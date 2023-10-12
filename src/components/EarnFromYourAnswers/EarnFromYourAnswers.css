@@ -1,0 +1,45 @@
+.earnFromYourAnswers-grid-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 75%;
+  margin: auto;
+}
+.earn-from-your-answer {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Alata", Helvetica, Arial, Lucida, sans-serif;
+}
+.get-up-to {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Alata", Helvetica, Arial, Lucida, sans-serif;
+}
+.earnFromYourAnswers-p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.start-earning-here-btn {
+  background-color: #01b67a;
+  padding: 15px;
+  width: 210px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.dateSendPhoto {
+  width: 500px;
+}
+
+@media screen and (max-width: 1100px) {
+  .earnFromYourAnswers-grid-div {
+    grid-template-columns: 1fr;
+  }
+  .dateSendPhoto {
+    margin: auto;
+  }
+}
