@@ -1,0 +1,110 @@
+.our-courses-parent-div {
+  background-color: rgb(250, 237, 222);
+  padding: 10px;
+}
+.our-courses-child-div {
+  margin-top: 100px;
+}
+.our-courses-first-heading {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: "magnolia";
+  font-weight: 800;
+  color: green;
+}
+.our-course-cart-grid-div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.our-course-cart-div {
+  border: 1px solid green;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.our-course-cart-div:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(104, 253, 161, 0.63) 0px 30px 60px -30px;
+
+  transition: 1s ease-in-out;
+}
+.our-course-img {
+  width: 50px;
+  margin: auto;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  animation-name: infiniteUpDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.our-course-header {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.our-course-p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.our-course-see-more-btn {
+  background-color: #ff1e1e;
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+.our-course-see-more-btn:hover {
+  background-color: white;
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1620px) {
+  .our-course-cart-grid-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .our-course-cart-grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 850px) {
+  .our-course-cart-grid-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-course-cart-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
