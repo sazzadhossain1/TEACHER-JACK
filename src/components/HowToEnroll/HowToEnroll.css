@@ -1,0 +1,48 @@
+.HowToEnroll-parent-div {
+  margin-top: 50px;
+}
+.howToEnroll-grid-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  margin-top: 50px;
+  width: 75%;
+  align-items: center;
+  gap: 50px;
+}
+.howToEnroll-text-div {
+  text-align: left;
+}
+.what-you-have {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.HowToEnroll-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(2, 119, 165);
+}
+
+.howToEnroll-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .howToEnroll-grid-div {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .howToEnroll-grid-div {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .howToEnroll-video {
+    width: 100%;
+  }
+}

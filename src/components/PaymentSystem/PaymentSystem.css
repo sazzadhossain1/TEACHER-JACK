@@ -1,0 +1,170 @@
+.payment-system-parent-div {
+  margin-top: 100px;
+}
+.payment-method-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.method {
+  color: rgb(3, 3, 202);
+}
+.payment-system-blank-div {
+  height: 3px;
+  width: 300px;
+  margin: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(26, 42, 163, 1) 31%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin-bottom: 50px;
+}
+
+.payment-method-bangla-heading {
+  font-size: 50px;
+
+  color: #e04978;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #e04978 31%,
+    #3989c5 46%,
+    #212d89 83%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fillUp-form-btn {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(125, 118, 247, 1) 52%,
+    rgba(93, 220, 246, 1) 100%
+  );
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.payment-system-account-grid-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.payment-system-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+.payment-logo-photo {
+  width: 30px;
+  border-radius: 50px;
+}
+
+.payment-number {
+  font-weight: 500;
+}
+
+/*  */
+.payment-bank-account-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.payment-bank-text {
+  font-weight: 500;
+}
+
+/* ------ */
+.personal-contact-text {
+  font-size: 25px;
+  font-weight: 600;
+
+  color: #446bc7;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #446bc7 12%,
+    #95a6c2 100%,
+    #a41002 16%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.payment-system-phone-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1700px) {
+  .payment-system-account-grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .payment-system-account-grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .payment-system-phone-logo {
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .payment-system-account-grid-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .payment-system-account-grid-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  .payment-system-number-div {
+    margin: auto;
+  }
+}

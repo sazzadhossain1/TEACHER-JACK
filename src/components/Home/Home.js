@@ -8,6 +8,9 @@ import TryTodayOurTreat from "../TryTodayOurTreat/TryTodayOurTreat";
 import MakeMoneyOnlineToday from "../MakeMoneyOnlineToday/MakeMoneyOnlineToday";
 import OurCourses from "../OurCourses/OurCourses";
 import MeetOurCeo from "../MeetOurCeo/MeetOurCeo";
+import Testimonials from "../Testimonials/Testimonials";
+import PaymentSystem from "../PaymentSystem/PaymentSystem";
+import HowToEnroll from "../HowToEnroll/HowToEnroll";
 
 const Home = () => {
   return (
@@ -20,6 +23,9 @@ const Home = () => {
       <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
       <OurCourses></OurCourses>
       <MeetOurCeo></MeetOurCeo>
+      <Testimonials></Testimonials>
+      <HowToEnroll></HowToEnroll>
+      <PaymentSystem></PaymentSystem>
     </div>
   );
 };

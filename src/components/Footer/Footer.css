@@ -1,0 +1,178 @@
+.footer-parent-div {
+  background-color: #1f1e38;
+  margin-top: 100px;
+  padding: 10px;
+}
+.footer-grid-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  margin-top: 100px;
+  color: white;
+  width: 85%;
+  text-align: left;
+  gap: 20px;
+}
+
+.footer-header {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer-blank-div {
+  height: 1px;
+  width: 90%;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-first-second-common-cart-p {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-first-second-common-cart-p:hover {
+  color: rgb(255, 122, 122);
+}
+
+/* ------ */
+.footer-last-cart-heading-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-person-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.footer-last-cart-icon-flex-div {
+  display: flex;
+  align-items: center;
+
+  background-color: #b88de2;
+  padding: 15px;
+  border-radius: 30px;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+.footer-icon {
+  margin: auto;
+  font-size: 30px;
+}
+.text-us {
+  margin: auto;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer-last-cart-icon-flex-div-two {
+  display: flex;
+  align-items: center;
+
+  background-color: #66cc89;
+  padding: 15px;
+  border-radius: 30px;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.or-check {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.faq {
+  font-weight: 500;
+
+  text-decoration: underline;
+}
+.email {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer-media-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+/* -------- */
+.footer-navigation-parent-div {
+  background-color: white;
+  margin-top: 60px;
+}
+.footer-navigation-parent-grid-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin: auto;
+}
+.footer-teacher-jack-logo {
+  width: 120px;
+}
+.footer-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-ul li {
+  font-size: 12px;
+}
+.footer-copy-right {
+  font-size: 12px;
+}
+
+/* responsive start */
+@media screen and (max-width: 1250px) {
+  .footer-grid-div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer-grid-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-navigation-parent-grid-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-teacher-jack-logo {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .footer-ul {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer-last-cart-heading-flex-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-last-cart-icon-flex-div {
+    width: 100%;
+  }
+  .footer-last-cart-icon-flex-div-two {
+    width: 100%;
+  }
+}
