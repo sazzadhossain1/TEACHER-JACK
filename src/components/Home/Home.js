@@ -11,6 +11,7 @@ import MeetOurCeo from "../MeetOurCeo/MeetOurCeo";
 import Testimonials from "../Testimonials/Testimonials";
 import PaymentSystem from "../PaymentSystem/PaymentSystem";
 import HowToEnroll from "../HowToEnroll/HowToEnroll";
+import MediaButton from "../MediaButton/MediaButton";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Testimonials></Testimonials>
       <HowToEnroll></HowToEnroll>
       <PaymentSystem></PaymentSystem>
+      <MediaButton></MediaButton>
     </div>
   );
 };
