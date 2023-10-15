@@ -1,32 +1,68 @@
 .nav-parent-div {
-  background-color: rgb(245, 245, 245);
-  padding: 10px;
-  padding-right: 50px;
+  background-color: rgb(236, 236, 236);
+
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .login button {
-  width: 100px;
-  margin-right: 10px;
-  border: 2px solid rgb(105, 219, 185);
+  /* width: 10rem;
+  height: 3.1rem;
+  border: 2px solid #15768d;
   padding: 5px;
-  border-radius: 5px;
-  font-weight: 700;
+  font-weight: 700; */
+  margin-right: 10px;
+  border-radius: 0.4rem;
+  border: 1px solid #15768d;
+  color: #15768d;
+
+  box-sizing: border-box;
+
+  font-size: 1em;
+  font-weight: 500;
+  height: 2rem;
+
+  margin-left: 0.5rem;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
 }
 
 .signUp button {
-  font-weight: 700;
-  background-color: rgb(105, 219, 185);
+  /* font-weight: 700;
+  background-color: #15768d;
   padding: 5px;
   width: 100px;
   border-radius: 5px;
+  width: 10rem;
+  height: 3.1rem; */
+
+  margin-right: 10px;
+  border-radius: 0.4rem;
+  background-color: #15768d;
+  color: white;
+
+  box-sizing: border-box;
+
+  font-size: 1em;
+  font-weight: 500;
+  height: 2rem;
+
+  margin-left: 0.5rem;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
 }
 
-.teacher-jack {
-  font-size: 25px;
-  font-weight: 500;
-  color: rgb(105, 219, 185);
+.Navigation-Teacher-Jack-Logo {
+  width: 300px;
+  height: 40px;
+
   margin-right: 100px;
+  margin-top: -10px;
+}
+.TeacherJackOnline {
+  font-size: 40px;
+  font-weight: 600;
 }
 .small-display-ul {
   font-family: "Mulish", sans-serif;
@@ -35,11 +71,20 @@
 .large-display-ul {
   font-family: "Mulish", sans-serif;
 }
+@media screen and (max-width: 1375px) {
+  .TeacherJackOnline {
+    font-size: 26px;
+  }
+}
 @media screen and (max-width: 1280px) {
+  .TeacherJackOnline {
+    font-size: 26px;
+  }
   .login-and-signUp-div {
     display: flex;
     align-items: center;
   }
+
   .login button {
     width: 100px;
   }
@@ -63,16 +108,55 @@
     width: 80px;
   }
 }
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1153px) {
+  .TeacherJackOnline {
+    font-size: 21px;
+  }
+  .large-display-ul li {
+    font-size: 13px;
+  }
   .login button {
-    width: 80px;
+    width: 70px;
   }
   .signUp button {
-    width: 80px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1075px) {
+  .nav-parent-div {
+  }
+  .TeacherJackOnline {
+    font-size: 19px;
+  }
+
+  .login button {
+    width: 70px;
+  }
+  .signUp button {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .nav-parent-div {
+  }
+  .TeacherJackOnline {
+    font-size: 19px;
+  }
+  .large-display-ul li {
+    font-size: 12px;
+  }
+  .login button {
+    width: 68px;
+  }
+  .signUp button {
+    width: 68px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .teacher-jack {
+  .nav-parent-div {
+    width: 107%;
+  }
+  .TeacherJackOnline {
     font-size: 20px;
   }
   .login button {
@@ -102,6 +186,24 @@
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  .nav-parent-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav-parent-div {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .nav-parent-div {
+    width: 118%;
+  }
+  .TeacherJackOnline {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 340px) {
   .nav-parent-div {
     width: 110%;
@@ -113,7 +215,7 @@
   }
 }
 @media screen and (max-width: 300px) {
-  .teacher-jack {
-    font-size: 10px;
+  .TeacherJackOnline {
+    font-size: 22px;
   }
 }

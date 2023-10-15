@@ -53,10 +53,11 @@
 .ceo-learn-more-btn {
   background-color: rgb(1, 120, 156);
   padding: 10px;
-  width: 200px;
+  width: 300px;
   color: white;
   font-weight: 500;
   border-radius: 15px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1400px) {

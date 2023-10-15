@@ -72,10 +72,11 @@
 .our-course-see-more-btn {
   background-color: #ff1e1e;
   padding: 5px;
-  width: 100px;
+  width: 150px;
   border-radius: 15px;
   color: white;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .our-course-see-more-btn:hover {

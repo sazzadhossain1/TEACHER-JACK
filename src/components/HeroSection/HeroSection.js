@@ -1,48 +1,46 @@
 import React from "react";
 import "./HeroSection.css";
+import heroBookCoverPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
 
 const HeroSection = () => {
   return (
     <div className="hero-main-div">
       <div className="hero-child-div">
-        <h1 className="hero-first-heading">
-          Be Focused Be Skilled and Be Own Boss
-        </h1>
+        <h1 className="hero-first-heading">দক্ষতা গড়ুন, ঘরে বসে ইনকাম করুন</h1>
         <div className="hero-grid-div">
-          <div className="hero-text-div">
-            <h3 className="hero-second-text-heading">
-              Best IT institute in Bangladesh
-            </h3>
-            <h2 className="hero-teacher-jack">Teacher Jack</h2>
-            <p className="hero-p-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eius
-              amet ab natus atque soluta voluptates alias est, quaerat quisquam
-              aliquam vel impedit id aspernatur ullam? Id, a! Quidem vel dolore
-              nam explicabo nihil excepturi eum mollitia laboriosam repellat
-              delectus quaerat laborum, at rem illo expedita quis? Obcaecati,
-              quis deleniti!
-            </p>
+          <div className="learn-more-btn-and-text-div">
+            <div className="hero-text-div">
+              <h3 className="hero-second-text-heading">
+                “Skills for Job Program”
+              </h3>
+              <h2 className="hero-teacher-jack">আপনি কি একজন</h2>
+
+              <p className="hero-p-text">চাকুরীপ্রার্থী গ্র্যাজুয়েট?</p>
+              <p className="hero-p-text">হাই স্কুল, কলেজ পড়ুয়া শিক্ষার্থী?</p>
+              <p className="hero-p-text">
+                {" "}
+                চাকুরীজীবী কিছু বাড়তি আয়ের সন্ধানে?
+              </p>
+              <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যাক্তি? </p>
+              <p className="hero-p-text">গৃহিণী?</p>
+              <p className="hero-p-text last-second-p">
+                এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে?
+              </p>
+              <p className="hero-p-text">
+                তাহলে এই প্রোগ্রামটি আপনার জন্য অর্থনৈতিক মুক্তি পেতে এই
+                প্রোগ্রামটি ফলো করুন।
+              </p>
+            </div>
             <button className="learn-more-btn">Learn More</button>
-            <button className="how-to-admit-btn">How to Admit</button>
-            <button className="join-success-btn">Join Success Group</button>
           </div>
-          <div>
-            <iframe
-              className="hero-video"
-              src="https://www.youtube.com/embed/UlaAYWKwTjw?si=sawEpibvGiU62OEC"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <div className="heroBookCoverPhoto-dvi">
+            <img
+              className="heroBookCoverPhoto-img"
+              src={heroBookCoverPhoto}
+              alt=""
+            />
           </div>
         </div>
-        <marquee className="marquee" behavior="" direction="">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nisi
-          aperiam itaque eos asperiores velit sunt similique officia commodi
-          provident quo, esse animi maxime magnam nihil delectus sit rerum
-          deleniti!
-        </marquee>
       </div>
     </div>
   );

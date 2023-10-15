@@ -1,38 +1,42 @@
 .hero-main-div {
   background-color: #010313;
-  padding: 10px;
+  padding: 5px;
   color: white;
+  /* height: 1050px; */
 }
 .hero-child-div {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .hero-first-heading {
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 700;
 
   margin-bottom: 30px;
-  color: rgb(105, 219, 185);
+  margin-top: 50px;
+  color: white;
 }
 .hero-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  grid-gap: 30px;
+
+  grid-gap: 230px;
   padding: 10px;
-  width: 85%;
+  width: 90%;
   margin: auto;
+  margin-top: 50px;
 }
 .hero-text-div {
   text-align: left;
 }
 .hero-second-text-heading {
-  font-size: 25px;
+  font-size: 43px;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 .hero-teacher-jack {
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-weight: 800;
   color: rgb(105, 219, 185);
 }
@@ -40,66 +44,180 @@
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 20px;
+  font-size: 29px;
+  line-height: 35px;
+}
+.last-second-p {
+  margin-bottom: 60px;
+}
+.learn-more-btn-and-text-div {
+  text-align: left;
 }
 .learn-more-btn {
-  background-color: aquamarine;
-  margin-right: 10px;
+  background-color: yellow;
   padding: 10px;
-  width: 25%;
-  font-weight: 500;
+  width: 300px;
+  font-weight: 700;
+  font-size: 23px;
   border-radius: 10px;
   color: black;
+
+  margin-left: 250px;
+  margin-top: 25px;
 }
-.how-to-admit-btn {
-  background-color: rgb(139, 236, 139);
-  margin-right: 10px;
-  padding: 10px;
-  width: 25%;
-  font-weight: 500;
-  border-radius: 10px;
-  color: black;
+
+.heroBookCoverPhoto-dvi {
 }
-.join-success-btn {
-  background-color: aquamarine;
-  padding: 10px;
-  width: 25%;
-  font-weight: 500;
-  border-radius: 10px;
-  color: black;
-}
-.hero-video {
-  width: 100%;
-  height: 350px;
-  border-radius: 10px;
-}
-.marquee {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 50px;
+.heroBookCoverPhoto-img {
+  /* height: 550px;
+  width: 480px; */
+  margin-bottom: -113px;
 }
 
 /* Responsive start */
+
+@media screen and (max-width: 1675px) {
+  .heroBookCoverPhoto-img {
+    margin-bottom: -108px;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .hero-p-text {
+    font-size: 25px;
+  }
+  .heroBookCoverPhoto-img {
+    margin-bottom: -100px;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .hero-p-text {
+    font-size: 22px;
+  }
+  .heroBookCoverPhoto-img {
+    margin-bottom: -100px;
+  }
+}
 @media screen and (max-width: 1555px) {
   .learn-more-btn {
-    width: 30%;
+    width: 50%;
   }
-  .how-to-admit-btn {
-    width: 30%;
+}
+@media screen and (max-width: 1500px) {
+  .learn-more-btn {
+    width: 50%;
   }
-  .join-success-btn {
-    width: 30%;
+  .heroBookCoverPhoto-img {
+    margin-bottom: -170px;
+  }
+}
+@media screen and (max-width: 1470px) {
+  .hero-main-div {
+    height: 124vh;
+  }
+
+  .heroBookCoverPhoto-img {
+    margin-bottom: -90px;
+  }
+  .learn-more-btn {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .hero-first-heading {
+    font-size: 50px;
+  }
+  .hero-second-text-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .hero-teacher-jack {
+    font-size: 30px;
+    margin-bottom: 20;
+  }
+  .hero-main-div {
+    height: 120vh;
+  }
+
+  .heroBookCoverPhoto-img {
+  }
+  .learn-more-btn {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .hero-first-heading {
+    font-size: 45px;
+  }
+  .hero-second-text-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .hero-teacher-jack {
+    font-size: 28px;
+    margin-bottom: 20;
+  }
+  .hero-p-text {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .last-second-p {
+    margin-bottom: 40px;
+  }
+  .hero-main-div {
+    height: 120vh;
+  }
+
+  .heroBookCoverPhoto-img {
+    margin-top: 30px;
+  }
+  .learn-more-btn {
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .hero-first-heading {
+  }
+  .hero-second-text-heading {
+  }
+  .hero-teacher-jack {
+  }
+  .hero-p-text {
+  }
+  .last-second-p {
+  }
+  .hero-main-div {
+  }
+
+  .heroBookCoverPhoto-img {
+    margin-top: 55px;
+  }
+  .learn-more-btn {
   }
 }
 @media screen and (max-width: 1310px) {
   .learn-more-btn {
     width: 32%;
   }
-  .how-to-admit-btn {
-    width: 32%;
+  .heroBookCoverPhoto-img {
+    margin-top: 80px;
   }
-  .join-success-btn {
-    width: 32%;
+}
+@media screen and (max-width: 1285px) {
+  .learn-more-btn {
+    width: 40%;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .learn-more-btn {
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 115px;
   }
 }
 @media screen and (max-width: 1235px) {
@@ -109,14 +227,42 @@
 }
 @media screen and (max-width: 1235px) {
   .hero-grid-div {
-    width: 98%;
+    width: 100%;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero-grid-div {
+    gap: 200px;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .hero-grid-div {
+    gap: 170px;
+  }
+  .heroBookCoverPhoto-img {
+  }
+}
+@media screen and (max-width: 1120px) {
+  .hero-grid-div {
+    gap: 120px;
   }
 }
 @media screen and (max-width: 1100px) {
   .hero-grid-div {
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 30px;
+  }
+  .heroBookCoverPhoto-dvi {
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 70px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -127,10 +273,65 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .hero-main-div {
+    height: 100%;
+  }
   .hero-grid-div {
     width: 100%;
     grid-template-columns: 1fr;
     padding-left: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero-main-div {
+    height: 100%;
+  }
+  .hero-main-div {
+    background-color: #010313;
+    padding: 5px;
+    color: white;
+    width: 103%;
+  }
+  .learn-more-btn {
+    width: 300px;
+
+    margin-left: 200px;
+    margin-top: 25px;
+  }
+  .heroBookCoverPhoto-img {
+  }
+}
+@media screen and (max-width: 745px) {
+  .hero-main-div {
+    height: 100%;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero-main-div {
+    height: 100%;
+  }
+  .learn-more-btn {
+    width: 300px;
+
+    margin-left: 150px;
+    margin-top: 25px;
+  }
+  .heroBookCoverPhoto-img {
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero-main-div {
+  }
+  .learn-more-btn {
+    width: 300px;
+
+    margin-left: 110px;
+    margin-top: 25px;
+  }
+  .heroBookCoverPhoto-img {
   }
 }
 @media screen and (max-width: 540px) {
@@ -139,23 +340,80 @@
     grid-template-columns: 1fr;
     padding-left: 10px;
   }
+
+  .hero-main-div {
+  }
+  .learn-more-btn {
+    width: 300px;
+  }
+  .heroBookCoverPhoto-img {
+  }
+}
+@media screen and (max-width: 470px) {
+  .hero-first-heading {
+    font-size: 42px;
+  }
+  .hero-second-text-heading {
+    font-size: 32px;
+  }
+  .hero-teacher-jack {
+    font-size: 26px;
+  }
+  .hero-p-text {
+    font-size: 21px;
+  }
+  .hero-grid-div {
+  }
+
+  .hero-main-div {
+  }
   .learn-more-btn {
     width: 100%;
-    margin-bottom: 10px;
+    margin-left: 0;
+    margin-top: 10px;
   }
-  .how-to-admit-btn {
-    width: 100%;
-    margin-bottom: 10px;
+  .heroBookCoverPhoto-img {
   }
-  .join-success-btn {
-    width: 100%;
-    margin-bottom: 10px;
+}
+@media screen and (max-width: 410px) {
+  .hero-main-div {
+    background-color: #010313;
+    padding: 5px;
+    color: white;
+    width: 105%;
+  }
+  .hero-first-heading {
+    font-size: 38px;
+  }
+  .hero-second-text-heading {
+    font-size: 30px;
+  }
+  .hero-teacher-jack {
+    font-size: 25px;
+  }
+  .hero-p-text {
+    font-size: 20px;
+  }
+  .hero-grid-div {
+  }
+
+  .hero-main-div {
+  }
+  .learn-more-btn {
+    margin-top: 0px;
+  }
+  .heroBookCoverPhoto-img {
   }
 }
 
+@media screen and (max-width: 355px) {
+  .hero-main-div {
+    width: 120%;
+  }
+}
 @media screen and (max-width: 340px) {
   .hero-main-div {
-    width: 110%;
+    width: 126%;
   }
 }
 @media screen and (max-width: 315px) {

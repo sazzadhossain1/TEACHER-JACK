@@ -16,7 +16,7 @@ import MediaButton from "../MediaButton/MediaButton";
 const Home = () => {
   return (
     <div>
-      <HeroSection></HeroSection>
+      {/* <HeroSection></HeroSection>
       <EarnOnlineJob></EarnOnlineJob>
       <EarnFromYourAnswers></EarnFromYourAnswers>
       <FirstTwocartSection></FirstTwocartSection>
@@ -27,7 +27,7 @@ const Home = () => {
       <Testimonials></Testimonials>
       <HowToEnroll></HowToEnroll>
       <PaymentSystem></PaymentSystem>
-      <MediaButton></MediaButton>
+      <MediaButton></MediaButton> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.earnFromYourAnswers-grid-div {
+/* .earnFromYourAnswers-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -25,11 +25,12 @@
 .start-earning-here-btn {
   background-color: #01b67a;
   padding: 15px;
-  width: 210px;
+  width: 300px;
   margin-top: 20px;
   border-radius: 5px;
   color: white;
   font-weight: 500;
+  font-size: 24px;
 }
 .dateSendPhoto {
   width: 500px;
@@ -42,4 +43,14 @@
   .dateSendPhoto {
     margin: auto;
   }
+} */
+
+.earnFromYourAnswers-img-div {
+  background-color: blanchedalmond;
+  padding: 30px;
+  margin-top: 100px;
+}
+.earnFromYourAnswers-img-div img {
+  margin: auto;
+  width: 100%;
 }

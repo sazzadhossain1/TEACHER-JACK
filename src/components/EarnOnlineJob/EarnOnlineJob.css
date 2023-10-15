@@ -1,27 +1,28 @@
 .earnOnlineJob-parent-div {
-  background-color: #f4f4f4;
+  background-color: #f8f7f3;
   padding: 10px;
-  text-align: right;
+  text-align: left;
+  margin-top: 97px;
 }
 .earnOnlineJob-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  width: 75%;
+  width: 95%;
   margin: auto;
   margin-top: 100px;
   gap: 50px;
 }
 .earnOnlineJob-flex-div {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   gap: 20px;
 }
 .earn-online-job {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ee795e;
+  color: blue;
 }
 .earn-online-job-blank-div {
   height: 100px;
@@ -29,25 +30,16 @@
   background-color: rgb(0, 0, 0);
 }
 
-.anOpportunity {
-  font-size: 40px;
-  font-family: YAEtfxocAz8-0;
-  font-weight: 800;
-  color: #5d4b4b;
+.step-p {
+  font-size: 25px;
 }
-.earnMoneyFrom {
-  font-size: 65px;
-  margin-bottom: 20px;
-  line-height: 70px;
-  font-family: YAEtfxocAz8-0;
-  font-weight: 800;
-  color: #5d4b4b;
-}
+
 .earnOnlineJob-p {
   font-family: YACgEbc43jc-0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #5d4b4b;
+  font-size: 25px;
+
+  color: #055dff;
+  margin-top: 20px;
 }
 
 .signUpNow-btn {
@@ -61,6 +53,11 @@
   margin-bottom: 50px;
 }
 
+.earnOnlineJob-img-div {
+  background-color: #dad2b9;
+}
+.img {
+}
 @media screen and (max-width: 1500px) {
   .earnOnlineJob-grid-div {
     width: 100%;
@@ -78,7 +75,70 @@
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 1024px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+  .earnOnlineJob-parent-div {
+    text-align: left;
+  }
+  .earnOnlineJob-flex-div {
+    justify-content: left;
+  }
+  .earnOnlineJob-grid-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 950px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
+}
 @media screen and (max-width: 360px) {
+  .earnOnlineJob-parent-div {
+    margin-top: 150px;
+  }
   .signUpNow-btn {
     width: 250px;
     font-size: 25px;

@@ -28,8 +28,9 @@
   background-color: rgb(3, 92, 103);
   color: white;
   padding: 10px;
-  width: 150px;
+  width: 300px;
   border-radius: 50px;
+  font-size: 30px;
 }
 
 .read-more:hover {

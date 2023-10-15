@@ -1,7 +1,6 @@
 import React from "react";
 import "./EarnOnlineJob.css";
-import workWithClock from "../../accets/Images/work-with-clock.jpg";
-import girlWithLaptop from "../../accets/Images/girl-with-laptop.jpg";
+import খুবসহজেধাপেধাপে from "../../accets/Images/খুবসহজেধাপেধাপে/খুবসহজেধাপেধাপে.png";
 import { Link } from "react-router-dom";
 
 const EarnOnlineJob = () => {
@@ -11,27 +10,42 @@ const EarnOnlineJob = () => {
         <div>
           <div className="earnOnlineJob-flex-div">
             <h2 className="earn-online-job">
-              EARN ONLINE <br /> JOB VACANCIES
+              খুব সহজে ধাপে ধাপে কিভাবে <br /> রিমোট জব বা ফ্রিল্যান্সিং করবেন?
             </h2>
             <div className="earn-online-job-blank-div"></div>
           </div>
-          <h3 className="anOpportunity">An Opportunity to</h3>
-          <h2 className="earnMoneyFrom">
-            Earn Money <br /> from Home.
-          </h2>
+          <p className="step-p">Step 1: “Remote Job” বইটি পড়ে শেষ করুন।</p>
+          <p className="step-p">
+            Step 2: “Basic English Communication” কোর্সটি শেষ করুন।
+          </p>
+          <p className="step-p">
+            Step 3: “Core Skills” Section থেকে যে কোন একটি কোর্স শেষ করুন।
+          </p>
+          <p className="step-p">
+            Step 4: “Job Preparation Guideline” টি পড়ে শেষ করুন।
+          </p>
+          <p className="step-p">
+            {" "}
+            Step 5: “FB Group-এ প্রশ্ন-উত্তর সেশনে join করুন।
+          </p>
+          <p className="step-p">
+            Step 6: আমাদের দেখিয়ে দেয়া জায়গাগুলোতে কাজের জন্য Apply করুন
+          </p>
+
           <p className="earnOnlineJob-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-            deleniti adipisci id, at pariatur, impedit neque omnis, sunt dolorem
-            cumque quasi error eos repudiandae veniam!
+            রিমোট জব/ফ্রিল্যান্সিং করে সাধারণ একজন ব্যাক্তি সর্বনিম্ন কয়েক হাজার
+            টাকা থেকে শুরু করে ১ বছরের মধ্যে ৩০,০০০ থেরে ৪০,০০০ টাকা সহজেই ইনকাম
+            করতে পারে। চোখ কান খোলা থাকলে এবং একটু বেশী পরিশ্রমী হলে আরো বেশী
+            ইনকাম করতে পারে।
           </p>
           <Link to="/signUP">
             <button className="signUpNow-btn">
-              SIGN UP NOW <i class="fa-solid fa-angle-right"></i>
+              বিস্তারিত.. <i class="fa-solid fa-angle-right"></i>
             </button>
           </Link>
         </div>
-        <div>
-          <img className="img" src={workWithClock} alt="" />
+        <div className="earnOnlineJob-img-div">
+          <img className="img" src={খুবসহজেধাপেধাপে} alt="" />
           {/* <img src={girlWithLaptop} alt="" /> */}
         </div>
       </div>

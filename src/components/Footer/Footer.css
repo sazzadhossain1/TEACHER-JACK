@@ -146,6 +146,17 @@
     padding: 20px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .footer-parent-div {
+    width: 107%;
+  }
+  .footer-grid-div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 850px) {
   .footer-grid-div {
     grid-template-columns: repeat(1, 1fr);
@@ -165,6 +176,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .footer-parent-div {
+    width: 100%;
+  }
   .footer-last-cart-heading-flex-div {
     display: grid;
     grid-template-columns: 1fr;
