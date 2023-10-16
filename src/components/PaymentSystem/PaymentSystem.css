@@ -61,7 +61,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 .payment-system-flex-div {
@@ -93,20 +93,10 @@
 
 /* ------ */
 .personal-contact-text {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 
-  color: #446bc7;
-  background-image: -webkit-linear-gradient(
-    0deg,
-    #446bc7 12%,
-    #95a6c2 100%,
-    #a41002 16%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: black;
 }
 
 .payment-system-phone-logo {

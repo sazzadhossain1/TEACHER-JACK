@@ -1,0 +1,50 @@
+.special-courses-h2 {
+  margin-top: 70px;
+  font-size: 40px;
+  color: rgb(3, 92, 103);
+  font-weight: 500;
+}
+.specialCourses-grid-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+  margin-top: 10px;
+  gap: 20px;
+}
+.specialCourses-cart {
+  margin: auto;
+  background-color: rgb(241, 241, 241);
+  text-align: left;
+  border-radius: 70px;
+  height: 110%;
+  position: relative;
+}
+.specialCourses-learning-photo {
+  width: 500px;
+  border-radius: 70px;
+  margin: auto;
+}
+.specialCourses-cart-text-div {
+  padding: 40px;
+}
+.specialCourses-cart-heading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.specialCourses-read-more {
+  background-color: rgb(3, 92, 103);
+  color: white;
+  padding: 10px;
+  width: 250px;
+  border-radius: 50px;
+  font-size: 25px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.specialCourses-read-more:hover {
+  background-color: rgb(5, 164, 185);
+  transition: 0.5s;
+}

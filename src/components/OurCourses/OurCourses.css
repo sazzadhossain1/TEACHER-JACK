@@ -25,6 +25,7 @@
   background-color: white;
   padding: 40px;
   border-radius: 15px;
+  position: relative;
 }
 
 .our-course-cart-div:hover {
@@ -65,10 +66,7 @@
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.our-course-p {
-  font-weight: 500;
-  margin-bottom: 20px;
-}
+
 .our-course-see-more-btn {
   background-color: #ff1e1e;
   padding: 5px;
@@ -77,6 +75,10 @@
   color: white;
   font-weight: 500;
   font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .our-course-see-more-btn:hover {

@@ -103,12 +103,12 @@ const NavigationBar = () => {
           </div>
 
           <Link to="/home" className="">
-            {/* <img
+            <img
               className="Navigation-Teacher-Jack-Logo"
               src={teacherJackOnlineLogo}
               alt=""
-            /> */}
-            <h1 className="TeacherJackOnline">TeacherJackOnline</h1>
+            />
+            {/* <h1 className="TeacherJackOnline">TeacherJackOnline</h1> */}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

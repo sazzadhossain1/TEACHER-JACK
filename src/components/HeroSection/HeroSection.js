@@ -31,7 +31,7 @@ const HeroSection = () => {
                 প্রোগ্রামটি ফলো করুন।
               </p>
             </div>
-            <button className="learn-more-btn">Learn More</button>
+            <button className="learn-more-btn">বিস্তারিত..</button>
           </div>
           <div className="heroBookCoverPhoto-dvi">
             <img
