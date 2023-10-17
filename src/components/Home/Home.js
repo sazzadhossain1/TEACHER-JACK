@@ -26,7 +26,7 @@ const Home = () => {
       <TryTodayOurTreat></TryTodayOurTreat>
       <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
       <OurCourses></OurCourses>
-      <SpecialCourses></SpecialCourses>
+      {/* <SpecialCourses></SpecialCourses> */}
       <MeetOurCeo></MeetOurCeo>
       <Testimonials></Testimonials>
       <HowToEnroll></HowToEnroll>

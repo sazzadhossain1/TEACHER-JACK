@@ -175,6 +175,11 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 600px) {
+  .footer-parent-div {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 500px) {
   .footer-parent-div {
     width: 100%;
@@ -188,5 +193,15 @@
   }
   .footer-last-cart-icon-flex-div-two {
     width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-parent-div {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .footer-parent-div {
+    width: 118%;
   }
 }

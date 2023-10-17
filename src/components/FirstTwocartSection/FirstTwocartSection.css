@@ -1,8 +1,7 @@
 .firstTwoCartSection-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  width: 75%;
+  width: 50%;
   margin: auto;
   margin-top: 50px;
 }
@@ -11,16 +10,19 @@
   background-color: rgb(241, 241, 241);
   text-align: left;
   border-radius: 70px;
+  width: 380px;
 }
 .learning-photo {
-  width: 500px;
+  width: 350px;
   border-radius: 70px;
+  margin: auto;
+  margin-top: 20px;
 }
 .cart-text-div {
   padding: 40px;
 }
 .cart-heading {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -28,14 +30,20 @@
   background-color: rgb(3, 92, 103);
   color: white;
   padding: 10px;
-  width: 300px;
+  width: 180px;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .read-more:hover {
   background-color: rgb(5, 164, 185);
   transition: 0.5s;
+}
+@media screen and (max-width: 1550px) {
+  .firstTwoCartSection-grid-div {
+    grid-gap: 100px;
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1380px) {
   .firstTwoCartSection-grid-div {
@@ -55,3 +63,8 @@
     font-size: 20px;
   }
 }
+
+/* https://bd.teacherjackonline.com/
+Host: ftp.teacherjackonline.com
+User: u721601174.Sazzad_admin
+Pass: FTPAdmin4teacherjack */

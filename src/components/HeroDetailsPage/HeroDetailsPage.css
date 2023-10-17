@@ -1,0 +1,46 @@
+.HeroDetailsPage-parent-div {
+  margin-top: 50px;
+
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+}
+.skills-for-job-program {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.who-should {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.apni-ki-akjon {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.heroDetailsPage-qus {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.HeroDetailsPage-second-parent-div {
+  margin: auto;
+  margin-top: 50px;
+}
+.HeroDetailsPage-second-parent-div p {
+  font-size: 18px;
+}
+.heroDetailsPage-p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.heroDetailsPage-link {
+  color: blue;
+  font-weight: 500;
+  margin-left: 5px;
+  text-decoration: underline;
+}

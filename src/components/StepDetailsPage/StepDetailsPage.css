@@ -1,0 +1,99 @@
+.stepDetailsPage-div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+.stepDetailsPage-p {
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+.stepDetailsPage-step-p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.navigate-site-sink {
+  color: blue;
+  margin-left: 5px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.stepDetailsPage-last-p {
+  margin-top: 60px;
+  font-size: 25px;
+}
+@media screen and (max-width: 900px) {
+  .stepDetailsPage-div {
+    width: 107%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stepDetailsPage-div {
+    width: 100%;
+  }
+  .stepDetailsPage-p {
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+  .stepDetailsPage-step-p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .navigate-site-sink {
+    color: blue;
+    margin-left: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .stepDetailsPage-last-p {
+    margin-top: 40px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stepDetailsPage-div {
+  }
+  .stepDetailsPage-p {
+    font-size: 22px;
+  }
+  .stepDetailsPage-step-p {
+    font-size: 19px;
+  }
+  .navigate-site-sink {
+    color: blue;
+    margin-left: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .stepDetailsPage-last-p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stepDetailsPage-div {
+    width: 110%;
+  }
+  .stepDetailsPage-p {
+    font-size: 22px;
+  }
+  .stepDetailsPage-step-p {
+    font-size: 19px;
+  }
+  .navigate-site-sink {
+    color: blue;
+    margin-left: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .stepDetailsPage-last-p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .stepDetailsPage-div {
+    width: 118%;
+  }
+}

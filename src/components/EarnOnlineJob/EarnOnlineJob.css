@@ -2,7 +2,7 @@
   background-color: #f8f7f3;
   padding: 10px;
   text-align: left;
-  margin-top: 97px;
+  margin-top: 50px;
 }
 .earnOnlineJob-grid-div {
   display: grid;
@@ -19,27 +19,28 @@
   gap: 20px;
 }
 .earn-online-job {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
   color: blue;
 }
 .earn-online-job-blank-div {
-  height: 100px;
+  height: 70px;
   width: 5px;
   background-color: rgb(0, 0, 0);
+  margin-bottom: 40px;
 }
 
 .step-p {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .earnOnlineJob-p {
   font-family: YACgEbc43jc-0;
-  font-size: 23px;
+  font-size: 20px;
 
   color: #055dff;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .signUpNow-btn {
@@ -77,7 +78,8 @@
 }
 @media screen and (max-width: 1024px) {
   .earnOnlineJob-parent-div {
-    margin-top: 150px;
+    margin-top: 90px;
+    width: 107%;
   }
   .earnOnlineJob-parent-div {
     text-align: left;

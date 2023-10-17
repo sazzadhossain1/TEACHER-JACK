@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import heroBookCoverPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -31,7 +32,9 @@ const HeroSection = () => {
                 প্রোগ্রামটি ফলো করুন।
               </p>
             </div>
-            <button className="learn-more-btn">বিস্তারিত..</button>
+            <Link to="/heroDetailsPage">
+              <button className="learn-more-btn">বিস্তারিত..</button>
+            </Link>
           </div>
           <div className="heroBookCoverPhoto-dvi">
             <img

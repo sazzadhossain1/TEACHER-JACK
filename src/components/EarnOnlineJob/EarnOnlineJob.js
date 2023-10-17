@@ -38,7 +38,7 @@ const EarnOnlineJob = () => {
             করতে পারে। চোখ কান খোলা থাকলে এবং একটু বেশী পরিশ্রমী হলে আরো বেশী
             ইনকাম করতে পারে।
           </p>
-          <Link to="/signUP">
+          <Link to="/stepDetailsPage">
             <button className="signUpNow-btn">
               বিস্তারিত.. <i class="fa-solid fa-angle-right"></i>
             </button>
