@@ -16,21 +16,43 @@ const HeroSection = () => {
               </h3>
               <h2 className="hero-teacher-jack">আপনি কি একজন</h2>
 
-              <p className="hero-p-text">চাকুরীপ্রার্থী গ্র্যাজুয়েট?</p>
-              <p className="hero-p-text">হাই স্কুল, কলেজ পড়ুয়া শিক্ষার্থী?</p>
-              <p className="hero-p-text">
-                {" "}
-                চাকুরীজীবী কিছু বাড়তি আয়ের সন্ধানে?
-              </p>
-              <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যাক্তি? </p>
-              <p className="hero-p-text">গৃহিণী?</p>
-              <p className="hero-p-text last-second-p">
-                এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে?
-              </p>
-              <p className="hero-p-text">
-                তাহলে এই প্রোগ্রামটি আপনার জন্য অর্থনৈতিক মুক্তি পেতে এই
-                প্রোগ্রামটি ফলো করুন।
-              </p>
+              <div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+
+                  <p className="hero-p-text">চাকুরীপ্রার্থী গ্র্যাজুয়েট?</p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+                  <p className="hero-p-text">
+                    হাই স্কুল, কলেজ পড়ুয়া শিক্ষার্থী?
+                  </p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+                  <p className="hero-p-text">
+                    চাকুরীজীবী কিছু বাড়তি আয়ের সন্ধানে?
+                  </p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+                  <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যাক্তি? </p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+                  <p className="hero-p-text">গৃহিণী?</p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <i class="fa-solid fa-right-long"></i>
+                  <p className="hero-p-text last-second-p">
+                    এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে?
+                  </p>
+                </div>
+                <p className="hero-p-text-last">
+                  তাহলে এই প্রোগ্রামটি আপনার জন্য অর্থনৈতিক মুক্তি পেতে এই
+                  প্রোগ্রামটি ফলো করুন।
+                </p>
+              </div>
             </div>
             <Link to="/heroDetailsPage">
               <button className="learn-more-btn">বিস্তারিত..</button>

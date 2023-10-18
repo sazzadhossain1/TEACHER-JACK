@@ -1,3 +1,7 @@
+.tryTodayTreat-main-parent-div {
+  background-color: #f8f7f3;
+  padding: 20px;
+}
 .tryTodayTreat-parent-div {
   background-color: #72c597;
   width: 75%;
@@ -7,8 +11,12 @@
   border-radius: 50px;
   margin-bottom: 50px;
 }
+.step-two {
+  font-size: 30px;
+  font-weight: 500;
+}
 .tryToday {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -20,76 +28,26 @@
   margin-bottom: 20px;
   color: black;
 }
-.tryTodayTreat-from {
-  background-color: white;
-  width: 30%;
-  margin: auto;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid green;
-  margin-bottom: 20px;
-}
-.tryTodayTreat-input {
-  padding: 10px;
-}
-.getStarted {
-  background-color: rgb(202, 168, 105);
-  padding: 10px;
-  border-radius: 10px;
-  margin-left: 20px;
-}
-
-.getStarted:hover {
-  background-color: rgb(5, 164, 185);
-  transition: 0.5s;
-}
 
 @media screen and (max-width: 1615px) {
-  .tryTodayTreat-from {
-    width: 35%;
-  }
 }
 @media screen and (max-width: 1400px) {
-  .tryTodayTreat-from {
-    width: 40%;
-    padding: 10px;
-  }
 }
 @media screen and (max-width: 1275px) {
-  .tryTodayTreat-from {
-    width: 45%;
-  }
 }
 @media screen and (max-width: 1150px) {
   .tryTodayTreat-p {
     width: 70%;
-  }
-  .tryTodayTreat-from {
-    width: 50%;
   }
 }
 @media screen and (max-width: 1050px) {
   .tryTodayTreat-p {
     width: 80%;
   }
-  .tryTodayTreat-from {
-    width: 60%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 30px;
-  }
 }
 @media screen and (max-width: 925px) {
   .tryTodayTreat-p {
     width: 90%;
-  }
-  .tryTodayTreat-from {
-    width: 65%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 20px;
   }
 }
 @media screen and (max-width: 845px) {
@@ -98,13 +56,6 @@
   }
   .tryTodayTreat-p {
     width: 90%;
-  }
-  .tryTodayTreat-from {
-    width: 70%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 15px;
   }
 }
 @media screen and (max-width: 785px) {
@@ -115,13 +66,6 @@
     font-size: 16px;
     width: 100%;
   }
-  .tryTodayTreat-from {
-    width: 75%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 15px;
-  }
 }
 @media screen and (max-width: 745px) {
   .tryToday {
@@ -131,15 +75,8 @@
     font-size: 14px;
     width: 100%;
   }
-  .tryTodayTreat-from {
-    width: 80%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 15px;
-    font-size: 12px;
-  }
 }
+
 @media screen and (max-width: 670px) {
   .tryToday {
     font-size: 25px;
@@ -147,14 +84,6 @@
   .tryTodayTreat-p {
     font-size: 14px;
     width: 100%;
-  }
-  .tryTodayTreat-from {
-    width: 85%;
-    padding: 12px;
-  }
-  .getStarted {
-    margin-left: 15px;
-    font-size: 12px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -164,14 +93,6 @@
   .tryTodayTreat-p {
     font-size: 14px;
   }
-  .tryTodayTreat-from {
-    width: 90%;
-    padding: 10px;
-  }
-  .getStarted {
-    margin-left: 10px;
-    font-size: 12px;
-  }
 }
 @media screen and (max-width: 600px) {
   .tryToday {
@@ -179,14 +100,6 @@
   }
   .tryTodayTreat-p {
     font-size: 12px;
-  }
-  .tryTodayTreat-from {
-    width: 95%;
-    padding: 8px;
-  }
-  .getStarted {
-    margin-left: 8px;
-    font-size: 10px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -212,38 +125,16 @@
   .tryTodayTreat-p {
     font-size: 12px;
   }
-  .tryTodayTreat-from {
-    width: 100%;
-    padding: 8px;
-  }
-
-  .getStarted {
-    margin-left: 8px;
-    font-size: 10px;
-  }
 }
 @media screen and (max-width: 550px) {
   .tryTodayTreat-parent-div {
     width: 100%;
     padding: 40px;
   }
-  .tryTodayTreat-input {
-    width: 170px;
-  }
 }
 @media screen and (max-width: 345px) {
   .tryTodayTreat-parent-div {
     width: 100%;
     padding: 40px;
-  }
-  .lable-flex-div {
-    display: flex;
-    align-items: center;
-  }
-  .tryTodayTreat-input {
-    width: 100%;
-  }
-  .getStarted {
-    width: 75%;
   }
 }

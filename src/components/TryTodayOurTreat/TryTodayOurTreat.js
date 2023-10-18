@@ -3,31 +3,18 @@ import "./TryTodayOurTreat.css";
 
 const TryTodayOurTreat = () => {
   return (
-    <div className="tryTodayTreat-parent-div">
-      <div>
-        <h1 className="tryToday">Try Today. Our Treat.</h1>
-        <p className="tryTodayTreat-p">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-          numquam quas quos, harum consectetur minima ad, eveniet dicta, quia
-          earum mollitia!
-        </p>
-        <form className="tryTodayTreat-from" action="">
-          <div>
-            <div className="lable-flex-div">
-              <label htmlFor=""></label>
-              <input
-                className="tryTodayTreat-input"
-                type="text"
-                placeholder="Enter mobile number"
-              />
-              <button className="getStarted">Get Started</button>
-            </div>
-          </div>
-        </form>
-        <p className="tryTodayTreat-p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolor
-          quibusdam labore accusamus.
-        </p>
+    <div className="tryTodayTreat-main-parent-div">
+      <div className="tryTodayTreat-parent-div">
+        <div>
+          <h1 className="step-two">Step 2</h1>
+          <h1 className="tryToday">
+            Mandatory - “Basic English Communication” কোর্স (Basic Level)
+          </h1>
+          <p className="tryTodayTreat-p">30+ Modules</p>
+          <p className="tryTodayTreat-p">30 Modules (150+ videos) </p>
+          <p className="tryTodayTreat-p">Each Module Costs 120 tk</p>
+          <p className="tryTodayTreat-p"> Entire Course: 3600 tk </p>
+        </div>
       </div>
     </div>
   );

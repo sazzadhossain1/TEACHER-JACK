@@ -1,7 +1,6 @@
 .earn-from-your-answer-parent-div {
   margin-bottom: 100px;
-  margin-top: 100px;
-  background-color: rgb(250, 241, 230);
+  background-color: white;
   padding: 10px;
 }
 .earn-from-your-answer {
@@ -16,42 +15,41 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-
-  width: 100%;
+  width: 75%;
   margin: auto;
 }
 
 .earnFromYourAnswers-text-div {
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: left;
-
   margin: auto;
 }
 .earnFromYourAnswers-p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  /* background-color: rgb(212, 212, 212); */
+}
+.eBook {
+  margin-left: 40px;
 }
 .earnFromYourAnswers-img-div {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: start;
 }
-/* .start-earning-here-btn {
-  background-color: #01b67a;
-  padding: 15px;
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 5px;
-  color: white;
-  font-weight: 500;
-  font-size: 24px;
-} */
 
 .dateSendPhoto {
-  width: 500px;
-  margin: auto;
+  width: 150%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .earnFromYourAnswers-grid-div {
-    width: 90%;
+    width: 80%;
   }
   .earnFromYourAnswers-p {
     font-size: 18px;
@@ -59,6 +57,47 @@
   .earnFromYourAnswers-img-div {
   }
   .dateSendPhoto {
+  }
+}
+@media screen and (max-width: 1400px) {
+  .earnFromYourAnswers-grid-div {
+    width: 90%;
+  }
+  .earnFromYourAnswers-p {
+  }
+  .earnFromYourAnswers-img-div {
+  }
+  .dateSendPhoto {
+  }
+}
+@media screen and (max-width: 1255px) {
+  .earnFromYourAnswers-grid-div {
+    width: 90%;
+  }
+  .earnFromYourAnswers-p {
+    font-size: 17px;
+  }
+  .earnFromYourAnswers-img-div {
+  }
+  .dateSendPhoto {
+  }
+}
+@media screen and (max-width: 1185px) {
+  .earnFromYourAnswers-grid-div {
+    width: 90%;
+  }
+  .earnFromYourAnswers-p {
+    font-size: 16px;
+  }
+  .earnFromYourAnswers-img-div {
+  }
+
+  .dateSendPhoto {
+  }
+}
+@media screen and (max-width: 1116px) {
+  .earnFromYourAnswers-p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -70,9 +109,87 @@
     width: 95%;
   }
   .dateSendPhoto {
-    width: 100%;
-    margin: auto;
+    background-color: rgb(243, 243, 243);
   }
+}
+@media screen and (max-width: 540px) {
+  .earnFromYourAnswers-p {
+    font-size: 15px;
+  }
+  .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  }
+}
+@media screen and (max-width: 510px) {
+  .earnFromYourAnswers-p {
+    font-size: 14px;
+  }
+  .dateSendPhoto {
+    /* background-color: rgb(243, 243, 243); */
+  }
+}
+@media screen and (max-width: 475px) {
+  .earnFromYourAnswers-p {
+    font-size: 13px;
+  }
+  .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  }
+}
+@media screen and (max-width: 455px) {
+  .earnFromYourAnswers-p {
+    font-size: 12px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+@media screen and (max-width: 410px) {
+  .earnFromYourAnswers-p {
+    font-size: 11px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+@media screen and (max-width: 380px) {
+  .earnFromYourAnswers-p {
+    font-size: 10px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+@media screen and (max-width: 345px) {
+  .earnFromYourAnswers-text-div {
+    width: 100%;
+  }
+  .earnFromYourAnswers-p {
+    font-size: 10px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+@media screen and (max-width: 328px) {
+  .earnFromYourAnswers-text-div {
+  }
+  .earnFromYourAnswers-p {
+    font-size: 9px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+@media screen and (max-width: 300px) {
+  .earnFromYourAnswers-text-div {
+  }
+  .earnFromYourAnswers-p {
+    font-size: 8px;
+  }
+  /* .dateSendPhoto {
+    background-color: rgb(243, 243, 243);
+  } */
 }
 
 /* ------------------------------------ */

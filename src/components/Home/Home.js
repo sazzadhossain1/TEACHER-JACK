@@ -22,10 +22,10 @@ const Home = () => {
       <BuyTheBook></BuyTheBook>
       <EarnOnlineJob></EarnOnlineJob>
       <EarnFromYourAnswers></EarnFromYourAnswers>
-      <FirstTwocartSection></FirstTwocartSection>
+      {/* <FirstTwocartSection></FirstTwocartSection> */}
       <TryTodayOurTreat></TryTodayOurTreat>
-      <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
       <OurCourses></OurCourses>
+      <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
       {/* <SpecialCourses></SpecialCourses> */}
       <MeetOurCeo></MeetOurCeo>
       <Testimonials></Testimonials>

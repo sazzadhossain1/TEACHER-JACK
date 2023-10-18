@@ -7,7 +7,7 @@ const EarnOnlineJob = () => {
   return (
     <div className="earnOnlineJob-parent-div">
       <div className="earnOnlineJob-grid-div">
-        <div>
+        <div className="earnOnlineJob-text-div">
           <div className="earnOnlineJob-flex-div">
             <h2 className="earn-online-job">
               খুব সহজে ধাপে ধাপে কিভাবে <br /> রিমোট জব বা ফ্রিল্যান্সিং করবেন?
@@ -45,7 +45,7 @@ const EarnOnlineJob = () => {
           </Link>
         </div>
         <div className="earnOnlineJob-img-div">
-          <img className="img" src={খুবসহজেধাপেধাপে} alt="" />
+          <img className="earnOnlineJob-img" src={খুবসহজেধাপেধাপে} alt="" />
           {/* <img src={girlWithLaptop} alt="" /> */}
         </div>
       </div>

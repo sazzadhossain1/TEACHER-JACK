@@ -32,7 +32,10 @@ const NavigationBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 small-display-ul"
             >
               <li>
-                <a>HOME</a>
+                <Link to="/home">HOME</Link>
+              </li>
+              <li>
+                <Link to="/videos">VIDEOS</Link>
               </li>
               <li>
                 <Link>FEATURES</Link>
@@ -115,6 +118,9 @@ const NavigationBar = () => {
           <ul className="menu menu-horizontal px-1 large-display-ul">
             <li>
               <Link to="/home">HOME</Link>
+            </li>
+            <li>
+              <Link to="/videos">VIDEOS</Link>
             </li>
 
             <li tabIndex={0}>

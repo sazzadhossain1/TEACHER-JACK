@@ -1,9 +1,10 @@
 .our-courses-parent-div {
   background-color: rgb(250, 237, 222);
-  padding: 10px;
+  padding: 20px;
 }
 .our-courses-child-div {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .our-courses-first-heading {
   margin-bottom: 50px;
@@ -79,12 +80,24 @@
   bottom: 10px;
   display: flex;
   justify-content: center;
+  margin-left: 5px;
 }
 
 .our-course-see-more-btn:hover {
-  background-color: white;
+  background-color: black;
   color: red;
   transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1685px) {
+  .our-course-see-more-btn {
+    margin-left: 1px;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .our-course-see-more-btn {
+    margin-left: -5px;
+  }
 }
 
 @media screen and (max-width: 1620px) {
@@ -92,11 +105,57 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+  .our-course-see-more-btn {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1510px) {
+  .our-course-see-more-btn {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .our-course-see-more-btn {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .our-course-see-more-btn {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .our-course-see-more-btn {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .our-course-see-more-btn {
+    margin-left: 5px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .our-course-cart-grid-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .our-course-see-more-btn {
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .our-course-see-more-btn {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .our-course-see-more-btn {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .our-course-see-more-btn {
+    margin-left: 5px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -104,10 +163,57 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .our-course-see-more-btn {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .our-course-see-more-btn {
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .our-course-see-more-btn {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .our-course-see-more-btn {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .our-course-see-more-btn {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 600px) {
   .our-course-cart-grid-div {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .our-course-see-more-btn {
+    width: 80%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-course-see-more-btn {
+    margin-left: 1px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .our-course-see-more-btn {
+    margin-left: -4px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .our-course-see-more-btn {
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .our-course-see-more-btn {
+    margin-left: -15px;
   }
 }

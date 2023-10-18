@@ -18,12 +18,12 @@
 .hero-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  grid-gap: 230px;
+  gap: 50px;
   padding: 10px;
-  width: 90%;
+  width: 80%;
   margin: auto;
   margin-top: 50px;
+  /* background-color: red; */
 }
 .hero-text-div {
   text-align: left;
@@ -40,15 +40,26 @@
   font-weight: 800;
   color: rgb(105, 219, 185);
 }
+
+.hero-font-awesome-icon-div {
+  display: flex;
+
+  gap: 20px;
+}
 .hero-p-text {
   font-weight: 500;
-  line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 20px;
   line-height: 20px;
 }
+.hero-p-text-last {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 30px;
+}
 .last-second-p {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .learn-more-btn-and-text-div {
   text-align: left;
@@ -62,33 +73,38 @@
   border-radius: 10px;
   color: black;
 
-  margin-left: 250px;
+  margin-left: 130px;
   margin-top: 25px;
   margin-bottom: 50px;
 }
 
 .heroBookCoverPhoto-dvi {
+  /* background-color: red; */
+  display: flex;
+  justify-content: right;
 }
 .heroBookCoverPhoto-img {
   height: 800px;
-  width: 480px;
-  margin-bottom: -170px;
-  margin-top: 120px;
+  width: 550px;
+  margin-bottom: -185px;
 }
 
 /* Responsive start */
 
 @media screen and (max-width: 1675px) {
   .heroBookCoverPhoto-img {
-    margin-bottom: -108px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1570px) {
   .hero-p-text {
-    font-size: 25px;
+    font-size: 20px;
   }
   .heroBookCoverPhoto-img {
     margin-bottom: -100px;
+  }
+  .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1530px) {
@@ -96,9 +112,10 @@
     font-size: 22px;
   }
   .heroBookCoverPhoto-img {
-    margin-bottom: -100px;
+    margin-bottom: -185px;
   }
 }
+
 @media screen and (max-width: 1555px) {
   .learn-more-btn {
     width: 50%;
@@ -113,12 +130,12 @@
   }
 }
 @media screen and (max-width: 1470px) {
-  .hero-main-div {
+  /* .hero-main-div {
     height: 124vh;
-  }
+  } */
 
   .heroBookCoverPhoto-img {
-    margin-bottom: -90px;
+    margin-bottom: -185px;
   }
   .learn-more-btn {
     width: 50%;
@@ -137,11 +154,12 @@
     font-size: 30px;
     margin-bottom: 20;
   }
-  .hero-main-div {
+  /* .hero-main-div {
     height: 120vh;
-  }
+  } */
 
   .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
   }
   .learn-more-btn {
     width: 50%;
@@ -161,18 +179,17 @@
     margin-bottom: 20;
   }
   .hero-p-text {
-    font-size: 23px;
-    margin-bottom: 10px;
+    font-size: 22px;
   }
   .last-second-p {
     margin-bottom: 40px;
   }
-  .hero-main-div {
+  /* .hero-main-div {
     height: 120vh;
-  }
+  } */
 
   .heroBookCoverPhoto-img {
-    margin-top: 30px;
+    margin-bottom: -185px;
   }
   .learn-more-btn {
     width: 50%;
@@ -194,7 +211,7 @@
   }
 
   .heroBookCoverPhoto-img {
-    margin-top: 55px;
+    margin-bottom: -185px;
   }
   .learn-more-btn {
   }
@@ -204,7 +221,7 @@
     width: 32%;
   }
   .heroBookCoverPhoto-img {
-    margin-top: 80px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1285px) {
@@ -212,14 +229,14 @@
     width: 40%;
   }
   .heroBookCoverPhoto-img {
-    margin-top: 90px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1250px) {
   .learn-more-btn {
   }
   .heroBookCoverPhoto-img {
-    margin-top: 115px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1235px) {
@@ -229,49 +246,53 @@
 }
 @media screen and (max-width: 1235px) {
   .hero-grid-div {
-    width: 100%;
+    width: 90%;
   }
   .heroBookCoverPhoto-img {
-    margin-top: 40px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1200px) {
   .hero-grid-div {
-    gap: 200px;
   }
   .heroBookCoverPhoto-img {
-    margin-top: 40px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1170px) {
   .hero-grid-div {
-    gap: 170px;
   }
   .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1120px) {
   .hero-grid-div {
-    gap: 120px;
   }
 }
 @media screen and (max-width: 1100px) {
   .hero-grid-div {
-    width: 100%;
+    width: 98%;
     grid-template-columns: repeat(2, 1fr);
     padding-left: 30px;
   }
   .heroBookCoverPhoto-dvi {
   }
   .heroBookCoverPhoto-img {
-    margin-top: 70px;
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1024px) {
   .hero-grid-div {
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 0px;
+  }
+  .hero-main-div {
+    /* height: 120vh; */
+  }
+  .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1023px) {
