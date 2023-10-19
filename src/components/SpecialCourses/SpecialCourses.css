@@ -8,13 +8,12 @@
   color: rgb(0, 54, 61);
   font-weight: 500;
 }
-.specialCourses-all-cart-parent-div {
-}
+
 .specialCourses-grid-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 50px;
-  gap: 80px;
+
   width: 80%;
   margin: auto;
   margin-bottom: 40px;
@@ -57,4 +56,33 @@
 .specialCourses-read-more:hover {
   background-color: rgb(5, 164, 185);
   transition: 0.5s;
+}
+
+@media screen and (max-width: 1500px) {
+  .specialCourses-grid-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .specialCourses-grid-div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .special-main-parent-div {
+    /* height: 300vh; */
+    /* margin-bottom: 100px; */
+  }
+  .specialCourses-grid-div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5%;
+    margin-bottom: 200px;
+  }
+  .specialCourses-cart {
+    width: 100%;
+  }
+  .specialCourses-learning-photo {
+    width: 90%;
+  }
 }

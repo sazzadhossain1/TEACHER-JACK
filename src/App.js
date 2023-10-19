@@ -8,6 +8,7 @@ import SignUp from "./components/SignUp/SignUp";
 import HeroDetailsPage from "./components/HeroDetailsPage/HeroDetailsPage";
 import StepDetailsPage from "./components/StepDetailsPage/StepDetailsPage";
 import Videos from "./components/Videos/Videos";
+import MeetOurCeo from "./components/MeetOurCeo/MeetOurCeo";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/videos",
           element: <Videos></Videos>,
+        },
+        {
+          path: "/meetOurCeo",
+          element: <MeetOurCeo></MeetOurCeo>,
         },
         {
           path: "/login",

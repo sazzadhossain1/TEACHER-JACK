@@ -1,3 +1,6 @@
+.stepDetailsPage-banner-photo {
+  margin-bottom: 50px;
+}
 .common-step-p {
   font-size: 22px;
   font-weight: 600;
@@ -21,6 +24,116 @@
   margin-bottom: 60px;
   font-size: 25px;
 }
+
+/* -----For Step 1 Start------- */
+.stepDetailsPage-stepOne-flex-div {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.remoteJobBook-img-div {
+  display: flex;
+  justify-content: end;
+}
+.remoteJobBook-img {
+}
+/* -----For Step 1 End------- */
+
+/* ----------For Step 2 start------------ */
+.stepDetailsPage-stepTwo-flex-div {
+  background-color: rgb(239, 245, 253);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  gap: 20px;
+}
+.basicEnglishCommunication-img-div {
+  display: flex;
+  justify-content: end;
+}
+.basicEnglishCommunication-img {
+  width: 94%;
+}
+/* -------For Step 2 End--------- */
+
+/* --------- For Step 3 Start */
+.stepDetailsPage-stepThree-flex-div {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.core-skill-img-div {
+  background-color: antiquewhite;
+}
+.core-skill-img {
+  width: 550px;
+}
+/* --------- For Step 3 End */
+
+/* --------- For Step 4 Start */
+.stepDetailsPage-stepFour-flex-div {
+  display: flex;
+  align-items: center;
+  background-color: rgb(239, 245, 253);
+  margin-top: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+.jobPrepatarion-img {
+  width: 370px;
+}
+/* --------- For Step 4 End */
+
+/* --------- For Step  5 Start */
+.stepDetailsPage-stepFive-flex-div {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin-top: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+.facebookGroup-img {
+  width: 370px;
+}
+/* --------- For Step 5 End */
+
+/* --------- For Step  6 Start */
+.stepDetailsPage-stepSix-flex-div {
+  display: flex;
+  align-items: center;
+  background-color: rgb(239, 245, 253);
+  margin-top: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+.skillDevelopment-img {
+  width: 650px;
+}
+/* --------- For Step 6 End */
+
+/* --------- For Step  6 Start */
+.stepDetailsPage-stepSeven-flex-div {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin-top: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+.companyOpening-img {
+  width: 700px;
+}
+/* --------- For Step 6 End */
+
 .stepDetailsPage-step-p {
   font-size: 20px;
   margin-bottom: 30px;

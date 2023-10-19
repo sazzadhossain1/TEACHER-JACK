@@ -45,7 +45,11 @@ const Footer = () => {
             marginalized by gender, race, and/or age—to learn in-demand tech
             skills and land higher paying and more fulfilling jobs.
           </p>
-          <p className="footer-first-second-common-cart-p">About The Team</p>
+          <a href="/meetOurCeo" alt="">
+            <p className="footer-first-second-common-cart-p">
+              About Teacher Jack
+            </p>
+          </a>
           <p className="footer-first-second-common-cart-p"> Blog </p>
           <p className="footer-first-second-common-cart-p">
             Anti-Racism Statement

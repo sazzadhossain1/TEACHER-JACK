@@ -1,0 +1,52 @@
+.BusinessScopes-parent-div {
+  padding: 20px;
+
+  margin: auto;
+  text-align: left;
+}
+.BusinessScopes-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.BusinessScopes-international {
+  font-size: 26px;
+}
+
+.BusinessScopes-p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.export-business-idea {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.BusinessScope-ul li {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.need-for-business-div {
+  margin-top: 20px;
+}
+
+.understand-business {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.বিস্তারিত {
+  font-size: 20px;
+  font-weight: 600;
+}
+.understand-business-link {
+  color: blue;
+  font-weight: 700;
+  text-decoration: underline;
+}

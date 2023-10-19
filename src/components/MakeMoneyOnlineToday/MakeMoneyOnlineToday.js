@@ -7,7 +7,7 @@ const MakeMoneyOnlineToday = () => {
     <div className="makeMoneyOnlineToday-parent-div">
       <div className="makeMOneyOnlineToday-first-text-div">
         <h1 className="makeMOneyOnlineToday-heading">
-          Make Money Online Today
+          Step 4: “Job Preparation Guideline”
         </h1>
         <p className="makeMOneyOnlineToday-p">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est repellat

@@ -7,13 +7,16 @@ import FirstTwocartSection from "../FirstTwocartSection/FirstTwocartSection";
 import TryTodayOurTreat from "../TryTodayOurTreat/TryTodayOurTreat";
 import MakeMoneyOnlineToday from "../MakeMoneyOnlineToday/MakeMoneyOnlineToday";
 import OurCourses from "../OurCourses/OurCourses";
-import MeetOurCeo from "../MeetOurCeo/MeetOurCeo";
 import Testimonials from "../Testimonials/Testimonials";
 import PaymentSystem from "../PaymentSystem/PaymentSystem";
 import HowToEnroll from "../HowToEnroll/HowToEnroll";
 import MediaButton from "../MediaButton/MediaButton";
 import BuyTheBook from "../BuyTheBook/BuyTheBook";
 import SpecialCourses from "../SpecialCourses/SpecialCourses";
+import SkillsforJobProgramGroup from "../SkillsforJobProgramGroup/SkillsforJobProgramGroup";
+import JobHuntStep from "../JobHuntStep/JobHuntStep";
+import NeedToConsult from "../NeedToConsult/NeedToConsult";
+import BusinessScopes from "../BusinessScopes/BusinessScopes";
 
 const Home = () => {
   return (
@@ -26,8 +29,11 @@ const Home = () => {
       <TryTodayOurTreat></TryTodayOurTreat>
       <OurCourses></OurCourses>
       <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
-      {/* <SpecialCourses></SpecialCourses> */}
-      <MeetOurCeo></MeetOurCeo>
+      <SkillsforJobProgramGroup></SkillsforJobProgramGroup>
+      <JobHuntStep></JobHuntStep>
+      <NeedToConsult></NeedToConsult>
+      <SpecialCourses></SpecialCourses>
+      <BusinessScopes></BusinessScopes>
       <Testimonials></Testimonials>
       <HowToEnroll></HowToEnroll>
       <PaymentSystem></PaymentSystem>
