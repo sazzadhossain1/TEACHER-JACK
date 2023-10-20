@@ -38,6 +38,14 @@
   color: rgb(255, 122, 122);
 }
 
+.footer-click-here-btn {
+  color: rgb(100, 100, 255);
+  margin-left: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 /* ------ */
 .footer-last-cart-heading-flex-div {
   display: flex;

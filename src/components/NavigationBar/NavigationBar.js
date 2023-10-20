@@ -34,63 +34,61 @@ const NavigationBar = () => {
               <li>
                 <Link to="/home">HOME</Link>
               </li>
+
+              <li tabIndex={0}>
+                <details>
+                  <summary>BUY BOOK</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Submenu 1</a>
+                    </li>
+                    <li>
+                      <a>Submenu 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li tabIndex={0}>
+                <details>
+                  <summary>COURSES</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Submenu 1</a>
+                    </li>
+                    <li>
+                      <a>Submenu 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
               <li>
                 <Link to="/videos">VIDEOS</Link>
               </li>
-              <li>
-                <Link>FEATURES</Link>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+              <li tabIndex={0}>
+                <details>
+                  <summary>AFFILIATE PROGRAM</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Submenu 1</a>
+                    </li>
+                    <li>
+                      <a>Submenu 2</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
-              <li>
-                <Link>OPTION</Link>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link>LEARN</Link>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link>WHO WE ARE</Link>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link>PARTNERSHIP</Link>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+              <li tabIndex={0}>
+                <details>
+                  <summary>CONTACT</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Submenu 1</a>
+                    </li>
+                    <li>
+                      <a>Submenu 2</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
 
               <div className="login-and-signUp-div-one">
@@ -119,9 +117,6 @@ const NavigationBar = () => {
             <li>
               <Link to="/home">HOME</Link>
             </li>
-            <li>
-              <Link to="/videos">VIDEOS</Link>
-            </li>
 
             <li tabIndex={0}>
               <details>
@@ -149,21 +144,9 @@ const NavigationBar = () => {
                 </ul>
               </details>
             </li>
-
-            <li tabIndex={0}>
-              <details>
-                <summary>PROFILE</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+            <li>
+              <Link to="/videos">VIDEOS</Link>
             </li>
-
             <li tabIndex={0}>
               <details>
                 <summary>AFFILIATE PROGRAM</summary>

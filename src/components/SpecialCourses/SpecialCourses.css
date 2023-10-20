@@ -70,10 +70,6 @@
   }
 }
 @media screen and (max-width: 850px) {
-  .special-main-parent-div {
-    /* height: 300vh; */
-    /* margin-bottom: 100px; */
-  }
   .specialCourses-grid-div {
     grid-template-columns: repeat(1, 1fr);
     gap: 5%;

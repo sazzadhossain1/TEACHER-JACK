@@ -9,36 +9,7 @@ const Footer = () => {
     <div className="footer-parent-div">
       <div className="footer-grid-div">
         <div>
-          <h4 className="footer-header">RESOURCES</h4>
-          <div className="footer-blank-div"></div>
-          <p className="footer-first-second-common-cart-p">
-            NEW! Tech Jobs Database
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            The Get Hired Track
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            Career Coaching for Skillcrush Students: Here’s How It Works
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            100+ Ways to Learn to Code for Free
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            11 High-Paying Entry-Level Tech Jobs—No Experience Required
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            How to Decide Between Being a Web Designer vs. Web Developer`r`
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            The 15 Essential Front End Developer Skills
-          </p>
-          <p className="footer-first-second-common-cart-p">
-            9 Skills Every Successful Web Designer Needs
-          </p>
-        </div>
-        {/*  */}
-        <div>
-          <h4 className="footer-header">ABOUT SKILLCRUSH</h4>
+          <h4 className="footer-header">Important Links</h4>
           <div className="footer-blank-div"></div>
           <p className="footer-first-second-common-cart-p">
             We’re on a mission to support our students—especially those
@@ -50,15 +21,39 @@ const Footer = () => {
               About Teacher Jack
             </p>
           </a>
-          <p className="footer-first-second-common-cart-p"> Blog </p>
           <p className="footer-first-second-common-cart-p">
-            Anti-Racism Statement
+            {" "}
+            Affiliate Program
+          </p>
+          <p className="footer-first-second-common-cart-p">Job Opportunities</p>
+          <p className="footer-first-second-common-cart-p">FAQ</p>
+
+          <Link to="/signUp">
+            <p className="footer-first-second-common-cart-p">Sign In</p>
+          </Link>
+        </div>
+        {/*  */}
+        <div>
+          <h4 className="footer-header">Find Path</h4>
+          <div className="footer-blank-div"></div>
+
+          <p className="footer-first-second-common-cart-p">
+            It will lead to a form which will include - Name, ph, email, last
+            education completed, Schooling where, Type of profession at
+            present or recent past
           </p>
           <p className="footer-first-second-common-cart-p">
-            Community Guidelines
+            যদি বুঝতে না পারেন যে আপনার কোন পথে এগুনো উচিৎ বা আপনি কনফিউসড
+            থাকেন, তাহলে আপনার শিক্ষাগত যোগ্যতা কি, বয়স কত, লেখাপড়া করে থাকলে
+            কোথায় করেছেন, স্মার্টফোন ব্যবহার করেন কিনা, কম্পিউটার ব্যবহার করেন
+            কিনা, পূর্বে কোন ধরণের ট্রেইনিং নিয়েছেন কি না ইত্যাদি ডিটেইলস দিয়ে
+            আমার ওয়েবসাইটে ফর্ম পুরণ করে সাবমিট করুন। আমি আপনার অবস্থা বুঝে
+            সাজেশন দেবো কোন পথে এগোলে আপনার জন্য ভালো হবে।
           </p>
-          <p className="footer-first-second-common-cart-p">Jobs</p>
-          <p className="footer-first-second-common-cart-p">Sign In</p>
+          <p className="footer-first-second-common-cart-p">
+            যদি বুঝতে না পারেন যে আপনার কোন পথে এগুনো উচিৎ বা আপনি কনফিউসড
+            থাকেন, তাহলে এই ফর্ম পুরণ করুন -
+          </p>
         </div>
         {/*  */}
         <div>
@@ -70,7 +65,13 @@ const Footer = () => {
             />
             <div>
               <h4 className="footer-header">Have Question?</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing:</p>
+              <p>
+                {" "}
+                Still Need Help finding out which path to take?{" "}
+                <Link>
+                  <button className="footer-click-here-btn">Click  here</button>
+                </Link>
+              </p>
             </div>
           </div>
 
