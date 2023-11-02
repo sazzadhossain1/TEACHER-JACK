@@ -1,6 +1,5 @@
 .nav-parent-div {
   background-color: white;
-
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 
@@ -33,7 +32,20 @@
   text-align: center;
   width: 6rem;
 }
-
+.logOut-btn {
+  margin-right: 50px;
+  border-radius: 0.4rem;
+  background-color: #15768d;
+  color: white;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 500;
+  height: 2rem;
+  margin-left: 0.5rem;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
+}
 .Navigation-Teacher-Jack-Logo {
   width: 300px;
   height: 40px;
@@ -143,7 +155,7 @@
 }
 @media screen and (max-width: 1024px) {
   .nav-parent-div {
-    width: 107%;
+    max-width: 100%;
   }
   .TeacherJackOnline {
     font-size: 20px;

@@ -2,7 +2,8 @@
   background-color: #f8f7f3;
   padding: 10px;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 200px;
+  max-width: 100%;
 }
 .earnOnlineJob-grid-div {
   display: grid;
@@ -10,37 +11,29 @@
   align-items: start;
   width: 80%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   gap: 50px;
 }
-.earnOnlineJob-text-div {
-  /* margin: auto; */
-}
+
 .earnOnlineJob-flex-div {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 .earn-online-job {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
   color: blue;
 }
-.earn-online-job-blank-div {
-  height: 70px;
-  width: 5px;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 40px;
-}
 
 .step-p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .earnOnlineJob-p {
   font-family: YACgEbc43jc-0;
-  font-size: 20px;
+  font-size: 22px;
 
   color: #055dff;
   margin-top: 40px;
@@ -61,14 +54,22 @@
   background-color: rgb(2, 2, 255);
   transition: 0.5s;
 }
-
 .earnOnlineJob-img-div {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  max-width: 100%;
 }
+.earn-online-job-blank-div {
+  height: 90px;
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
 .earnOnlineJob-img {
   background-color: #dad2b9;
-  width: 550px;
+  max-width: 92%;
 }
 @media screen and (max-width: 1500px) {
   .earnOnlineJob-grid-div {
@@ -185,5 +186,21 @@
 @media screen and (max-width: 315px) {
   .earnOnlineJob-parent-div {
     width: 115%;
+  }
+  .earn-online-job {
+    font-size: 18px;
+  }
+  .step-p {
+    font-size: 15px;
+  }
+  .earnOnlineJob-p {
+    font-size: 15px;
+  }
+  .signUpNow-btn {
+    max-width: 50%;
+    font-size: 18px;
+  }
+  .earnOnlineJob-img {
+    max-width: 70%;
   }
 }

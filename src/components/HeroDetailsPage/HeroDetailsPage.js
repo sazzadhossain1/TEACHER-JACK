@@ -1,16 +1,18 @@
 import React from "react";
 import "./HeroDetailsPage.css";
-import { Link } from "react-router-dom";
 
 const HeroDetailsPage = () => {
   return (
     <div>
       <div className="HeroDetailsPage-parent-div">
         <div className="heroDetailsPage-heading-text-div">
-          <h2 className="skills-for-job-program">“Skills for Job Program”</h2>
-          <h3 className="who-should">
-            Who should participate in our program -
-          </h3>
+          <h2 className="skills-for-job-program">
+            “Skills for Job Program” -{" "}
+            <span className="skillForWork-heading">
+              কাজের জন্য দক্ষতা বৃদ্ধি
+            </span>
+          </h2>
+          <h3 className="who-should">এই প্রোগ্রামটি কাদের জন্য?</h3>
           <h5 className="apni-ki-akjon">আপনি কি একজন</h5>
           <p className="heroDetailsPage-qus">Housewife/HomeMaker (গৃহিণী) ?</p>
           <p className="heroDetailsPage-qus">
@@ -30,17 +32,20 @@ const HeroDetailsPage = () => {
           </p>
         </div>
 
-        <p className="heroDetailsPage-single-first-p">
-          এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে। তাহলে এই প্রোগ্রামটি আপনার
-          জন্য জরুরী। অর্থনৈতিক মুক্তি বা Financial Freedom যাকে বলে – এই
-          প্রোগ্রামটির মাধ্যমে আপনি তা পাবেন ইনশাল্লাহ। দেশে হাজারও বই রয়েছে,
-          লক্ষ লক্ষ Youtube ভিডিও রয়েছে যেখানে নানা ধরণের আইডিয়া দেয়া হয়, Lesson
-          দেয়া হয় – কিছু রয়েছে সত্য আবার কিছু রয়েছে মিথ্যা মিশ্রিত। আপনি যেনো
-          সঠিক গাইডলাইনটি পান, সেজন্যই আমার এ উদ্যোগ। আমার যে কোন কথা নেয়ার আগে
-          সেগুলো যাচাই করে নেবেন যাতে কোন রকম দ্বিধা ছাড়া আপনি একটি সঠিক
-          সিদ্ধান্ত নিজেই নিতে পারেন। আমি চেষ্টা করবো যতটুকু পারি Authentic
-          Reference Link দিতে যাতে আপনাদের সুবিধা হয়।
-        </p>
+        <div className="heroDetailsPage-single-first-p-div">
+          <p className="heroDetailsPage-single-first-p">
+            এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে। তাহলে এই প্রোগ্রামটি আপনার
+            জন্য জরুরী। অর্থনৈতিক মুক্তি বা <br /> Financial Freedom যাকে বলে –
+            এই প্রোগ্রামটির মাধ্যমে আপনি তা পাবেন ইনশাল্লাহ। <br /> দেশে হাজারও
+            বই রয়েছে, লক্ষ লক্ষ Youtube ভিডিও রয়েছে যেখানে নানা ধরণের আইডিয়া
+            দেয়া হয়, Lesson দেয়া হয় – <br /> কিছু রয়েছে সত্য আবার কিছু রয়েছে
+            মিথ্যা মিশ্রিত। আপনি যেনো সঠিক গাইডলাইনটি পান, সেজন্যই আমার এ
+            উদ্যোগ। <br /> আমার যে কোন কথা নেয়ার আগে সেগুলো যাচাই করে নেবেন যাতে
+            কোন রকম দ্বিধা ছাড়া আপনি একটি সঠিক সিদ্ধান্ত <br /> নিজেই নিতে
+            পারেন। আমি চেষ্টা করবো যতটুকু পারি Authentic Reference দিতে যাতে
+            আপনাদের সুবিধা হয়।
+          </p>
+        </div>
         <div className="HeroDetailsPage-second-parent-div">
           <div className="heroDetailsPage-video-grid-container first-cart">
             <div>
@@ -57,25 +62,16 @@ const HeroDetailsPage = () => {
                 থেকে মুক্তির উপায় দেখিয়ে দেয়া। আপনাকে সরাসরি আপনার অর্জিত
                 ডিগ্রির সাথে সম্পর্কিত না থাকলেও, একটি Process এর মাধ্যমে আপনাকে
                 আন্তর্জাতিক মানদণ্ডে দক্ষ করে আর্থিকভাবে স্বাবলম্বী করে তোলাই
-                আমার উদ্দেশ্য। বাস্তব প্রতিবেদনঃ
-                {/* <Link
-              to="https://youtu.be/_Ep1dfk12ec"
-              target="blank"
-              className="heroDetailsPage-link"
-            >
-              https://youtu.be/_Ep1dfk12ec
-            </Link> */}
+                আমার উদ্দেশ্য।
               </p>
             </div>
             <div>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/_Ep1dfk12ec?si=MjeQqql1xllBPen2"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -83,13 +79,11 @@ const HeroDetailsPage = () => {
           <div className="heroDetailsPage-video-grid-container second-cart">
             <div>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/huTkGMnLEU0?si=p8CzFk4Xl5TcAUEd"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div>
@@ -104,14 +98,7 @@ const HeroDetailsPage = () => {
                 করার সুবর্ণ সুযোগ। একটু একটু করে সময় নিয়ে- ৪ মাস, ৬ মাস, ১ বছর –
                 যাই লাগে লাগলেও অন্যদের চেয়ে এগিয়ে থাকতে পারেন। যাতে করে বোর্ড
                 পরীক্ষা পরবর্তি সময়েই নিজেকে যেকোন চাকরি বা কাজের জন্য নিজেকে
-                তৈরি করে ফেলতে পারেন। বাস্তব প্রতিবেদনঃ{" "}
-                {/* <Link
-              to="https://youtu.be/huTkGMnLEU0"
-              target="blank"
-              className="heroDetailsPage-link"
-            >
-              https://youtu.be/huTkGMnLEU0
-            </Link> */}
+                তৈরি করে ফেলতে পারেন।
               </p>
             </div>
           </div>
@@ -127,26 +114,17 @@ const HeroDetailsPage = () => {
                 একেবারেই ছেড়ে দেবেন। আবার অনেকে আছেন এমন ধরণের জব করেন যারা
                 তাদের ডিউটিরত অবস্থায় থেকেও সময় বের করতে পারেন - অনেকের হয়তো
                 কাজটিই এমন - বসে থাকাই কাজ বা সুপারভাইজার লেভেলের কাজ যাদের
-                প্রতিটি মিনিট ব্যাস্ত থাকতে হয় না। বাস্তব প্রতিবেদনঃ
-                {/* <Link
-              to="https://youtu.be/TOYjuMMrFNg"
-              target="blank"
-              className="heroDetailsPage-link"
-            >
-              https://youtu.be/TOYjuMMrFNg
-            </Link> */}
+                প্রতিটি মিনিট ব্যাস্ত থাকতে হয় না।
               </p>
             </div>
 
             <div>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/TOYjuMMrFNg?si=Yj77Kt3cGqsJCcMZ"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -154,13 +132,11 @@ const HeroDetailsPage = () => {
           <div className="heroDetailsPage-video-grid-container forth-cart">
             <div>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/L7-Vhdj7gAw?si=v4myzZdsDrXOsBHb"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div>
@@ -175,14 +151,7 @@ const HeroDetailsPage = () => {
                 কিভাবের উত্তরই হল এই প্রোগ্রামটি। আপনার এই “শেষ বয়সে বিশ্বজয়” এর
                 রোডম্যাপ এঁকে দিব আমরা। কিংবা ৪-৫ মাস সময় দিয়ে একেবারে গোঁড়া
                 থেকে এক-দুইটি দক্ষতা develop করে শুরু করতে পারেন নতুন এক চলার
-                রাস্তা। অসম্ভব বলে কিছুই নেই। বাস্তব প্রতিবেদনঃ{" "}
-                {/* <Link
-              to="https://youtu.be/L7-Vhdj7gAw"
-              target="blank"
-              className="heroDetailsPage-link"
-            >
-              https://youtu.be/L7-Vhdj7gAw
-            </Link> */}
+                রাস্তা। অসম্ভব বলে কিছুই নেই।
               </p>
             </div>
           </div>
@@ -203,45 +172,52 @@ const HeroDetailsPage = () => {
                 বাসায় থাকে বা অমুকের মা কিছু করে না, বাসায় থাকে। আপনার সবসময় মনে
                 হয় “ইশ ঘরে বসে যদি নিজের খরচের টাকা-টা আয় করতে পারতাম !” কোনরকম
                 দ্বিধা না করে এই প্রোগ্রামে অংশগ্রহণ করুন। দেখুন মাত্র কয়েক মাসে
-                জীবনে কেমন পরিবর্তন চলে আসে। বাস্তব প্রতিবেদনঃ
-                {/* <Link
-              to="https://youtu.be/7IeIBna5qMo"
-              target="blank"
-              className="heroDetailsPage-link"
-            >
-              https://youtu.be/7IeIBna5qMo
-            </Link> */}
+                জীবনে কেমন পরিবর্তন চলে আসে।
               </p>
             </div>
 
             <div>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/7IeIBna5qMo?si=x9mRTOyRV4F9eI_u"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
         </div>
-        <p className="heroDetailsPage-last-p">
-          এই Skills for Job Program টি তে যাত্রা শুরু করার আগে এই ৫ টি বিষয় দেখে
-          শুরু করবেন। - আপনাকে প্রথমে জানতে হবে এই Program সম্পর্কে এবং তথ্য
-          যাচাই বাছাই করতে হবে - আপনি আমার যোগ্যতা কতটুকু তা ঘেটে দেখবেন – এই
-          ডকুমেন্টের শেষে আমার কিছু লিঙ্ক দেয়া আছে - ভালো করে বুঝবেন এই Program
-          থেকে আপনি কি পাচ্ছেন - যাচাই করবেন অন্য কোথাও আমাদের মতো আপনাকে দক্ষ
-          করে গড়ে তোলার পাশাপাশি আপনার ইনকাম সুনিশ্চিত এর পথ করে দিচ্ছে কি না -
-          নেতিবাচক কথায় কান না দিয়ে আপনি নিজে বোঝেন যে আগামী ৫-৬ মাস আপনি এই
-          Program টি তে যেভাবে বলা হয় সেভাবে কাজ করতে পারবেন কি না। এই বিষয়
-          গুলো খেয়াল রেখে পদক্ষেপ নেবেন ইনশাআল্লাহ।
-        </p>
+        <div>
+          <p className="heroDetailsPage-last-p">
+            এই Skills for Job Program টি তে যাত্রা শুরু করার আগে যে বিষয়গুলো
+            ভালো করে দেখে শুরু করবেন -
+          </p>
+          <div className="heroDetailsPage-last-p-div">
+            <p className="">
+              - আপনাকে প্রথমে জানতে হবে এই Program সম্পর্কে এবং তথ্য যাচাই বাছাই
+              করতে হবে
+            </p>
+            <p className="">
+              - আপনি আমার যোগ্যতা কতটুকু তা রিমোট জব বইটিতে দেখবেন
+            </p>
+            <p className="">- কোর্সেস থেকে কোর্সগুলোর বিস্তারিত দেখবেন</p>
+            <p className="">
+              - ভালো করে বুঝবেন এই Program থেকে আপনি কি পাচ্ছেন
+            </p>
+            <p className="">
+              - যাচাই করবেন অন্য কোথাও আমাদের মতো আপনাকে দক্ষ করে গড়ে তোলার
+              পাশাপাশি আপনার ইনকাম সুনিশ্চিত এর পথ করে দিচ্ছে কি না
+            </p>
+            <p className="">
+              - নেতিবাচক কথায় কান না দিয়ে আপনি নিজে বোঝেন যে আগামী ৫-৬ মাস আপনি
+              এই Program টি তে যেভাবে বলা হয় সেভাবে কাজ করতে পারবেন কি না।
+            </p>
+          </div>
+          <p className="heroDetailsPage-last-p">
+            এই বিষয় গুলো খেয়াল রেখে পদক্ষেপ নেবেন ইনশাআল্লাহ।
+          </p>
+        </div>
       </div>
-      <Link to="/home">
-        <button className="backToHome">Back to Home</button>
-      </Link>
     </div>
   );
 };

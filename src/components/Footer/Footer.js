@@ -1,8 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import footerPersonPhoto from "../../accets/Images/footer-img/footerPersonImg.jpg";
 import teacherJack from "../../accets/Images/teaher-jack/teacherJack.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAlignLeft, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faInvision,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -10,12 +17,7 @@ const Footer = () => {
       <div className="footer-grid-div">
         <div>
           <h4 className="footer-header">Important Links</h4>
-          <div className="footer-blank-div"></div>
-          <p className="footer-first-second-common-cart-p">
-            We’re on a mission to support our students—especially those
-            marginalized by gender, race, and/or age—to learn in-demand tech
-            skills and land higher paying and more fulfilling jobs.
-          </p>
+
           <a href="/meetOurCeo" alt="">
             <p className="footer-first-second-common-cart-p">
               About Teacher Jack
@@ -34,9 +36,15 @@ const Footer = () => {
         </div>
         {/*  */}
         <div>
-          <h4 className="footer-header">Find Path</h4>
+          <h4 className="footer-header">Still Need Help</h4>
           <div className="footer-blank-div"></div>
 
+          <p className="footer-first-second-common-cart-p">
+            Still Need Help finding out which path to take?{" "}
+            <Link>
+              <button className="footer-click-here-btn">Click  here</button>
+            </Link>
+          </p>
           <p className="footer-first-second-common-cart-p">
             It will lead to a form which will include - Name, ph, email, last
             education completed, Schooling where, Type of profession at
@@ -56,54 +64,43 @@ const Footer = () => {
           </p>
         </div>
         {/*  */}
-        <div>
-          <div className="footer-last-cart-heading-flex-div">
-            <img
-              className="footer-person-photo"
-              src={footerPersonPhoto}
-              alt=""
-            />
+        <div className="footer-contact-parent-div">
+          <div className="footer-contact-child-div">
             <div>
-              <h4 className="footer-header">Have Question?</h4>
-              <p>
-                {" "}
-                Still Need Help finding out which path to take?{" "}
-                <Link>
-                  <button className="footer-click-here-btn">Click  here</button>
-                </Link>
-              </p>
+              <h4 className="footer-contact-heading">Contact</h4>
+              <div className="footer-blank-div"></div>
             </div>
-          </div>
 
-          <div className="footer-last-cart-icon-flex-div">
-            <i className="fa-solid fa-align-left footer-icon"></i>
-            <Link className="text-us">
-              <p>Text us -000-000-000</p>
-            </Link>
-          </div>
+            <div className="footer-last-cart-icon-flex-div">
+              <FontAwesomeIcon icon={faAlignLeft} />
+              <Link className="text-us">
+                <p>Text us -000-000-000</p>
+              </Link>
+            </div>
 
-          <div className="footer-last-cart-icon-flex-div-two">
-            <i class="fa-solid fa-phone-volume footer-icon"></i>
-            <Link className="text-us">
-              <p>Schedule a Call</p>
-            </Link>
-          </div>
-          <p className="or-check">
-            Or check out the <span className="faq">FAQs,</span> or email us at{" "}
-            <span className="email"> teacherjackonline@gmail.com</span>
-          </p>
-          <div className="footer-media-flex-div">
-            <div>
-              <i class="fa-brands fa-twitter"></i>
+            <div className="footer-last-cart-icon-flex-div-two">
+              <FontAwesomeIcon icon={faPhoneVolume} />
+              <Link className="text-us">
+                <p>Schedule a Call</p>
+              </Link>
             </div>
-            <div>
-              <i class="fa-brands fa-facebook"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-invision"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-instagram"></i>
+            <p className="or-check">
+              Or check out the <span className="faq">FAQs,</span> or email us at{" "}
+              <span className="email"> teacherjackonline@gmail.com</span>
+            </p>
+            <div className="footer-media-flex-div">
+              <div>
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faFacebook} />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faInvision} />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faInstagram} />
+              </div>
             </div>
           </div>
         </div>

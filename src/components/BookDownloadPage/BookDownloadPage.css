@@ -1,0 +1,151 @@
+.submit-up-parent-div {
+  background-color: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.submit-child-div {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid rgb(226, 221, 221);
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+}
+.bookDownloadPage-book-grid-die {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.bookDownloadPage-img {
+  max-width: 100%;
+}
+.bookDownloadPage-text-div {
+  max-width: 100%;
+  margin-top: 50px;
+}
+.bookDownloadPage-h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.bookDownloadPage-p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.goBackBookDetails {
+  background-color: darkblue;
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.product-id {
+  margin-top: 5px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.submit-form {
+  /* max-width: 70%; */
+  /* margin: 0 auto;
+  padding: 20px; */
+  /* border: 1px solid rgb(226, 221, 221);
+  border-radius: 5px; */
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white; */
+
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.submit-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: -25px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 27%;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.select-option {
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.submit-btn {
+  background-color: #eee;
+  width: 50%;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 23px;
+
+  margin-left: 275px;
+}
+.submit-btn:hover {
+  background-color: #aaa;
+  transition: 1s;
+}
+
+.pleaseLoginLink {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .submit-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bookDownloadPage-book-grid-die {
+    grid-template-columns: 1fr;
+  }
+  .bookDownloadPage-img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .bookDownloadPage-img {
+    max-width: 100%;
+  }
+  .bookDownloadPage-h2 {
+    font-size: 22px;
+  }
+  .bookDownloadPage-p {
+    font-size: 18px;
+  }
+}

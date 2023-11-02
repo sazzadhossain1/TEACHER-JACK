@@ -1,0 +1,93 @@
+.buyTheBook-flex-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+}
+.step-one {
+  font-size: 30px;
+  font-weight: 500;
+}
+.download-the-book {
+  background-color: rgb(71, 255, 102);
+  padding: 25px 30px;
+  max-width: 100%;
+  font-size: 28px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .buyTheBook-flex-div {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .buyTheBook-parent-div {
+    margin-top: -150px;
+  }
+  .buyTheBook-flex-div {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .buyTheBook-parent-div {
+    margin-top: -100px;
+  }
+  .buyTheBook-flex-div {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .buyTheBook-parent-div {
+    margin-top: 10px;
+  }
+  .buyTheBook-flex-div {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .step-one {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .step-one {
+    font-size: 25px;
+  }
+  .download-the-book {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .buyTheBook-flex-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .step-one {
+    font-size: 28px;
+  }
+  .download-the-book {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .step-one {
+    font-size: 22px;
+  }
+  .download-the-book {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 265px) {
+  .step-one {
+    font-size: 20px;
+  }
+  .download-the-book {
+    font-size: 16px;
+  }
+}

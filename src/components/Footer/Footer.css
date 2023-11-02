@@ -1,3 +1,8 @@
+.footer-header {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
 .footer-parent-div {
   background-color: #1f1e38;
   margin-top: 100px;
@@ -9,12 +14,12 @@
   margin: auto;
   margin-top: 100px;
   color: white;
-  width: 85%;
+  max-width: 100%;
   text-align: left;
   gap: 20px;
 }
 
-.footer-header {
+.footer-contact-heading {
   font-size: 20px;
   font-weight: 500;
 }
@@ -46,17 +51,12 @@
   font-weight: 700;
 }
 
+.footer-contact-child-div {
+  /* background-color: #0076fd; */
+  width: 65%;
+  margin-left: auto;
+}
 /* ------ */
-.footer-last-cart-heading-flex-div {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.footer-person-photo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
 
 .footer-last-cart-icon-flex-div {
   display: flex;
@@ -65,7 +65,7 @@
   background-color: #b88de2;
   padding: 15px;
   border-radius: 30px;
-  width: 70%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   color: black;
@@ -88,7 +88,7 @@
   background-color: #66cc89;
   padding: 15px;
   border-radius: 30px;
-  width: 70%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   color: black;
@@ -153,10 +153,13 @@
     width: 100%;
     padding: 20px;
   }
+  .footer-contact-child-div {
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .footer-parent-div {
-    width: 107%;
+    max-width: 100%;
   }
   .footer-grid-div {
     grid-template-columns: repeat(2, 1fr);
@@ -192,10 +195,7 @@
   .footer-parent-div {
     width: 100%;
   }
-  .footer-last-cart-heading-flex-div {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+
   .footer-last-cart-icon-flex-div {
     width: 100%;
   }

@@ -2,6 +2,7 @@
   background-color: #010313;
   padding: 5px;
   color: white;
+  max-width: 100%;
   /* height: 1050px; */
 }
 .hero-child-div {
@@ -298,11 +299,10 @@
 @media screen and (max-width: 1023px) {
   .hero-main-div {
     width: 107%;
-    height: 365vh;
+    height: 220vh;
   }
   .heroBookCoverPhoto-img {
-    width: 100%;
-    height: 100%;
+    margin: auto;
     margin-bottom: 500px;
     margin-top: 0;
   }
@@ -316,9 +316,13 @@
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 970px) {
+  .hero-main-div {
+    height: 230vh;
+  }
+}
 @media screen and (max-width: 900px) {
   .hero-main-div {
-    height: 100%;
   }
   .hero-main-div {
     background-color: #010313;
@@ -337,7 +341,6 @@
 }
 @media screen and (max-width: 745px) {
   .hero-main-div {
-    height: 100%;
   }
   .heroBookCoverPhoto-img {
     margin-top: 0;
@@ -345,7 +348,6 @@
 }
 @media screen and (max-width: 640px) {
   .hero-main-div {
-    height: 100%;
   }
   .learn-more-btn {
     width: 300px;
@@ -358,6 +360,7 @@
 }
 @media screen and (max-width: 580px) {
   .hero-main-div {
+    height: 235vh;
   }
   .learn-more-btn {
     width: 300px;
@@ -381,6 +384,11 @@
     width: 300px;
   }
   .heroBookCoverPhoto-img {
+  }
+}
+@media screen and (max-width: 515px) {
+  .hero-main-div {
+    height: 245vh;
   }
 }
 @media screen and (max-width: 470px) {
@@ -440,9 +448,24 @@
   }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 400px) {
   .hero-main-div {
-    width: 120%;
+    height: 250vh;
+  }
+}
+@media screen and (max-width: 371px) {
+  .hero-main-div {
+    height: 260vh;
+  }
+}
+@media screen and (max-width: 365px) {
+  .hero-main-div {
+    height: 250vh;
+  }
+}
+@media screen and (max-width: 313px) {
+  .hero-main-div {
+    height: 260vh;
   }
 }
 @media screen and (max-width: 340px) {

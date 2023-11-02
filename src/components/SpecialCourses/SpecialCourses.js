@@ -2,6 +2,7 @@ import React from "react";
 import "./SpecialCourses.css";
 import learningPhotoOne from "../../accets/Images/learning-photo/learning-photo-one.jpg";
 import learningPhotoTwo from "../../accets/Images/learning-photo/learning-photo-two.jpg";
+import { Link } from "react-router-dom";
 
 const SpecialCourses = () => {
   return (
@@ -46,7 +47,9 @@ const SpecialCourses = () => {
                 * Online Business ideas & scopes - How to know the entire
                 business process of each of this businesses  -  5000 tk
               </h3>
-              <button className="specialCourses-read-more">Read More</button>
+              <Link to="/businessScopes">
+                <button className="specialCourses-read-more">Read More</button>
+              </Link>
             </div>
           </div>
         </div>

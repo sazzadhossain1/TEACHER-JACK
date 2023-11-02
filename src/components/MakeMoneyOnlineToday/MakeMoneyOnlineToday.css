@@ -55,6 +55,7 @@
   color: white;
   font-size: 30px;
   border-radius: 30px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -122,6 +123,18 @@
     font-size: 20px;
   }
   .makeMoneyOnlineToday-flex-div i {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .makeMOneyOnlineToday-heading {
+    font-size: 20px;
+  }
+  .makeMOneyOnlineToday-p {
+    font-size: 16px;
+  }
+  .start-earning-now-btn {
+    max-width: 60%;
     font-size: 20px;
   }
 }

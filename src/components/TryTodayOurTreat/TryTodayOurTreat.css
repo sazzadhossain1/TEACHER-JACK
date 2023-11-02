@@ -4,7 +4,7 @@
 }
 .tryTodayTreat-parent-div {
   background-color: #72c597;
-  width: 75%;
+  max-width: 75%;
   margin: auto;
   margin-top: 100px;
   padding: 50px;

@@ -1,6 +1,7 @@
 .special-main-parent-div {
   background-color: rgb(156, 179, 255);
   padding: 20px;
+  max-width: 100%;
 }
 .special-courses-h2 {
   margin-top: 30px;
@@ -14,7 +15,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 50px;
 
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -22,14 +23,14 @@
   margin: auto;
   background-color: rgb(241, 241, 241);
   text-align: left;
-  border-radius: 70px;
-  width: 320px;
+  border-radius: 10px;
+  max-width: 320px;
   height: 110%;
   position: relative;
 }
 .specialCourses-learning-photo {
   width: 300px;
-  border-radius: 70px;
+  border-radius: 10px;
   margin: auto;
   margin-top: 14px;
 }
@@ -47,7 +48,7 @@
   color: white;
   padding: 10px;
   width: 190px;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 18px;
   position: absolute;
   bottom: 25px;
@@ -82,3 +83,13 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 500px) {
+  .specialCourses-grid-div {
+    margin-left: 5px;
+  }
+}
+
+/* https://bd.teacherjackonline.com/
+Host: ftp.teacherjackonline.com
+User: u721601174.Sazzad_admin
+Pass: FTPAdmin4teacherjack */

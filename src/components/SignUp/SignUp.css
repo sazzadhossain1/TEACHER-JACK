@@ -1,0 +1,112 @@
+.signUp-parent-div {
+  background-color: #eee;
+  color: black;
+}
+.signup-div {
+  width: 50%;
+
+  background-color: #fff;
+}
+
+.sign-head {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+.start-text {
+  color: white;
+  font-size: 20px;
+}
+.label-text {
+  color: white;
+}
+
+.input-field {
+  width: 400px;
+  padding: 5px;
+}
+
+.sign-up-btn {
+  background-color: #eee;
+  padding: 6px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 15px;
+  width: 470px;
+
+  margin: auto;
+}
+
+.sign-up-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .input-field {
+    width: 300px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .signUp-parent-div {
+  }
+  .signup-div {
+  }
+  .input-field {
+    width: 200px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .input-field {
+    width: 150px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 100px;
+  }
+  .signUp-parent-div {
+  }
+  .signup-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .signUp-parent-div {
+    width: 30px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px;
+  }
+  .sign-up-btn {
+    width: 100%;
+  }
+  .signUp-parent-div {
+    width: 100%;
+  }
+  .signup-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .input-field {
+    width: 100px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 100px;
+  }
+  .signUp-parent-div {
+  }
+  .signup-div {
+  }
+}
