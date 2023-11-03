@@ -91,11 +91,11 @@ function App() {
         },
         {
           path: "/userBuying/:id",
-          loader: async ({ params }) => {
-            return fetch(
-              `https://app.teacherjackonline.com/api/user/buyings/${params.id}`
-            );
-          },
+          // loader: async ({ params }) => {
+          //   return fetch(
+          //     `https://app.teacherjackonline.com/api/user/buyings/${params.id}`
+          //   );
+          // },
           element: <UserBuying></UserBuying>,
         },
       ],
