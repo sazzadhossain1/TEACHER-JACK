@@ -33,11 +33,13 @@ const Login = () => {
     console.log(result.data.token);
     setUser(result);
     console.log(result);
+    localStorage.setItem("token", result.data.token);
 
     if (result.data.token) {
       navigation(from, { replace: true });
     }
   }
+
   return (
     <div className="signUp-parent-div ">
       <div className="p-10">

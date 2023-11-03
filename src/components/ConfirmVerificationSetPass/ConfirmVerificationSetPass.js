@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ConfirmVerificationSetPass.css";
 
 const ConfirmVerificationSetPass = () => {
+  // const { user } = useContext(AuthContext);
+  // console.log(user);
   const [email, setEmail] = useState("");
   const [token, setToken] = useState("");
   const [password, setPassword] = useState("");
   //   console.log(email, token, password);
+  const tokenId = localStorage.getItem("token");
 
+  useEffect(() => {
+    setToken(tokenId);
+    console.log(tokenId);
+  }, []);
   async function handleLogin(e) {
     e.preventDefault();
     console.log(email, token, password);
@@ -27,11 +34,6 @@ const ConfirmVerificationSetPass = () => {
 
     result = await result.json();
     console.log(result);
-    if (result.data.token) {
-      localStorage.setItem("token", JSON.stringify(result.data.token));
-    } else {
-      alert("Token not storage in local");
-    }
   }
   return (
     <form onSubmit={handleLogin}>
@@ -46,7 +48,7 @@ const ConfirmVerificationSetPass = () => {
         />
       </div>
 
-      <div className="form-group">
+      {/* <div className="form-group">
         <label htmlFor="token">Token</label>
         <input
           type="text"
@@ -56,7 +58,7 @@ const ConfirmVerificationSetPass = () => {
           value={token}
           // required
         />
-      </div>
+      </div> */}
       <div className="form-group">
         <label htmlFor="password">Password</label>
         <input

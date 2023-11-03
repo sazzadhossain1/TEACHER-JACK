@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./BookDownloadPage.css";
 import { useState } from "react";
 // import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
   const getBookInfoApi = useLoaderData();
-  //   console.log(getBookInfoApi);
+  console.log(getBookInfoApi);
+  const { setUser } = useContext(AuthContext);
 
   const { id } = getBookInfoApi;
 
@@ -55,10 +57,11 @@ const BookDownloadPage = () => {
 
       result = await result.json();
       console.log("result", result);
+      setUser(result);
+      // console.log(result);
     } catch (error) {
       console.log("error", error);
     }
-
     console.log(inputItem);
   }
 

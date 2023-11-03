@@ -19,6 +19,7 @@ import ConfirmVerificationSetPass from "./components/ConfirmVerificationSetPass/
 import UserBuying from "./components/UserBuying/UserBuying";
 
 function App() {
+  const tokenId = localStorage.getItem("token");
   const router = createBrowserRouter([
     {
       path: "/",
@@ -91,11 +92,19 @@ function App() {
         },
         {
           path: "/userBuying/:id",
-          // loader: async ({ params }) => {
-          //   return fetch(
-          //     `https://app.teacherjackonline.com/api/user/buyings/${params.id}`
-          //   );
-          // },
+          loader: async ({ params }) => {
+            return fetch(
+              `https://app.teacherjackonline.com/api/user/buyings/${params.id}`,
+              {
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                  Authorization: `Bearer ${tokenId}`,
+                },
+                body: JSON.stringify(),
+              }
+            );
+          },
           element: <UserBuying></UserBuying>,
         },
       ],
