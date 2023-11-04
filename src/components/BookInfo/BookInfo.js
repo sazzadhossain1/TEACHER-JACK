@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BookInfo = ({ bookData }) => {
+  console.log(bookData);
   const { id } = bookData;
   // console.log(name, price, id);
 

@@ -21,7 +21,7 @@ const BookDownloadPage = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  console.log(product_id);
+  // console.log(product_id);
 
   useEffect(() => {
     setProduct_id(id);
@@ -30,7 +30,7 @@ const BookDownloadPage = () => {
     e.preventDefault();
     // console.log(id);
     // setProduct_id(id);
-    console.log(setProduct_id(id));
+    // console.log(setProduct_id(id));
     let inputItem = {
       name,
       email,
@@ -62,7 +62,7 @@ const BookDownloadPage = () => {
     } catch (error) {
       console.log("error", error);
     }
-    console.log(inputItem);
+    // console.log(inputItem);
   }
 
   return (

@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "./ConfirmVerificationSetPass.css";
+import { useLoaderData } from "react-router-dom";
 
 const ConfirmVerificationSetPass = () => {
   // const { user } = useContext(AuthContext);
   // console.log(user);
+
+  // const getApi = useLoaderData();
+  // console.log(getApi.data);
+
   const [email, setEmail] = useState("");
   const [token, setToken] = useState("");
   const [password, setPassword] = useState("");
   //   console.log(email, token, password);
   const tokenId = localStorage.getItem("token");
+  // console.log(tokenId);
 
   useEffect(() => {
     setToken(tokenId);
-    console.log(tokenId);
+    // console.log(tokenId);
   }, []);
   async function handleLogin(e) {
     e.preventDefault();
@@ -38,6 +44,7 @@ const ConfirmVerificationSetPass = () => {
   return (
     <form onSubmit={handleLogin}>
       <div className="form-group">
+        {/* <h1>{getApi.message}</h1> */}
         <label htmlFor="email">Email</label>
         <input
           type="email"
