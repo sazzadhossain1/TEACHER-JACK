@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./UserBuying.css";
 import { useLoaderData } from "react-router-dom";
 import UseBuyingDetails from "../UseBuyingDetails/UseBuyingDetails";
@@ -9,9 +9,12 @@ const UserBuying = () => {
 
   return (
     <div>
-      {userBuyingGetApi.data.map((data) => (
+      <h1>This is user Buying </h1>
+      <UseBuyingDetails></UseBuyingDetails>
+
+      {/* {userBuyingGetApi.data.map((data) => (
         <UseBuyingDetails key={data.id} data={data}></UseBuyingDetails>
-      ))}
+      ))} */}
     </div>
   );
 };

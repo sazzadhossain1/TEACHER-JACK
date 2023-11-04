@@ -12,12 +12,14 @@ const ConfirmVerificationSetPass = () => {
   const [email, setEmail] = useState("");
   const [token, setToken] = useState("");
   const [password, setPassword] = useState("");
-  //   console.log(email, token, password);
+  console.log(email, token, password);
   const tokenId = localStorage.getItem("token");
+  const emailId = localStorage.getItem("email");
   // console.log(tokenId);
 
   useEffect(() => {
     setToken(tokenId);
+    setEmail(emailId);
     // console.log(tokenId);
   }, []);
   async function handleLogin(e) {

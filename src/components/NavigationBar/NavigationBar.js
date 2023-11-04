@@ -116,6 +116,9 @@ const NavigationBar = () => {
                 </ul>
               </details>
             </li>
+            <li>
+              <Link to="/useBuyingDetails">User Buying </Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">

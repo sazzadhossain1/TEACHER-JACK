@@ -18,9 +18,12 @@ import ClickHereGetInfo from "./components/ClickHereGetInfo/ClickHereGetInfo";
 import ConfirmVerificationSetPass from "./components/ConfirmVerificationSetPass/ConfirmVerificationSetPass";
 import UserBuying from "./components/UserBuying/UserBuying";
 import UserSales from "./components/UserSales/UserSales";
+import UseBuyingDetails from "./components/UseBuyingDetails/UseBuyingDetails";
 
 function App() {
   const tokenId = localStorage.getItem("token");
+  const id = localStorage.getItem("userId");
+  console.log(id);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -96,10 +99,27 @@ function App() {
         },
 
         {
-          path: "/userBuying/:id",
+          path: "/userBuying/",
+          // loader: async ({ params }) => {
+          //   return fetch(
+          //     `https://app.teacherjackonline.com/api/user/buyings/${params.id}`,
+          //     {
+          //       headers: {
+          //         "Content-Type": "application/json",
+          //         Accept: "application/json",
+          //         Authorization: `Bearer ${tokenId}`,
+          //       },
+          //       body: JSON.stringify(),
+          //     }
+          //   );
+          // },
+          element: <UserBuying></UserBuying>,
+        },
+        {
+          path: "/useBuyingDetails",
           loader: async ({ params }) => {
             return fetch(
-              `https://app.teacherjackonline.com/api/user/buyings/${params.id}`,
+              `https://app.teacherjackonline.com/api/user/buyings/${id}`,
               {
                 headers: {
                   "Content-Type": "application/json",
@@ -110,26 +130,8 @@ function App() {
               }
             );
           },
-          element: <UserBuying></UserBuying>,
+          element: <UseBuyingDetails></UseBuyingDetails>,
         },
-
-        // {
-        //   path: "http://localhost:3000/confirm/sazzadtomal1@gmail.com/598413",
-        //   loader: async ({ params }) => {
-        //     return fetch(
-        //       `https://app.teacherjackonline.com/api/confirm/${params.email}/${params.token}`,
-        //       {
-        //         headers: {
-        //           "Content-Type": "application/json",
-        //           Accept: "application/json",
-        //           // Authorization: `Bearer ${token}`,
-        //         },
-        //         body: JSON.stringify(),
-        //       }
-        //     );
-        //   },
-        //   element: <ConfirmVerificationSetPass></ConfirmVerificationSetPass>,
-        // },
 
         {
           path: "/userSales/:id",

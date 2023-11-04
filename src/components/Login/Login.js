@@ -34,6 +34,8 @@ const Login = () => {
     setUser(result);
     console.log(result);
     localStorage.setItem("token", result.data.token);
+    localStorage.setItem("email", result.data.user.email);
+    localStorage.setItem("userId", result.data.user.id);
 
     if (result.data.token) {
       navigation(from, { replace: true });
