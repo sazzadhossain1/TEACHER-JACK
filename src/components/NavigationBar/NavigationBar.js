@@ -136,19 +136,6 @@ const NavigationBar = () => {
                 </ul>
               </details>
             </li>
-            <li>git rirchse</li>
-            <li>
-              <Link to="">Sazzad Hossain</Link>
-            </li>
-            <li>
-              <Link to="">Rocky</Link>
-            </li>
-            <li>
-              <Link to="">Created By Sazzad</Link>
-            </li>
-            <li>
-              <Link to="">Abaacorp</Link>
-            </li>
           </ul>
         </div>
         <div className="navbar-end">

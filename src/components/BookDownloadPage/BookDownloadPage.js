@@ -46,16 +46,15 @@ const BookDownloadPage = () => {
     };
 
     try {
-      let url = "https://app.teacherjackonline.com/api/sale"
-      let result = await fetch(url, 
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(inputItem),
-        });
+      let url = "https://app.teacherjackonline.com/api/sale";
+      let result = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(inputItem),
+      });
 
       result = await result.json();
       console.log("result", result);
@@ -101,14 +100,26 @@ const BookDownloadPage = () => {
                 required
               />
             </div> */}
-            <p>Coupon Code ব্যবহার করলেই পাচ্ছেন 10%  ডিসকাউন্ট</p>
+            <p>Coupon Code ব্যবহার করলেই পাচ্ছেন 10% ডিসকাউন্ট</p>
             <br></br>
             <div className="form-group">
-              <label><input type="checkbox" name="coupon_code" value="Yes" id="cc_agree" /> আমি কুপন কোড ব্যবহার করতে চাই</label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="coupon_code"
+                  value="Yes"
+                  id="cc_agree"
+                />{" "}
+                আমি কুপন কোড ব্যবহার করতে চাই
+              </label>
             </div>
             <div className="form-group" id="coupon_field" hidden>
               <label htmlFor="CouponCode">কুপন কোড</label>
-              <input type="number" onChange={(e) => setCoupon_code(e.target.value)} id="CouponCode" name="CouponCode"
+              <input
+                type="number"
+                onChange={(e) => setCoupon_code(e.target.value)}
+                id="CouponCode"
+                name="CouponCode"
                 value={coupon_code}
               />
             </div>
@@ -127,7 +138,14 @@ const BookDownloadPage = () => {
             {/*  */}
             <div className="form-group">
               <label htmlFor="PaymentMethod">কোন মাধ্যমে পেমেন্ট করছেন</label>
-              <select required className="select-option" name="pay_method" id="pay_method" type="text" value={pay_method} onChange={(e) => setPay_method(e.target.value)}
+              <select
+                required
+                className="select-option"
+                name="pay_method"
+                id="pay_method"
+                type="text"
+                value={pay_method}
+                onChange={(e) => setPay_method(e.target.value)}
               >
                 <option value="">Please Select Payment Method</option>
                 <option value="bKash">বিকাশ = 01793596432</option>
@@ -214,13 +232,13 @@ const BookDownloadPage = () => {
   );
 };
 
-let cc_agree = document.getElementById('cc_agree');
-let coupon_field = document.getElementById('coupon_field');
-// console.log(cc_agree);
-cc_agree.addEventListener('change', ccAction);
-function ccAction()
-{
-  coupon_field.removeAttribute('hidden');
-  console.log(cc_agree);
-}
+// let cc_agree = document.getElementById('cc_agree');
+// let coupon_field = document.getElementById('coupon_field');
+// // console.log(cc_agree);
+// cc_agree.addEventListener('change', ccAction);
+// function ccAction()
+// {
+//   coupon_field.removeAttribute('hidden');
+//   console.log(cc_agree);
+// }
 export default BookDownloadPage;
