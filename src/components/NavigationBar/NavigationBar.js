@@ -138,7 +138,7 @@ const NavigationBar = () => {
             </li>
             <li>git rirchse</li>
             <li>
-              <Link to="">Sazzad</Link>
+              <Link to="">Sazzad Hossain</Link>
             </li>
           </ul>
         </div>
