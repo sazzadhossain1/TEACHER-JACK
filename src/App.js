@@ -19,6 +19,7 @@ import ConfirmVerificationSetPass from "./components/ConfirmVerificationSetPass/
 import UserBuying from "./components/UserBuying/UserBuying";
 import UserSales from "./components/UserSales/UserSales";
 import UseBuyingDetails from "./components/UseBuyingDetails/UseBuyingDetails";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
   const tokenId = localStorage.getItem("token");
@@ -99,24 +100,7 @@ function App() {
         },
 
         {
-          path: "/userBuying/",
-          // loader: async ({ params }) => {
-          //   return fetch(
-          //     `https://app.teacherjackonline.com/api/user/buyings/${params.id}`,
-          //     {
-          //       headers: {
-          //         "Content-Type": "application/json",
-          //         Accept: "application/json",
-          //         Authorization: `Bearer ${tokenId}`,
-          //       },
-          //       body: JSON.stringify(),
-          //     }
-          //   );
-          // },
-          element: <UserBuying></UserBuying>,
-        },
-        {
-          path: "/useBuyingDetails",
+          path: "/userBuying",
           loader: async ({ params }) => {
             return fetch(
               `https://app.teacherjackonline.com/api/user/buyings/${id}`,
@@ -130,8 +114,29 @@ function App() {
               }
             );
           },
-          element: <UseBuyingDetails></UseBuyingDetails>,
+          element: (
+            <PrivateRoute>
+              <UserBuying></UserBuying>
+            </PrivateRoute>
+          ),
         },
+        // {
+        //   path: "/useBuyingDetails",
+        //   loader: async ({ params }) => {
+        //     return fetch(
+        //       `https://app.teacherjackonline.com/api/user/buyings/${id}`,
+        //       {
+        //         headers: {
+        //           "Content-Type": "application/json",
+        //           Accept: "application/json",
+        //           Authorization: `Bearer ${tokenId}`,
+        //         },
+        //         body: JSON.stringify(),
+        //       }
+        //     );
+        //   },
+        //   element: <UseBuyingDetails></UseBuyingDetails>,
+        // },
 
         {
           path: "/userSales/:id",

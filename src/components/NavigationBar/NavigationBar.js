@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./NavigarionBar.css";
 
 import teacherJackOnlineLogo from "../../accets/Images/Navigation-logo/teacherJackOnlineLogo.jpg";
@@ -7,6 +7,13 @@ import { AuthContext } from "../context/UseContext";
 
 const NavigationBar = () => {
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    console.log("logOUt SuccessFully");
+    localStorage.clear();
+    navigate("/signUp");
+  };
 
   return (
     <div className="nav-parent-div">
@@ -63,7 +70,9 @@ const NavigationBar = () => {
 
               <div className="login-and-signUp-div-one">
                 {user?.data?.token ? (
-                  <button className="logOut-btn">LogOut</button>
+                  <button className="logOut-btn">
+                    <Link to="/signUp">LogOut</Link>
+                  </button>
                 ) : (
                   <div>
                     <Link to="/login" className="">
@@ -117,14 +126,16 @@ const NavigationBar = () => {
               </details>
             </li>
             <li>
-              <Link to="/useBuyingDetails">User Buying </Link>
+              <Link to="/userBuying">User Buying </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <div className="login-and-signUp-div">
             {user?.data?.token ? (
-              <button className="logOut-btn">LogOut</button>
+              <button onClick={handleLogOut} className="logOut-btn">
+                LogOut
+              </button>
             ) : (
               <div>
                 <Link to="/login" className="login">
