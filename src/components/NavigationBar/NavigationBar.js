@@ -140,6 +140,9 @@ const NavigationBar = () => {
             <li>
               <Link to="">Sazzad Hossain</Link>
             </li>
+            <li>
+              <Link to="">Rocky</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
