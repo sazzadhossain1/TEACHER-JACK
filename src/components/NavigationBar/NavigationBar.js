@@ -133,6 +133,7 @@ const NavigationBar = () => {
                 </ul>
               </details>
             </li>
+            <li>git rirchse</li>
           </ul>
         </div>
         <div className="navbar-end">

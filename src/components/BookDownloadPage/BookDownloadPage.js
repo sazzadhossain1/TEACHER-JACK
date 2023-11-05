@@ -102,9 +102,11 @@ const BookDownloadPage = () => {
               />
             </div> */}
             <p>Coupon Code ব্যবহার করলেই পাচ্ছেন 10%  ডিসকাউন্ট</p>
+            <br></br>
             <div className="form-group">
-              <label><input type="radio" name="coupon_code" value="Yes"/> আমি কুপন কোড ব্যবহার করতে চাই</label>
-              <label><input type="radio" name="coupon_code" value="No"/> আমার কুপন কোড নেই</label>
+              <label><input type="checkbox" name="coupon_code" value="Yes" id="cc_agree" /> আমি কুপন কোড ব্যবহার করতে চাই</label>
+            </div>
+            <div className="form-group" id="coupon_field" hidden>
               <label htmlFor="CouponCode">কুপন কোড</label>
               <input type="number" onChange={(e) => setCoupon_code(e.target.value)} id="CouponCode" name="CouponCode"
                 value={coupon_code}
@@ -212,4 +214,13 @@ const BookDownloadPage = () => {
   );
 };
 
+let cc_agree = document.getElementById('cc_agree');
+let coupon_field = document.getElementById('coupon_field');
+// console.log(cc_agree);
+cc_agree.addEventListener('change', ccAction);
+function ccAction()
+{
+  coupon_field.removeAttribute('hidden');
+  console.log(cc_agree);
+}
 export default BookDownloadPage;
