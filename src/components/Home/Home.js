@@ -34,8 +34,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// https://bd.teacherjackonline.com/
-// Host: ftp.teacherjackonline.com
-// User: u721601174.Sazzad_admin
-// Pass: FTPAdmin4teacherjack

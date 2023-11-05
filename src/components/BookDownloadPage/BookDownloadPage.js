@@ -46,14 +46,16 @@ const BookDownloadPage = () => {
     };
 
     try {
-      let result = await fetch("https://app.teacherjackonline.com/api/sale", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(inputItem),
-      });
+      let url = "https://app.teacherjackonline.com/api/sale"
+      let result = await fetch(url, 
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(inputItem),
+        });
 
       result = await result.json();
       console.log("result", result);
@@ -99,13 +101,12 @@ const BookDownloadPage = () => {
                 required
               />
             </div> */}
+            <p>Coupon Code ব্যবহার করলেই পাচ্ছেন 10%  ডিসকাউন্ট</p>
             <div className="form-group">
+              <label><input type="radio" name="coupon_code" value="Yes"/> আমি কুপন কোড ব্যবহার করতে চাই</label>
+              <label><input type="radio" name="coupon_code" value="No"/> আমার কুপন কোড নেই</label>
               <label htmlFor="CouponCode">কুপন কোড</label>
-              <input
-                type="number"
-                onChange={(e) => setCoupon_code(e.target.value)}
-                id="CouponCode"
-                name="CouponCode"
+              <input type="number" onChange={(e) => setCoupon_code(e.target.value)} id="CouponCode" name="CouponCode"
                 value={coupon_code}
               />
             </div>
@@ -124,19 +125,12 @@ const BookDownloadPage = () => {
             {/*  */}
             <div className="form-group">
               <label htmlFor="PaymentMethod">কোন মাধ্যমে পেমেন্ট করছেন</label>
-              <select
-                className="select-option"
-                name="pay_method"
-                id="pay_method"
-                type="text"
-                value={pay_method}
-                onChange={(e) => setPay_method(e.target.value)}
-                required
+              <select required className="select-option" name="pay_method" id="pay_method" type="text" value={pay_method} onChange={(e) => setPay_method(e.target.value)}
               >
-                <option>Please Select Payment Method</option>
-                <option>বিকাশ</option>
-                <option>নগদ</option>
-                <option>রকেট</option>
+                <option value="">Please Select Payment Method</option>
+                <option value="bKash">বিকাশ = 01793596432</option>
+                <option value="Nagad">নগদ = 01793596432</option>
+                <option value="Rocket">রকেট = 01793596432</option>
               </select>
             </div>
             {/*  */}
@@ -208,7 +202,7 @@ const BookDownloadPage = () => {
                 required
               />
             </div>
-            <button className="submit-btn" type="submit">
+            <button className="sign-up-btn submit-btn" type="submit">
               Submit
             </button>
           </form>

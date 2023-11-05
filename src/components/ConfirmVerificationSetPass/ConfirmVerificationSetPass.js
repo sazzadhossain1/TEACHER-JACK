@@ -44,46 +44,46 @@ const ConfirmVerificationSetPass = () => {
     console.log(result);
   }
   return (
-    <form onSubmit={handleLogin}>
-      <div className="form-group">
-        {/* <h1>{getApi.message}</h1> */}
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          onChange={(e) => setEmail(e.target.value)}
-          id="email"
-          name="email"
-          value={email}
-        />
-      </div>
+    <div className="signUp-parent-div ">
+      <div className="p-10">
+        <div className=" mx-auto signup-div p-5">
+      <h1>Confirm Verifiaction</h1>
+      <br></br>
+          <form onSubmit={handleLogin}>
+            <div className="form-group">
+              {/* <h1>{getApi.message}</h1> */}
+              {/* <label htmlFor="email">Email </label> */}
+              <input type="hidden"
+                onChange={(e) => setEmail(e.target.value)}
+                id="email" name="email" value={email}
+              />
+            </div>
 
-      {/* <div className="form-group">
-        <label htmlFor="token">Token</label>
-        <input
-          type="text"
-          onChange={(e) => setToken(e.target.value)}
-          id="token"
-          name="token"
-          value={token}
-          // required
-        />
-      </div> */}
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          id="password"
-          name="password"
-          value={password}
-          required
-        />
-      </div>
+            {/* <div className="form-group">
+              <label htmlFor="token">Token</label>
+              <input
+                type="text"
+                onChange={(e) => setToken(e.target.value)}
+                id="token"
+                name="token"
+                value={token}
+                // required
+              />
+            </div> */}
+            <div className="form-group">
+              <label htmlFor="password">Set Password</label>
+              <input type="password" onChange={(e) => setPassword(e.target.value)} id="password" name="password"
+                value={password} required placeholder="Set your new password"
+              />
+            </div>
 
-      <button className="submit-btn" type="submit">
-        Submit
-      </button>
-    </form>
+            <button className="sign-up-btn submit-btn" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
 

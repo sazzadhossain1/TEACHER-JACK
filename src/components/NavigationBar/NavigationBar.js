@@ -54,15 +54,19 @@ const NavigationBar = () => {
                 <Link to="/videos">VIDEOS</Link>
               </li>
 
+              <li>
+                <Link to="/contact">CONTACT</Link>
+              </li>
+
               <li tabIndex={0}>
                 <details>
-                  <summary>CONTACT</summary>
+                  <summary>My Account</summary>
                   <ul className="p-2">
                     <li>
-                      <Link>Submenu 1</Link>
+                      <Link>My Buyings</Link>
                     </li>
                     <li>
-                      <Link>Submenu 2</Link>
+                      <Link>My Sellings</Link>
                     </li>
                   </ul>
                 </details>
@@ -112,21 +116,22 @@ const NavigationBar = () => {
               <Link to="/videos">VIDEOS</Link>
             </li>
 
+            <li>
+              <Link to="/contact">CONTACT</Link>
+            </li>
+
             <li tabIndex={0}>
               <details>
-                <summary>CONTACT</summary>
+                <summary>MY ACCOUNT</summary>
                 <ul className="p-2">
                   <li>
-                    <Link>Submenu 1</Link>
+                    <Link to="/useBuyingDetails">My Buyings</Link>
                   </li>
                   <li>
-                    <Link>Submenu 2</Link>
+                    <Link>My Sellings</Link>
                   </li>
                 </ul>
               </details>
-            </li>
-            <li>
-              <Link to="/userBuying">User Buying </Link>
             </li>
           </ul>
         </div>
