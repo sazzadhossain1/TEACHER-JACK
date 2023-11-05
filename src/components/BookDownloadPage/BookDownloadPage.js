@@ -46,14 +46,16 @@ const BookDownloadPage = () => {
     };
 
     try {
-      let result = await fetch("https://app.teacherjackonline.com/api/sale", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(inputItem),
-      });
+      let url = "https://app.teacherjackonline.com/api/sale"
+      let result = await fetch(url, 
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(inputItem),
+        });
 
       result = await result.json();
       console.log("result", result);
@@ -102,13 +104,9 @@ const BookDownloadPage = () => {
             <p>Coupon Code ব্যবহার করলেই পাচ্ছেন 10%  ডিসকাউন্ট</p>
             <div className="form-group">
               <label><input type="radio" name="coupon_code" value="Yes"/> আমি কুপন কোড ব্যবহার করতে চাই</label>
-              <label><input type="radio" name="coupon_code" value="No"/> আমর কুপন কোড নেই</label>
+              <label><input type="radio" name="coupon_code" value="No"/> আমার কুপন কোড নেই</label>
               <label htmlFor="CouponCode">কুপন কোড</label>
-              <input
-                type="number"
-                onChange={(e) => setCoupon_code(e.target.value)}
-                id="CouponCode"
-                name="CouponCode"
+              <input type="number" onChange={(e) => setCoupon_code(e.target.value)} id="CouponCode" name="CouponCode"
                 value={coupon_code}
               />
             </div>
