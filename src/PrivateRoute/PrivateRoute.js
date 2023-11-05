@@ -5,11 +5,12 @@ import { AuthContext } from "../components/context/UseContext";
 
 const PrivateRoute = ({ children }) => {
   const location = useLocation();
+  const getToken = localStorage.getItem("token");
 
   const { user } = useContext(AuthContext);
   console.log(user);
 
-  if (user && user.data.token) {
+  if (getToken) {
     return children;
   }
 

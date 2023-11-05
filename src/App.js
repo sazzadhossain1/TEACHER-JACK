@@ -101,7 +101,7 @@ function App() {
 
         {
           path: "/userBuying",
-          loader: async ({ params }) => {
+          loader: async () => {
             return fetch(
               `https://app.teacherjackonline.com/api/user/buyings/${id}`,
               {
@@ -120,29 +120,16 @@ function App() {
             </PrivateRoute>
           ),
         },
-        // {
-        //   path: "/useBuyingDetails",
-        //   loader: async ({ params }) => {
-        //     return fetch(
-        //       `https://app.teacherjackonline.com/api/user/buyings/${id}`,
-        //       {
-        //         headers: {
-        //           "Content-Type": "application/json",
-        //           Accept: "application/json",
-        //           Authorization: `Bearer ${tokenId}`,
-        //         },
-        //         body: JSON.stringify(),
-        //       }
-        //     );
-        //   },
-        //   element: <UseBuyingDetails></UseBuyingDetails>,
-        // },
+        {
+          path: "/useBuyingDetails",
+          element: <UseBuyingDetails></UseBuyingDetails>,
+        },
 
         {
-          path: "/userSales/:id",
+          path: "/userSales",
           loader: async ({ params }) => {
             return fetch(
-              `https://app.teacherjackonline.com/api/user/sales/${params.id}`,
+              `https://app.teacherjackonline.com/api/user/sales/${id}`,
               {
                 headers: {
                   "Content-Type": "application/json",

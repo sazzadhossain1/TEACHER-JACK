@@ -5,7 +5,7 @@ import UserSalesDetails from "../UserSalesDetails/UserSalesDetails";
 
 const UserSales = () => {
   const userSalesGetApi = useLoaderData();
-  //   console.log(userSalesGetApi);
+  console.log(userSalesGetApi);
   return (
     <div>
       <h1>User Sales</h1>

@@ -9,10 +9,13 @@ const NavigationBar = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  const getToken = localStorage.getItem("token");
+  console.log(getToken);
+
   const handleLogOut = () => {
     console.log("logOUt SuccessFully");
     localStorage.clear();
-    navigate("/signUp");
+    navigate("/login");
   };
 
   return (
@@ -63,17 +66,17 @@ const NavigationBar = () => {
                   <summary>My Account</summary>
                   <ul className="p-2">
                     <li>
-                      <Link>My Buyings</Link>
+                      <Link to="/userBuying">My Buyings</Link>
                     </li>
                     <li>
-                      <Link>My Sellings</Link>
+                      <Link to="/userSales">My Sellings</Link>
                     </li>
                   </ul>
                 </details>
               </li>
 
               <div className="login-and-signUp-div-one">
-                {user?.data?.token ? (
+                {getToken ? (
                   <button className="logOut-btn">
                     <Link to="/signUp">LogOut</Link>
                   </button>
@@ -125,20 +128,23 @@ const NavigationBar = () => {
                 <summary>MY ACCOUNT</summary>
                 <ul className="p-2">
                   <li>
-                    <Link to="/useBuyingDetails">My Buyings</Link>
+                    <Link to="/userBuying">My Buyings</Link>
                   </li>
                   <li>
-                    <Link>My Sellings</Link>
+                    <Link to="/userSales">My Sellings</Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>git rirchse</li>
+            <li>
+              <Link to="">Sazzad</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
           <div className="login-and-signUp-div">
-            {user?.data?.token ? (
+            {getToken ? (
               <button onClick={handleLogOut} className="logOut-btn">
                 LogOut
               </button>
