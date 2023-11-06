@@ -5,7 +5,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const UseBuyingDetails = ({ data }) => {
   // const userBuyingGetApi = useLoaderData();
   // console.log(userBuyingGetApi);
-  // console.log(data);
+  console.log(data);
   const {
     name,
     download,

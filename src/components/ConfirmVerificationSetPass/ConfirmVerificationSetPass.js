@@ -1,82 +1,98 @@
 import React, { useEffect, useState } from "react";
 import "./ConfirmVerificationSetPass.css";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useLocation, useNavigate, useNavigation, useParams } from "react-router-dom";
 
 const ConfirmVerificationSetPass = () => {
-  // const { user } = useContext(AuthContext);
-  // console.log(user);
+  const location = useLocation();
+  const navigation = useNavigate();
+  const form = location.state?.from?.pathname || "/userBuying";
 
-  // const getApi = useLoaderData();
-  // console.log(getApi.data);
+  const { email, token } = useParams();
 
-  const [email, setEmail] = useState("");
-  const [token, setToken] = useState("");
+  const searchParams = new URLSearchParams(location.search);
+
+  const [Email, setEmail] = useState("");
+  const [Token, setToken] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email, token, password);
-  const tokenId = localStorage.getItem("token");
-  const emailId = localStorage.getItem("email");
-  // console.log(tokenId);
 
   useEffect(() => {
-    setToken(tokenId);
-    setEmail(emailId);
-    // console.log(tokenId);
+    setToken(Email);
+    setEmail(Token);
+    handleLogin();
   }, []);
-  async function handleLogin(e) {
+
+  async function confirmVerification(e)
+  {
     e.preventDefault();
-    console.log(email, token, password);
-
-    let item = { email, token, password };
-
-    let result = await fetch(
-      "https://app.teacherjackonline.com/api/password_update",
+    let values = {email, token, password};
+    let apiUrl = `https://app.teacherjackonline.com/api/password_update`
+    let result = await fetch( apiUrl, 
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body:JSON.stringify(values)
+      });
+      result = await result.json();
+      localStorage.setItem("token", result.data.token);
+      localStorage.setItem("auth_user", result.data.user);
+      localStorage.setItem("userId", result.data.user.id);
+      if (result.data.token) {
+        navigation(form, { replace: true });
+      }
+      console.log(result);
+
+  }
+
+  async function handleLogin() 
+  {
+    let item = { email, token};
+    let apiUrl = `https://app.teacherjackonline.com/api/confirm/${email}/${token}`
+    let result = await fetch(apiUrl, {
+        headers: {
+          "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(item),
       }
     );
 
     result = await result.json();
-    console.log(result);
-  }
-  return (
-    <div className="signUp-parent-div ">
-      <div className="p-10">
-        <div className=" mx-auto signup-div p-5">
-      <h1>Confirm Verifiaction</h1>
-      <br></br>
-          <form onSubmit={handleLogin}>
-            <div className="form-group">
-              {/* <h1>{getApi.message}</h1> */}
-              {/* <label htmlFor="email">Email </label> */}
-              <input type="hidden"
-                onChange={(e) => setEmail(e.target.value)}
-                id="email" name="email" value={email}
-              />
-            </div>
 
-            {/* <div className="form-group">
-              <label htmlFor="token">Token</label>
-              <input
-                type="text"
-                onChange={(e) => setToken(e.target.value)}
-                id="token"
-                name="token"
-                value={token}
-                // required
-              />
-            </div> */}
+    const submitForm  = document.getElementById('submitForm');
+    const loginButton = document.getElementById('loginButton');
+
+    if(result.data)
+    {
+      submitForm.removeAttribute('hidden');
+    }
+    else
+    {
+      loginButton.removeAttribute('hidden');
+    }
+
+  }
+
+  return (
+    <div className="signUp-parent-div">
+      <div className="p-10">
+        <div className="mx-auto signup-div p-5">
+          <h1 className="heading1">Confirm Verifiaction</h1>
+          <div className="loginButton" id="loginButton" hidden>
+            <p className="loginInfo">Your account already verified. Please login to your panel.</p>
+            <Link className="loginBtn sign-up-btn" to="/login">Login</Link>
+          </div>
+          <br></br>
+          <form onSubmit={confirmVerification} id="submitForm" hidden>
             <div className="form-group">
               <label htmlFor="password">Set Password</label>
-              <input type="password" onChange={(e) => setPassword(e.target.value)} id="password" name="password"
-                value={password} required placeholder="Set your new password"
+              <input type="password"
+                onChange={(e) => setPassword(e.target.value)}
+                id="password" name="password" value={password} required
+                placeholder="Set your new password"
               />
             </div>
-
             <button className="sign-up-btn submit-btn" type="submit">
               Submit
             </button>
@@ -88,3 +104,6 @@ const ConfirmVerificationSetPass = () => {
 };
 
 export default ConfirmVerificationSetPass;
+
+// https://app.teacherjackonline.com/api/{uri}
+// https://app.teacherjackonline.com/api/check/{email}/{token}
