@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NeedToConsult = () => {
   return (
-    <div>
+    <div className="NeedToConsult_parent_div">
       <div>
         <h1 className="NeedToConsult-heading">
           কোন লাইনে দক্ষতা ডেভেলপ করবেন তা এখনও বুঝতে পারছেন না ?

@@ -1,7 +1,16 @@
+.NeedToConsult_parent_div {
+  margin: auto;
+  text-align: center;
+}
 .NeedToConsult-heading {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.NeedToConsult_parent_div p {
+  max-width: 80%;
+  margin: auto;
 }
 .NeedToConsult-btn {
   border: 2px solid blue;
@@ -10,7 +19,8 @@
   max-width: 100%;
   font-size: 25px;
   border-radius: 5px;
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .NeedToConsult-btn:hover {
