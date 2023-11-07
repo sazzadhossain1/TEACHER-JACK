@@ -11,7 +11,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirm_password, setConfirm_Password] = useState("");
 
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
   const navigation = useNavigate();
@@ -29,7 +29,8 @@ const SignUp = () => {
     let item = { name, email, phone, password, confirm_password };
     console.log(item);
     // console.log(confirm_password);
-
+    try {
+    } catch {}
     let result = await fetch("https://app.teacherjackonline.com/api/register", {
       method: "POST",
       headers: {

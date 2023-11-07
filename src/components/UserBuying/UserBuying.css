@@ -1,0 +1,17 @@
+.useBuyingDetails_parent_div {
+  margin: auto;
+  margin-top: 100px;
+}
+.table-border {
+  border: 1px solid black;
+  max-width: 80%;
+
+  margin: auto;
+}
+.t_head {
+  background-color: #10a6f1;
+  font-size: 20px;
+}
+.table_colum {
+  border: 1px solid black;
+}

@@ -3,9 +3,8 @@ import "./UseBuyingDetails.css";
 import { Link, useLoaderData } from "react-router-dom";
 
 const UseBuyingDetails = ({ data }) => {
-  // const userBuyingGetApi = useLoaderData();
-  // console.log(userBuyingGetApi);
-  // console.log(data);
+  const userBuyingGetApi = useLoaderData();
+
   const {
     name,
     download,
@@ -19,16 +18,7 @@ const UseBuyingDetails = ({ data }) => {
     url,
   } = data;
 
-  return (
-    <div>
-      <h1>This is User Buying Details</h1>
-      <p>Name: {name}</p>
-      <Link to={download}>Download</Link>
-      <p>Payee Number: {payee_number}</p>
-      <p>Payee Method: {pay_method}</p>
-      <p>Price: {price}</p>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default UseBuyingDetails;

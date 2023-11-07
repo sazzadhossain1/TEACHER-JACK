@@ -7,10 +7,13 @@ import { AuthContext } from "../context/UseContext";
 
 const NavigationBar = () => {
   const { user } = useContext(AuthContext);
+  console.log(user);
+
   const navigate = useNavigate();
 
   const getToken = localStorage.getItem("token");
   console.log(getToken);
+  const id = localStorage.getItem("userId");
 
   const handleLogOut = () => {
     console.log("logOUt SuccessFully");
@@ -61,19 +64,23 @@ const NavigationBar = () => {
                 <Link to="/contact">CONTACT</Link>
               </li>
 
-              <li tabIndex={0}>
-                <details>
-                  <summary>My Account</summary>
-                  <ul className="p-2">
-                    <li>
-                      <Link to="/userBuying">My Buyings</Link>
-                    </li>
-                    <li>
-                      <Link to="/userSales">My Sellings</Link>
-                    </li>
-                  </ul>
-                </details>
-              </li>
+              {getToken ? (
+                <li tabIndex={0}>
+                  <details>
+                    <summary>My Account</summary>
+                    <ul className="p-2">
+                      <li>
+                        <Link to="/userBuying">My Buyings</Link>
+                      </li>
+                      <li>
+                        <Link to={`/userSales/${id}`}>My Sellings</Link>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                ""
+              )}
 
               <div className="login-and-signUp-div-one">
                 {getToken ? (
@@ -123,19 +130,23 @@ const NavigationBar = () => {
               <Link to="/contact">CONTACT</Link>
             </li>
 
-            <li tabIndex={0}>
-              <details>
-                <summary>MY ACCOUNT</summary>
-                <ul className="p-2">
-                  <li>
-                    <Link to="/userBuying">My Buyings</Link>
-                  </li>
-                  <li>
-                    <Link to="/userSales">My Sellings</Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
+            {getToken ? (
+              <li tabIndex={0}>
+                <details>
+                  <summary>MY ACCOUNT</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a href="/userBuying">My Buyings</a>
+                    </li>
+                    <li>
+                      <a href="/userSales">My Sellings</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            ) : (
+              ""
+            )}
           </ul>
         </div>
         <div className="navbar-end">

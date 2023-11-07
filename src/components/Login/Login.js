@@ -30,7 +30,6 @@ const Login = () => {
     });
 
     result = await result.json();
-    console.log(result.data.token);
     setUser(result);
     console.log(result);
 
@@ -55,7 +54,13 @@ const Login = () => {
                 <span className="label-text">Your Email</span>
               </label>
               <label className="input-group">
-                <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Enter Your Email" className=" input-field" required
+                <input
+                  type="email"
+                  name="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter Your Email"
+                  className=" input-field"
+                  required
                 />
               </label>
             </div>

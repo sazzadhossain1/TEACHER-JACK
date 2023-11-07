@@ -6,6 +6,10 @@ import UserSalesDetails from "../UserSalesDetails/UserSalesDetails";
 const UserSales = () => {
   const userSalesGetApi = useLoaderData();
   console.log(userSalesGetApi);
+
+  if (!userSalesGetApi.data) {
+    return <div>Loading...</div>; // You can show a loading indicator or message while data is being fetched
+  }
   return (
     <div>
       <h1>User Sales</h1>

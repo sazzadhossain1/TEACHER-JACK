@@ -99,35 +99,48 @@ function App() {
           element: <BookDownloadPage></BookDownloadPage>,
         },
 
+        // -------------- userBuying -----------------//
+
         {
           path: "/userBuying",
-          loader: async () => {
-            return fetch(
-              `https://app.teacherjackonline.com/api/user/buyings/${id}`,
-              {
-                headers: {
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                  Authorization: `Bearer ${tokenId}`,
-                },
-                body: JSON.stringify(),
-              }
-            );
+          loader: async ({ params }) => {
+            const id = localStorage.getItem("userId");
+            console.log(id);
+            try {
+              const result = await fetch(
+                `https://app.teacherjackonline.com/api/user/buyings/${id}`,
+                {
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                    Authorization: `Bearer ${tokenId}`,
+                  },
+                }
+              );
+
+              const data = await result.json();
+              console.log(data);
+              return data;
+            } catch (error) {
+              console.error("Error fetching data:", error);
+              throw error; // Rethrow the error to handle it elsewhere if needed
+            }
           },
-          element: (
-            <PrivateRoute>
-              <UserBuying></UserBuying>
-            </PrivateRoute>
-          ),
+          element: <UserBuying></UserBuying>,
         },
+
+        // --------------
         {
           path: "/useBuyingDetails",
           element: <UseBuyingDetails></UseBuyingDetails>,
         },
+        // ---------------
 
+        // ---------------
         {
           path: "/userSales",
           loader: async ({ params }) => {
+            const id = localStorage.getItem("userId");
             return fetch(
               `https://app.teacherjackonline.com/api/user/sales/${id}`,
               {
@@ -142,6 +155,7 @@ function App() {
           },
           element: <UserSales></UserSales>,
         },
+        // -----------------
       ],
     },
   ]);
