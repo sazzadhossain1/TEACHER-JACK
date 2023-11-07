@@ -43,7 +43,7 @@ const Login = () => {
   }
 
   return (
-    <div className="signUp-parent-div ">
+    <div className="signUp-parent-div">
       <div className="p-10">
         <div className=" mx-auto signup-div p-5">
           <h1 className="sign-head">Login</h1>
