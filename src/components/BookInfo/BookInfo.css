@@ -5,7 +5,15 @@
   margin: auto;
   margin-top: 50px;
 }
-
+.coupon_code {
+  color: blue;
+  font-size: 19px;
+  text-align: center;
+}
+.ten_percent {
+  font-size: 30px;
+  color: green;
+}
 .bookInfo-left-side-div {
   text-align: left;
 }
@@ -16,8 +24,15 @@
 }
 .bookInfo-p {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
+.Zakir_Sir {
+  font-size: 18px;
+}
+.trainer {
+  font-size: 18px;
+}
 .bookInfo-courseInstructor {
   font-size: 25px;
   font-weight: 500;

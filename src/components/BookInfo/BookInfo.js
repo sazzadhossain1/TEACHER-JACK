@@ -29,8 +29,8 @@ const BookInfo = ({ bookData }) => {
             <div className="bookInfo-teacherJack-flex-div">
               <img className="bookInfo-teacherJack" src={teacherJack} alt="" />
               <div>
-                <h3>Zakir Hossain</h3>
-                <p>Trainer, Techerjackonline.com</p>
+                <h3 className="Zakir_Sir">Zakir Hossain</h3>
+                <p className="trainer">Trainer, Teacherjackonline.com</p>
               </div>
             </div>
             {/*  */}
@@ -90,7 +90,12 @@ const BookInfo = ({ bookData }) => {
                   <h1 className="bookInfo-name">"REMOTE JOB" BOOK</h1>
                   <p className="by-zakir-hossain">by Zakir Hossain</p>
                   {/* <p className="bookInfo-price">{price} TK</p> */}
+
                   <p className="bookInfo-price">300 TK</p>
+                  <p className="coupon_code">
+                    কুপন কোড ব্যবহার করলেই পাচ্ছেন{" "}
+                    <span className="ten_percent">১০%</span> ডিসকাউন্ট
+                  </p>
                 </div>
 
                 <Link to={`/bookDownloadPage/${id}`}>

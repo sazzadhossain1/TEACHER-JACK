@@ -1,14 +1,8 @@
 .ceo-main-parent-div {
   margin-bottom: 100px;
-}
-.meetOurCeo-heading {
-  font-size: 40px;
   margin-top: 50px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  color: green;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .meetOurCeo-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -41,13 +35,8 @@
 .ceo-text-p {
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 15px;
-}
-
-.again-ceo-name {
-  color: green;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 35px;
 }
 
 .ceo-learn-more-btn {

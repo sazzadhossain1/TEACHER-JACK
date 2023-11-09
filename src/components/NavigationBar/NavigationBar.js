@@ -13,6 +13,9 @@ const NavigationBar = () => {
 
   const getToken = localStorage.getItem("token");
   console.log(getToken);
+
+  // const getSignUpToken = localStorage.getItem("SignUpToken");
+
   const id = localStorage.getItem("userId");
 
   const handleLogOut = () => {
@@ -50,7 +53,7 @@ const NavigationBar = () => {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="">BUY BOOK</Link>
+                <Link to="/bookDetailsPage">BUY BOOK</Link>
               </li>
               <li>
                 <Link to="/courses">COURSES</Link>
@@ -70,10 +73,14 @@ const NavigationBar = () => {
                     <summary>My Account</summary>
                     <ul className="p-2">
                       <li>
-                        <Link to="/userBuying">My Buyings</Link>
+                        <Link target="_blank" to="/userBuying">
+                          My Purchase
+                        </Link>
                       </li>
                       <li>
-                        <Link to={`/userSales/${id}`}>My Sellings</Link>
+                        <Link target="_blank" to="/userSales">
+                          My Sales
+                        </Link>
                       </li>
                     </ul>
                   </details>
@@ -116,7 +123,7 @@ const NavigationBar = () => {
               <Link to="/">HOME</Link>
             </li>
             <li>
-              <Link to="">BUY BOOK</Link>
+              <Link to="/bookDetailsPage">BUY BOOK</Link>
             </li>
             <li>
               <Link to="/courses">COURSES</Link>
@@ -131,15 +138,27 @@ const NavigationBar = () => {
             </li>
 
             {getToken ? (
-              <li tabIndex={0}>
+              <li className="my_account" tabIndex={0}>
                 <details>
                   <summary>MY ACCOUNT</summary>
                   <ul className="p-2">
                     <li>
-                      <a href="/userBuying">My Buyings</a>
+                      <Link
+                        className="my_buyings_and_sales-Common"
+                        target="_blank"
+                        to="/userBuying"
+                      >
+                        My Purchase
+                      </Link>
                     </li>
                     <li>
-                      <a href="/userSales">My Sellings</a>
+                      <Link
+                        className="my_buyings_and_sales-Common"
+                        target="_blank"
+                        to="/userSales"
+                      >
+                        My Sales
+                      </Link>
                     </li>
                   </ul>
                 </details>

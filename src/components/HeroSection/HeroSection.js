@@ -11,7 +11,6 @@ const HeroSection = () => {
     <div className="hero-main-div">
       <div className="hero-child-div">
         <h1 className="hero-first-heading">
-          {" "}
           রিমোট জব বা ফ্রিল্যন্সিং এর সঠিক তথ্য জানুন
         </h1>
         <div className="hero-grid-div">

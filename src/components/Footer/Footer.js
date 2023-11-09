@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import teacherJack from "../../accets/Images/teaher-jack/teacherJack.png";
+import weAccept from "../../accets/Images/we_Accept/weAccept.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignLeft, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -15,27 +16,8 @@ const Footer = () => {
   return (
     <div className="footer-parent-div">
       <div className="footer-grid-div">
-        <div>
-          <h4 className="footer-header">Important Links</h4>
-
-          <a href="/meetOurCeo" alt="">
-            <p className="footer-first-second-common-cart-p">
-              About Teacher Jack
-            </p>
-          </a>
-          <p className="footer-first-second-common-cart-p">
-            {" "}
-            Affiliate Program
-          </p>
-          <p className="footer-first-second-common-cart-p">Job Opportunities</p>
-          <p className="footer-first-second-common-cart-p">FAQ</p>
-
-          <Link to="/signUp">
-            <p className="footer-first-second-common-cart-p">Sign In</p>
-          </Link>
-        </div>
         {/*  */}
-        <div>
+        {/* <div>
           <h4 className="footer-header">Still Need Help</h4>
           <div className="footer-blank-div"></div>
 
@@ -62,45 +44,70 @@ const Footer = () => {
             যদি বুঝতে না পারেন যে আপনার কোন পথে এগুনো উচিৎ বা আপনি কনফিউসড
             থাকেন, তাহলে এই ফর্ম পুরণ করুন -
           </p>
+        </div> */}
+        <div>
+          <img className="footer-teacher-jack-logo" src={teacherJack} alt="" />
+          <p className="WhatsApp_number">
+            WhatsApp: 01327808821 (Message Only)
+          </p>
+          <p className="email">teacherjackonline@gmail.com </p>
+          <button className="teacherjack_main_site">
+            <Link to="http://www.teacherjackonline.com" target="_blank">
+              http://www.teacherjackonline.com
+            </Link>
+          </button>
+        </div>
+
+        {/*  */}
+
+        <div className="important_link_div">
+          <h4 className="footer-header">Important Links</h4>
+
+          <a href="/meetOurCeo" alt="">
+            <p className="footer-first-second-common-cart-p">
+              About Teacher Jack
+            </p>
+          </a>
+          <p className="footer-first-second-common-cart-p">
+            {" "}
+            Affiliate Program
+          </p>
+          <p className="footer-first-second-common-cart-p">Job Opportunities</p>
+          <p className="footer-first-second-common-cart-p">FAQ</p>
         </div>
         {/*  */}
         <div className="footer-contact-parent-div">
           <div className="footer-contact-child-div">
-            <div>
-              <h4 className="footer-contact-heading">Contact</h4>
-              <div className="footer-blank-div"></div>
-            </div>
-
-            <div className="footer-last-cart-icon-flex-div">
-              <FontAwesomeIcon icon={faAlignLeft} />
-              <Link className="text-us">
-                <p>Text us -000-000-000</p>
+            <h4 className="footer-Channels-heading">Channels</h4>
+            <p className="facebook-p">
+              FB Page:&nbsp;
+              <Link
+                className="media_LInk_facebook"
+                to="https://www.facebook.com/TeacherJackOnline"
+                target="_blank"
+              >
+                https://www.facebook.com/TeacherJackOnline
               </Link>
-            </div>
-
-            <div className="footer-last-cart-icon-flex-div-two">
-              <FontAwesomeIcon icon={faPhoneVolume} />
-              <Link className="text-us">
-                <p>Schedule a Call</p>
-              </Link>
-            </div>
-            <p className="or-check">
-              Or check out the <span className="faq">FAQs,</span> or email us at{" "}
-              <span className="email"> teacherjackonline@gmail.com</span>
             </p>
-            <div className="footer-media-flex-div">
-              <div>
-                <FontAwesomeIcon icon={faTwitter} />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faFacebook} />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faInvision} />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faInstagram} />
-              </div>
+
+            <p className="youtube-p">
+              You Tube:&nbsp;
+              <Link
+                target="_blank"
+                className="media_LInk_youtube "
+                to="https://www.youtube.com/@TeacherJackOnline"
+              >
+                https://www.youtube.com/@TeacherJackOnline
+              </Link>
+            </p>
+
+            <div>
+              <h2 className="We_Accept">We Accept</h2>
+              <img className="weAccept_photo" src={weAccept} alt="" />
+            </div>
+
+            <div className="facebook_icon_div">
+              <FontAwesomeIcon icon={faFacebook} className="facebook_icon" />
             </div>
           </div>
         </div>
@@ -108,16 +115,8 @@ const Footer = () => {
 
       <div className="footer-navigation-parent-div">
         <div className="footer-navigation-parent-grid-div container">
-          <img className="footer-teacher-jack-logo" src={teacherJack} alt="" />
-          <div>
-            <ul className="footer-ul">
-              <li>Site Map</li>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-            </ul>
-          </div>
           <p className="footer-copy-right">
-            © 2022 TeacherJackOnline. All Rights Reserved.
+            © TeacherJackOnline. All Rights Reserved.
           </p>
         </div>
       </div>

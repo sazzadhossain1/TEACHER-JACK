@@ -9,10 +9,10 @@ const HeroDetailsPage = () => {
           <h2 className="skills-for-job-program">
             “Skills for Job Program” -{" "}
             <span className="skillForWork-heading">
-              কাজের জন্য দক্ষতা বৃদ্ধি
+              কাজের জন্য দক্ষতা বৃদ্ধি প্রোগ্রাম
             </span>
           </h2>
-          <h3 className="who-should">এই প্রোগ্রামটি কাদের জন্য?</h3>
+
           <h5 className="apni-ki-akjon">আপনি কি একজন</h5>
           <p className="heroDetailsPage-qus">Housewife/HomeMaker (গৃহিণী) ?</p>
           <p className="heroDetailsPage-qus">
@@ -33,17 +33,19 @@ const HeroDetailsPage = () => {
         </div>
 
         <div className="heroDetailsPage-single-first-p-div">
-          <p className="heroDetailsPage-single-first-p">
+          <p className="heroDetailsPage-single-first__p">
             এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে। তাহলে এই প্রোগ্রামটি আপনার
-            জন্য জরুরী। অর্থনৈতিক মুক্তি বা <br /> Financial Freedom যাকে বলে –
-            এই প্রোগ্রামটির মাধ্যমে আপনি তা পাবেন ইনশাল্লাহ। <br /> দেশে হাজারও
-            বই রয়েছে, লক্ষ লক্ষ Youtube ভিডিও রয়েছে যেখানে নানা ধরণের আইডিয়া
-            দেয়া হয়, Lesson দেয়া হয় – <br /> কিছু রয়েছে সত্য আবার কিছু রয়েছে
-            মিথ্যা মিশ্রিত। আপনি যেনো সঠিক গাইডলাইনটি পান, সেজন্যই আমার এ
-            উদ্যোগ। <br /> আমার যে কোন কথা নেয়ার আগে সেগুলো যাচাই করে নেবেন যাতে
-            কোন রকম দ্বিধা ছাড়া আপনি একটি সঠিক সিদ্ধান্ত <br /> নিজেই নিতে
-            পারেন। আমি চেষ্টা করবো যতটুকু পারি Authentic Reference দিতে যাতে
-            আপনাদের সুবিধা হয়।
+            জন্য জরুরী। অর্থনৈতিক মুক্তি বা Financial Freedom যাকে বলে – এই
+            প্রোগ্রামটির মাধ্যমে আপনি তা পাবেন ইনশাল্লাহ।
+          </p>
+          <p className="heroDetailsPage-single-first-p">
+            <br /> দেশে হাজারও বই রয়েছে, লক্ষ লক্ষ Youtube ভিডিও রয়েছে যেখানে
+            নানা ধরণের আইডিয়া দেয়া হয়, Lesson দেয়া হয় – <br /> কিছু রয়েছে সত্য
+            আবার কিছু রয়েছে মিথ্যা মিশ্রিত। আপনি যেনো সঠিক গাইডলাইনটি পান,
+            সেজন্যই আমার এ উদ্যোগ। <br /> আমার যে কোন কথা নেয়ার আগে সেগুলো যাচাই
+            করে নেবেন যাতে কোন রকম দ্বিধা ছাড়া আপনি একটি সঠিক সিদ্ধান্ত <br />{" "}
+            নিজেই নিতে পারেন। আমি চেষ্টা করবো যতটুকু পারি Authentic Reference
+            দিতে যাতে আপনাদের সুবিধা হয়।
           </p>
         </div>
         <div className="HeroDetailsPage-second-parent-div">
@@ -164,7 +166,7 @@ const HeroDetailsPage = () => {
               </div>
               <p className="heroDetailsPage-p">
                 পরিবারের সবাই আপনাকে ভালবাসলেও আপনার জন্য কিছু বেশি খরচ করাটা
-                যেনো একটু বারা-বারিই মনে করে অনেকে অনেক সময়। আবার আপনার নিজেরও
+                যেনো একটু বাড়াবাড়িই মনে করে অনেকে অনেক সময়। আবার আপনার নিজেরও
                 বাসার বাইরে গিয়ে কাজ করা হয়তো পছন্দ নয় বা সুযোগ নেই। যে পরিমাণ
                 respect আপনার পাওনা, তা হয়তো আপনি পান না – home management যে
                 কতটা কষ্টের সেটি অনেকেই হয়তো বুঝতে চায় না – মনে করে ঘরের কাজ কোন

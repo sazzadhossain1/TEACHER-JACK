@@ -45,8 +45,11 @@ const SignUp = () => {
     console.log("result", result);
     setUser(result);
 
+    localStorage.setItem("SignUpToken", result.data.token);
+
     if (result.data.token) {
       navigation(from, { replace: true });
+      alert("User Created SuccessFully Please Login");
     }
     // Password Validation //
     if (password !== confirm_password) {

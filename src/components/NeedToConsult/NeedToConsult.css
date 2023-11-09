@@ -5,8 +5,11 @@
 .NeedToConsult-heading {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+.if_you_dont_Un {
+  font-size: 21px;
 }
 .NeedToConsult_parent_div p {
   max-width: 80%;
@@ -19,7 +22,7 @@
   max-width: 100%;
   font-size: 25px;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 

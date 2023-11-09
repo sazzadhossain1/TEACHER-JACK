@@ -1,9 +1,29 @@
+.e_bank {
+  font-size: 25px;
+}
 .img-bb {
-  width: 150px;
+  width: 200px;
+  margin: auto;
+  margin-top: 100px;
+}
+.coupon_code_download {
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+.ten_percent_Download {
+  color: green;
+  font-weight: 700;
+  font-size: 40px;
+}
+.discount {
+  font-size: 29px;
 }
 .submit-up-parent-div {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.CouponCode {
 }
 .submit-child-div {
   max-width: 60%;
@@ -13,7 +33,6 @@
   background-color: white;
   border: 1px solid rgb(226, 221, 221);
   border-radius: 5px;
-
   margin-bottom: 10px;
 }
 .bookDownloadPage-book-grid-die {
@@ -79,7 +98,6 @@
 }
 
 .form-group {
-  gap: 30px;
   margin-bottom: 20px;
 }
 
@@ -102,6 +120,8 @@ select {
   border: 1px solid #ccc;
   padding: 10px;
   font-size: 18px;
+}
+form {
 }
 .submit-btn {
   font-weight: 500;
@@ -127,12 +147,12 @@ select {
   margin-bottom: 20px;
   color: forestgreen;
 }
-@media (max-width: 600px) {
-  .submit-form {
-    max-width: 100%;
+
+@media screen and (max-width: 1550px) {
+  .submit-child-div {
+    max-width: 65%;
   }
 }
-
 @media screen and (max-width: 650px) {
   .bookDownloadPage-book-grid-die {
     grid-template-columns: 1fr;
@@ -141,6 +161,12 @@ select {
     max-width: 300px;
   }
 }
+@media (max-width: 600px) {
+  .submit-form {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .bookDownloadPage-img {
     max-width: 100%;

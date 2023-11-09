@@ -18,17 +18,6 @@ const Home = () => {
 
       <HeroDetailsPage></HeroDetailsPage>
       <NeedToConsult></NeedToConsult>
-
-      <p className="home-fb-group-heading">
-        <Link
-          className="fb-group-btn"
-          target="_blank"
-          to="https://www.facebook.com/groups/3127566597539398?_rdc=1&_rdr"
-        >
-          “Facebook Group
-        </Link>
-        - এ Join করুন।
-      </p>
     </div>
   );
 };

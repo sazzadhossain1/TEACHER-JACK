@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./UserBuying.css";
 import { Link, useLoaderData } from "react-router-dom";
 import UseBuyingDetails from "../UseBuyingDetails/UseBuyingDetails";
@@ -11,6 +11,7 @@ const UserBuying = () => {
   }
   return (
     <div className="useBuyingDetails_parent_div mt-10">
+      <h1 className="my_buying">My Purchase</h1>
       <table className="table-border table" cellPadding={30}>
         <thead>
           <tr className="t_head">
@@ -41,7 +42,14 @@ const UserBuying = () => {
                   ""
                 )}
               </td>
-              <td>{data.status}</td>
+
+              <td
+                className={
+                  data.status === "Approved" ? "green-status" : "red-status"
+                }
+              >
+                {data.status}
+              </td>
             </tr>
           ))}
         </tbody>

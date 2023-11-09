@@ -5,6 +5,7 @@ iframe {
 }
 .common-style-p {
   font-weight: 600;
+  font-size: 19px;
 }
 .HeroDetailsPage-parent-div {
   text-align: left;
@@ -21,23 +22,22 @@ iframe {
   margin-left: 200px;
 }
 .skills-for-job-program {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 10px;
   margin-left: -15px;
   line-height: 60px;
 }
 .skillForWork-heading {
-  font-size: 38px;
+  font-size: 30px;
 }
-.who-should {
-  font-size: 34px;
-  font-weight: 500;
+
+.and {
   margin-bottom: 20px;
 }
 .apni-ki-akjon {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 .heroDetailsPage-qus {
@@ -52,12 +52,19 @@ iframe {
 .heroDetailsPage-single-first-p-div {
   text-align: left;
 }
-.heroDetailsPage-single-first-p {
+.heroDetailsPage-single-first__p {
   font-size: 22px;
   line-height: 40px;
   width: 82%;
   margin: auto;
   margin-top: 50px;
+}
+.heroDetailsPage-single-first-p {
+  font-size: 22px;
+  line-height: 40px;
+  width: 82%;
+  margin: auto;
+  margin-top: -10px;
 }
 .HeroDetailsPage-second-parent-div p {
   font-size: 18px;
@@ -97,7 +104,7 @@ iframe {
 .heroDetailsPage-p {
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .heroDetailsPage-link {
@@ -118,23 +125,23 @@ iframe {
 }
 
 .heroDetailsPage-last-p:first-child {
-  font-size: 22px;
-
+  font-size: 21px;
+  font-weight: 700;
   width: 80%;
   margin: auto;
   margin-top: 100px;
 }
 
 .heroDetailsPage-last-p-div {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 40px;
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .heroDetailsPage-last-p:last-child {
-  font-size: 22px;
+  font-size: 21px;
 
   width: 80%;
   margin: auto;

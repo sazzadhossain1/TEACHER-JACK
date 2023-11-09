@@ -1,48 +1,69 @@
 .footer-header {
   margin-bottom: 20px;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 700;
 }
 .footer-parent-div {
-  background-color: #1f1e38;
+  background-color: #eee;
   margin-top: 100px;
   padding: 10px;
 }
+.important_link_div {
+  max-width: 75%;
+  margin-left: 100px;
+}
+
 .footer-grid-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   margin-top: 100px;
-  color: white;
-  max-width: 100%;
+
+  max-width: 75%;
   text-align: left;
   gap: 20px;
 }
 
-.footer-contact-heading {
-  font-size: 20px;
-  font-weight: 500;
-}
-.footer-blank-div {
-  height: 1px;
-  width: 90%;
-  background-color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.footer-Channels-heading {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .footer-first-second-common-cart-p {
-  font-size: 14px;
+  font-size: 18px;
   width: 100%;
   margin-bottom: 20px;
-  font-weight: 500;
+
   cursor: pointer;
 }
 
-.footer-first-second-common-cart-p:hover {
-  color: rgb(255, 122, 122);
+.media_LInk_facebook {
+  font-size: 18px;
+  color: blue;
 }
-
+.facebook-p {
+  font-size: 18px;
+}
+.youtube-p {
+  font-size: 18px;
+}
+.media_LInk_youtube {
+  font-size: 18px;
+  color: blue;
+}
+.We_Accept {
+  margin-top: 20px;
+  font-size: 21px;
+  font-weight: 700;
+}
+.weAccept_photo {
+  margin-top: 10px;
+}
+.facebook_icon {
+  font-size: 30px;
+  margin-top: 15px;
+}
 .footer-click-here-btn {
   color: rgb(100, 100, 255);
   margin-left: 10px;
@@ -53,68 +74,14 @@
 
 .footer-contact-child-div {
   /* background-color: #0076fd; */
-  width: 65%;
-  margin-left: auto;
+  width: 102%;
+  margin-left: 100px;
 }
 /* ------ */
 
-.footer-last-cart-icon-flex-div {
-  display: flex;
-  align-items: center;
-
-  background-color: #b88de2;
-  padding: 15px;
-  border-radius: 30px;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
-}
 .footer-icon {
   margin: auto;
   font-size: 30px;
-}
-.text-us {
-  margin: auto;
-  font-size: 18px;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.footer-last-cart-icon-flex-div-two {
-  display: flex;
-  align-items: center;
-
-  background-color: #66cc89;
-  padding: 15px;
-  border-radius: 30px;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.or-check {
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.faq {
-  font-weight: 500;
-
-  text-decoration: underline;
-}
-.email {
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.footer-media-flex-div {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  font-size: 30px;
-  margin-top: 50px;
 }
 
 /* -------- */
@@ -123,26 +90,34 @@
   margin-top: 60px;
 }
 .footer-navigation-parent-grid-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
+  text-align: center;
+  padding: 20px;
   margin: auto;
 }
 .footer-teacher-jack-logo {
-  width: 120px;
+  width: 300px;
 }
-.footer-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+
+.WhatsApp_number {
+  font-size: 18px;
+  margin-top: 30px;
+}
+.email {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.teacherjack_main_site {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.teacherjack_main_site:hover {
+  color: blue;
 }
 .footer-ul li {
   font-size: 12px;
 }
 .footer-copy-right {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 /* responsive start */

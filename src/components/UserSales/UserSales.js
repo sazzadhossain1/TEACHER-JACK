@@ -12,6 +12,7 @@ const UserSales = () => {
   }
   return (
     <div className="useBuyingDetails_parent_div mt-10">
+      <h1 className="my_buying">My Sales</h1>
       <table className="table-border table" cellPadding={30}>
         <thead>
           <tr className="t_head">

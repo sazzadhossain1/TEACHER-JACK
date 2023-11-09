@@ -17,7 +17,7 @@ const Login = () => {
 
   async function handleLogin(e) {
     e.preventDefault();
-    console.log("data", email, password);
+    // console.log("data", email, password);
 
     let item = { email, password };
     let result = await fetch("https://app.teacherjackonline.com/api/login", {
@@ -36,6 +36,7 @@ const Login = () => {
     localStorage.setItem("token", result.data.token);
     localStorage.setItem("email", result.data.user.email);
     localStorage.setItem("userId", result.data.user.id);
+    localStorage.setItem("refer_code", result.data.user.refer_code);
 
     if (result.data.token) {
       navigation(from, { replace: true });
@@ -43,7 +44,7 @@ const Login = () => {
   }
 
   return (
-    <div className="signUp-parent-div">
+    <div className="signUp-parent-div ">
       <div className="p-10">
         <div className=" mx-auto signup-div p-5">
           <h1 className="sign-head">Login</h1>
