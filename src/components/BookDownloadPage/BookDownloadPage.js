@@ -117,7 +117,6 @@ const BookDownloadPage = () => {
   const showInputField = (e) => {
     e.preventDefault();
     const Show_hidden = document.getElementById("Show_hidden");
-    // console.log(Show_hidden.removeAttribute("hidden"));
   };
 
   // -------------------------
