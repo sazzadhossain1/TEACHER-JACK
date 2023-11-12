@@ -51,7 +51,7 @@ const BookDownloadPage = () => {
       coupon_code,
     };
 
-    console.log(coupon_code);
+    // console.log(coupon_code);
     try {
       let url = "https://app.teacherjackonline.com/api/sale";
       let result = await fetch(url, {
@@ -64,7 +64,7 @@ const BookDownloadPage = () => {
       });
 
       result = await result.json();
-      console.log("result", result);
+      // console.log("result", result);
       if (result.data) {
         const submitBtn = document.getElementById("submitBtn");
 
@@ -90,38 +90,34 @@ const BookDownloadPage = () => {
 
   let coupon = 34330;
 
-  useEffect(() => {
-    fetch(`https://app.teacherjackonline.com/api/check_coupon/${coupon}`)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`https://app.teacherjackonline.com/api/check_coupon/${coupon}`)
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }, []);
 
-  const handleCheckCoupon = (e) => {
+  async function handleCheckCoupon(e) {
     e.preventDefault();
-    // console.log(e);
-    // try {
-    //   let url = `https://app.teacherjackonline.com/api/check_coupon/${coupon_code}`;
-    //   let result = await fetch(url, {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //       Accept: "application/json",
-    //     },
-    //     body: JSON.stringify(),
-    //   });
+    try {
+      let url = `https://app.teacherjackonline.com/api/check_coupon/${coupon_code}`;
+      let result = await fetch(url, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        }
+      });
 
-    //   result = await result.json();
-    //   console.log(result);
-    // } catch {
-    //   console.log(error);
-    // }
-
-    // console.log(result);
+      result = await result.json();
+      console.log(result);
+    } catch {
+      // console.log(error);
+    }
   };
 
   const showInputField = (e) => {
     e.preventDefault();
     const Show_hidden = document.getElementById("Show_hidden");
-    console.log(Show_hidden.removeAttribute("hidden"));
+    // console.log(Show_hidden.removeAttribute("hidden"));
   };
 
   // -------------------------
@@ -141,16 +137,16 @@ const BookDownloadPage = () => {
             <div className="product_info">
               <h1 className="product_title">{getBookInfoApi.name}</h1>
               <p className="product_price">
-                Price: <span id="book_price">{getBookInfoApi.price}</span> taka
+                Price: <span id="book_price">{Number(getBookInfoApi.price).toFixed(0)}</span> taka
               </p>
               <p className="product_discount">
                 কুপন কোড ব্যবহারে পাচ্ছেন{" "}
-                <span id="Book_discount">{getBookInfoApi.discount}%</span>
+                <span id="Book_discount">{Number(getBookInfoApi.discount).toFixed(0)}%</span>
                 ডিসকাউন্ট
               </p>
               <p>
                 <del>
-                  <span className="item_price">{getBookInfoApi.price}</span>
+                  <span className="item_price">{Number(getBookInfoApi.price).toFixed()}</span>
                 </del>{" "}
                 &nbsp;
                 <span className="item_discount_price">
@@ -165,12 +161,10 @@ const BookDownloadPage = () => {
           <div className="bookDownloadPage-book-grid-die"></div>
           <div className="product-id-div"></div>
           <form>
-            <div className="form-control">
-              <label className="label">
-                {/* <span className="CouponCode">কুপন কোড থাকলে এখানে লিখুন</span> */}
-                <p className="use_coupon_code"> কুপন কোড ব্যবহার করুন</p>
-              </label>
-              <label className="input-group">
+            <div className="col-md-6">
+            <div className="form-group">
+              <label className="label">কুপন কোড ব্যবহার করুন</label>
+              <div className="input-group">
                 <input
                   className="input input-bordered"
                   type="number"
@@ -180,17 +174,34 @@ const BookDownloadPage = () => {
                   name="CouponCode"
                   value={coupon_code}
                 />
-                <span onClick={handleCheckCoupon}>Check</span>
-              </label>
+                <button type="button" className="btn" onClick={handleCheckCoupon}>কুপন কোড চেক করুন</button>
+              </div>
+              <span id="code_error" className="error">আপনার কুপন কোড সঠিক নয় </span>
+            </div>
             </div>
 
-            <p>আপনার কুপন কোড সঠিক নয় </p>
-            <p>অনুগ্রহও </p>
-
-            {/*  */}
             <div className="form-group">
-              <label htmlFor="PaymentMethod">কোন মাধ্যমে পেমেন্ট করছেন</label>
-              <div className="for_center">
+              <label>বইটি কেনার জন্য আপনাকে <span>300</span> টাকা প্রদান করতে হবে।</label>
+            </div>
+            <div className="form-group payment_indication">
+
+            <label className="payment_options"> আমাদেরকে পেমেন্ট করেত নিচের যে কোন একটা পেমেন্ট অপশনে সেন্ড মানি করুন</label>
+              <p>বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>019 61 449 755</span> </p>
+              <p>নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>019 61 449 755</span></p>
+              <p>রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>016 38 885 358 1</span></p>
+              <p>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br/>
+              <span>BRAC BANK LIMITED.<br/>
+              Bank Accont Holder: Zakir Hossain.  <br/>
+              Account Num: 1501102568019001. <br/>
+              Branch: Gulshan Branch.</span></p>
+            </div>
+            <div className="form-group">
+              <label>
+                <input type="checkbox" name="payment_agree" value="Yes" onClick={showInputField} className="payment-btn"/> আমি পেমেন্ট করেছি
+              </label>
+            </div>
+            <div className="form-group">
+            <div className="for_center">
                 <select
                   required
                   className="select-option"
@@ -200,7 +211,7 @@ const BookDownloadPage = () => {
                   value={pay_method}
                   onChange={(e) => setPay_method(e.target.value)}
                 >
-                  <option value="">Please Select Payment Method</option>
+                  <option value="">কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করুন</option>
                   <option className="e_bank" value="bKash">
                     বিকাশ : 01961449755
                   </option>
@@ -211,20 +222,12 @@ const BookDownloadPage = () => {
                     রকেট : 016388853581
                   </option>
                   <option className="e_bank" value="bangk">
-                    Bank Acct: Zakir Hossain. BRAC BANK LIMITED. Account Num:
-                    1501102568019001. Gulshan Branch.
+                  BRAC BANK: 1501102568019001
                   </option>
                 </select>
-                <button onClick={showInputField} className="payment-btn">
-                  আমি পেমেন্ট পাঠিয়েছি
-                </button>
               </div>
             </div>
-            {/*  */}
-            {/* Try new way start */}
             <br />
-
-            {/* try new way end */}
             <div id="Show_hidden" hidden>
               <div className="form-group">
                 <label htmlFor="password">
