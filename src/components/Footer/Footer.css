@@ -18,7 +18,6 @@
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   margin-top: 100px;
-
   max-width: 75%;
   text-align: left;
   gap: 20px;
@@ -59,6 +58,7 @@
 }
 .weAccept_photo {
   margin-top: 10px;
+  max-width: 100%;
 }
 .facebook_icon {
   font-size: 30px;
@@ -74,7 +74,7 @@
 
 .footer-contact-child-div {
   /* background-color: #0076fd; */
-  width: 102%;
+  width: 100%;
   margin-left: 100px;
 }
 /* ------ */
@@ -121,6 +121,22 @@
 }
 
 /* responsive start */
+@media screen and (max-width: 1350px) {
+  .footer-grid-div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 20px;
+  }
+  .footer_first_div {
+  }
+  .important_link_div {
+    margin-left: 20;
+  }
+  .footer-contact-child-div {
+    margin-left: 50px;
+  }
+}
 @media screen and (max-width: 1250px) {
   .footer-grid-div {
     grid-template-columns: repeat(2, 1fr);
@@ -147,6 +163,9 @@
   .footer-grid-div {
     grid-template-columns: repeat(1, 1fr);
   }
+  .important_link_div {
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 750px) {
   .footer-navigation-parent-grid-div {
@@ -166,6 +185,26 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 550px) {
+  .footer_first_div {
+    margin-left: -50px;
+  }
+  .footer-grid-div {
+    padding: 0;
+  }
+  .footer-teacher-jack-logo {
+    margin-left: 0;
+  }
+  .weAccept_photo {
+    max-width: 75%;
+  }
+  .important_link_div {
+    margin-left: -50px;
+  }
+  .footer-contact-child-div {
+    margin-left: -50px;
+  }
+}
 @media screen and (max-width: 500px) {
   .footer-parent-div {
     width: 100%;
@@ -182,9 +221,52 @@
   .footer-parent-div {
     width: 110%;
   }
+  .facebook-p {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .youtube-p {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .media_LInk_facebook {
+    font-size: 16px;
+  }
+  .media_LInk_youtube {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .facebook-p {
+    font-size: 14px;
+  }
+  .youtube-p {
+    font-size: 14px;
+  }
+  .media_LInk_facebook {
+    font-size: 14px;
+  }
+  .media_LInk_youtube {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 360px) {
   .footer-parent-div {
     width: 118%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .footer_first_div {
+    margin-left: -35px;
+  }
+  .important_link_div {
+    margin-left: -35px;
+  }
+  .footer-contact-child-div {
+    margin-left: -35px;
   }
 }

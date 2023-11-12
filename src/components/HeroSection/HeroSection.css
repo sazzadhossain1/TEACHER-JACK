@@ -358,6 +358,12 @@
   .heroBookCoverPhoto-img {
   }
 }
+@media screen and (max-width: 600px) {
+  .hero-first-heading {
+    font-size: 35px;
+    margin-left: 15px;
+  }
+}
 @media screen and (max-width: 580px) {
   .hero-main-div {
     height: 235vh;
@@ -417,6 +423,12 @@
   .heroBookCoverPhoto-img {
   }
 }
+@media screen and (max-width: 450px) {
+  .hero-first-heading {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+}
 @media screen and (max-width: 410px) {
   .hero-main-div {
     background-color: #010313;
@@ -425,7 +437,7 @@
     width: 105%;
   }
   .hero-first-heading {
-    font-size: 38px;
+    font-size: 30px;
   }
   .hero-second-text-heading {
     font-size: 30px;
@@ -461,6 +473,9 @@
 @media screen and (max-width: 365px) {
   .hero-main-div {
     height: 250vh;
+  }
+  .hero-first-heading {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 313px) {
