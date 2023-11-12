@@ -1,18 +1,17 @@
 import React, { useContext, useEffect } from "react";
 import "./BookDownloadPage.css";
 import { useState } from "react";
-// import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  console.log(getBookInfoApi);
+  // console.log(getBookInfoApi);
 
   const { id } = getBookInfoApi;
   const refer_code = localStorage.getItem("refer_code");
-  console.log(refer_code);
+  // console.log(refer_code);
 
   const [disable, setDisable] = useState(0);
   const [success, setSuccess] = useState(false);
@@ -52,7 +51,7 @@ const BookDownloadPage = () => {
       coupon_code,
     };
 
-    // console.log(typeof coupon_code);
+    console.log(coupon_code);
     try {
       let url = "https://app.teacherjackonline.com/api/sale";
       let result = await fetch(url, {
@@ -89,21 +88,34 @@ const BookDownloadPage = () => {
     // console.log(inputItem);
   }
 
+  let coupon = 34330;
+
+  useEffect(() => {
+    fetch(`https://app.teacherjackonline.com/api/check_coupon/${coupon}`)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
+
   const handleCheckCoupon = (e) => {
     e.preventDefault();
-    console.log("Coupon Check Button Clicked");
+    // console.log(e);
+    // try {
+    //   let url = `https://app.teacherjackonline.com/api/check_coupon/${coupon_code}`;
+    //   let result = await fetch(url, {
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Accept: "application/json",
+    //     },
+    //     body: JSON.stringify(),
+    //   });
 
-    if (refer_code === coupon_code) {
-      alert(
-        "Your coupon code is match. You get 10% discount.You have to pay 270 taka"
-      );
-    } else {
-      // const Show_hidden = document.getElementById("Show_hidden");
-      // console.log(Show_hidden.removeAttribute("hidden"));
-      alert(
-        "Your coupon code does not match you have to pay 300 taka. If you have the correct coupon code please put it in the coupon code field and get will 10% discount "
-      );
-    }
+    //   result = await result.json();
+    //   console.log(result);
+    // } catch {
+    //   console.log(error);
+    // }
+
+    // console.log(result);
   };
 
   const showInputField = (e) => {
@@ -112,132 +124,12 @@ const BookDownloadPage = () => {
     console.log(Show_hidden.removeAttribute("hidden"));
   };
 
-  // BKash function //
-  const handleBKash = (e) => {
-    e.preventDefault();
-    const getBKash = document.getElementById("BKash");
-    getBKash.removeAttribute("hidden");
-
-    const getNagad = document.getElementById("Nagad");
-    const getRocket = document.getElementById("Rocket");
-    const getBank = document.getElementById("Bank");
-    getNagad.setAttribute("hidden", "hidden");
-    getRocket.setAttribute("hidden", "hidden");
-    getBank.setAttribute("hidden", "hidden");
-
-    // ------
-
-    const get_li_Nagad = document.getElementById("li_Nagad");
-    const get_li_Rocket = document.getElementById("li_Rocket");
-    const get_li_Bank = document.getElementById("li_Bank");
-
-    get_li_Nagad.removeAttribute("class", "className");
-    get_li_Rocket.removeAttribute("class", "className");
-    get_li_Bank.removeAttribute("class", "className");
-
-    const get_li_BKash = document.getElementById("li_BKash");
-    get_li_BKash.setAttribute("class", "BKash");
-    console.log(get_li_BKash);
-  };
-  // --------------------------- //
-
-  // Nagad function //
-  const handleNagad = (e) => {
-    e.preventDefault();
-    const getNagad = document.getElementById("Nagad");
-    getNagad.removeAttribute("hidden");
-
-    const getBKash = document.getElementById("BKash");
-    const getRocket = document.getElementById("Rocket");
-    const getBank = document.getElementById("Bank");
-    getBank.setAttribute("hidden", "hidden");
-    getBKash.setAttribute("hidden", "hidden");
-    getRocket.setAttribute("hidden", "hidden");
-
-    // ---
-
-    const get_li_BKash = document.getElementById("li_BKash");
-    const get_li_Rocket = document.getElementById("li_Rocket");
-    const get_li_Bank = document.getElementById("li_Bank");
-
-    get_li_Bank.removeAttribute("class", "className");
-    get_li_BKash.removeAttribute("class", "className");
-    get_li_Rocket.removeAttribute("class", "className");
-
-    const get_li_Nagad = document.getElementById("li_Nagad");
-    get_li_Nagad.setAttribute("class", "Nagad");
-    console.log(get_li_Nagad);
-  };
-  // ------------------------------ //
-
-  // Rocket function//
-  const handleRocket = (e) => {
-    e.preventDefault();
-    const getRocket = document.getElementById("Rocket");
-    getRocket.removeAttribute("hidden");
-
-    const getNagad = document.getElementById("Nagad");
-    const getBKash = document.getElementById("BKash");
-    const getBank = document.getElementById("Bank");
-
-    getBank.setAttribute("hidden", "hidden");
-    getNagad.setAttribute("hidden", "hidden");
-    getBKash.setAttribute("hidden", "hidden");
-
-    // -------
-
-    const get_li_BKash = document.getElementById("li_BKash");
-    const get_li_Nagad = document.getElementById("li_Nagad");
-    const get_li_Bank = document.getElementById("li_Bank");
-
-    get_li_Bank.removeAttribute("class", "className");
-    get_li_BKash.removeAttribute("class", "className");
-    get_li_Nagad.removeAttribute("class", "className");
-
-    const get_li_Rocket = document.getElementById("li_Rocket");
-    get_li_Rocket.setAttribute("class", "Rocket");
-    console.log(get_li_BKash);
-  };
-  // ----------------------//
-
-  // Bank Function //
-  const handleBank = (e) => {
-    e.preventDefault();
-    const getBank = document.getElementById("Bank");
-    getBank.removeAttribute("hidden");
-
-    const getBKash = document.getElementById("BKash");
-    const getNagad = document.getElementById("Nagad");
-    const getRocket = document.getElementById("Rocket");
-
-    getRocket.setAttribute("hidden", "hidden");
-    getNagad.setAttribute("hidden", "hidden");
-    getBKash.setAttribute("hidden", "hidden");
-
-    //--------
-
-    const get_li_BKash = document.getElementById("li_BKash");
-    const get_li_Nagad = document.getElementById("li_Nagad");
-    const get_li_Rocket = document.getElementById("li_Rocket");
-
-    get_li_BKash.removeAttribute("class", "className");
-    get_li_Nagad.removeAttribute("class", "className");
-    get_li_Rocket.removeAttribute("class", "className");
-
-    const get_li_Bank = document.getElementById("li_Bank");
-    get_li_Bank.setAttribute("class", "Bank");
-    console.log(get_li_Bank);
-  };
   // -------------------------
 
   return (
     <div className="submit-up-parent-div">
       <div className="submit-child-div">
         <div className="submit-form">
-          <h2 className="submit-title">নিচের ঘরটি পুরণ করুন</h2>
-          {/* <p>{getBookInfoApi.name}</p>
-          <p>{getBookInfoApi.price}</p> */}
-
           <div className="product_parent_div">
             <div className="product_img">
               <img
@@ -247,19 +139,25 @@ const BookDownloadPage = () => {
               />
             </div>
             <div className="product_info">
-              <h1 className="product_title">Remote Job book</h1>
+              <h1 className="product_title">{getBookInfoApi.name}</h1>
               <p className="product_price">
-                Price: <span>300</span> taka
+                Price: <span id="book_price">{getBookInfoApi.price}</span> taka
               </p>
               <p className="product_discount">
-                কুপন কোড ব্যবহারে পাচ্ছেন <span>১০%</span> ডিসকাউন্ট
+                কুপন কোড ব্যবহারে পাচ্ছেন{" "}
+                <span id="Book_discount">{getBookInfoApi.discount}%</span>
+                ডিসকাউন্ট
               </p>
               <p>
                 <del>
-                  <span className="item_price">300</span>
+                  <span className="item_price">{getBookInfoApi.price}</span>
                 </del>{" "}
                 &nbsp;
-                <span className="item_discount_price">270</span> টাকায়
+                <span className="item_discount_price">
+                  {getBookInfoApi.price -
+                    (getBookInfoApi.price * getBookInfoApi.discount) / 100}
+                </span>
+                টাকায়
               </p>
             </div>
           </div>
@@ -270,7 +168,7 @@ const BookDownloadPage = () => {
             <div className="form-control">
               <label className="label">
                 {/* <span className="CouponCode">কুপন কোড থাকলে এখানে লিখুন</span> */}
-                <p> কুপন কোড ব্যবহার করুন</p>
+                <p className="use_coupon_code"> কুপন কোড ব্যবহার করুন</p>
               </label>
               <label className="input-group">
                 <input
@@ -285,8 +183,12 @@ const BookDownloadPage = () => {
                 <span onClick={handleCheckCoupon}>Check</span>
               </label>
             </div>
+
+            <p>আপনার কুপন কোড সঠিক নয় </p>
+            <p>অনুগ্রহও </p>
+
             {/*  */}
-            {/* <div className="form-group">
+            <div className="form-group">
               <label htmlFor="PaymentMethod">কোন মাধ্যমে পেমেন্ট করছেন</label>
               <div className="for_center">
                 <select
@@ -317,105 +219,11 @@ const BookDownloadPage = () => {
                   আমি পেমেন্ট পাঠিয়েছি
                 </button>
               </div>
-            </div> */}
+            </div>
             {/*  */}
             {/* Try new way start */}
             <br />
-            <div>
-              <ul className="tabs_ul">
-                <li>
-                  <button htmlFor="payment_bkash">
-                    <label>
-                      <input type="radio" id="payment_bkash" />
-                      BKash
-                    </label>
-                  </button>
-                </li>
-                <li id="li_BKash" className="BKash" onClick={handleBKash}>
-                  <label htmlFor="input_bkash">
-                    <input id="input_bkash" type="radio" />
-                    বিকাশ : 01961449755
-                  </label>
-                </li>
-                <li id="li_Nagad" className="Nagad" onClick={handleNagad}>
-                  নগদ : 01961449755
-                </li>
-                <li id="li_Rocket" className="Rocket" onClick={handleRocket}>
-                  রকেট : 016388853581
-                </li>
-                <li id="li_Bank" className="Bank" onClick={handleBank}>
-                  Bank
-                </li>
-              </ul>
-              <div id="BKash" hidden>
-                <div className="tab_grid_cart">
-                  <div className="tab_cart">
-                    <h1 className="BKash_Number">*247#</h1>
-                    <button></button>
-                  </div>
 
-                  {/*  */}
-
-                  <div className="tab_cart">
-                    <p>BKash</p>
-                    <ol>
-                      <li>1.Send Money</li>
-                      <li>2.Mobile Recharge</li>
-                      <li>3.Payment</li>
-                      <li>4.Cash Out</li>
-                      <li>5.Pay Bill</li>
-                      <li>6.App Registration</li>
-                      <li>7.My bkash</li>
-                      <li>8.My Helpline</li>
-                    </ol>
-                    <button>
-                      <p>Send</p>
-                      <p>Exit</p>
-                    </button>
-                  </div>
-                  <div className="tab_cart">
-                    <h1>BKash Account Number</h1>
-                    <p>01719988494</p>
-                    <button>
-                      <p>Send</p>
-                      <p>Exit</p>
-                    </button>
-                  </div>
-                  <div className="tab_cart">
-                    <h1>Enter Amount</h1>
-                    <p>xxxxx</p>
-                    <button>
-                      <p>Send</p>
-                      <p>Exit</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div id="Nagad" hidden>
-                <h3>নগদ </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam dolorem cumque unde architecto impedit illum tenetur
-                  natus expedita veritatis harum.
-                </p>
-              </div>
-              <div id="Rocket" hidden>
-                <h3>রকেট</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam dolorem cumque unde architecto impedit illum tenetur
-                  natus expedita veritatis harum.
-                </p>
-              </div>
-              <div id="Bank" hidden>
-                <h3>Bank</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam dolorem cumque unde architecto impedit illum tenetur
-                  natus expedita veritatis harum.
-                </p>
-              </div>
-            </div>
             {/* try new way end */}
             <div id="Show_hidden" hidden>
               <div className="form-group">

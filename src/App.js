@@ -96,6 +96,7 @@ function App() {
               `https://app.teacherjackonline.com/api/product/${params.id}`
             );
           },
+
           element: <BookDownloadPage></BookDownloadPage>,
         },
 

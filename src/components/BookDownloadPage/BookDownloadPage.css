@@ -8,7 +8,7 @@
   font-size: 25px;
 }
 .product_title {
-  font-size: 50px;
+  font-size: 40px;
 }
 .product_info p {
   padding: 15px 0;
@@ -33,10 +33,14 @@
   padding-right: 20px;
   border-radius: 5px;
 }
+.product_img {
+  /* background-color: red; */
+  max-width: 60%;
+}
 .img-bb {
   width: 200px;
-  margin: auto;
-  margin-top: 100px;
+
+  margin-top: 30px;
 }
 
 .ten_percent_Download {
@@ -48,11 +52,13 @@
   font-size: 29px;
 }
 .submit-up-parent-div {
-  padding-top: 10px;
   padding-bottom: 10px;
 }
-.CouponCode {
+.use_coupon_code {
+  font-size: 30px;
+  margin-top: 20px;
 }
+
 .submit-child-div {
   max-width: 60%;
   margin: 0 auto;
@@ -61,6 +67,7 @@
   background-color: white;
   border: 1px solid rgb(226, 221, 221);
   border-radius: 5px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .bookDownloadPage-book-grid-die {
@@ -104,25 +111,9 @@
   font-weight: 500;
 }
 .submit-form {
-  /* max-width: 70%; */
-  /* margin: 0 auto;
-  padding: 20px; */
-  /* border: 1px solid rgb(226, 221, 221);
-  border-radius: 5px; */
-  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: white; */
-
   text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 
-.submit-title {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 500;
-  margin-top: -50px;
-  margin-bottom: -25px;
+  margin-bottom: 50px;
 }
 
 .form-group {
