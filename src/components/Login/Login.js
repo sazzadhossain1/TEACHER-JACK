@@ -31,7 +31,7 @@ const Login = () => {
 
     result = await result.json();
     setUser(result);
-    console.log(result);
+    // console.log(result);
 
     localStorage.setItem("token", result.data.token);
     localStorage.setItem("email", result.data.user.email);

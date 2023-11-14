@@ -1,16 +1,58 @@
-.btn{border: 1px solid #ddd;background: #ddd;}
-.error{color:red}
-.hide{display: none;}
-.col-md-6{width: 50%;}
-.payment_options{border: 1px solid #ddd; padding: 10px;background: #eee;}
+.btn {
+  border: 1px solid #ddd;
+  background: #ddd;
+}
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+#numberPrice {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.bookDownloadPage-success-div {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bookDownloadPage-success-div p {
+  width: 600px;
+  height: 400px;
+  margin: 10% auto;
+  padding: 50px 15px;
+  background-color: white;
+}
+.success {
+  color: green;
+  margin-top: 20px;
+}
+.hide {
+  display: none;
+}
+.col-md-6 {
+  width: 50%;
+}
+.payment_options {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #eee;
+}
 .payment_indication {
   font-size: 18px;
-
 }
-.payment_indication p{
+.payment_indication p {
   padding: 10px 0;
 }
-.payment_indication span{
+.payment_indication span {
   font-weight: bold;
 }
 .product_parent_div {
@@ -48,7 +90,8 @@
   padding-right: 20px;
   border-radius: 5px;
 }
-.product_info, .product_img {
+.product_info,
+.product_img {
   display: inline-block;
 }
 .img-bb {

@@ -14,7 +14,7 @@ iframe {
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  max-width: 80%;
+  max-width: 90%;
 }
 .heroDetailsPage-heading-text-div {
   /* text-align: center; */
@@ -51,19 +51,21 @@ iframe {
 }
 .heroDetailsPage-single-first-p-div {
   text-align: left;
+  margin-left: 100px;
 }
 .heroDetailsPage-single-first__p {
   font-size: 22px;
   line-height: 40px;
-  width: 82%;
+
   margin: auto;
   margin-top: 50px;
 }
 .heroDetailsPage-single-first-p {
   font-size: 22px;
   line-height: 40px;
-  width: 82%;
+
   margin: auto;
+
   margin-top: -10px;
 }
 .HeroDetailsPage-second-parent-div p {
@@ -72,6 +74,7 @@ iframe {
 .heroDetailsPage-video-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   align-items: center;
   margin-top: 50px;
 }

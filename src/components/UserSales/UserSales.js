@@ -44,7 +44,14 @@ const UserSales = () => {
                 )}
               </td>
 
-              <td>{data.status}</td>
+              <td
+                className={
+                  data.status === "Approved" ? "green-status" : "red-status"
+                }
+              >
+                {" "}
+                {data.status}
+              </td>
             </tr>
           ))}
         </tbody>
@@ -54,16 +61,3 @@ const UserSales = () => {
 };
 
 export default UserSales;
-// created_at,
-//     discount,
-//     download,
-//     pay_method,
-//     payee_number,
-//     price,
-//     ref_discount,
-//     seller_id,
-//     status,
-//     trx_id,
-//     updated_at,
-//     url,
-//     user_id,

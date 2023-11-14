@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className="hero-main-div">
       <div className="hero-child-div">
         <h1 className="hero-first-heading">
-          রিমোট জব বা ফ্রিল্যন্সিং এর সঠিক তথ্য জানুন
+          রিমোট জব বা ফ্রিল্যান্সিং এর সঠিক তথ্য জানুন
         </h1>
         <div className="hero-grid-div">
           <div className="learn-more-btn-and-text-div">
@@ -24,38 +24,41 @@ const HeroSection = () => {
               <div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">চাকুরীপ্রার্থী গ্র্যাজুয়েট?</p>
+                  <p className="hero-p-text">চাকুরিপ্রার্থী ব্যক্তি ?</p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <FontAwesomeIcon icon={faRightLong} />
+                  <p className="hero-p-text">স্কুল, কলেজ পড়ুয়া শিক্ষার্থী ?</p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
                   <p className="hero-p-text">
-                    হাই স্কুল, কলেজ পড়ুয়া শিক্ষার্থী?
+                    যেকোন পেশায় চাকুরিরত কিন্তু কিছু বাড়তি আয় করতে চান ?
                   </p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <FontAwesomeIcon icon={faRightLong} />
+                  <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যক্তি? </p>
+                </div>
+                <div className="hero-font-awesome-icon-div">
+                  <FontAwesomeIcon icon={faRightLong} />
+                  <p className="hero-p-text">গৃহিণী ?</p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
                   <p className="hero-p-text">
-                    চাকুরীজীবী কিছু বাড়তি আয়ের সন্ধানে?
+                    কিছুটা বাংলা বা ইংরেজি পড়তে পারেন এবং একটি স্মার্টফোন আছে
                   </p>
                 </div>
-                <div className="hero-font-awesome-icon-div">
-                  <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যাক্তি? </p>
-                </div>
-                <div className="hero-font-awesome-icon-div">
-                  <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">গৃহিণী?</p>
-                </div>
-                <div className="hero-font-awesome-icon-div">
-                  <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text last-second-p">
-                    এবং আপনি চাচ্ছেন আপনার আয়-রোজগার বাড়াতে?
+
+                <div className="hero-p-text-last">
+                  <p>
+                    আপনি আপনার আয়-রোজগার বাড়াতে চাচ্ছেন কিন্তু কিভাবে তা করবেন
+                    সেটির সঠিক কোন গাইডলাইন পাচ্ছেন না।
                   </p>
+
+                  <p className="margin_t">তাহলে এই বইটি আপনার জন্য জরুরি।</p>
                 </div>
-                <p className="hero-p-text-last">
-                  তাহলে এই প্রোগ্রামটি আপনার জন্য অর্থনৈতিক মুক্তি পেতে এই
-                  প্রোগ্রামটি ফলো করুন।
-                </p>
               </div>
             </div>
 

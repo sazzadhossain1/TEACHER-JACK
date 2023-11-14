@@ -20,11 +20,12 @@ import UserBuying from "./components/UserBuying/UserBuying";
 import UserSales from "./components/UserSales/UserSales";
 import UseBuyingDetails from "./components/UseBuyingDetails/UseBuyingDetails";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import AffiliateProgram from "./components/AffiliateProgram/AffiliateProgram";
 
 function App() {
   const tokenId = localStorage.getItem("token");
   const id = localStorage.getItem("userId");
-  console.log(id);
+  // console.log(id);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -66,6 +67,10 @@ function App() {
         {
           path: "/signUp",
           element: <SignUp></SignUp>,
+        },
+        {
+          path: "/affiliateProgram",
+          element: <AffiliateProgram></AffiliateProgram>,
         },
         {
           path: "/confirm/:email/:token",

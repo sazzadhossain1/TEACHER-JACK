@@ -3,14 +3,6 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import teacherJack from "../../accets/Images/teaher-jack/teacherJack.png";
 import weAccept from "../../accets/Images/we_Accept/weAccept.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAlignLeft, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faInvision,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -24,7 +16,7 @@ const Footer = () => {
           <p className="email">teacherjackonline@gmail.com </p>
           <button className="teacherjack_main_site">
             <Link to="http://www.teacherjackonline.com" target="_blank">
-              http://www.teacherjackonline.com
+              www.teacherjackonline.com
             </Link>
           </button>
         </div>
@@ -40,8 +32,7 @@ const Footer = () => {
             </p>
           </a>
           <p className="footer-first-second-common-cart-p">
-            {" "}
-            Affiliate Program
+            <Link to="/affiliateProgram">Affiliate Program</Link>
           </p>
           <p className="footer-first-second-common-cart-p">Job Opportunities</p>
           <p className="footer-first-second-common-cart-p">FAQ</p>
@@ -75,10 +66,6 @@ const Footer = () => {
           <div>
             <h2 className="We_Accept">We Accept</h2>
             <img className="weAccept_photo" src={weAccept} alt="" />
-          </div>
-
-          <div className="facebook_icon_div">
-            <FontAwesomeIcon icon={faFacebook} className="facebook_icon" />
           </div>
         </div>
       </div>

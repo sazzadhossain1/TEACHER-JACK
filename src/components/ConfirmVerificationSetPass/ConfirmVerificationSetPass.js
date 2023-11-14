@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ConfirmVerificationSetPass.css";
-import {
-  Link,
-  useLoaderData,
-  useLocation,
-  useNavigate,
-  useNavigation,
-  useParams,
-} from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 const ConfirmVerificationSetPass = () => {
   const location = useLocation();
@@ -44,8 +37,10 @@ const ConfirmVerificationSetPass = () => {
     localStorage.setItem("token", result.data.token);
     localStorage.setItem("auth_user", result.data.user);
     localStorage.setItem("userId", result.data.user.id);
+
     if (result.data.token) {
-      navigation(form, { replace: true });
+      // navigation(form, { replace: true });
+      navigation(form);
     }
     console.log(result);
   }

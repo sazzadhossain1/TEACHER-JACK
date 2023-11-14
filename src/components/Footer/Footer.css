@@ -13,6 +13,9 @@
   margin-left: 100px;
 }
 
+.Affiliate {
+  margin-bottom: 300px;
+}
 .footer-grid-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

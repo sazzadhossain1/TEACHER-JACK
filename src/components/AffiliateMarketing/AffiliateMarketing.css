@@ -1,13 +1,18 @@
 .AffiliateMarketing-div {
-  max-width: 50%;
+  max-width: 60%;
 }
 .AffiliateMarketing-heading {
   text-align: left;
-  padding-left: 100px;
+  padding-left: 50px;
   margin-top: 50px;
-  font-size: 21px;
+  font-size: 30px;
+  line-height: 55px;
   color: black;
   margin-bottom: -100px;
+}
+.click_here {
+  color: blue;
+  font-weight: 500;
 }
 .AffiliateMarketing {
   font-size: 24px;

@@ -1,25 +1,24 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./NavigarionBar.css";
 
 import teacherJackOnlineLogo from "../../accets/Images/Navigation-logo/teacherJackOnlineLogo.jpg";
-import { AuthContext } from "../context/UseContext";
 
 const NavigationBar = () => {
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  // const { user } = useContext(AuthContext);
+  // console.log(user);
 
   const navigate = useNavigate();
 
   const getToken = localStorage.getItem("token");
-  console.log(getToken);
+  // console.log(getToken);
 
   // const getSignUpToken = localStorage.getItem("SignUpToken");
 
-  const id = localStorage.getItem("userId");
+  // const id = localStorage.getItem("userId");
 
   const handleLogOut = () => {
-    console.log("logOUt SuccessFully");
+    // console.log("logOUt SuccessFully");
     localStorage.clear();
     navigate("/login");
   };

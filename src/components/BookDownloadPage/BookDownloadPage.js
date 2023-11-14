@@ -1,13 +1,14 @@
 import React, { useContext, useEffect } from "react";
 import "./BookDownloadPage.css";
 import { useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
   // console.log(getBookInfoApi);
+  const navigate = useNavigate();
 
   const { id } = getBookInfoApi;
   const refer_code = localStorage.getItem("refer_code");
@@ -26,7 +27,6 @@ const BookDownloadPage = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  // console.log(product_id);
 
   useEffect(() => {
     setProduct_id(id);
@@ -34,9 +34,10 @@ const BookDownloadPage = () => {
 
   async function handleFrom(e) {
     e.preventDefault();
-    // console.log(id);
-    // setProduct_id(id);
-    // console.log(setProduct_id(id));
+
+    const numberPrice = document.getElementById("numberPrice");
+    const price_text = numberPrice.innerText;
+
     let inputItem = {
       name,
       email,
@@ -49,54 +50,53 @@ const BookDownloadPage = () => {
       payee_number,
       trx_id,
       coupon_code,
+      address: "",
     };
+    console.log(inputItem);
+    // console.log(price);
+    if (+price >= +price_text) {
+      try {
+        let url = "https://app.teacherjackonline.com/api/sale";
+        let result = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(inputItem),
+        });
 
-    // console.log(coupon_code);
-    try {
-      let url = "https://app.teacherjackonline.com/api/sale";
-      let result = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(inputItem),
-      });
+        result = await result.json();
+        console.log(JSON.stringify(inputItem));
+        console.log("result", result);
 
-      result = await result.json();
-      // console.log("result", result);
-      if (result.data) {
-        const submitBtn = document.getElementById("submitBtn");
+        if (result.data) {
+          const submitBtn = document.getElementById("submitBtn");
 
-        submitBtn.setAttribute("hidden", "hidden");
-      }
+          // submitBtn.setAttribute("hidden", "hidden");
+        }
 
-      setDisable(true);
-      if (result) {
-        setSuccess(true);
-        setError("");
-      } else {
-        setError("Please Send Correct Price");
+        setDisable(true);
+        if (result) {
+          setSuccess(true);
+          setError("");
+        } else {
+          setError("Please Send Correct Price");
+          setSuccess(false);
+        }
+        setUser(result);
+      } catch (error) {
         setSuccess(false);
       }
-      setUser(result);
-      // console.log(result);
-    } catch (error) {
-      // console.log("error", error);
-      setSuccess(false);
+    } else {
+      alert("Please input you valid price");
     }
-    // console.log(inputItem);
   }
 
-  let coupon = 34330;
-
-  // useEffect(() => {
-  //   fetch(`https://app.teacherjackonline.com/api/check_coupon/${coupon}`)
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
-
   async function handleCheckCoupon(e) {
+    const code_error = document.getElementById("code_error");
+    const numberPrice = document.getElementById("numberPrice");
+
     e.preventDefault();
     try {
       let url = `https://app.teacherjackonline.com/api/check_coupon/${coupon_code}`;
@@ -104,23 +104,38 @@ const BookDownloadPage = () => {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
-        }
+        },
       });
 
       result = await result.json();
       console.log(result);
+
+      if (result.data === null) {
+        code_error.innerHTML = "<p class='error'>আপনার কুপন কোড সঠিক নয়</p>";
+
+        numberPrice.innerText = ` ${Number(getBookInfoApi.price).toFixed()} `;
+      } else {
+        code_error.innerHTML = '<p class="success">আপনার কুপন কোড সঠিক</p>';
+
+        numberPrice.innerText = `${
+          getBookInfoApi.price -
+          (getBookInfoApi.price * getBookInfoApi.discount) / 100
+        } `;
+      }
     } catch {
-      // console.log(error);
+      console.log(error);
     }
-  };
+  }
 
   const showInputField = (e) => {
     e.preventDefault();
-    const Show_hidden = document.getElementById("Show_hidden");
-    // console.log(Show_hidden.removeAttribute("hidden"));
-  };
+    const checked_field = document.getElementById("checked_field");
 
-  // -------------------------
+    checked_field.setAttribute("checked", "checked");
+
+    const Show_hidden = document.getElementById("Show_hidden");
+    Show_hidden.removeAttribute("hidden");
+  };
 
   return (
     <div className="submit-up-parent-div">
@@ -137,16 +152,24 @@ const BookDownloadPage = () => {
             <div className="product_info">
               <h1 className="product_title">{getBookInfoApi.name}</h1>
               <p className="product_price">
-                Price: <span id="book_price">{Number(getBookInfoApi.price).toFixed(0)}</span> taka
+                Price:{" "}
+                <span id="book_price">
+                  {Number(getBookInfoApi.price).toFixed(0)}
+                </span>{" "}
+                taka
               </p>
               <p className="product_discount">
                 কুপন কোড ব্যবহারে পাচ্ছেন{" "}
-                <span id="Book_discount">{Number(getBookInfoApi.discount).toFixed(0)}%</span>
+                <span id="Book_discount">
+                  {Number(getBookInfoApi.discount).toFixed(0)}%
+                </span>
                 ডিসকাউন্ট
               </p>
               <p>
                 <del>
-                  <span className="item_price">{Number(getBookInfoApi.price).toFixed()}</span>
+                  <span className="item_price">
+                    {Number(getBookInfoApi.price).toFixed()}
+                  </span>
                 </del>{" "}
                 &nbsp;
                 <span className="item_discount_price">
@@ -162,73 +185,111 @@ const BookDownloadPage = () => {
           <div className="product-id-div"></div>
           <form>
             <div className="col-md-6">
-            <div className="form-group">
-              <label className="label">কুপন কোড ব্যবহার করুন</label>
-              <div className="input-group">
-                <input
-                  className="input input-bordered"
-                  type="number"
-                  placeholder=""
-                  onChange={(e) => setCoupon_code(e.target.value)}
-                  id="CouponCode"
-                  name="CouponCode"
-                  value={coupon_code}
-                />
-                <button type="button" className="btn" onClick={handleCheckCoupon}>কুপন কোড চেক করুন</button>
+              <div className="form-group">
+                <label className="label">কুপন কোড ব্যবহার করুন</label>
+                <div className="input-group">
+                  <input
+                    className="input input-bordered"
+                    type="number"
+                    placeholder=""
+                    onChange={(e) => setCoupon_code(e.target.value)}
+                    id="CouponCode"
+                    name="CouponCode"
+                    value={coupon_code}
+                  />
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={handleCheckCoupon}
+                  >
+                    কুপন কোড চেক করুন
+                  </button>
+                </div>
+                <span id="code_error"></span>
               </div>
-              <span id="code_error" className="error">আপনার কুপন কোড সঠিক নয় </span>
-            </div>
             </div>
 
             <div className="form-group">
-              <label>বইটি কেনার জন্য আপনাকে <span>300</span> টাকা প্রদান করতে হবে।</label>
+              <p>
+                বইটি কেনার জন্য আপনাকে <span id="numberPrice">300</span> টাকা
+                প্রদান করতে হবে।
+              </p>
             </div>
             <div className="form-group payment_indication">
-
-            <label className="payment_options"> আমাদেরকে পেমেন্ট করেত নিচের যে কোন একটা পেমেন্ট অপশনে সেন্ড মানি করুন</label>
-              <p>বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>019 61 449 755</span> </p>
-              <p>নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>019 61 449 755</span></p>
-              <p>রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে <span>016 38 885 358 1</span></p>
-              <p>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br/>
-              <span>BRAC BANK LIMITED.<br/>
-              Bank Accont Holder: Zakir Hossain.  <br/>
-              Account Num: 1501102568019001. <br/>
-              Branch: Gulshan Branch.</span></p>
+              <label className="payment_options">
+                {" "}
+                আমাদেরকে পেমেন্ট করেত নিচের যে কোন একটা পেমেন্ট অপশনে সেন্ড মানি
+                করুন
+              </label>
+              <p>
+                বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                <span>019 61 449 755</span>{" "}
+              </p>
+              <p>
+                নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                <span>019 61 449 755</span>
+              </p>
+              <p>
+                রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                <span>016 38 885 358 1</span>
+              </p>
+              <p>
+                ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br />
+                <span>
+                  BRAC BANK LIMITED.
+                  <br />
+                  Bank Accont Holder: Zakir Hossain. <br />
+                  Account Num: 1501102568019001. 
+                  <br />
+                  Branch: Gulshan Branch.
+                </span>
+              </p>
             </div>
-            <div className="form-group">
-              <label>
-                <input type="checkbox" name="payment_agree" value="Yes" onClick={showInputField} className="payment-btn"/> আমি পেমেন্ট করেছি
+            <div className="form-group ">
+              <label htmlFor="checked_field" className="payment_options">
+                <input
+                  onChange={showInputField}
+                  id="checked_field"
+                  type="checkbox"
+                  name="payment_agree"
+                  value="Yes"
+                  className="payment-btn"
+                />{" "}
+                &nbsp; আমি পেমেন্ট করেছি
               </label>
             </div>
-            <div className="form-group">
-            <div className="for_center">
-                <select
-                  required
-                  className="select-option"
-                  name="pay_method"
-                  id="pay_method"
-                  type="text"
-                  value={pay_method}
-                  onChange={(e) => setPay_method(e.target.value)}
-                >
-                  <option value="">কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করুন</option>
-                  <option className="e_bank" value="bKash">
-                    বিকাশ : 01961449755
-                  </option>
-                  <option className="e_bank" value="Nagad">
-                    নগদ : 01961449755
-                  </option>
-                  <option className="e_bank" value="Rocket">
-                    রকেট : 016388853581
-                  </option>
-                  <option className="e_bank" value="bangk">
-                  BRAC BANK: 1501102568019001
-                  </option>
-                </select>
-              </div>
-            </div>
+
             <br />
             <div id="Show_hidden" hidden>
+              <div className="form-group">
+                <div className="for_center">
+                  <select
+                    required
+                    className="select-option"
+                    name="pay_method"
+                    id="pay_method"
+                    type="text"
+                    value={pay_method}
+                    onChange={(e) => setPay_method(e.target.value)}
+                  >
+                    <option value="">
+                      কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করুন
+                    </option>
+                    <option className="e_bank" value="bKash">
+                      বিকাশ
+                    </option>
+                    <option className="e_bank" value="Nagad">
+                      নগদ
+                    </option>
+                    <option className="e_bank" value="Rocket">
+                      রকেট
+                    </option>
+                    <option className="e_bank" value="bangk">
+                      BANK: 1501102568019001
+                    </option>
+                  </select>
+                </div>
+              </div>
               <div className="form-group">
                 <label htmlFor="password">
                   যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন
@@ -303,14 +364,20 @@ const BookDownloadPage = () => {
                   required
                 />
               </div>
-              <p className="bookDownloadPage-error-p" style={{ color: "red" }}>
-                {error}
-              </p>
+
               {success && (
-                <p className="bookDownloadPage-success-p">
-                  Successfully Submit...Please Check Your Email <br />
-                  <Link to="/">Back to Home</Link>
-                </p>
+                <div className="bookDownloadPage-success-div">
+                  <p className="bookDownloadPage-success-p">
+                    ধন্যবাদ। আপনার পেমেন্ট গ্রহন করা হয়েছে। <br /> আপনার ইমেইল
+                    চেক করুন এবং এ্যাকাউন্ট ভেরিফাই করে ড্যাশবোর্ড
+                    থেকে ডাউনলোড করুন।
+                    <br />
+                    <br />
+                    <Link className="btn" to="/">
+                      Back to Home
+                    </Link>
+                  </p>
+                </div>
               )}
               <button
                 onClick={handleFrom}

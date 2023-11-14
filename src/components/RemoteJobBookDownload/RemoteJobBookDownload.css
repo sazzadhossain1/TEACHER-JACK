@@ -14,9 +14,10 @@
   background-color: rgb(71, 255, 102);
   padding: 25px 30px;
   max-width: 100%;
-  font-size: 28px;
+  font-size: 40px;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {

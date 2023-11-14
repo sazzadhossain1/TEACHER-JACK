@@ -10,8 +10,8 @@ const RemoteJobBookDownload = () => {
     <div className="buyTheBook-parent-div">
       <div className="buyTheBook-flex-div">
         <Link to="/bookDetailsPage">
-          <button className=" download-the-book">
-            'রিমোট জব' বই কিনুন &nbsp;
+          <button className="download-the-book">
+            BUY BOOK &nbsp;
             <FontAwesomeIcon icon={faShoppingCart} />
           </button>
         </Link>

@@ -11,8 +11,9 @@
 .hero-first-heading {
   font-size: 34px;
   font-weight: 700;
+
+  text-align: center;
   margin-bottom: 30px;
-  margin-left: 120px;
   margin-top: 50px;
   color: white;
 }
@@ -58,6 +59,11 @@
   margin-bottom: 15px;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 20px;
+}
+.margin_t {
+  margin-top: 25px;
+  font-size: 22px;
 }
 .last-second-p {
   margin-bottom: 40px;
