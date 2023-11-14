@@ -23,6 +23,12 @@ const NavigationBar = () => {
     navigate("/login");
   };
 
+  const scrollToFooter = () => {
+    const footerElement = document.getElementById("footer");
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="nav-parent-div">
       <div className="navbar    mx-auto">
@@ -63,7 +69,9 @@ const NavigationBar = () => {
               </li>
 
               <li>
-                <Link to="/contact">CONTACT</Link>
+                <Link to="#" onClick={scrollToFooter}>
+                  CONTACT
+                </Link>
               </li>
 
               {getToken ? (
@@ -91,7 +99,7 @@ const NavigationBar = () => {
               <div className="login-and-signUp-div-one">
                 {getToken ? (
                   <button className="logOut-btn">
-                    <Link to="/signUp">LogOut</Link>
+                    <Link to="/signUp">Log Out</Link>
                   </button>
                 ) : (
                   <div>
@@ -99,7 +107,7 @@ const NavigationBar = () => {
                       <button className="login-one">Login</button>
                     </Link>
                     <Link to="/signUp" className="">
-                      <button className="signUp-one">SignUp</button>
+                      <button className="signUp-one">Sign Up</button>
                     </Link>
                   </div>
                 )}
@@ -133,7 +141,9 @@ const NavigationBar = () => {
             </li>
 
             <li>
-              <Link to="/contact">CONTACT</Link>
+              <Link to="#" onClick={scrollToFooter}>
+                CONTACT
+              </Link>
             </li>
 
             {getToken ? (
@@ -171,7 +181,7 @@ const NavigationBar = () => {
           <div className="login-and-signUp-div">
             {getToken ? (
               <button onClick={handleLogOut} className="logOut-btn">
-                LogOut
+                Log Out
               </button>
             ) : (
               <div>
@@ -179,7 +189,7 @@ const NavigationBar = () => {
                   <button>Login</button>
                 </Link>
                 <Link to="/signUp" className="signUp">
-                  <button>SignUp</button>
+                  <button>Sign Up</button>
                 </Link>
               </div>
             )}

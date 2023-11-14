@@ -1,6 +1,10 @@
 .btn {
-  border: 1px solid #ddd;
-  background: #ddd;
+  /* border: 1px solid #ddd; */
+  /* background: #ddd; */
+  background-color: blue;
+  color: white;
+}
+del {
 }
 .error {
   color: red;
@@ -10,6 +14,28 @@
 #numberPrice {
   font-size: 23px;
   font-weight: 700;
+}
+.product_price {
+  font-size: 30px;
+}
+.payment_btn {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 50px;
+  font-size: 20px;
+}
+.item_discount_price {
+  font-size: 45px;
+  font-weight: 500;
+}
+#book_discount {
+  font-size: 40px;
+  font-weight: 400;
+}
+.item_price {
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .bookDownloadPage-success-div {
@@ -71,7 +97,7 @@
   padding: 10px 0;
 }
 .product_info p span {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* ------------------- */
@@ -95,7 +121,7 @@
   display: inline-block;
 }
 .img-bb {
-  max-width: 110px;
+  max-width: 200px;
   /* float: right; */
   margin-right: 25px;
 }
@@ -200,8 +226,12 @@ select {
 form {
 }
 .submit-btn {
-  font-weight: 500;
-  font-size: 23px;
+  background-color: blue;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 30px;
 }
 .submit-btn:hover {
   background-color: #aaa;

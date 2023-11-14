@@ -17,11 +17,11 @@ const UserSales = () => {
         <thead>
           <tr className="t_head">
             <th>Product Name</th>
-            <th>Payee Number</th>
+            <th>Payment From</th>
             <th>Pay Method</th>
             <th>Price</th>
             <th>discount</th>
-            <th>Download Avle</th>
+            <th>Download</th>
             <th>Status</th>
           </tr>
         </thead>

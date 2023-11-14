@@ -91,41 +91,29 @@ const BookInfo = ({ bookData }) => {
                   <p className="by-zakir-hossain">by Zakir Hossain</p>
                   {/* <p className="bookInfo-price">{price} TK</p> */}
 
-                  <p className="bookInfo-price">300 TK</p>
+                  <p className="bookInfo-price">
+                    কুপন কোড ব্যবহার করলে{" "}
+                    <span className="coupon_price">270 tk</span>
+                  </p>
                   <p className="coupon_code">
-                    কুপন কোড ব্যবহার করলেই পাচ্ছেন{" "}
-                    <span className="ten_percent">১০%</span> ডিসকাউন্ট
+                    রেগুলার প্রাইস <span className="ten_percent">320 tk</span>{" "}
+                  </p>
+                  <p className="print_copy">
+                    {" "}
+                    প্রিন্ট কপির লিংক পরবর্তীতে এখানে দেয়া হবে
                   </p>
                 </div>
 
                 <Link to={`/bookDownloadPage/${id}`}>
-                  <button className="buyCourseBtn">বইটি কিনুন</button>
+                  <button className="buyCourseBtn">
+                    বইটি কিনুন (soft copy)
+                  </button>
                 </Link>
-                {/* <div className="bookInfo-icon-flex-div">
-                  <FontAwesomeIcon icon={faFaceMeh} />
-                  <p>কোর্সটি করছেন ২১৩১ জন</p>
-                </div>
-                <div className="bookInfo-icon-flex-div">
-                  <FontAwesomeIcon icon={faClock} />
-                  <p>সময় লাগবে 6 মাশ </p>
-                </div>
-                <div className="bookInfo-icon-flex-div">
-                  <FontAwesomeIcon icon={faPlay} />
-                  <p>১০০+ টি ভিডিও</p>
-                </div>
-                <div className="bookInfo-icon-flex-div">
-                  <FontAwesomeIcon icon={faQuestion} />
-                  <p>৩ সেট কুইজ</p>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Modal Form Section Start */}
-
-      {/* Modal Form Section End */}
     </div>
   );
 };

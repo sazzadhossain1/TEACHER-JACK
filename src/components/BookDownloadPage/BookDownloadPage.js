@@ -5,9 +5,15 @@ import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
+  // For Safari
+  // document.body.scrollTop = 0;
+
+  // For Chrome, Firefox, IE and Opera
+  // document.documentElement.scrollTop = 0;
+
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  // console.log(getBookInfoApi);
+  console.log(getBookInfoApi.price - getBookInfoApi.discount);
   const navigate = useNavigate();
 
   const { id } = getBookInfoApi;
@@ -53,7 +59,7 @@ const BookDownloadPage = () => {
       address: "",
     };
     console.log(inputItem);
-    // console.log(price);
+    console.log(price);
     if (+price >= +price_text) {
       try {
         let url = "https://app.teacherjackonline.com/api/sale";
@@ -89,7 +95,7 @@ const BookDownloadPage = () => {
         setSuccess(false);
       }
     } else {
-      alert("Please input you valid price");
+      alert("Please input your valid price");
     }
   }
 
@@ -118,8 +124,7 @@ const BookDownloadPage = () => {
         code_error.innerHTML = '<p class="success">আপনার কুপন কোড সঠিক</p>';
 
         numberPrice.innerText = `${
-          getBookInfoApi.price -
-          (getBookInfoApi.price * getBookInfoApi.discount) / 100
+          getBookInfoApi.price - getBookInfoApi.discount
         } `;
       }
     } catch {
@@ -129,6 +134,7 @@ const BookDownloadPage = () => {
 
   const showInputField = (e) => {
     e.preventDefault();
+
     const checked_field = document.getElementById("checked_field");
 
     checked_field.setAttribute("checked", "checked");
@@ -152,7 +158,7 @@ const BookDownloadPage = () => {
             <div className="product_info">
               <h1 className="product_title">{getBookInfoApi.name}</h1>
               <p className="product_price">
-                Price:{" "}
+                Price:&nbsp;
                 <span id="book_price">
                   {Number(getBookInfoApi.price).toFixed(0)}
                 </span>{" "}
@@ -160,9 +166,13 @@ const BookDownloadPage = () => {
               </p>
               <p className="product_discount">
                 কুপন কোড ব্যবহারে পাচ্ছেন{" "}
-                <span id="Book_discount">
+                <span className="book_discount" id="book_discount">
+                  50 taka
+                </span>{" "}
+                &nbsp;
+                {/* <span id="Book_discount">
                   {Number(getBookInfoApi.discount).toFixed(0)}%
-                </span>
+                </span> */}
                 ডিসকাউন্ট
               </p>
               <p>
@@ -171,12 +181,11 @@ const BookDownloadPage = () => {
                     {Number(getBookInfoApi.price).toFixed()}
                   </span>
                 </del>{" "}
-                &nbsp;
+                &nbsp; মাত্র &nbsp;
                 <span className="item_discount_price">
-                  {getBookInfoApi.price -
-                    (getBookInfoApi.price * getBookInfoApi.discount) / 100}
+                  {getBookInfoApi.price - getBookInfoApi.discount}
                 </span>
-                টাকায়
+                &nbsp; টাকায়
               </p>
             </div>
           </div>
@@ -211,31 +220,31 @@ const BookDownloadPage = () => {
 
             <div className="form-group">
               <p>
-                বইটি কেনার জন্য আপনাকে <span id="numberPrice">300</span> টাকা
-                প্রদান করতে হবে।
+                বইটির মূল্য <span id="numberPrice">320</span>  টাকা প্রদান করুন।
               </p>
             </div>
             <div className="form-group payment_indication">
               <label className="payment_options">
                 {" "}
-                আমাদেরকে পেমেন্ট করেত নিচের যে কোন একটা পেমেন্ট অপশনে সেন্ড মানি
-                করুন
+                পেমেন্ট করতে নিচের যে কোন একটা পেমেন্ট অপশন বেছে নিন।
               </label>
               <p>
                 বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>019 61 449 755</span>{" "}
+                <span>0196 144 9755</span>{" "}
               </p>
               <p>
                 নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>019 61 449 755</span>
+                <span>0196 144 9755</span>
               </p>
               <p>
                 রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>016 38 885 358 1</span>
+                <span>0163 888 5358 1</span>
               </p>
               <p>
-                ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br />
                 <span>
+                  ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br />
+                </span>
+                <span className="brack-bank-info">
                   BRAC BANK LIMITED.
                   <br />
                   Bank Accont Holder: Zakir Hossain. <br />
@@ -246,8 +255,17 @@ const BookDownloadPage = () => {
               </p>
             </div>
             <div className="form-group ">
-              <label htmlFor="checked_field" className="payment_options">
-                <input
+              <label htmlFor="checked_field" className="">
+                <button
+                  className="payment_btn"
+                  id="checked_field"
+                  onClick={showInputField}
+                >
+                  পেমেন্ট করে এই বাটনে ক্লিক করুন
+                  <p>এবং নিচের ফিল্ডগুলো পুরণ করুন</p>
+                </button>
+
+                {/* <input
                   onChange={showInputField}
                   id="checked_field"
                   type="checkbox"
@@ -255,7 +273,7 @@ const BookDownloadPage = () => {
                   value="Yes"
                   className="payment-btn"
                 />{" "}
-                &nbsp; আমি পেমেন্ট করেছি
+                &nbsp; আমি পেমেন্ট করেছি */}
               </label>
             </div>
 
@@ -273,7 +291,7 @@ const BookDownloadPage = () => {
                     onChange={(e) => setPay_method(e.target.value)}
                   >
                     <option value="">
-                      কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করুন
+                      কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করতে এখানে ক্লিক করুন
                     </option>
                     <option className="e_bank" value="bKash">
                       বিকাশ
@@ -285,14 +303,15 @@ const BookDownloadPage = () => {
                       রকেট
                     </option>
                     <option className="e_bank" value="bangk">
-                      BANK: 1501102568019001
+                      BANK ACCOUNT
                     </option>
                   </select>
                 </div>
               </div>
               <div className="form-group">
                 <label htmlFor="password">
-                  যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন
+                  যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / (ব্যংকে পাঠালে যে ব্যংক
+                  থেকে পাঠানো হয়েছে সেই ব্যংকের নাম
                 </label>
                 <input
                   className="input"
@@ -305,7 +324,10 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">ট্র্যান্স্যাকশন আই ডি নাম্বার</label>
+                <label htmlFor="password">
+                  ট্র্যান্স্যাকশন আই ডি নাম্বার / (ব্যংকে পাঠালে যে ব্যংক থেকে
+                  পাঠানো হয়েছে সেই ব্যংকের এ্যাকাউন্ট নম্বর)
+                </label>
                 <input
                   className="input"
                   type="text"
@@ -329,7 +351,7 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password"> পুরো নাম</label>
+                <label htmlFor="password">আপনার পুরো নাম</label>
                 <input
                   className="input"
                   type="text"
@@ -382,7 +404,7 @@ const BookDownloadPage = () => {
               <button
                 onClick={handleFrom}
                 id="submitBtn"
-                className="sign-up-btn submit-btn"
+                className=" submit-btn"
                 type="submit"
               >
                 Submit

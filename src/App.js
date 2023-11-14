@@ -19,8 +19,9 @@ import ConfirmVerificationSetPass from "./components/ConfirmVerificationSetPass/
 import UserBuying from "./components/UserBuying/UserBuying";
 import UserSales from "./components/UserSales/UserSales";
 import UseBuyingDetails from "./components/UseBuyingDetails/UseBuyingDetails";
-import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import AffiliateProgram from "./components/AffiliateProgram/AffiliateProgram";
+import Faq from "./components/Faq/Faq";
+import JobOpportunities from "./components/JobOpportunities/JobOpportunities";
 
 function App() {
   const tokenId = localStorage.getItem("token");
@@ -38,6 +39,14 @@ function App() {
         {
           path: "/home",
           element: <Home></Home>,
+        },
+        {
+          path: "/faq",
+          element: <Faq></Faq>,
+        },
+        {
+          path: "/jobOpportunities",
+          element: <JobOpportunities></JobOpportunities>,
         },
         {
           path: "/heroDetailsPage",
@@ -68,6 +77,7 @@ function App() {
           path: "/signUp",
           element: <SignUp></SignUp>,
         },
+
         {
           path: "/affiliateProgram",
           element: <AffiliateProgram></AffiliateProgram>,

@@ -7,7 +7,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  width: 85%;
+  width: 90%;
+  padding: 10px 50px;
   margin: auto;
   gap: 30px;
 }
@@ -15,10 +16,30 @@
 .first-ceo-img-div {
   display: none;
 }
+.second-ceo-img-div {
+  width: 100%;
+}
+.second-ceo-img-div img {
+  margin: auto;
+  width: 90%;
+}
 .meetOurCeo-text-div {
   text-align: left;
 }
+.link {
+  color: blue;
+}
+.zakir_sir_email {
+  font-size: 19px;
+  font-weight: 500;
+}
 
+.media_link {
+  font-size: 19px;
+  color: blue;
+  text-decoration: underline;
+  font-weight: 500;
+}
 .teacher-jack-ceo {
   font-size: 28px;
   font-weight: 700;

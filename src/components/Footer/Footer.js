@@ -6,7 +6,7 @@ import weAccept from "../../accets/Images/we_Accept/weAccept.png";
 
 const Footer = () => {
   return (
-    <div className="footer-parent-div">
+    <div className="footer-parent-div" id="footer">
       <div className="footer-grid-div">
         <div className="footer_first_div">
           <img className="footer-teacher-jack-logo" src={teacherJack} alt="" />
@@ -34,8 +34,17 @@ const Footer = () => {
           <p className="footer-first-second-common-cart-p">
             <Link to="/affiliateProgram">Affiliate Program</Link>
           </p>
-          <p className="footer-first-second-common-cart-p">Job Opportunities</p>
-          <p className="footer-first-second-common-cart-p">FAQ</p>
+          <Link
+            to="/jobOpportunities"
+            className="footer-first-second-common-cart-p"
+          >
+            Job Opportunities
+          </Link>
+          <br />
+          <br />
+          <Link to="/faq" className="footer-first-second-common-cart-p">
+            FAQ
+          </Link>
         </div>
         {/*  */}
 
