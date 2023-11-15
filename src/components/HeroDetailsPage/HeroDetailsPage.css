@@ -5,7 +5,7 @@ iframe {
 }
 .common-style-p {
   font-weight: 600;
-  font-size: 19px;
+  font-size: 18px;
 }
 .HeroDetailsPage-parent-div {
   text-align: left;
@@ -22,27 +22,27 @@ iframe {
   margin-left: 200px;
 }
 .skills-for-job-program {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
   margin-bottom: 10px;
   margin-left: -15px;
   line-height: 60px;
 }
 .skillForWork-heading {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .and {
   margin-bottom: 20px;
 }
 .apni-ki-akjon {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
   margin-bottom: 10px;
 }
 .heroDetailsPage-qus {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .HeroDetailsPage-second-parent-div {
@@ -54,23 +54,21 @@ iframe {
   margin-left: 100px;
 }
 .heroDetailsPage-single-first__p {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 40px;
 
   margin: auto;
   margin-top: 50px;
 }
 .heroDetailsPage-single-first-p {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 40px;
 
   margin: auto;
 
   margin-top: -10px;
 }
-.HeroDetailsPage-second-parent-div p {
-  font-size: 18px;
-}
+
 .heroDetailsPage-video-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -107,7 +105,7 @@ iframe {
 .heroDetailsPage-p {
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .heroDetailsPage-link {
@@ -128,7 +126,7 @@ iframe {
 }
 
 .heroDetailsPage-last-p:first-child {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   width: 80%;
   margin: auto;
@@ -136,7 +134,7 @@ iframe {
 }
 
 .heroDetailsPage-last-p-div {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 40px;
   width: 80%;
   margin: auto;
@@ -144,7 +142,7 @@ iframe {
 }
 
 .heroDetailsPage-last-p:last-child {
-  font-size: 21px;
+  font-size: 20px;
 
   width: 80%;
   margin: auto;

@@ -1,5 +1,5 @@
 .buyTheBook-flex-div {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,13 +14,19 @@
   background-color: rgb(71, 255, 102);
   padding: 25px 30px;
   max-width: 100%;
-  font-size: 40px;
+  font-size: 35px;
   border-radius: 10px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
+  .buyTheBook-parent-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: -150px;
+  }
   .buyTheBook-flex-div {
     margin-top: 200px;
   }

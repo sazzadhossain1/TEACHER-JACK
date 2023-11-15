@@ -9,7 +9,7 @@
   margin-top: 10px;
 }
 .hero-first-heading {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
 
   text-align: center;
@@ -31,12 +31,12 @@
   text-align: left;
 }
 .hero-second-text-heading {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 50px;
 }
 .hero-teacher-jack {
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 10px;
   margin-bottom: 30px;
   font-weight: 800;
@@ -51,19 +51,19 @@
 .hero-p-text {
   font-weight: 500;
   margin-bottom: 18px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
 }
 .hero-p-text-last {
   font-weight: 500;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   margin-top: 20px;
 }
 .margin_t {
   margin-top: 25px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .last-second-p {
   margin-bottom: 40px;
@@ -86,7 +86,6 @@
 }
 
 .heroBookCoverPhoto-dvi {
-  /* background-color: red; */
   display: flex;
   justify-content: right;
 }
@@ -114,6 +113,19 @@
     margin-bottom: -185px;
   }
 }
+@media screen and (max-width: 1555px) {
+  .learn-more-btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .hero-grid-div {
+    width: 90%;
+  }
+  .hero_p_text_last {
+    line-height: 35px;
+  }
+}
 @media screen and (max-width: 1530px) {
   .hero-p-text {
     font-size: 22px;
@@ -122,12 +134,13 @@
     margin-bottom: -185px;
   }
 }
-
-@media screen and (max-width: 1555px) {
-  .learn-more-btn {
-    width: 50%;
+@media screen and (max-width: 1524px) {
+  .heroBookCoverPhoto-img {
+    height: 850px;
+    margin-bottom: -185px;
   }
 }
+
 @media screen and (max-width: 1500px) {
   .learn-more-btn {
     width: 50%;
@@ -137,10 +150,6 @@
   }
 }
 @media screen and (max-width: 1470px) {
-  /* .hero-main-div {
-    height: 124vh;
-  } */
-
   .heroBookCoverPhoto-img {
     margin-bottom: -185px;
   }
@@ -161,9 +170,6 @@
     font-size: 30px;
     margin-bottom: 20;
   }
-  /* .hero-main-div {
-    height: 120vh;
-  } */
 
   .heroBookCoverPhoto-img {
     margin-bottom: -185px;
@@ -171,6 +177,11 @@
   .learn-more-btn {
     width: 50%;
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 1415px) {
+  .hero_p_text_third {
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 1380px) {
@@ -191,9 +202,6 @@
   .last-second-p {
     margin-bottom: 40px;
   }
-  /* .hero-main-div {
-    height: 120vh;
-  } */
 
   .heroBookCoverPhoto-img {
     margin-bottom: -185px;
@@ -204,23 +212,9 @@
   }
 }
 @media screen and (max-width: 1350px) {
-  .hero-first-heading {
-  }
-  .hero-second-text-heading {
-  }
-  .hero-teacher-jack {
-  }
-  .hero-p-text {
-  }
-  .last-second-p {
-  }
-  .hero-main-div {
-  }
-
   .heroBookCoverPhoto-img {
+    height: 840px;
     margin-bottom: -185px;
-  }
-  .learn-more-btn {
   }
 }
 @media screen and (max-width: 1310px) {
@@ -246,16 +240,25 @@
     margin-bottom: -185px;
   }
 }
-@media screen and (max-width: 1235px) {
-  .hero-grid-div {
-    width: 90%;
-  }
-}
+
 @media screen and (max-width: 1235px) {
   .hero-grid-div {
     width: 90%;
   }
   .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .hero-first-heading {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  .hero-grid-div {
+    margin-top: 10px;
+  }
+  .heroBookCoverPhoto-img {
+    height: 850px;
     margin-bottom: -185px;
   }
 }
@@ -273,6 +276,11 @@
     margin-bottom: -185px;
   }
 }
+@media screen and (max-width: 1150px) {
+  .heroBookCoverPhoto-img {
+    margin-bottom: -185px;
+  }
+}
 @media screen and (max-width: 1120px) {
   .hero-grid-div {
   }
@@ -283,53 +291,53 @@
     grid-template-columns: repeat(2, 1fr);
     padding-left: 30px;
   }
-  .heroBookCoverPhoto-dvi {
-  }
+
   .heroBookCoverPhoto-img {
     margin-bottom: -185px;
   }
 }
 @media screen and (max-width: 1024px) {
+  .heroBookCoverPhoto-dvi {
+    justify-content: left;
+  }
+  .heroBookCoverPhoto-img {
+    height: 800px;
+    width: 550px;
+    margin-bottom: -140px;
+  }
   .hero-grid-div {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
   }
   .hero-main-div {
     /* height: 120vh; */
   }
-  .heroBookCoverPhoto-img {
-    margin-bottom: -185px;
-  }
 }
 @media screen and (max-width: 1023px) {
-  .hero-main-div {
-    width: 107%;
-    height: 220vh;
+  .heroBookCoverPhoto-dvi {
+    justify-content: left;
   }
   .heroBookCoverPhoto-img {
-    margin: auto;
-    margin-bottom: 500px;
-    margin-top: 0;
+    height: 850px;
+    width: 550px;
+    margin-bottom: -110px;
   }
-
-  .hero-grid-div {
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding-left: 20px;
-  }
-  .learn-more-btn {
-    margin-bottom: 0;
+  .hero-main-div {
+    height: 220vh;
   }
 }
 @media screen and (max-width: 970px) {
   .hero-main-div {
-    height: 230vh;
+    height: 220vh;
+  }
+}
+@media screen and (max-width: 912px) {
+  .hero-main-div {
+    height: 115vh;
   }
 }
 @media screen and (max-width: 900px) {
-  .hero-main-div {
-  }
   .hero-main-div {
     background-color: #010313;
     padding: 5px;
@@ -342,7 +350,29 @@
     margin-left: 200px;
     margin-top: 25px;
   }
+}
+@media screen and (max-width: 820px) {
+  .hero-main-div {
+    height: 135vh;
+  }
   .heroBookCoverPhoto-img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-main-div {
+    height: 140vh;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-main-div {
+    height: 175vh;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 745px) {
@@ -350,6 +380,19 @@
   }
   .heroBookCoverPhoto-img {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 712px) {
+  .hero-main-div {
+    height: 160vh;
+  }
+  .heroBookCoverPhoto-img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 701px) {
+  .hero-main-div {
+    height: 100%;
   }
 }
 @media screen and (max-width: 640px) {
@@ -384,6 +427,24 @@
   }
 }
 @media screen and (max-width: 540px) {
+  .hero-first-heading {
+    font-size: 28px;
+  }
+  .hero-second-text-heading {
+    font-size: 28px;
+  }
+  .hero-teacher-jack {
+    font-size: 25px;
+  }
+  .hero-p-text {
+    font-size: 18px;
+  }
+  .margin_t {
+    font-size: 18px;
+  }
+  .hero-p-text-last {
+    font-size: 18px;
+  }
   .hero-grid-div {
     width: 100%;
     grid-template-columns: 1fr;
@@ -416,17 +477,11 @@
   .hero-p-text {
     font-size: 21px;
   }
-  .hero-grid-div {
-  }
 
-  .hero-main-div {
-  }
   .learn-more-btn {
     width: 100%;
     margin-left: 0;
     margin-top: 10px;
-  }
-  .heroBookCoverPhoto-img {
   }
 }
 @media screen and (max-width: 450px) {
@@ -454,21 +509,59 @@
   .hero-p-text {
     font-size: 20px;
   }
-  .hero-grid-div {
-  }
 
-  .hero-main-div {
-  }
   .learn-more-btn {
     margin-top: 0px;
   }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-main-div {
+    height: 190vh;
+  }
   .heroBookCoverPhoto-img {
+    height: 700px;
   }
 }
 
+@media screen and (max-width: 412px) {
+  .hero-main-div {
+    height: 210vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .hero-main-div {
+    height: 195vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 700px;
+  }
+}
 @media screen and (max-width: 400px) {
   .hero-main-div {
     height: 250vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero-main-div {
+    height: 195vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 640px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .hero-main-div {
+    height: 260vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 650px;
   }
 }
 @media screen and (max-width: 371px) {
@@ -484,6 +577,23 @@
     font-size: 25px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .hero-main-div {
+    height: 220vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 520px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero-main-div {
+    height: 220vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 450px;
+  }
+}
 @media screen and (max-width: 313px) {
   .hero-main-div {
     height: 260vh;
@@ -497,5 +607,13 @@
 @media screen and (max-width: 315px) {
   .hero-main-div {
     width: 115%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero-main-div {
+    height: 255vh;
+  }
+  .heroBookCoverPhoto-img {
+    height: 450px;
   }
 }

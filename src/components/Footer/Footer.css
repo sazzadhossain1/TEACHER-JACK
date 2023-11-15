@@ -1,7 +1,7 @@
 .footer-header {
   margin-bottom: 20px;
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
 }
 .footer-parent-div {
   background-color: #eee;
@@ -27,13 +27,13 @@
 }
 
 .footer-Channels-heading {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
 .footer-first-second-common-cart-p {
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
   margin-bottom: 20px;
 
@@ -41,27 +41,31 @@
 }
 
 .media_LInk_facebook {
-  font-size: 18px;
+  font-size: 16px;
   color: blue;
 }
 .facebook-p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .youtube-p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .media_LInk_youtube {
-  font-size: 18px;
+  font-size: 16px;
   color: blue;
 }
 .We_Accept {
   margin-top: 20px;
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
 }
 .weAccept_photo {
   margin-top: 10px;
   max-width: 100%;
+}
+.footer_photo_flex_div {
+  display: flex;
+  align-items: end;
 }
 .facebook_icon {
   font-size: 30px;
@@ -90,7 +94,7 @@
 /* -------- */
 .footer-navigation-parent-div {
   background-color: white;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .footer-navigation-parent-grid-div {
   text-align: center;
@@ -102,15 +106,15 @@
 }
 
 .WhatsApp_number {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 30px;
 }
 .email {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
 }
 .teacherjack_main_site {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
 }
 .teacherjack_main_site:hover {
@@ -120,7 +124,7 @@
   font-size: 12px;
 }
 .footer-copy-right {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* responsive start */

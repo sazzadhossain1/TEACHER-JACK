@@ -9,21 +9,21 @@
   text-align: left;
 
   color: blue;
-  font-size: 27px;
+  font-size: 20px;
 }
 .ten_percent {
-  font-size: 35px;
+  font-size: 25px;
   color: green;
 }
 .print_copy {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 10px;
 }
 .bookInfo-left-side-div {
   text-align: left;
 }
 .bookInfo-heading {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -121,16 +121,16 @@
 }
 
 .bookInfo-name {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .bookInfo-price {
-  font-size: 27px;
+  font-size: 20px;
   margin-top: 10px;
   font-weight: 500;
 }
 .coupon_price {
-  font-size: 32px;
+  font-size: 25px;
 }
 .buyCourseBtn {
   background-color: rgb(1, 131, 1);
@@ -152,9 +152,8 @@
 }
 
 .by-zakir-hossain {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 0px;
 }
 
 .book-details {

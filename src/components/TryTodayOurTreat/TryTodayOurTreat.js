@@ -4,6 +4,9 @@ import "./TryTodayOurTreat.css";
 const TryTodayOurTreat = () => {
   return (
     <div className="tryTodayTreat-main-parent-div">
+      <h1 className="construction">
+        This Courses Page is under construction. Pls check back periodically.
+      </h1>
       <div className="tryTodayTreat-parent-div">
         <div>
           <h1 className="step-two">Step 2</h1>

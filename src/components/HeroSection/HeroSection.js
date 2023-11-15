@@ -32,7 +32,7 @@ const HeroSection = () => {
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">
+                  <p className="hero-p-text hero_p_text_third">
                     যেকোন পেশায় চাকুরিরত কিন্তু কিছু বাড়তি আয় করতে চান ?
                   </p>
                 </div>
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">
+                  <p className="hero-p-text hero_p_text_last">
                     কিছুটা বাংলা বা ইংরেজি পড়তে পারেন এবং একটি স্মার্টফোন আছে
                   </p>
                 </div>

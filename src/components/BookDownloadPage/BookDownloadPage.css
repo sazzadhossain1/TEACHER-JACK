@@ -37,7 +37,10 @@ del {
   font-size: 25px;
   font-weight: 400;
 }
-
+strike {
+  /* text-decoration: line-through; */
+  /* color: red; */
+}
 .bookDownloadPage-success-div {
   width: 100%;
   height: 100%;

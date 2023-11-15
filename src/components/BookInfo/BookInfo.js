@@ -9,9 +9,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BookInfo = ({ bookData }) => {
-  // console.log(bookData);
+  console.log(bookData);
   const { id } = bookData;
   // console.log(name, price, id);
+
+  const dis = bookData.discount;
+  const regularPrice = bookData.price;
+
+  const discountBookPrice = regularPrice - dis;
+  // console.log(discountBookPrice);
 
   return (
     <div>
@@ -87,20 +93,24 @@ const BookInfo = ({ bookData }) => {
                 </div>
                 <div className="bookInfo-text-div">
                   {/* <h1 className="bookInfo-name">{name}</h1> */}
-                  <h1 className="bookInfo-name">"REMOTE JOB" BOOK</h1>
+                  <h1 className="bookInfo-name">{bookData.name}</h1>
                   <p className="by-zakir-hossain">by Zakir Hossain</p>
                   {/* <p className="bookInfo-price">{price} TK</p> */}
 
                   <p className="bookInfo-price">
                     কুপন কোড ব্যবহার করলে{" "}
-                    <span className="coupon_price">270 tk</span>
+                    <span className="coupon_price">{discountBookPrice} </span>tk
                   </p>
                   <p className="coupon_code">
-                    রেগুলার প্রাইস <span className="ten_percent">320 tk</span>{" "}
+                    রেগুলার প্রাইস{" "}
+                    <span className="ten_percent">
+                      {Number(bookData.price).toFixed(0)}
+                    </span>{" "}
+                    tk
                   </p>
                   <p className="print_copy">
                     {" "}
-                    প্রিন্ট কপির লিংক পরবর্তীতে এখানে দেয়া হবে
+                    হার্ড কপির লিংক পরবর্তীতে এখানে দেয়া হবে
                   </p>
                 </div>
 

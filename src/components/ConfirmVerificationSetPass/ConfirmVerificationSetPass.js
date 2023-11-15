@@ -72,10 +72,7 @@ const ConfirmVerificationSetPass = () => {
       <div className="p-10">
         <div className="mx-auto signup-div p-5">
           <h1 className="heading1">Complete Verification</h1>
-          <p></p>
-          নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
-          যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে এবং
-          এটিই আপনার লগ ইন পাসওয়ার্ড।
+
           <div className="loginButton" id="loginButton" hidden>
             <p className="loginInfo">
               Your account already verified. Please login to your panel.
@@ -86,8 +83,14 @@ const ConfirmVerificationSetPass = () => {
           </div>
           <br></br>
           <form onSubmit={confirmVerification} id="submitForm" hidden>
+            <p>
+              নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
+              যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে
+              এবং এটিই আপনার লগ ইন পাসওয়ার্ড।
+            </p>
             <div className="form-group">
               <label htmlFor="password">Set Password</label>
+              <label>Please input a minimum of 8 characters</label>
               <input
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}

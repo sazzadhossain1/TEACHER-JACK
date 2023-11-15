@@ -74,7 +74,16 @@ const Footer = () => {
 
           <div>
             <h2 className="We_Accept">We Accept</h2>
-            <img className="weAccept_photo" src={weAccept} alt="" />
+            <div className="footer_photo_flex_div">
+              <img className="weAccept_photo" src={weAccept} alt="" />
+
+              <Link
+                to="https://app.teacherjackonline.com/login"
+                target="_blank"
+              >
+                i
+              </Link>
+            </div>
           </div>
         </div>
       </div>

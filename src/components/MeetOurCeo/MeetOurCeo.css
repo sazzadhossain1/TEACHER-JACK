@@ -4,70 +4,74 @@
 }
 
 .meetOurCeo-grid-div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   width: 90%;
   padding: 10px 50px;
   margin: auto;
   gap: 30px;
 }
-
-.first-ceo-img-div {
-  display: none;
+.p_photo_grid_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  /* background-color: red; */
+  margin-bottom: 30px;
 }
-.second-ceo-img-div {
+.first-ceo-img-div {
+  display: block;
+}
+.first-ceo-img-div img {
   width: 100%;
 }
+
 .second-ceo-img-div img {
   margin: auto;
-  width: 90%;
+  width: 100%;
+  display: none;
 }
 .meetOurCeo-text-div {
   text-align: left;
+  margin-top: 50px;
 }
 .link {
   color: blue;
 }
 .zakir_sir_email {
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 16px;
 }
 
 .media_link {
-  font-size: 19px;
+  font-size: 16px;
   color: blue;
   text-decoration: underline;
-  font-weight: 500;
 }
 .teacher-jack-ceo {
   font-size: 28px;
-  font-weight: 700;
+
   font-family: "Times New Roman", Times, serif;
   color: rgb(1, 120, 156);
   margin-bottom: 20px;
 }
 .ceo-expert-p {
-  font-weight: 500;
   margin-bottom: 20px;
   color: green;
 }
 
 .ceo-text-p {
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 21px;
+
+  font-size: 16px;
   line-height: 35px;
 }
 
 .ceo-learn-more-btn {
   background-color: rgb(1, 120, 156);
   padding: 10px;
-  width: 300px;
+  width: 250px;
   color: white;
-  font-weight: 500;
+
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1400px) {

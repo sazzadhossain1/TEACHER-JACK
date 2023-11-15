@@ -1,9 +1,11 @@
 import React from "react";
 import "./UserSales.css";
 import { Link, useLoaderData } from "react-router-dom";
-import UserSalesDetails from "../UserSalesDetails/UserSalesDetails";
 
 const UserSales = () => {
+  const referCodeFromLocalStore = localStorage.getItem("storeReferCode");
+  console.log(referCodeFromLocalStore);
+
   const userSalesGetApi = useLoaderData();
   console.log(userSalesGetApi);
 
@@ -12,6 +14,11 @@ const UserSales = () => {
   }
   return (
     <div className="useBuyingDetails_parent_div mt-10">
+      <h2 className="reff_code">
+        আপনার রেফারেল কোডটি হলো{" "}
+        <span className="refer_code_number">{referCodeFromLocalStore}</span> ।
+        এটি ব্যবহার করে আপনি এ্যাফিলিয়েট মার্কেটিং করতে পারেন
+      </h2>
       <h1 className="my_buying">My Sales</h1>
       <table className="table-border table" cellPadding={30}>
         <thead>

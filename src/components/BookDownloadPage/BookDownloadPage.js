@@ -13,7 +13,7 @@ const BookDownloadPage = () => {
 
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  console.log(getBookInfoApi.price - getBookInfoApi.discount);
+  console.log(getBookInfoApi.discount);
   const navigate = useNavigate();
 
   const { id } = getBookInfoApi;
@@ -162,25 +162,25 @@ const BookDownloadPage = () => {
                 <span id="book_price">
                   {Number(getBookInfoApi.price).toFixed(0)}
                 </span>{" "}
-                taka
+                Taka
               </p>
               <p className="product_discount">
                 কুপন কোড ব্যবহারে পাচ্ছেন{" "}
                 <span className="book_discount" id="book_discount">
-                  50 taka
+                  {Number(getBookInfoApi.discount).toFixed(0)}
                 </span>{" "}
-                &nbsp;
+                Taka &nbsp;
                 {/* <span id="Book_discount">
                   {Number(getBookInfoApi.discount).toFixed(0)}%
                 </span> */}
                 ডিসকাউন্ট
               </p>
               <p>
-                <del>
+                <strike>
                   <span className="item_price">
                     {Number(getBookInfoApi.price).toFixed()}
-                  </span>
-                </del>{" "}
+                  </span>{" "}
+                </strike>
                 &nbsp; মাত্র &nbsp;
                 <span className="item_discount_price">
                   {getBookInfoApi.price - getBookInfoApi.discount}
@@ -220,7 +220,11 @@ const BookDownloadPage = () => {
 
             <div className="form-group">
               <p>
-                বইটির মূল্য <span id="numberPrice">320</span>  টাকা প্রদান করুন।
+                বইটির মূল্য{" "}
+                <span id="numberPrice">
+                  {Number(getBookInfoApi.price).toFixed(0)}
+                </span>{" "}
+                 টাকা প্রদান করুন।
               </p>
             </div>
             <div className="form-group payment_indication">
