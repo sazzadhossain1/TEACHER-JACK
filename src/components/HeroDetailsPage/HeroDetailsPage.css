@@ -49,9 +49,12 @@ iframe {
   margin: auto;
   margin-top: 50px;
 }
+.heroDetailsPage-heading-text-div {
+}
 .heroDetailsPage-single-first-p-div {
+  width: 100%;
+  /* background-color: red; */
   text-align: left;
-  margin-left: 100px;
 }
 .heroDetailsPage-single-first__p {
   font-size: 19px;
@@ -188,11 +191,167 @@ iframe {
     margin-left: 150px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .heroDetailsPage-single-first-p-div {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 912px) {
+  .heroDetailsPage-heading-text-div {
+    margin-left: 0;
+  }
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 26px;
+    margin-left: 1px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .heroDetailsPage-qus {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .heroDetailsPage-heading-text-div {
+    margin-left: 0;
+  }
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 28px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 28px;
+  }
+  .apni-ki-akjon {
+    font-size: 22px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 20px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 20px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heroDetailsPage-heading-text-div {
+    margin-left: 0;
+  }
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 28px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 28px;
+  }
+  .apni-ki-akjon {
+    font-size: 22px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 20px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 20px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroDetailsPage-heading-text-div {
+    margin-left: 0;
+  }
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 26px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 26px;
+  }
+  .apni-ki-akjon {
+    font-size: 20px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 19px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 19px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 19px;
+  }
+}
+
 @media screen and (max-width: 731px) {
   .heroDetailsPage-heading-text-div {
     margin-left: 0px;
 
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 712px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 26px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 26px;
+  }
+  .apni-ki-akjon {
+    font-size: 20px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -212,5 +371,145 @@ iframe {
 
   .heroDetailsPage-single-first-p {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 25px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 25px;
+  }
+  .apni-ki-akjon {
+    font-size: 19px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 17px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 24px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 24px;
+  }
+  .apni-ki-akjon {
+    font-size: 18px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 16px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 16px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 22px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 22px;
+  }
+  .apni-ki-akjon {
+    font-size: 16px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 15px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 15px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 21px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 21px;
+  }
+  .apni-ki-akjon {
+    font-size: 15px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 13px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 13px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .HeroDetailsPage-parent-div {
+    margin-top: 5px;
+  }
+  .skills-for-job-program {
+    font-size: 17px;
+    margin-left: 1px;
+  }
+  .skillForWork-heading {
+    font-size: 17px;
+  }
+  .apni-ki-akjon {
+    font-size: 14px;
+  }
+  .heroDetailsPage-qus {
+    font-size: 11px;
+  }
+  .heroDetailsPage-single-first-p-div {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .heroDetailsPage-single-first__p {
+    font-size: 12px;
+  }
+  .heroDetailsPage-single-first-p {
+    font-size: 12px;
   }
 }

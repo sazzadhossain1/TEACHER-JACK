@@ -122,6 +122,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .earn-online-job-blank-div {
+    display: none;
+  }
 }
 @media screen and (max-width: 950px) {
   .earnOnlineJob-parent-div {
@@ -133,9 +136,17 @@
     margin-top: 150px;
   }
 }
+@media screen and (max-width: 820px) {
+  .earn-online-job-blank-div {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
   .earnOnlineJob-parent-div {
     margin-top: 150px;
+  }
+  .earn-online-job-blank-div {
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
