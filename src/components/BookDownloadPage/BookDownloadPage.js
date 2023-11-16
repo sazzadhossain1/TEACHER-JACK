@@ -319,7 +319,7 @@ const BookDownloadPage = () => {
                 </label>
                 <input
                   className="input"
-                  type="number"
+                  type="text"
                   onChange={(e) => setPayee_number(e.target.value)}
                   id="payee_number"
                   name="payee_number"

@@ -59,9 +59,6 @@
   border-radius: 50px;
 }
 
-.WhatYouWillLearn-parent-div {
-}
-
 .WhatYouWillLearn-heading {
   margin-top: 50px;
   margin-bottom: 15px;
@@ -90,9 +87,6 @@
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 15px;
-}
-
-.bookInfo-right-side-div {
 }
 
 .bookInfo-right-side-videoCart {
@@ -162,13 +156,135 @@
 
 /* -------------------- */
 
+@media screen and (max-width: 1350px) {
+  .bookInfo-grid-div {
+  }
+  .bookInfo-right-side-videoCart {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1250px) {
   .bookInfo-img-div {
     max-width: 450px;
   }
 }
+@media screen and (max-width: 1100px) {
+  .bookInfo-grid-div {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bookInfo-right-side-videoCart {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .WhatYouWillLearn-grid-div {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .WhatYouWillLearn-grid-div {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .bookInfo-right-side-videoCart {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .bookInfo-name {
+    font-size: 25px;
+  }
+  .by-zakir-hossain {
+    font-size: 17px;
+  }
+  .bookInfo-price {
+    font-size: 19px;
+  }
+  .coupon_code {
+    font-size: 19px;
+  }
+  .print_copy {
+    font-size: 17px;
+  }
+  .buyCourseBtn {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 367px) {
+  .bookInfo-name {
+    font-size: 22px;
+  }
+  .by-zakir-hossain {
+    font-size: 17px;
+  }
+  .bookInfo-price {
+    font-size: 18px;
+  }
+  .coupon_code {
+    font-size: 18px;
+  }
+  .print_copy {
+    font-size: 16px;
+  }
+  .buyCourseBtn {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 322px) {
+  .buyCourseBtn {
+    font-size: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 302px) {
+  .buyCourseBtn {
+    font-size: 19px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 350px) {
+  .bookInfo-name {
+    font-size: 25px;
+  }
+  .bookInfo-price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bookInfo-heading {
+    font-size: 28px;
+  }
+  .bookInfo-p {
+    font-size: 16px;
+  }
+  .bookInfo-courseInstructor {
+    font-size: 22px;
+  }
+  .Zakir_Sir {
+    font-size: 16px;
+  }
+  .trainer {
+    font-size: 16px;
+  }
+  .WhatYouWillLearn-heading {
+    font-size: 20px;
+  }
+  .WhatYouWillLearn-icon-flex-div {
+    gap: 15px;
+  }
+  .WhatYouWillLearn-icon-flex-div p {
+    font-size: 15px;
+  }
   .bookInfo-name {
     font-size: 25px;
   }

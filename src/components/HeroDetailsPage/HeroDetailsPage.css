@@ -53,6 +53,7 @@ iframe {
 }
 .heroDetailsPage-single-first-p-div {
   width: 100%;
+  margin: auto;
   /* background-color: red; */
   text-align: left;
 }
@@ -289,6 +290,17 @@ iframe {
     width: 100%;
     height: 400px;
   }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 95%;
+  }
+  .heroDetailsPage-last-p-div {
+    width: 95%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -328,6 +340,19 @@ iframe {
     width: 100%;
     height: 350px;
   }
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 90%;
+    font-size: 20px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 18px;
+    width: 90%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 20px;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -359,6 +384,17 @@ iframe {
   }
   .heroDetailsPage-single-first-p {
     font-size: 19px;
+  }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 100%;
+  }
+  .heroDetailsPage-last-p-div {
+    width: 100%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    width: 100%;
   }
 }
 
@@ -401,6 +437,20 @@ iframe {
   iframe {
     width: 100%;
     height: 300px;
+  }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 100%;
+    font-size: 19px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 16px;
+    width: 100%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 19px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -503,6 +553,33 @@ iframe {
     width: 100%;
     height: 100%;
   }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    font-size: 16px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 15px;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 100%;
+    font-size: 18px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 15px;
+    width: 100%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 18px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 360px) {
   .HeroDetailsPage-parent-div {
@@ -540,6 +617,17 @@ iframe {
   }
   .heroDetailsPage-p {
     font-size: 14px;
+  }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    font-size: 15px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 14px;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -583,6 +671,20 @@ iframe {
   iframe {
     width: 100%;
     height: 100%;
+  }
+
+  /* এই Skills for Job Program টি তে যাত্রা */
+  .heroDetailsPage-last-p:first-child {
+    width: 100%;
+    font-size: 15px;
+  }
+  .heroDetailsPage-last-p-div {
+    font-size: 14px;
+    width: 100%;
+  }
+  .heroDetailsPage-last-p:last-child {
+    font-size: 15px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 280px) {

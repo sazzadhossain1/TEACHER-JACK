@@ -30,3 +30,168 @@
   background-color: #eee;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 800px) {
+  .NeedToConsult-heading {
+    font-size: 21px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 19px;
+  }
+  .NeedToConsult-btn {
+    width: 70%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .NeedToConsult-heading {
+    font-size: 20px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 17px;
+  }
+  .NeedToConsult-btn {
+    width: 50%;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NeedToConsult-heading {
+    font-size: 18px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 18px;
+  }
+  .NeedToConsult-btn {
+    width: 70%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .NeedToConsult-heading {
+    font-size: 18px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 17px;
+  }
+  .NeedToConsult-btn {
+    width: 85%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 412px) {
+  .NeedToConsult-heading {
+    font-size: 18px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 16px;
+  }
+  .NeedToConsult-btn {
+    width: 85%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .NeedToConsult_parent_div {
+    margin-top: -50px;
+  }
+  .NeedToConsult-heading {
+    font-size: 19px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 17px;
+  }
+  .NeedToConsult-btn {
+    width: 90%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .NeedToConsult-heading {
+    font-size: 17px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 15px;
+  }
+  .NeedToConsult-btn {
+    width: 90%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .NeedToConsult-heading {
+    font-size: 18px;
+    width: 98%;
+  }
+  .if_you_dont_Un {
+    font-size: 17px;
+  }
+  .NeedToConsult-btn {
+    width: 90%;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .NeedToConsult_parent_div {
+    margin-top: -50px;
+  }
+  .NeedToConsult-heading {
+    font-size: 18px;
+    width: 100%;
+  }
+  .if_you_dont_Un {
+    font-size: 17px;
+  }
+  .NeedToConsult-btn {
+    width: 97%;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .NeedToConsult-btn {
+    width: 90%;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .NeedToConsult-heading {
+    font-size: 16px;
+    width: 100%;
+  }
+  .if_you_dont_Un {
+    font-size: 14px;
+  }
+  .NeedToConsult-btn {
+    width: 95%;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
