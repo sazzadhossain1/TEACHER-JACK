@@ -86,8 +86,6 @@ strike {
 }
 .product_parent_div {
   /* display: grid; */
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
 }
 
 .product_info {
@@ -228,6 +226,7 @@ select {
 }
 form {
 }
+
 .submit-btn {
   background-color: blue;
   color: white;
@@ -295,7 +294,7 @@ form {
 /* tabs end */
 
 /* BKash tab cart start */
-.tab_grid_cart {
+/* .tab_grid_cart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -307,15 +306,75 @@ form {
 }
 .BKash_Number {
   font-size: 50px;
-}
+} */
 /* BKash tab cart end */
 
 @media screen and (max-width: 1550px) {
   .submit-child-div {
     max-width: 65%;
   }
+  .e_bank {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .col-md-6 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .product_parent_div {
+    display: flex;
+    align-items: center;
+  }
+  .col-md-6 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .col-md-6 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .submit-child-div {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .submit-child-div {
+    padding: 10px;
+  }
+  .product_title {
+    font-size: 27px;
+  }
+  .product_price {
+    font-size: 25px;
+  }
+  .product_discount {
+    font-size: 18px;
+  }
+  #book_discount {
+    font-size: 30px;
+  }
+  .strike_p {
+    font-size: 18px;
+  }
+  .item_price {
+    font-size: 18px;
+  }
+
+  .item_discount_price {
+    font-size: 30px;
+  }
+  .submit-child-div {
+    max-width: 90%;
+  }
 }
 @media screen and (max-width: 650px) {
+  .submit-child-div {
+    padding: 10px;
+  }
   .bookDownloadPage-book-grid-die {
     grid-template-columns: 1fr;
   }
@@ -324,12 +383,83 @@ form {
   }
 }
 @media (max-width: 600px) {
+  .submit-child-div {
+    padding: 20px;
+  }
   .submit-form {
     max-width: 100%;
+  }
+  .product_title {
+    font-size: 23px;
+  }
+  .product_price {
+    font-size: 22px;
+  }
+  .product_discount {
+    font-size: 16px;
+  }
+  #book_discount {
+    font-size: 21px;
+  }
+  .strike_p {
+    font-size: 16px;
+  }
+  .item_price {
+    font-size: 16px;
+  }
+
+  .item_discount_price {
+    font-size: 21px;
+  }
+  .submit-child-div {
+    max-width: 97%;
+  }
+
+  .form-group p {
+    font-size: 16px;
+  }
+  #numberPrice {
+    font-size: 21px;
+  }
+  .payment_options {
+    font-size: 16px;
+  }
+  .which_way {
+    font-size: 17px;
+  }
+
+  .e_bank {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 540px) {
+  .submit-child-div {
+    padding: 10px;
+  }
+  .product_parent_div {
+    display: inline-block;
+  }
+  .product_info {
+    margin-top: 20px;
+  }
+
+  .product_discount {
+    margin-top: -15px;
+  }
+  .strike_p {
+    margin-top: -15px;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+  .form-group p {
+    font-size: 15px;
+  }
+  .payment_options {
+    font-size: 15px;
+  }
   .bookDownloadPage-img {
     max-width: 100%;
   }
@@ -338,5 +468,13 @@ form {
   }
   .bookDownloadPage-p {
     font-size: 18px;
+  }
+  .submit-btn {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .submit-child-div {
+    padding: 10px;
   }
 }

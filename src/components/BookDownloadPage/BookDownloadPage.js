@@ -175,7 +175,7 @@ const BookDownloadPage = () => {
                 </span> */}
                 ডিসকাউন্ট
               </p>
-              <p>
+              <p className="strike_p">
                 <strike>
                   <span className="item_price">
                     {Number(getBookInfoApi.price).toFixed()}
@@ -265,19 +265,11 @@ const BookDownloadPage = () => {
                   id="checked_field"
                   onClick={showInputField}
                 >
-                  পেমেন্ট করে এই বাটনে ক্লিক করুন
-                  <p>এবং নিচের ফিল্ডগুলো পুরণ করুন</p>
+                  <p className="do_payment">
+                    পেমেন্ট করে এখানে ক্লিক করুন <br />
+                    এবং নিচের ফিল্ডগুলো পুরণ করুন
+                  </p>
                 </button>
-
-                {/* <input
-                  onChange={showInputField}
-                  id="checked_field"
-                  type="checkbox"
-                  name="payment_agree"
-                  value="Yes"
-                  className="payment-btn"
-                />{" "}
-                &nbsp; আমি পেমেন্ট করেছি */}
               </label>
             </div>
 
@@ -294,7 +286,7 @@ const BookDownloadPage = () => {
                     value={pay_method}
                     onChange={(e) => setPay_method(e.target.value)}
                   >
-                    <option value="">
+                    <option className="which_way" value="">
                       কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করতে এখানে ক্লিক করুন
                     </option>
                     <option className="e_bank" value="bKash">

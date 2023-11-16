@@ -86,7 +86,7 @@ const Login = () => {
             <h1 style={{ color: "black" }} className="m-5">
               You new to this site?{" "}
               <Link style={{ color: "blue" }} to="/signUp">
-                Please SignUp
+                Please Sign Up
               </Link>
             </h1>
 
