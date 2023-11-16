@@ -71,7 +71,8 @@ const ConfirmVerificationSetPass = () => {
     <div className="signUp-parent-div">
       <div className="p-10">
         <div className="mx-auto signup-div p-5">
-          <h1 className="heading1">Complete Verification</h1>
+          <h1 className="heading1">Complete Verification </h1>
+          <p className="verification">(ভেরিফিকেশন সম্পন্ন করুন)</p>
 
           <div className="loginButton" id="loginButton" hidden>
             <p className="loginInfo">
@@ -86,7 +87,10 @@ const ConfirmVerificationSetPass = () => {
             <p>
               নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
               যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে
-              এবং এটিই আপনার লগ ইন পাসওয়ার্ড।
+              এবং এটিই আপনার লগ ইন পাসওয়ার্ড। আমাদের সিস্টেম আপনার পেমেন্টের
+              তথ্য যাচাই করে আপনাকে পুনরায় ই-মেইল পাঠাবে। অতঃপর আপনি আপনার
+              এ্যাকাউনন্টে লগ ইন করে ড্যাশবোর্ডের My Account অপশনের My Purchase
+              থেকে ডাউনলোড করুন।
             </p>
             <div className="form-group">
               <label htmlFor="password">Set Password</label>
@@ -101,7 +105,7 @@ const ConfirmVerificationSetPass = () => {
                 placeholder="Set your new password"
               />
             </div>
-            <button className="sign-up-btn submit-btn" type="submit">
+            <button className="submit_btn" type="submit">
               Submit
             </button>
           </form>

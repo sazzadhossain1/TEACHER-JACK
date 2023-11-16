@@ -1,17 +1,29 @@
-.heading1, .loginInfo{
+.heading1,
+.loginInfo {
   padding: 15px;
 }
-.heading1{
+.heading1 {
   font-size: 22px;
 }
-.loginInfo{
-
+.verification {
+  margin-top: -10px;
 }
-.loginBtn{
+.loginInfo {
+}
+.loginBtn {
   display: block;
-padding: 5px 25px
+  padding: 5px 25px;
 }
 
-.form-group label{
+.form-group label {
   text-align: left;
+}
+
+.submit_btn {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 5px;
 }

@@ -386,9 +386,8 @@ const BookDownloadPage = () => {
               {success && (
                 <div className="bookDownloadPage-success-div">
                   <p className="bookDownloadPage-success-p">
-                    ধন্যবাদ। আপনার পেমেন্ট গ্রহন করা হয়েছে। <br /> আপনার ইমেইল
-                    চেক করুন এবং এ্যাকাউন্ট ভেরিফাই করে ড্যাশবোর্ড
-                    থেকে ডাউনলোড করুন।
+                    রিমোট জব বইটি কেনার জন্য আপনাকে ধন্যবাদ। আপনার এ্যাকাউন্ট
+                    ভেরিফাই করে ড্যাশবোর্ড থেকে বইটি ডাউনলোড করুন
                     <br />
                     <br />
                     <Link className="btn" to="/">
