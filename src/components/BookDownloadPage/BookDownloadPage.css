@@ -82,7 +82,7 @@ strike {
   padding: 10px 0;
 }
 .payment_indication span {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .product_parent_div {
   /* display: grid; */

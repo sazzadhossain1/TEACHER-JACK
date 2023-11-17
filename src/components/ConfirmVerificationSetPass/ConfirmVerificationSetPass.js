@@ -84,7 +84,7 @@ const ConfirmVerificationSetPass = () => {
           </div>
           <br></br>
           <form onSubmit={confirmVerification} id="submitForm" hidden>
-            <p>
+            <p className="set_you_password">
               নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
               যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে
               এবং এটিই আপনার লগ ইন পাসওয়ার্ড। আমাদের সিস্টেম আপনার পেমেন্টের

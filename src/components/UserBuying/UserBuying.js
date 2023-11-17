@@ -19,7 +19,7 @@ const UserBuying = () => {
             <th>Payment From</th>
             <th>Pay Method</th>
             <th>Price</th>
-            <th>discount</th>
+            <th>Discount</th>
             <th>Download</th>
             <th>Status</th>
           </tr>

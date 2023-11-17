@@ -256,6 +256,18 @@ const BookDownloadPage = () => {
                   <br />
                   Branch: Gulshan Branch.
                 </span>
+                <br />
+                <br />
+                <span>Paypal : derick@abaacorp.com</span>
+                <br />
+                <span>USA Checking Account:</span>
+                <br />
+                <span>First Century Bank</span>
+                <br />
+                <span>Routing: 061120084</span>
+                <br />
+                <span>Acct Number: 4029111170017</span>
+                <br />
               </p>
             </div>
             <div className="form-group ">
@@ -386,8 +398,8 @@ const BookDownloadPage = () => {
               {success && (
                 <div className="bookDownloadPage-success-div">
                   <p className="bookDownloadPage-success-p">
-                    রিমোট জব বইটি কেনার জন্য আপনাকে ধন্যবাদ। আপনার এ্যাকাউন্ট
-                    ভেরিফাই করে ড্যাশবোর্ড থেকে বইটি ডাউনলোড করুন
+                    ধন্যবাদ। আপনার পেমেন্ট গ্রহন করা হয়েছে। <br /> আপনার ইমেইল
+                    চেক করুন।
                     <br />
                     <br />
                     <Link className="btn" to="/">
