@@ -31,8 +31,8 @@ const Login = () => {
 
     result = await result.json();
     setUser(result);
-    console.log(result);
-    console.log(result.data.user.refer_code);
+    // console.log(result);
+    // console.log(result.data.user.refer_code);
     localStorage.setItem("storeReferCode", result.data.user.refer_code);
 
     localStorage.setItem("token", result.data.token);

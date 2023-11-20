@@ -22,6 +22,7 @@ import UseBuyingDetails from "./components/UseBuyingDetails/UseBuyingDetails";
 import AffiliateProgram from "./components/AffiliateProgram/AffiliateProgram";
 import Faq from "./components/Faq/Faq";
 import JobOpportunities from "./components/JobOpportunities/JobOpportunities";
+import BasicEnglishCommunication from "./components/BasicEnglishCommunication/BasicEnglishCommunication";
 
 function App() {
   const tokenId = localStorage.getItem("token");
@@ -34,10 +35,16 @@ function App() {
       children: [
         {
           path: "/",
+          loader: async () => {
+            return fetch("https://app.teacherjackonline.com/api/product");
+          },
           element: <Home></Home>,
         },
         {
           path: "/home",
+          loader: async () => {
+            return fetch("https://app.teacherjackonline.com/api/product");
+          },
           element: <Home></Home>,
         },
         {
@@ -55,6 +62,10 @@ function App() {
         {
           path: "/stepDetailsPage",
           element: <StepDetailsPage></StepDetailsPage>,
+        },
+        {
+          path: "/basicEnglishCommunication",
+          element: <BasicEnglishCommunication></BasicEnglishCommunication>,
         },
 
         {

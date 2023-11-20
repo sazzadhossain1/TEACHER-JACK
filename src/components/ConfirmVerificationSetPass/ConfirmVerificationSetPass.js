@@ -42,7 +42,7 @@ const ConfirmVerificationSetPass = () => {
       // navigation(form, { replace: true });
       navigation(form);
     }
-    console.log(result);
+    // console.log(result);
   }
 
   async function handleLogin() {
@@ -87,13 +87,15 @@ const ConfirmVerificationSetPass = () => {
             <p className="set_you_password">
               নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
               যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে
-              এবং এটিই আপনার লগ ইন পাসওয়ার্ড। আমাদের সিস্টেম আপনার পেমেন্টের
-              তথ্য যাচাই করে আপনাকে পুনরায় ই-মেইল পাঠাবে। অতঃপর আপনি আপনার
-              এ্যাকাউনন্টে লগ ইন করে ড্যাশবোর্ডের My Account অপশনের My Purchase
-              থেকে ডাউনলোড করুন।
+              এবং এটিই আপনার লগ ইন পাসওয়ার্ড। <br />
+              <br /> আমাদের সিস্টেম আপনার পেমেন্টের তথ্য যাচাই করে আপনাকে পুনরায়
+              ই-মেইল পাঠাবে। অতঃপর আপনি আপনার এ্যাকাউনন্টে লগ ইন করে
+              ড্যাশবোর্ডের My Account অপশনের My Purchase থেকে ডাউনলোড করুন।
             </p>
             <div className="form-group">
-              <label htmlFor="password">Set Password</label>
+              <label htmlFor="password" className="password">
+                Set Password
+              </label>
               <label>Please input a minimum of 8 characters</label>
               <input
                 type="password"

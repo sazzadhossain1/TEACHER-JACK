@@ -6,17 +6,20 @@ const EarnFromYourAnswers = () => {
   return (
     <div className="earn-from-your-answer-parent-div">
       <h3 className="earn-from-your-answer">
-        ট্রেইনিং শেষে আমাদের সাথে যে কাজ গুলো করার সুযোগ আছে{" "}
+        ট্রেইনিং শেষে আমাদের সাথে যে কাজগুলো করার সুযোগ আছে{" "}
       </h3>
       <div className="earnFromYourAnswers-grid-div">
         <div className="earnFromYourAnswers-text-div">
+          {/* <h3 className="earn-from-your-answer">
+            ট্রেইনিং শেষে আমাদের সাথে যে কাজ গুলো করার সুযোগ আছে{" "}
+          </h3> */}
           <p className="earnFromYourAnswers-p">✅ Affiliate Marketing</p>
           <p className="earnFromYourAnswers-p">
-            ✅ Writing & Translation Article Writing / Blog Writing / Book &{" "}
-            <br />
+            ✅ Writing & Translation / Content development
+            {/* <br />
             <span className="eBook">
               eBook Writing / Content development / Proofreading.
-            </span>
+            </span> */}
           </p>
           <p className="earnFromYourAnswers-p">
             ✅ Data Digging/ Data Entry / Research work.

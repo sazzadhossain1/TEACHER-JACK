@@ -1,5 +1,6 @@
 import React from "react";
 import "./TryTodayOurTreat.css";
+import { Link } from "react-router-dom";
 
 const TryTodayOurTreat = () => {
   return (
@@ -11,13 +12,23 @@ const TryTodayOurTreat = () => {
         <div>
           <h1 className="step-two">Step 2</h1>
           <h1 className="tryToday">
-            Mandatory - “Basic English Communication” কোর্স (Basic Level)
+            Mandatory Course - “Basic English Communication” কোর্স (Basic Level){" "}
+            <br /> <span className="six-month">(6-month Course)</span>
           </h1>
-          <p className="tryTodayTreat-p">30+ Modules</p>
-          <p className="tryTodayTreat-p">30 Modules (150+ videos) </p>
-          <p className="tryTodayTreat-p">Each Module Costs 120 tk</p>
-          <p className="tryTodayTreat-p"> Entire Course: 3600 tk </p>
+          <div className="try_today_p_div">
+            {/* <p className="six-month">(6-month Course)</p> */}
+            <p className="tryTodayTreat-p">30+ Modules</p>
+            <p className="tryTodayTreat-p">30 Modules (150+ videos) </p>
+            <p className="tryTodayTreat-p">Each Module Costs 150 tk</p>
+            <p className="tryTodayTreat-p"> Entire Course: 4500 tk </p>
+            <p className="tryTodayTreat-p">
+              After Discount with Coupon: 3700 tk
+            </p>
+          </div>
         </div>
+        <Link to="/basicEnglishCommunication">
+          <button className="step_six_buy_now_btn ">Buy Now</button>
+        </Link>
       </div>
     </div>
   );

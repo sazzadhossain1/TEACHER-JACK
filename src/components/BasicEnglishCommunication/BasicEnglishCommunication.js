@@ -1,13 +1,13 @@
 import React from "react";
-import "./AffiliateProgram.css";
+import "./BasicEnglishCommunication.css";
 import { Link } from "react-router-dom";
-import CEOPhoto from "../../accets/Images/CEO-photo/CEO-Photo.png";
+import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
 import AffiliateMarketingImg from "../../accets/Images/AffiliateMarketingImg/AffiliateMarketingImg.jpg";
 import teacherJack from "../../accets/Images/teacher-jack/teacherJack.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const AffiliateProgram = () => {
+const BasicEnglishCommunication = () => {
   const id = +localStorage.getItem("bookDataId");
   // console.log(typeof id, id);
 
@@ -18,7 +18,7 @@ const AffiliateProgram = () => {
       <div>
         <div className="bookInfo-grid-div">
           <div className="bookInfo-left-side-div">
-            <h1 className="bookInfo-heading">Affiliate Marketing Guideline</h1>
+            <h1 className="bookInfo-heading">Basic English Communication</h1>
             <p className="bookInfo-p">
               Affiliate Marketing করে সহজেই ইনকাম শুরু করতে পারেন। আমাদের
               প্রোগ্রামের সাথে যুক্ত হয়ে ইনকাম শুরু করতে চাইলে
@@ -137,4 +137,4 @@ const AffiliateProgram = () => {
   );
 };
 
-export default AffiliateProgram;
+export default BasicEnglishCommunication;

@@ -5,8 +5,9 @@
 }
 .earn-from-your-answer {
   margin-top: 70px;
+  margin-left: 198px;
   margin-bottom: 50px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   font-family: "Alata", Helvetica, Arial, Lucida, sans-serif;
 }
@@ -101,6 +102,9 @@
   }
 }
 @media screen and (max-width: 1100px) {
+  .earn-from-your-answer {
+    margin-left: 50px;
+  }
   .earnFromYourAnswers-grid-div {
     grid-template-columns: 1fr;
     width: 100%;
@@ -140,25 +144,35 @@
   .earnFromYourAnswers-p {
     font-size: 12px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
+}
+@media screen and (max-width: 455px) {
+  .earn-from-your-answer {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 410px) {
   .earnFromYourAnswers-p {
     font-size: 11px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
+}
+@media screen and (max-width: 400px) {
+  .earn-from-your-answer {
+    font-size: 17px;
+  }
+  .earnFromYourAnswers-p {
+    font-size: 11px;
+  }
 }
 @media screen and (max-width: 380px) {
   .earnFromYourAnswers-p {
     font-size: 10px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
+}
+@media screen and (max-width: 360px) {
+  .earn-from-your-answer {
+    margin-left: 20px;
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 345px) {
   .earnFromYourAnswers-text-div {
@@ -167,9 +181,6 @@
   .earnFromYourAnswers-p {
     font-size: 10px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
 }
 @media screen and (max-width: 328px) {
   .earnFromYourAnswers-text-div {
@@ -177,9 +188,6 @@
   .earnFromYourAnswers-p {
     font-size: 9px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
 }
 @media screen and (max-width: 300px) {
   .earnFromYourAnswers-text-div {
@@ -190,29 +198,4 @@
   .earn-from-your-answer {
     font-size: 18px;
   }
-  /* .dateSendPhoto {
-    background-color: rgb(243, 243, 243);
-  } */
 }
-
-/* ------------------------------------ */
-
-/* .earnFromYourAnswers-img-div {
-  background-color: blanchedalmond;
-  padding: 30px;
-  margin-top: 100px;
-}
-.earnFromYourAnswers-img-div img {
-  margin: auto;
-  width: 100%;
-  height: 800px;
-} */
-/* .earnFromYourAnswers-img-div {
-  background-color: blanchedalmond;
-}
-.earnFromYourAnswers-img-div img {
-  margin: auto;
-  width: 100%;
-  height: 800px;
-} */
-/* ----------------------------------- */

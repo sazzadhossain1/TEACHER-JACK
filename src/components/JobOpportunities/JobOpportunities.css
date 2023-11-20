@@ -1,0 +1,28 @@
+.AffiliateMarketing-text-p {
+  margin-bottom: 7px;
+}
+.our_payment_structure {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.Salary_or_Payment {
+  margin-top: 20px;
+}
+
+.email-text-p {
+  margin-bottom: 20px;
+  /* margin-top: -50px; */
+}
+
+.Disclaimer {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.jobOpportunities_photo {
+  width: 600px;
+}
+.second_jobOpportunities_photo {
+  width: 600px;
+  display: none;
+}

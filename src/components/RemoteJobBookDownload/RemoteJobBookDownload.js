@@ -11,8 +11,11 @@ const RemoteJobBookDownload = () => {
       <div className="buyTheBook-flex-div">
         <Link to="/bookDetailsPage">
           <button className="download-the-book">
-            BUY BOOK &nbsp;
-            <FontAwesomeIcon icon={faShoppingCart} />
+            <p className="download-the-book_p">
+              BUY BOOK &nbsp;
+              <FontAwesomeIcon icon={faShoppingCart} />
+            </p>
+            <span className="click_here_btn">(এখানে ক্লিক করুন) </span>
           </button>
         </Link>
       </div>

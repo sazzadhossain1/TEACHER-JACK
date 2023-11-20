@@ -8,15 +8,21 @@
   background-color: aliceblue;
   width: 50%;
   margin: auto;
+  text-align: center;
   margin-top: 50px;
   padding: 30px;
   border-radius: 50px;
 }
+.job_preparation_div {
+  text-align: left;
+}
 .makeMOneyOnlineToday-heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 20px;
+}
+.Job_Preparation {
+  font-size: 27px;
 }
 .makeMOneyOnlineToday-p {
   font-size: 18px;
@@ -24,7 +30,13 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.step_four_buy_now_btn {
+  border: 2px solid black;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 15px;
+}
 .makeMoneyOnlineToday-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

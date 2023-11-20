@@ -4,10 +4,10 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const UserSales = () => {
   const referCodeFromLocalStore = localStorage.getItem("storeReferCode");
-  console.log(referCodeFromLocalStore);
+  // console.log(referCodeFromLocalStore);
 
   const userSalesGetApi = useLoaderData();
-  console.log(userSalesGetApi);
+  // console.log(userSalesGetApi);
 
   if (!userSalesGetApi.data) {
     return <div>Loading...</div>; // You can show a loading indicator or message while data is being fetched

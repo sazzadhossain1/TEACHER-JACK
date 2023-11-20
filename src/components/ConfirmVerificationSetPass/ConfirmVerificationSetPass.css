@@ -17,6 +17,9 @@
 .set_you_password {
   text-align: left;
 }
+.password {
+  font-size: 18px;
+}
 .form-group label {
   text-align: left;
 }

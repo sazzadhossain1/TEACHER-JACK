@@ -6,14 +6,14 @@ import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
   // For Safari
-  // document.body.scrollTop = 0;
+  document.body.scrollTop = 0;
 
   // For Chrome, Firefox, IE and Opera
-  // document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  console.log(getBookInfoApi.discount);
+  // console.log(getBookInfoApi.discount);
   const navigate = useNavigate();
 
   const { id } = getBookInfoApi;
@@ -58,8 +58,8 @@ const BookDownloadPage = () => {
       coupon_code,
       address: "",
     };
-    console.log(inputItem);
-    console.log(price);
+    // console.log(inputItem);
+    // console.log(price);
     if (+price >= +price_text) {
       try {
         let url = "https://app.teacherjackonline.com/api/sale";
@@ -73,8 +73,8 @@ const BookDownloadPage = () => {
         });
 
         result = await result.json();
-        console.log(JSON.stringify(inputItem));
-        console.log("result", result);
+        // console.log(JSON.stringify(inputItem));
+        // console.log("result", result);
 
         if (result.data) {
           const submitBtn = document.getElementById("submitBtn");
@@ -114,7 +114,7 @@ const BookDownloadPage = () => {
       });
 
       result = await result.json();
-      console.log(result);
+      // console.log(result);
 
       if (result.data === null) {
         code_error.innerHTML = "<p class='error'>আপনার কুপন কোড সঠিক নয়</p>";
@@ -128,7 +128,7 @@ const BookDownloadPage = () => {
         } `;
       }
     } catch {
-      console.log(error);
+      // console.log(error);
     }
   }
 
@@ -245,9 +245,8 @@ const BookDownloadPage = () => {
                 <span>0163 888 5358 1</span>
               </p>
               <p>
-                <span>
-                  ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ <br />
-                </span>
+                <span>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ</span>
+                <br />
                 <span className="brack-bank-info">
                   BRAC BANK LIMITED.
                   <br />
@@ -256,8 +255,9 @@ const BookDownloadPage = () => {
                   <br />
                   Branch: Gulshan Branch.
                 </span>
-                <br />
-                <br />
+              </p>
+              <br />
+              <p>
                 <span>Paypal : derick@abaacorp.com</span>
                 <br />
                 <span>USA Checking Account:</span>

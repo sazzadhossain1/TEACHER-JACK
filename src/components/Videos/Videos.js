@@ -96,7 +96,7 @@ const Videos = () => {
     <div>
       <div className="gallery">
         {data.map((items) => {
-          console.log(items);
+          // console.log(items);
           return (
             <div key={items.id}>
               <div>

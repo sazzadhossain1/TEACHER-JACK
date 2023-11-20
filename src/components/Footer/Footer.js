@@ -78,6 +78,7 @@ const Footer = () => {
               <img className="weAccept_photo" src={weAccept} alt="" />
 
               <Link
+                className="i"
                 to="https://app.teacherjackonline.com/login"
                 target="_blank"
               >

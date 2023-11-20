@@ -19,17 +19,18 @@ const StepDetailsPage = () => {
   return (
     <div>
       <div className="stepDetailsPage-div">
-        <img className="stepDetailsPage-banner-photo" src={bannerOne} alt="" />
+        {/* <img className="stepDetailsPage-banner-photo" src={bannerOne} alt="" /> */}
+        <p className="stepDetailsPage-p">
+          নিচের স্টেপগুলো আগামী ৫ – ৬ মাস প্রতিদিন মিনিমাম ৩-৪ ঘন্টা করে সময়
+          দিয়ে শেষ করুন, তবেই আপনি একটি ভালো ফল পাবেন ইনশাআল্লাহ।
+        </p>
         <p className="stepDetailsPage-p">
           এ্যাফিলিয়েট প্রোগ্রামের মাধ্যমে টাকা ইনকাম করুন।
         </p>
         <p className="stepDetailsPage-p">
           একই সাথে এই বইয়ে উল্লেখিত কোর্সে সময় দিন।
         </p>
-        <p className="stepDetailsPage-p">
-          আগামী ৫ – ৬ মাস প্রতিদিন মিনিমাম ৩-৪ ঘন্টা সময় দিন, তবেই আপনি একটি
-          ভালো ফল পাবেন ইনশাআল্লাহ।
-        </p>
+
         <p className="stepDetailsPage-p">
           আমরা এই Skills for Job Program টি এমনভাবে তৈরি করেছি যাতে গ্রামে বসে
           থাকা একজন চাকুরীপ্রার্থী বা ছাত্র-ছাত্রী থেকে শুরু করে ঢাকার ইংলিশ
@@ -48,7 +49,7 @@ const StepDetailsPage = () => {
               একটি গাইডলাইন দেয়ার চেষ্টা করেছি যা আপনি সাধারণত কোথাও পাবেন না।
               বইটি এখান থেকে সংগ্রহ করুন:
               <Link
-                to="https://bd.teacherjackonline.com/"
+                to="https://bd.teacherjackonline.com/bookDetailsPage"
                 target="blank"
                 className="navigate-site-sink"
               >
@@ -205,7 +206,7 @@ const StepDetailsPage = () => {
         </p>
       </div>
       <a href="/">
-        <button className="backToHome">Back to Home</button>
+        <button className="step_details_page_backToHome">Back to Home</button>
       </a>
     </div>
   );

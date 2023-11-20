@@ -9,9 +9,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BookInfo = ({ bookData }) => {
-  console.log(bookData);
+  // console.log(bookData);
   const { id } = bookData;
-  // console.log(name, price, id);
+  // console.log(typeof id, id);
+  localStorage.setItem("bookDataId", id);
 
   const dis = bookData.discount;
   const regularPrice = bookData.price;

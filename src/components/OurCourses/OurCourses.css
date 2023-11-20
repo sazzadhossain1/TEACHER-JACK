@@ -2,13 +2,24 @@
   background-color: rgb(250, 237, 222);
   padding: 20px;
 }
+.core_skills {
+  font-size: 27px;
+  text-align: center;
+  font-weight: 500;
+}
+.pick_at_least {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
 .our-courses-child-div {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .our-courses-first-heading {
-  margin-bottom: 50px;
-  font-size: 40px;
+  text-align: center;
+
+  font-size: 30px;
   font-family: "magnolia";
   font-weight: 800;
   color: green;
@@ -66,6 +77,7 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  font-size: 19px;
 }
 
 .our-course-see-more-btn {

@@ -7,11 +7,13 @@ const OurCourses = () => {
   return (
     <div className="our-courses-parent-div">
       <div className="our-courses-child-div">
-        <h1 className="our-courses-first-heading">
-          Step 3: “Core Skills” Section
-        </h1>
+        <h1 className="our-courses-first-heading">Step 3</h1>
+        <p className="core_skills">“Core Skills” Section</p>
+        <p className="pick_at_least">
+          Pick at least 1 course from this section
+        </p>
         <div className="our-course-cart-grid-div">
-          <div className="our-course-cart-div">
+          {/* <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
               Affiliate Marketing: Course Fee: 650 tk
@@ -20,32 +22,22 @@ const OurCourses = () => {
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
-          </div>
+          </div> */}
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Writing & Translation / Article Writing / Blog Writing / Book &
-              eBook Writing / Content
+              Writing & Translation / Content development Course Fee: 850 tk
             </h4>
 
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
           </div>
-          <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              development / Proofreading. Course Fee: 650 tk
-            </h4>
 
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div>
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Data Digging/ Data Entry / Research work. Course Fee: 850 tk
+              Data Entry/Data Digging / Research work. Course Fee: 850 tk
             </h4>
 
             <Link>

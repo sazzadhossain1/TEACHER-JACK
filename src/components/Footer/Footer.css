@@ -126,7 +126,9 @@
 .footer-copy-right {
   font-size: 15px;
 }
-
+.i {
+  font-size: 12px;
+}
 /* responsive start */
 @media screen and (max-width: 1350px) {
   .footer-grid-div {

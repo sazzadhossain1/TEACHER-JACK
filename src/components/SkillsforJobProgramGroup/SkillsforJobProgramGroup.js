@@ -5,20 +5,23 @@ import StepFivePhoto from "../../accets/Images/steps-five-photo/StepFivePhoto.jp
 
 const SkillsforJobProgramGroup = () => {
   return (
-    <div>
+    <div className="sills_for_job_program_group_parent_div">
+      <h1 className="step_five">Step 5</h1>
       <h1 className="SkillsforJobProgramGroup-heading">
-        Step 5: Join 'Skills for Job Program' 
+        Join 'Skills for Job Program' 
         <Link
           className="SkillsforJobProgramGroup-Link"
-          to="https://web.facebook.com/groups/3127566597539398"
+          to="/jobOpportunities"
           target="_blank"
         >
-          Group
+          {" "}
+          <br />
+          <button className="NeedToConsult-btn margin_top">
+            আমাদের Job Opportunities page- এ এবং অন্যান্য দেখিয়ে দেয়া
+            জায়গাগুলোতে কাজের জন্য Apply করুন
+          </button>
         </Link>
       </h1>
-      <div className="StepFivePhoto-div">
-        <img className="StepFivePhoto" src={StepFivePhoto} alt="" />
-      </div>
     </div>
   );
 };

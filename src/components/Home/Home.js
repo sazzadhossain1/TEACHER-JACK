@@ -7,8 +7,11 @@ import NeedToConsult from "../NeedToConsult/NeedToConsult";
 
 import HeroDetailsPage from "../HeroDetailsPage/HeroDetailsPage";
 import AffiliateMarketing from "../AffiliateMarketing/AffiliateMarketing";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
+  const getProductData_fromApi = useLoaderData();
+  console.log(getProductData_fromApi);
   // For Safari
   document.body.scrollTop = 0;
 

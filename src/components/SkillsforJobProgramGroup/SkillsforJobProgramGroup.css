@@ -1,8 +1,23 @@
-.SkillsforJobProgramGroup-heading {
-  font-size: 30px;
-  font-weight: 500;
+.sills_for_job_program_group_parent_div {
+  background-color: #eee;
+  padding: 10px;
+}
+.step_five {
+  text-align: center;
   margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.margin_top {
+  margin-top: 20px;
+}
+.SkillsforJobProgramGroup-heading {
+  font-size: 27px;
+  font-weight: 500;
+
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .SkillsforJobProgramGroup-Link {
@@ -10,9 +25,33 @@
   text-decoration: underline;
 }
 
-.StepFivePhoto {
-  margin: auto;
-  max-width: 100%;
-  margin-top: 60px;
-  margin-bottom: 70px;
+@media screen and (max-width: 712px) {
+  .SkillsforJobProgramGroup-heading {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .SkillsforJobProgramGroup-heading {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .SkillsforJobProgramGroup-heading {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .SkillsforJobProgramGroup-heading {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .SkillsforJobProgramGroup-heading {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }

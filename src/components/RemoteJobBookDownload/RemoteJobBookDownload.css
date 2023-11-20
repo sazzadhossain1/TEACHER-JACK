@@ -12,14 +12,20 @@
 }
 .download-the-book {
   background-color: rgb(71, 255, 102);
-  padding: 25px 30px;
+  padding: 5px 35px;
   max-width: 100%;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 10px;
-  font-weight: 700;
   margin-bottom: 10px;
 }
-
+.download-the-book_p {
+  font-weight: 700;
+}
+.click_here_btn {
+  display: block;
+  font-size: 16px;
+  color: black;
+}
 @media screen and (max-width: 1024px) {
   .buyTheBook-parent-div {
     display: flex;

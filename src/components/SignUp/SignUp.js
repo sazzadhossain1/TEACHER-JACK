@@ -27,7 +27,7 @@ const SignUp = () => {
     e.preventDefault();
 
     let item = { name, email, phone, password, confirm_password };
-    console.log(item);
+    // console.log(item);
     // console.log(confirm_password);
     try {
     } catch {}
@@ -42,7 +42,7 @@ const SignUp = () => {
 
     result = await result.json();
     setSuccess(true);
-    console.log("result", result);
+    // console.log("result", result);
     setUser(result);
 
     localStorage.setItem("SignUpToken", result.data.token);

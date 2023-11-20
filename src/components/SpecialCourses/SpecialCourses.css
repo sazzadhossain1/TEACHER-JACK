@@ -4,6 +4,7 @@
   max-width: 100%;
 }
 .special-courses-h2 {
+  text-align: center;
   margin-top: 30px;
   font-size: 40px;
   color: rgb(0, 54, 61);
@@ -88,8 +89,8 @@
     margin-left: 5px;
   }
 }
-
-/* https://bd.teacherjackonline.com/
-Host: ftp.teacherjackonline.com
-User: u721601174.Sazzad_admin
-Pass: FTPAdmin4teacherjack */
+@media screen and (max-width: 360px) {
+  .specialCourses-cart {
+    margin-left: -30px;
+  }
+}
