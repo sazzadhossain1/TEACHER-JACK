@@ -8,6 +8,7 @@ import { AuthContext } from "../context/UseContext";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const navigation = useNavigate();
   const location = useLocation();
@@ -83,14 +84,18 @@ const Login = () => {
               </label>
             </div>
 
+            <Link to="/forgetPassword" style={{ color: "blue" }}>
+              Forgot password?
+            </Link>
+
             <h1 style={{ color: "black" }} className="m-5">
               You new to this site?{" "}
               <Link style={{ color: "blue" }} to="/signUp">
-                Please Sign Up
+                Sign Up
               </Link>
             </h1>
 
-            {/* <p style={{ color: "red" }}>{error}</p> */}
+            <p style={{ color: "red" }}>{error}</p>
             {/* {success && (
               <p style={{ color: "greenyellow" }}>User Login Successfully</p>
             )} */}

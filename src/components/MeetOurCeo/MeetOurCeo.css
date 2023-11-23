@@ -39,7 +39,9 @@
 .zakir_sir_email {
   font-size: 16px;
 }
-
+.about_zakir_sir_p_div {
+  max-width: 100%;
+}
 .media_link {
   font-size: 16px;
   color: blue;
@@ -74,6 +76,9 @@
   font-size: 20px;
 }
 
+.about_teacher_jack_photo_gallery_div {
+  display: grid;
+}
 @media screen and (max-width: 1400px) {
   .meetOurCeo-grid-div {
     width: 100%;

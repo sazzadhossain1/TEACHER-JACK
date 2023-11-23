@@ -23,6 +23,10 @@ import AffiliateProgram from "./components/AffiliateProgram/AffiliateProgram";
 import Faq from "./components/Faq/Faq";
 import JobOpportunities from "./components/JobOpportunities/JobOpportunities";
 import BasicEnglishCommunication from "./components/BasicEnglishCommunication/BasicEnglishCommunication";
+import ForgetPassword from "./components/ForgetPassword/ForgetPassword";
+import SetForgetPassword from "./components/SetForgetPassword/SetForgetPassword";
+import RemoteJobBookDownload from "./components/RemoteJobBookDownload/RemoteJobBookDownload";
+import BookInfo from "./components/BookInfo/BookInfo";
 
 function App() {
   const tokenId = localStorage.getItem("token");
@@ -98,6 +102,15 @@ function App() {
           element: <ConfirmVerificationSetPass></ConfirmVerificationSetPass>,
         },
         {
+          path: "/forgetPassword",
+          element: <ForgetPassword></ForgetPassword>,
+        },
+        {
+          path: "/forget_password/:token",
+          element: <SetForgetPassword></SetForgetPassword>,
+        },
+
+        {
           path: "/businessScopes",
           element: <BusinessScopes></BusinessScopes>,
         },
@@ -106,6 +119,27 @@ function App() {
           path: "/clickHereGetInfo",
           element: <ClickHereGetInfo></ClickHereGetInfo>,
         },
+        {
+          path: "/forgetPassword",
+          element: <ForgetPassword></ForgetPassword>,
+        },
+
+        // new //
+        {
+          path: "/remoteJobBookDownload/:id",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://app.teacherjackonline.com/api/product/${params.id}`
+            );
+          },
+          element: <RemoteJobBookDownload></RemoteJobBookDownload>,
+        },
+
+        {
+          path: "/bookInfo",
+          element: <BookInfo></BookInfo>,
+        },
+        // ---------------- //
 
         {
           path: "/bookDetailsPage",
@@ -130,7 +164,7 @@ function App() {
 
         {
           path: "/userBuying",
-          loader: async ({ params }) => {
+          loader: async () => {
             const id = localStorage.getItem("userId");
             console.log(id);
             try {
@@ -166,7 +200,7 @@ function App() {
         // ---------------
         {
           path: "/userSales",
-          loader: async ({ params }) => {
+          loader: async () => {
             const id = localStorage.getItem("userId");
             return fetch(
               `https://app.teacherjackonline.com/api/user/sales/${id}`,

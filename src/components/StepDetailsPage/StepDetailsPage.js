@@ -16,6 +16,8 @@ import skillDevelopment from "../../accets/Images/Step-details-page-photo/skillD
 import companyOpening from "../../accets/Images/Step-details-page-photo/companyOpening.jpg";
 
 const StepDetailsPage = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   return (
     <div>
       <div className="stepDetailsPage-div">

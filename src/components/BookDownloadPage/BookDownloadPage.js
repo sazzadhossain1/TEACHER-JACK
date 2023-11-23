@@ -6,10 +6,10 @@ import { AuthContext } from "../context/UseContext";
 
 const BookDownloadPage = () => {
   // For Safari
-  document.body.scrollTop = 0;
+  // document.body.scrollTop = 0;
 
   // For Chrome, Firefox, IE and Opera
-  document.documentElement.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
 
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
@@ -260,6 +260,7 @@ const BookDownloadPage = () => {
               <p>
                 <span>Paypal : derick@abaacorp.com</span>
                 <br />
+                <br />
                 <span>USA Checking Account:</span>
                 <br />
                 <span>First Century Bank</span>
@@ -311,15 +312,21 @@ const BookDownloadPage = () => {
                       রকেট
                     </option>
                     <option className="e_bank" value="bangk">
-                      BANK ACCOUNT
+                      BD BANK ACCOUNT
+                    </option>
+                    <option className="e_bank" value="bangk">
+                      PAYPAL
+                    </option>
+                    <option className="e_bank" value="bangk">
+                      US BANK ACCOUNT
                     </option>
                   </select>
                 </div>
               </div>
               <div className="form-group">
                 <label htmlFor="password">
-                  যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / (ব্যংকে পাঠালে যে ব্যংক
-                  থেকে পাঠানো হয়েছে সেই ব্যংকের নাম
+                  যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / যে ব্যংক থেকে পাঠানো হয়েছে
+                  সেটির নাম / PayPal id
                 </label>
                 <input
                   className="input"
@@ -333,8 +340,8 @@ const BookDownloadPage = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="password">
-                  ট্র্যান্স্যাকশন আই ডি নাম্বার / (ব্যংকে পাঠালে যে ব্যংক থেকে
-                  পাঠানো হয়েছে সেই ব্যংকের এ্যাকাউন্ট নম্বর)
+                  ট্র্যান্স্যাকশন আই ডি নাম্বার / যে ব্যংক থেকে পাঠানো হয়েছে
+                  সেটির এ্যাকাউন্ট নম্বর)
                 </label>
                 <input
                   className="input"

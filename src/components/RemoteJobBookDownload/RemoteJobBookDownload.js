@@ -3,13 +3,17 @@ import "./RemoteJobBookDownload.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const RemoteJobBookDownload = () => {
+  const getProductData = useLoaderData();
+  const id = getProductData.data[0].id;
+
   return (
     <div className="buyTheBook-parent-div">
+      {/* {getProductData.data.map((data) => console.log(data.id))} */}
       <div className="buyTheBook-flex-div">
-        <Link to="/bookDetailsPage">
+        <Link to={`/bookDetailsPage`}>
           <button className="download-the-book">
             <p className="download-the-book_p">
               BUY BOOK &nbsp;

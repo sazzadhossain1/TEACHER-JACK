@@ -26,7 +26,7 @@
 }
 .our-course-cart-grid-div {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   width: 90%;
   margin: auto;
@@ -38,6 +38,7 @@
   padding: 40px;
   border-radius: 15px;
   position: relative;
+  height: 400px;
 }
 
 .our-course-cart-div:hover {
@@ -77,7 +78,13 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 17px;
+}
+.discount_price {
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 17px;
+  color: blue;
 }
 
 .our-course-see-more-btn {
@@ -89,10 +96,9 @@
   font-weight: 500;
   font-size: 20px;
   position: absolute;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  margin-left: 5px;
+  bottom: 25px;
+
+  margin-left: 40px;
 }
 
 .our-course-see-more-btn:hover {

@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import cartPhoto from "../../accets/Images/our-corses-photo/cart-photo.jpg";
 
 const OurCourses = () => {
+  const handlePopup = (e) => {
+    console.log(e);
+  };
   return (
     <div className="our-courses-parent-div">
       <div className="our-courses-child-div">
@@ -13,22 +16,12 @@ const OurCourses = () => {
           Pick at least 1 course from this section
         </p>
         <div className="our-course-cart-grid-div">
-          {/* <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              Affiliate Marketing: Course Fee: 650 tk
-            </h4>
-
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div> */}
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Writing & Translation / Content development Course Fee: 850 tk
+              Writing & Translation / Content development Course Fee: 1250 Tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1000 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -39,7 +32,7 @@ const OurCourses = () => {
             <h4 className="our-course-header">
               Data Entry/Data Digging / Research work. Course Fee: 850 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1000 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -55,9 +48,9 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Transcription. Course Fee: 900 tk
+              Transcription. Course Fee: 1100 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 900 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -65,9 +58,9 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Audio Voice-over. Course Fee: 850 tk
+              Audio Voice-over. Course Fee: 1100 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 900 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -77,7 +70,7 @@ const OurCourses = () => {
             <h4 className="our-course-header">
               Video Editing. Course Fee: 3000 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 2500 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -85,9 +78,9 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Telemarketing + CRM. Course Fee: 1250 tk
+              Telemarketing + CRM. Course Fee: 1500 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1250 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -97,7 +90,7 @@ const OurCourses = () => {
             <h4 className="our-course-header">
               Graphic Design. Course Fee: 2000 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1550 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -105,7 +98,38 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Web Design & Development. Course Fee: 5000 tk
+              Web Design & Development. Course Fee:4000 tk
+            </h4>
+            <p className="discount_price">Discount w/ coupon: 500 Tk</p>
+            <Link>
+              <button className="our-course-see-more-btn">Buy Now</button>
+            </Link>
+          </div>
+          <div className="our-course-cart-div">
+            <img className="our-course-img" src={cartPhoto} alt="" />
+            <h4 className="our-course-header">
+              Search Engine Optimization (SEO). Project Management. Digital
+              Marketing Course Fee: 2500 tk
+            </h4>
+            <p className="discount_price">Discount w/ coupon:2050 Tk</p>
+            <Link>
+              <button className="our-course-see-more-btn">Buy Now</button>
+            </Link>
+          </div>
+          <div className="our-course-cart-div">
+            <img className="our-course-img" src={cartPhoto} alt="" />
+            <h4 className="our-course-header">
+              Customer Support. Course Fee: 1500 tk
+            </h4>
+            <p className="discount_price">Discount w/ coupon: 1250 Tk</p>
+            <Link>
+              <button className="our-course-see-more-btn">Buy Now</button>
+            </Link>
+          </div>
+          <div className="our-course-cart-div">
+            <img className="our-course-img" src={cartPhoto} alt="" />
+            <h4 className="our-course-header">
+              Grooming - published in a book format 200 tk
             </h4>
 
             <Link>
@@ -115,9 +139,9 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Search Engine Optimization (SEO). Course Fee: 2500 tk
+              Youtube/Facebook Content Making. Course Fee: 1250 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1000 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -125,29 +149,9 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Customer Support. Course Fee: 850 tk
+              Thumbnail design. Course Fee: 1250 tk
             </h4>
-
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div>
-          <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              Youtube/Facebook Content Making. Course Fee: 850 tk
-            </h4>
-
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div>
-          <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              Thumbnail design. Course Fee: 850 tk
-            </h4>
-
+            <p className="discount_price">Discount w/ coupon: 1000 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -156,9 +160,9 @@ const OurCourses = () => {
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
               Teaching English Online on Internatoinal Platforms. Course Fee:
-              5000 tk
+              3000 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 2500 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -166,10 +170,10 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              Authentication & Verification. Course Fee: 500 tk. Pre-requisite:
+              Authentication & Verification. Course Fee: 800 tk. Pre-requisite:
               Basic English course
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 600 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
@@ -209,14 +213,14 @@ const OurCourses = () => {
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
-              *Job Preparation Guideline Course: 900 tk
+              *Job Preparation Guideline Course: 800 tk
             </h4>
-
+            <p className="discount_price">Discount w/ coupon: 600 Tk</p>
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
           </div>
-          <div className="our-course-cart-div">
+          {/* <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
               *Basic Computer Usage Online Downloadable Course:  900 tk
@@ -225,13 +229,21 @@ const OurCourses = () => {
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
-          </div>
-          <div className="our-course-cart-div">
+          </div> */}
+          {/* <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
               Online Business ideas & scopes - How to know the entire business
               process of each of this businesses  -  5000 tk
             </h4>
+
+            <Link>
+              <button className="our-course-see-more-btn">Buy Now</button>
+            </Link>
+          </div> */}
+          <div className="our-course-cart-div">
+            <img className="our-course-img" src={cartPhoto} alt="" />
+            <h4 className="our-course-header">Business Development</h4>
 
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>

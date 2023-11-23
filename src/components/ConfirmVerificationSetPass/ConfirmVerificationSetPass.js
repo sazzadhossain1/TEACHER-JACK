@@ -118,6 +118,3 @@ const ConfirmVerificationSetPass = () => {
 };
 
 export default ConfirmVerificationSetPass;
-
-// https://app.teacherjackonline.com/api/{uri}
-// https://app.teacherjackonline.com/api/check/{email}/{token}

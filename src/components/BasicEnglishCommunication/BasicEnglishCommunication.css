@@ -39,7 +39,7 @@
   font-size: 18px;
 }
 .bookInfo-courseInstructor {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -62,10 +62,19 @@
 .WhatYouWillLearn-heading {
   margin-top: 50px;
   margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
+.Basic_English {
+  font-size: 24px;
+}
 
+.accordionForm-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
 .WhatYouWillLearn-grid-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -84,12 +93,6 @@
 }
 
 /* for accroding from */
-.accordionForm-heading {
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
 
 .bookInfo-right-side-videoCart {
   border: 2px solid rgb(201, 201, 201);
@@ -156,6 +159,40 @@
   line-height: 35px;
 }
 
+.course_duration {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+/* popup start */
+.basicEnglishCommunication-success-div {
+  max-width: 100%;
+  max-height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.basicEnglishCommunication-success-div p {
+  max-width: 600px;
+  height: 400px;
+  margin: 10% auto;
+  padding: 50px 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.basicEnglishCommunication-success-p {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: forestgreen;
+}
+/* popup end */
 /* -------------------- */
 
 @media screen and (max-width: 1350px) {

@@ -30,48 +30,51 @@ const MeetOurCeo = () => {
                 level of training. He is easily reachable and is always ready to
                 mentor his trainees.
               </p>
-              <p className="ceo-text-p">
-                Zakir Hossain completed his ‘O Level’ under The University of
-                Cambridge. Zakir completed his B.Sc in Management Information
-                System (MIS) and M.A in English Language Teaching (ELT) from the
-                USA. His childhood was quite cheerful. He kept busy with social
-                work from the early stages of his life. He excelled in his
-                school studies and always came out in flying colors.
-              </p>
             </div>
             <div className="first-ceo-img-div">
               <img src={CEOPhoto} alt="" />
             </div>
           </div>
 
-          <p className="ceo-text-p">
-            Zakir is working as the Chief Executive Officer of an international
-            Information Technology company{" "}
-            <Link target="_blank" className="link" to="https://abaacorp.com/">
-              Abaacorp.com
-            </Link>{" "}
-            Limited. Zakir is also the Chief Executive Officer and Founder of a
-            SAAS company <br />
-            <Link
-              className="link"
-              target="_blank"
-              to="https://tripshiptask.com/"
-            >
-              TripShipTask.com
-            </Link>
-            . He is also heading a training organization under the banner of
-            &nbsp;
-            <Link
-              className="link"
-              target="_blank"
-              to="https://bd.teacherjackonline.com/"
-            >
-              teacherjackonline.com
-            </Link>
-            .
-          </p>
+          <div className="about_zakir_sir_p_div">
+            <p className="ceo-text-p">
+              Zakir Hossain completed his ‘O Level’ under The University of
+              Cambridge. Zakir completed his B.Sc in Management Information
+              System (MIS) and M.A in English Language Teaching (ELT) from the
+              USA. His childhood was quite cheerful. He kept busy with social
+              work from the early stages of his life. He excelled in his school
+              studies and always came out in flying colors.
+            </p>
+            <p className="ceo-text-p">
+              Zakir is working as the Chief Executive Officer of an
+              international Information Technology company{" "}
+              <Link target="_blank" className="link" to="https://abaacorp.com/">
+                Abaacorp.com
+              </Link>{" "}
+              Limited. Zakir is also the Chief Executive Officer and Founder of
+              a SAAS company <br />
+              <Link
+                className="link"
+                target="_blank"
+                to="https://tripshiptask.com/"
+              >
+                TripShipTask.com
+              </Link>
+              . He is also heading a training organization under the banner of
+              &nbsp;
+              <Link
+                className="link"
+                target="_blank"
+                to="https://bd.teacherjackonline.com/"
+              >
+                teacherjackonline.com
+              </Link>
+              .
+            </p>
+          </div>
           <p className="zakir_sir_email">
             Email: zakir.hossain@tripshiptask.com
+            <span> or teacherjackonline@gmail.com</span>
           </p>
           <br />
           <p>
@@ -111,6 +114,15 @@ const MeetOurCeo = () => {
             </Link>
           </p>
           <br />
+
+          <div className="about_teacher_jack_photo_gallery_div">
+            <img src={CEOPhoto} alt="" />
+            <img src={CEOPhoto} alt="" />
+            <img src={CEOPhoto} alt="" />
+            <img src={CEOPhoto} alt="" />
+            <img src={CEOPhoto} alt="" />
+          </div>
+
           <Link to="/">
             <button className="ceo-learn-more-btn">Back to Home</button>
           </Link>

@@ -158,7 +158,7 @@ const SignUp = () => {
             <h1 style={{ color: "black" }} className="m-5">
               Already have an account?{" "}
               <Link style={{ color: "blue" }} to="/login">
-                Please Login
+                Login
               </Link>
             </h1>
 

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BookInfo = ({ bookData }) => {
-  // console.log(bookData);
+  console.log(bookData);
   const { id } = bookData;
   // console.log(typeof id, id);
   localStorage.setItem("bookDataId", id);
@@ -25,19 +25,22 @@ const BookInfo = ({ bookData }) => {
       <div>
         <div className="bookInfo-grid-div">
           <div className="bookInfo-left-side-div">
-            <h1 className="bookInfo-heading">রিমোট জব বই</h1>
+            <h1 className="bookInfo_first_heading">রিমোট জব বই</h1>
             <p className="bookInfo-p">
               এই বইটি এমনভাবে লেখা যাতে গ্রামে বসে থাকা একজন চাকুরীপ্রার্থী বা
               ছাত্র-ছাত্রী থেকে শুরু করে ঢাকার ইংলিশ মিডিয়ামের সুপার এফিশিয়েন্ট
               একজন student-ও যেনো ফ্রিল্যান্সিং বা রিমোট জব করে ইনকাম করতে পারে
               এবং একটি Future গড়ে তুলতে পারে।
             </p>
-            <h2 className="bookInfo-courseInstructor">Course Instructor </h2>
+            <h2 className="bookInfo-courseInstructor">Author </h2>
             <div className="bookInfo-teacherJack-flex-div">
               <img className="bookInfo-teacherJack" src={teacherJack} alt="" />
               <div>
                 <h3 className="Zakir_Sir">Zakir Hossain</h3>
                 <p className="trainer">Trainer, Teacherjackonline.com</p>
+                <Link target="_blank" to="/meetOurCeo" className="righter">
+                  বইটির লেখক সম্পর্কে জানুন
+                </Link>
               </div>
             </div>
             {/*  */}
@@ -109,10 +112,10 @@ const BookInfo = ({ bookData }) => {
                     </span>{" "}
                     tk
                   </p>
-                  <p className="print_copy">
+                  {/* <p className="print_copy">
                     {" "}
                     হার্ড কপির লিংক পরবর্তীতে এখানে দেয়া হবে
-                  </p>
+                  </p> */}
                 </div>
 
                 <Link to={`/bookDownloadPage/${id}`}>

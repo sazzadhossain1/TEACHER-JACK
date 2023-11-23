@@ -1,11 +1,11 @@
 import React from "react";
 import "./BasicEnglishCommunication.css";
 import { Link } from "react-router-dom";
-import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
 import AffiliateMarketingImg from "../../accets/Images/AffiliateMarketingImg/AffiliateMarketingImg.jpg";
 import teacherJack from "../../accets/Images/teacher-jack/teacherJack.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import basicEnglish from "../../accets/Images/basicEnglish/basicEnglish.jpg";
 
 const BasicEnglishCommunication = () => {
   const id = +localStorage.getItem("bookDataId");
@@ -13,6 +13,19 @@ const BasicEnglishCommunication = () => {
 
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+  const handleSubmitBtn = () => {
+    console.log("button clicked");
+    const basicEnglish = document.getElementById("basicEnglish");
+    basicEnglish.removeAttribute("hidden");
+    console.log(basicEnglish);
+  };
+
+  const handleGoBack = (e) => {
+    e.preventDefault();
+    const basicEnglish = document.getElementById("basicEnglish");
+    basicEnglish.setAttribute("hidden", "hidden");
+  };
   return (
     <div>
       <div>
@@ -20,17 +33,21 @@ const BasicEnglishCommunication = () => {
           <div className="bookInfo-left-side-div">
             <h1 className="bookInfo-heading">Basic English Communication</h1>
             <p className="bookInfo-p">
-              Affiliate Marketing করে সহজেই ইনকাম শুরু করতে পারেন। আমাদের
-              প্রোগ্রামের সাথে যুক্ত হয়ে ইনকাম শুরু করতে চাইলে
-              bd.teacherjackonline.com - এই ওয়েবসাইট থেকে 'রিমোট জব' বইটি ক্রয়
-              করবেন।
+              আপনি কাজ শিখেছেন, দক্ষতা অর্জন করেছেন এবং যে বিষয়ে দক্ষ তা আপনি
+              ভালোই পারেন – এটাই স্বাভাবিক। কিন্তু তা সত্ত্বেও কাজ পাচ্ছেন না।
+              আপনাকে অবশ্যই English Communication - এ ভালো হতে হবে। এখন এই ভালো
+              জানা মানেটা কি? যদি মনে করেন ইংরেজি মানে শুধু ট্র্যান্সলেশন, তাহলে
+              ভুল। শুধুমাত্র আক্ষরিক অনুবাদ করে ইংরেজি বলা যায় কিন্তু লিমিটেশন
+              থেকে যায়।
             </p>
             <p className="bookInfo-p">
-              আপনি যখনই এই ওয়েবসাইট থেকে 'রিমোট জব' বইটি ক্রয় করবেন, আমাদের
-              সফটওয়্যার আটোম্যাটিক্যালি আপনার জন্য একটি Referral Code তৈরি করে
-              দেবে। আপনি এই Referral Code যাকে দেবেন, তিনি এই সাইট থেকে বই বা
-              যেকোন কোর্স ক্রয় করলে ডিসকাউন্ট পাবেন। আপনিও একটি ভালো অঙ্কের
-              Referral BONUS পাবেন
+              চিন্তা করেন আপনি যদি এ্যামেরিকান, ব্রিটিশ, ক্যানাডিয়ান বা
+              অস্ট্রেলিয়ানদের চিন্তাধারা বুঝতে পারেন, টোন বুঝতে পারেন, তাহলে
+              আপনি সাকসেসফুল। আপনার পক্ষে কাজ পাওয়া অনেক সহজ হবে। আজ পর্যন্ত
+              যতগুলো লেসন দেখলাম ট্রেইনারদের - সবাই Traditional, Bookish way তে
+              শেখায়, ডাইরেক্ট ট্র্যান্সলেশন। ডিপ লেভেলে কোন ডিসকাশনই করে না। No
+              wonder টেকনিক্যাল কাজে অনেকে অনেক ভালো হওয়া সত্ত্বেও Communication
+              skill ভালো না থাকায় অনেকে কাজের অভাবে আছে
             </p>
 
             <h2 className="bookInfo-courseInstructor">Course Instructor </h2>
@@ -44,32 +61,29 @@ const BasicEnglishCommunication = () => {
             {/*  */}
             <div className="WhatYouWillLearn-parent-div">
               <h3 className="WhatYouWillLearn-heading">
-                Affiliate Marketing গাইডলাইনে যা পাবেন
+                <span className="Basic_English">
+                  “Basic English Communication”
+                </span>
+                কোর্সটিতে আপনি যা পাবেন
               </h3>
               <div className="WhatYouWillLearn-grid-div">
                 <div className="WhatYouWillLearn-icon-flex-div">
                   <FontAwesomeIcon icon={faCheck} />
-                  <p>
-                    কিভাবে কোন স্মার্টফোন ছাড়া Affiliate Marketing করবেন
-                    সেটির দিকনির্দেশনা
-                  </p>
+                  <p>এ্যামেরিকান স্টাইলে English Communication - এ দক্ষতা</p>
+                </div>
+                <div className="WhatYouWillLearn-icon-flex-div">
+                  <FontAwesomeIcon icon={faCheck} />
+                  <p>English -এর ডিপ লেভেলের মিনিং</p>
+                </div>
+                <div className="WhatYouWillLearn-icon-flex-div">
+                  <FontAwesomeIcon icon={faCheck} />
+                  <p>শুধু ভাষা নয়, English সভ্যতার লেসন</p>
                 </div>
                 <div className="WhatYouWillLearn-icon-flex-div">
                   <FontAwesomeIcon icon={faCheck} />
                   <p>
-                    কিভাবে কোন স্মার্টফোন ছাড়া Affiliate Marketing করবেন
-                    সেটির দিকনির্দেশনা
-                  </p>
-                </div>
-                <div className="WhatYouWillLearn-icon-flex-div">
-                  <FontAwesomeIcon icon={faCheck} />
-                  <p>সঠিক তথ্য দিয়ে সেল বাড়ানোর টেকনিক</p>
-                </div>
-                <div className="WhatYouWillLearn-icon-flex-div">
-                  <FontAwesomeIcon icon={faCheck} />
-                  <p>
-                    Affiliate Marketing এর পাশাপাশি আপনার নিজেকে
-                    ইম্প্রুভ করার টেকনিক
+                    Communication - এর পাশাপাশি এ্যামেরিকানদের মতো Successful
+                    Life Leading - এর অভ্যাস
                   </p>
                 </div>
               </div>
@@ -77,32 +91,26 @@ const BasicEnglishCommunication = () => {
             {/* Accroding from */}
             <div>
               <div className="accordionForm-second-parent-div">
-                <p className="accordionForm-heading">
-                  Affiliate Marketing গাইডলাইনের বিস্তারিত
-                </p>
                 <div className="accordionForm-grid-div">
                   <div className="accordionForm-children-div">
-                    <p className="book-details">
-                      আপনি আমাদের বই কিনে থাকলে আপনার ড্যাশবোর্ডে Affiliate
-                      Marketing নামে যে ফাইল রয়েছে সেটি ডাইনলোড করুন। এই ফাইলে
-                      ধাপে ধাপে বর্ণনা দেয়া আছে কিভাবে আপনি আমাদের Affiliate
-                      Marketing প্রোগ্রামের মাধ্যমে ইনকাম করবেন। শুধুমাত্র একটি
-                      স্মার্টফোন থাকলেই আপনি সহজে Affiliate Marketing করতে
-                      পারবেন। ফোন ছাড়াও কিভাবে Affiliate Marketing করা যায় সেটিও
-                      এই ফাইলে বিস্তারিত বলা হয়েছে।
+                    <p className="accordionForm-heading">
+                      <span className="Basic_English">
+                        “Basic English Communication”
+                      </span>{" "}
+                      কোর্সের বিস্তারিত
                     </p>
                     <p className="book-details">
-                      কারো কাছ থেকে টাকা নিয়ে হাজার হাজার টাকার ট্রেইনিং-এ ভর্তি
-                      হতে হবে না। ইচ্ছে থাকলে উপায় হয়।
+                      Communication skill ভালো না থাকায় অনেকে কাজের অভাবে আছে
+                      প্রতিদিন কমবেশি ২ – ৩ ঘন্টা সময় দিন। প্রতিটি সেকশনে নিজেকে
+                      Test করুন এবং অতপর পুরোপুরি বোঝা হলে পরের সেকশনে যান।
+                      “Basic English Communication” কোর্সটি আপনি ধাপে ধাপে অল্প
+                      অল্প করে কিংবা সব সেকশন একবারে সংগ্রহ করতে পারবেন। এই
+                      কোর্সটিতে ৩০+ টি মডিউল (সেকশন) রয়েছে
                     </p>
                     <p className="book-details">
-                      আমাদের সাথে Affiliate Marketing করে ইনকাম করেই আপনি আমাদের
-                      পরবর্তী স্টেপ-এ গিয়ে প্রয়োজনীয় কোর্স করবেন, কম্পিউটার
-                      কিনবেন এবং যা যা আপনার প্রয়োজন সেগূলো কিনবেন।
-                    </p>
-                    <p className="book-details">
-                      কারো কাছে দায়বদ্ধ থাকার বা জবাবদিহিতার মধ্যে
-                      থাকার কোন দরকার নেই।
+                      এই কোর্সটি আপনি একবারে কিনতে পারেন ডিস্কাউন্ট নিয়ে (4000
+                      টাকায়) কিংবা প্রতিটি মডিউল আলাদা আলাদা করে কিনতে পারেন মোট
+                      30টি মডিউল, প্রতি মডিউল  ১৫০ টাকা করে
                     </p>
                   </div>
                 </div>
@@ -113,19 +121,53 @@ const BasicEnglishCommunication = () => {
             <div className="bookInfo-right-side-videoCart">
               <div className="bookInfo-courseDetails-div">
                 <div className="bookInfo-img-div">
-                  <img
-                    className="bookInfo-img"
-                    src={AffiliateMarketingImg}
-                    alt=""
-                  />
+                  <img className="bookInfo-img" src={basicEnglish} alt="" />
+                </div>
+                <div className="bookInfo-text-div">
+                  {/* <h1 className="bookInfo-name">{name}</h1> */}
+                  {/* <h1 className="bookInfo-name">{bookData.name}</h1> */}
+                  <h1 className="bookInfo-name">
+                    “Basic English Communication Course”
+                  </h1>
+                  <p className="by-zakir-hossain">by Zakir Hossain</p>
+                  {/* <p className="bookInfo-price">{price} TK</p> */}
+
+                  <p className="bookInfo-price">
+                    কুপন কোড ব্যবহার করলে{" "}
+                    {/* <span className="coupon_price">{discountBookPrice} </span>tk */}
+                    <span className="coupon_price">4000 </span>tk
+                  </p>
+                  <p className="coupon_code">
+                    রেগুলার প্রাইস{" "}
+                    <span className="ten_percent">
+                      {/* {Number(bookData.price).toFixed(0)} */}
+                      4500
+                    </span>{" "}
+                    tk
+                  </p>
+                  <p className="course_duration">Course Duration: 6 months</p>
                 </div>
 
-                <Link to={`/bookDownloadPage/${id}`}>
+                <div
+                  id="basicEnglish"
+                  className="basicEnglishCommunication-success-div"
+                  hidden
+                >
+                  <p className="basicEnglishCommunication-success-p">
+                    This page is under construction. Please check
+                    back periodically.
+                    <br />
+                    <br />
+                    <Link className="btn" onClick={handleGoBack}>
+                      Go Back
+                    </Link>
+                  </p>
+                </div>
+                <Link onClick={handleSubmitBtn} to="">
                   <button className="buyCourseBtn">
                     <span className="Affiliate_Marketing_gideline">
-                      Affiliate Marketing
-                    </span>{" "}
-                    গাইডলাইন ডাউনলোড করতে প্রথমে 'রিমোট জব' বইটি কিনুন
+                      Buy The Course
+                    </span>
                   </button>
                 </Link>
               </div>

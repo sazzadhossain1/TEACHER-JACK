@@ -5,6 +5,13 @@
   margin: auto;
   margin-top: 50px;
 }
+.righter {
+  font-size: 16px;
+  color: blue;
+}
+.righter:hover {
+  color: rgb(1, 189, 126);
+}
 .coupon_code {
   text-align: left;
 
@@ -22,8 +29,8 @@
 .bookInfo-left-side-div {
   text-align: left;
 }
-.bookInfo-heading {
-  font-size: 35px;
+.bookInfo_first_heading {
+  font-size: 28px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -37,6 +44,7 @@
 }
 .trainer {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .bookInfo-courseInstructor {
   font-size: 25px;
