@@ -27,12 +27,15 @@ const ForgetPassword = () => {
     console.log(result);
 
     if (result.data.email) {
-      setSuccessMsg("User Found! Please check your email.");
+      setSuccessMsg("Please check your email.");
       setErrorMsg("");
     } else if (result.data.null) {
       setSuccessMsg("");
       setErrorMsg("Email not match");
     }
+
+    const hiddenButton = document.getElementById("forgetSubmitBtn");
+    hiddenButton.setAttribute("hidden", "hidden");
   }
   return (
     <div className="signUp-parent-div ">
@@ -60,7 +63,7 @@ const ForgetPassword = () => {
             {successMsg && <p className="success-msg">{successMsg}</p>}
             {errorMsg && <p className="error-msg">{errorMsg}</p>}
 
-            <div className="sign-up-btn">
+            <div id="forgetSubmitBtn" className="sign-up-btn">
               <button onClick={handleForgetPass} className="">
                 Submit
               </button>

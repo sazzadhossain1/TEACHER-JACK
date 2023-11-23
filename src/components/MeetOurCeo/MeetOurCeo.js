@@ -22,6 +22,18 @@ import photoGallerySixtin from "../../accets/Images/aboutTeacherJack/photoGaller
 import photoGallerySaventeen from "../../accets/Images/aboutTeacherJack/photoGallerySaventeen.jpg";
 import MeonLogonLake from "../../accets/Images/aboutTeacherJack/MeonLogonLake.jpg";
 
+// import BatchTwoPhotoOne from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoOne.JPG";
+// import BatchTwoPhotoTwo from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoTwo.JPG";
+// import BatchTwoPhotoThree from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoThree.JPG";
+// import BatchTwoPhotoFour from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoFour.JPG";
+// import BatchTwoPhotoFive from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoFive.JPG";
+// import BatchTwoPhotoSix from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoSix.JPG";
+// import BatchTwoPhotoSaven from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoSaven.JPG";
+// import BatchTwoPhotoEight from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoEight.JPG";
+// import BatchTwoPhotoNine from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoNine.JPG";
+// import BatchTwoPhotoTen from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoTen.jpg";
+// import BatchTwoPhotoEleven from "../../accets/Images/aboutTeacherJack/Batch 2/BatchTwoPhotoEleven.JPG";
+
 const MeetOurCeo = () => {
   return (
     <div className="ceo-main-parent-div">
@@ -96,6 +108,7 @@ const MeetOurCeo = () => {
             <span> or teacherjackonline@gmail.com</span>
           </p>
           <br />
+
           <p>
             <Link
               target="_blank"
@@ -211,6 +224,8 @@ const MeetOurCeo = () => {
               src={photoGallerySaventeen}
               alt=""
             />
+
+            {/*  */}
             <img
               className="about_teacher_gallery_img long_hight_photo"
               src={photoGalleryOne}
