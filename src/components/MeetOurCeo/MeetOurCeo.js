@@ -3,6 +3,25 @@ import "./MeetOurCeo.css";
 import CEOPhoto from "../../accets/Images/CEO-photo/CEO-Photo.png";
 import { Link } from "react-router-dom";
 
+import photoGalleryOne from "../../accets/Images/aboutTeacherJack/photoGalleryOne.jpg";
+import photoGalleryTwo from "../../accets/Images/aboutTeacherJack/photoGalleryTwo.jpg";
+import photoGalleryThree from "../../accets/Images/aboutTeacherJack/photoGalleryThree.jpg";
+import photoGalleryFour from "../../accets/Images/aboutTeacherJack/photoGalleryFour.jpg";
+import photoGalleryFive from "../../accets/Images/aboutTeacherJack/photoGalleryFive.jpg";
+import photoGallerySix from "../../accets/Images/aboutTeacherJack/photoGallerySix.jpg";
+import photoGallerySaven from "../../accets/Images/aboutTeacherJack/photoGallerySaven.jpg";
+import photoGalleryEight from "../../accets/Images/aboutTeacherJack/photoGalleryEight.jpg";
+import photoGalleryNine from "../../accets/Images/aboutTeacherJack/photoGalleryNine.jpg";
+import photoGalleryTen from "../../accets/Images/aboutTeacherJack/photoGalleryTen.jpg";
+import photoGalleryeleven from "../../accets/Images/aboutTeacherJack/photoGalleryeleven.jpg";
+import photoGalleryTwelve from "../../accets/Images/aboutTeacherJack/photoGalleryTwelve.JPG";
+import photoGallerythirteen from "../../accets/Images/aboutTeacherJack/photoGallerythirteen.JPG";
+import photoGalleryForthen from "../../accets/Images/aboutTeacherJack/photoGalleryForthen.JPG";
+import photoGalleryFifteen from "../../accets/Images/aboutTeacherJack/photoGalleryFifteen.jpg";
+import photoGallerySixtin from "../../accets/Images/aboutTeacherJack/photoGallerySixtin.jpg";
+import photoGallerySaventeen from "../../accets/Images/aboutTeacherJack/photoGallerySaventeen.jpg";
+import MeonLogonLake from "../../accets/Images/aboutTeacherJack/MeonLogonLake.jpg";
+
 const MeetOurCeo = () => {
   return (
     <div className="ceo-main-parent-div">
@@ -116,11 +135,97 @@ const MeetOurCeo = () => {
           <br />
 
           <div className="about_teacher_jack_photo_gallery_div">
-            <img src={CEOPhoto} alt="" />
-            <img src={CEOPhoto} alt="" />
-            <img src={CEOPhoto} alt="" />
-            <img src={CEOPhoto} alt="" />
-            <img src={CEOPhoto} alt="" />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryTwo}
+              alt=""
+            />
+
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryFour}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryFive}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGallerySix}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGallerySaven}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryEight}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryNine}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryTen}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryeleven}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryTwelve}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGallerythirteen}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryForthen}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGalleryFifteen}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGallerySixtin}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img"
+              src={photoGallerySaventeen}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img long_hight_photo"
+              src={photoGalleryOne}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img long_hight_photo"
+              src={photoGalleryThree}
+              alt=""
+            />
+            <img
+              className="about_teacher_gallery_img long_hight_photo"
+              src={MeonLogonLake}
+              alt=""
+            />
           </div>
 
           <Link to="/">
