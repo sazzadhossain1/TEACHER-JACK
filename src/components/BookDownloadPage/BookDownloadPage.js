@@ -326,7 +326,7 @@ const BookDownloadPage = () => {
               <div className="form-group">
                 <label htmlFor="password">
                   যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / যে ব্যংক থেকে পাঠানো হয়েছে
-                  সেটির নাম / PayPal id
+                  সেটির নাম / PayPal id &nbsp; নিচের বক্সে লিখুন
                 </label>
                 <input
                   className="input"
@@ -341,7 +341,7 @@ const BookDownloadPage = () => {
               <div className="form-group">
                 <label htmlFor="password">
                   ট্র্যান্স্যাকশন আই ডি নাম্বার / যে ব্যংক থেকে পাঠানো হয়েছে
-                  সেটির এ্যাকাউন্ট নম্বর)
+                  সেটির এ্যাকাউন্ট নম্বর &nbsp; নিচের বক্সে লিখুন
                 </label>
                 <input
                   className="input"
@@ -354,7 +354,9 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">কত টাকা পেমেন্ট করেছেন</label>
+                <label htmlFor="password">
+                  কত টাকা পেমেন্ট করেছেন সেটি নিচের বক্সে লিখুন
+                </label>
                 <input
                   className="input"
                   type="number"
@@ -366,7 +368,9 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">আপনার পুরো নাম</label>
+                <label htmlFor="password">
+                  আপনার পুরো নাম নিচের বক্সে লিখুন
+                </label>
                 <input
                   className="input"
                   type="text"
@@ -378,7 +382,10 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password"> আপনার ই-মেইল এ্যাড্রেস</label>
+                <label htmlFor="password">
+                  {" "}
+                  আপনার ই-মেইল এ্যাড্রেস নিচের বক্সে লিখুন
+                </label>
                 <input
                   className="input"
                   type="email"
@@ -390,7 +397,9 @@ const BookDownloadPage = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">আপনার ফোন নাম্বার</label>
+                <label htmlFor="password">
+                  আপনার ফোন নাম্বার নিচের বক্সে লিখুন
+                </label>
                 <input
                   className="input"
                   type="number"
@@ -409,8 +418,8 @@ const BookDownloadPage = () => {
                     চেক করুন।
                     <br />
                     <br />
-                    <Link className="btn" to="/">
-                      Back to Home
+                    <Link className="forget_btn" to="/login">
+                      OK
                     </Link>
                   </p>
                 </div>

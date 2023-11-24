@@ -6,6 +6,12 @@ import { useContext } from "react";
 import { AuthContext } from "../context/UseContext";
 
 const Login = () => {
+  // For Safari
+  document.body.scrollTop = 0;
+
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -51,11 +57,15 @@ const Login = () => {
       <div className="p-10">
         <div className=" mx-auto signup-div p-5">
           <h1 className="sign-head">Login</h1>
-          <h4 className="start-text">Get started with us today!</h4>
+          <h4 className="start-text">
+            নিচের ঘরগুলো পুরণ করে আপনার এ্যাকাউন্টে লগ ইন করুন
+          </h4>
           <form className="card-body">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Your Email</span>
+                <span className="label-text">
+                  নিচের বক্সে আপনার ই-মেইল এ্যড্রেসটি লিখুন
+                </span>
               </label>
               <label className="input-group">
                 <input
@@ -70,7 +80,9 @@ const Login = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text">
+                  নিচের বক্সে আপনার পাসওয়ার্ডটি লিখুন
+                </span>
               </label>
               <label className="input-group">
                 <input
@@ -85,12 +97,12 @@ const Login = () => {
             </div>
 
             <Link to="/forgetPassword" style={{ color: "blue" }}>
-              Forgot password?
+              পাসওয়ার্ড ভুলে গেলে এখানে ক্লিক করুন
             </Link>
 
             <h1 style={{ color: "black" }} className="m-5">
-              You new to this site?{" "}
-              <Link style={{ color: "blue" }} to="/signUp">
+              এই সাইটে আপনি নতুন হলে সাইন আপ লেখাটিতে ক্লিক করুন {" "}
+              <Link className="signUp_from_login" to="/signUp">
                 Sign Up
               </Link>
             </h1>
@@ -100,8 +112,9 @@ const Login = () => {
               <p style={{ color: "greenyellow" }}>User Login Successfully</p>
             )} */}
             <div className="sign-up-btn">
-              <button onClick={handleLogin} className="">
-                Login
+              <button onClick={handleLogin} className="login_submit">
+                {/* লগ ইন করতে এখানে ক্লিক করুন */}
+                Submit
               </button>
             </div>
           </form>

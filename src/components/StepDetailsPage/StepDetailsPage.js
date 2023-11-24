@@ -199,17 +199,21 @@ const StepDetailsPage = () => {
             <img className="companyOpening-img" src={companyOpening} alt="" />
           </div>
         </div>
-        <p className="stepDetailsPage-last-p">
-          আমাদের Company তে যারা যারা Selected হবেন তাদেরকে ফ্রি প্রডাক্ট নলেজ
-          ট্রেইনিং দেয়া হবে। বাস্তব কথা হলো – এই প্রসেসগুলো শেষ হলে সাধারণ একজন
-          ব্যাক্তি সর্বনিম্ন কয়েক হাজার টাকা থেকে শুরু করে ১ বছরের মধ্যে ৩০,০০০
-          থেরে ৪০,০০০ টাকা সহজেই ইনকাম করতে পারে। চোখ কান খোলা থাকলে এবং একটু
-          বেশী পরিশ্রমী হলে আরো বেশী ইনকাম করতে পারে।
-        </p>
+        <div className="back_to_home_btn_div">
+          <p className="stepDetailsPage-last-p">
+            আমাদের Company তে যারা যারা Selected হবেন তাদেরকে ফ্রি প্রডাক্ট নলেজ
+            ট্রেইনিং দেয়া হবে। বাস্তব কথা হলো – এই প্রসেসগুলো শেষ হলে সাধারণ
+            একজন ব্যাক্তি সর্বনিম্ন কয়েক হাজার টাকা থেকে শুরু করে ১ বছরের মধ্যে
+            ৩০,০০০ থেরে ৪০,০০০ টাকা সহজেই ইনকাম করতে পারে। চোখ কান খোলা থাকলে
+            এবং একটু বেশী পরিশ্রমী হলে আরো বেশী ইনকাম করতে পারে।
+          </p>
+          <a href="/">
+            <button className="step_details_page_backToHome">
+              Back to Home
+            </button>
+          </a>
+        </div>
       </div>
-      <a href="/">
-        <button className="step_details_page_backToHome">Back to Home</button>
-      </a>
     </div>
   );
 };

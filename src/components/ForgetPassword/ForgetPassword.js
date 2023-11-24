@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ForgetPassword.css";
+import { Link } from "react-router-dom";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState("");
@@ -27,7 +28,9 @@ const ForgetPassword = () => {
     console.log(result);
 
     if (result.data.email) {
-      setSuccessMsg("Please check your email.");
+      setSuccessMsg(
+        "আপনার ই-মেইলে একটি মেইল পাঠানো হয়েছে। ই-মেইলে প্রবেশ করুন এবং আপনার পাসওয়ার্ড রিসেট করুন। ধন্যবাদ"
+      );
       setErrorMsg("");
     } else if (result.data.null) {
       setSuccessMsg("");
@@ -36,6 +39,9 @@ const ForgetPassword = () => {
 
     const hiddenButton = document.getElementById("forgetSubmitBtn");
     hiddenButton.setAttribute("hidden", "hidden");
+
+    const forgatModalId = document.getElementById("forgatModalId");
+    forgatModalId.removeAttribute("hidden", "hidden");
   }
   return (
     <div className="signUp-parent-div ">
@@ -46,7 +52,9 @@ const ForgetPassword = () => {
           <form className="card-body">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Your Email</span>
+                <span className="label-text">
+                  নিচের বক্সে আপনার ই-মেইল এ্যড্রেসটি লিখুন
+                </span>
               </label>
               <label className="input-group">
                 <input
@@ -70,6 +78,19 @@ const ForgetPassword = () => {
             </div>
           </form>
         </div>
+      </div>
+
+      <div id="forgatModalId" className="forgetPassword-success-div" hidden>
+        <p className="forgetPassword-success-p">
+          আপনার ই-মেইলে একটি মেইল পাঠানো হয়েছে। ই-মেইলে প্রবেশ করুন এবং আপনার
+          পাসওয়ার্ড রিসেট করুন। <br />
+           ধন্যবাদ
+          <br />
+          <br />
+          <Link className="forget_btn" to="/login">
+            OK
+          </Link>
+        </p>
       </div>
     </div>
   );

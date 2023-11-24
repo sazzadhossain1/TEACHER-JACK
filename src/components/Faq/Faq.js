@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import CEOPhoto from "../../accets/Images/CEO-photo/CEO-Photo.png";
 
 const Faq = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
   return (
     <div className="ceo-main-parent-div">
       <div className="meetOurCeo-grid-div">

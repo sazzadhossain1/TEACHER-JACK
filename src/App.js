@@ -77,7 +77,7 @@ function App() {
           element: <Videos></Videos>,
         },
         {
-          path: "/meetOurCeo",
+          path: "/aboutTeacherJack",
           element: <MeetOurCeo></MeetOurCeo>,
         },
         {

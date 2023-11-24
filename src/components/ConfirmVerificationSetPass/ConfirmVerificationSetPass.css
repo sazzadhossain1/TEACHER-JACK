@@ -1,3 +1,9 @@
+.confirmVerification-div {
+  max-width: 550px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+}
 .heading1,
 .loginInfo {
   padding: 15px;
@@ -17,8 +23,11 @@
 .set_you_password {
   text-align: left;
 }
-.password {
+.Set_Your_Password {
   font-size: 18px;
+}
+.password {
+  font-size: 20px;
 }
 .form-group label {
   text-align: left;
@@ -32,4 +41,36 @@
   width: 100%;
   border-radius: 5px;
   font-weight: 500;
+}
+
+.confirm-success-div {
+  max-width: 100%;
+  max-height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.confirm-success-div p {
+  max-width: 600px;
+  height: 500px;
+  margin: 10% auto;
+  padding: 50px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.confirm-success-p {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: forestgreen;
+}
+.confirm_OK_btn {
+  background-color: blue;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 15px;
 }

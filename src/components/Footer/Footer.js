@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="important_link_div">
           <h4 className="footer-header">Important Links</h4>
 
-          <a href="/meetOurCeo" alt="">
+          <a href="/aboutTeacherJack" alt="">
             <p className="footer-first-second-common-cart-p">
               About Teacher Jack
             </p>

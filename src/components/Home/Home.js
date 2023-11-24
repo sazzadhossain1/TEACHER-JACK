@@ -11,10 +11,10 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const getProductData_fromApi = useLoaderData();
-  console.log(getProductData_fromApi);
+  // console.log(getProductData_fromApi);
+
   // For Safari
   document.body.scrollTop = 0;
-
   // For Chrome, Firefox, IE and Opera
   document.documentElement.scrollTop = 0;
   return (

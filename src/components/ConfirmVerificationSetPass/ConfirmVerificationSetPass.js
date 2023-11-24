@@ -39,10 +39,17 @@ const ConfirmVerificationSetPass = () => {
     localStorage.setItem("userId", result.data.user.id);
 
     if (result.data.token) {
+      const confirm_success_div = document.getElementById(
+        "confirm_success_div"
+      );
+
+      confirm_success_div.removeAttribute("hidden", "hidden");
       // navigation(form, { replace: true });
-      navigation(form);
+      // navigation(form);
     }
-    // console.log(result);
+    console.log(result);
+
+    // localStorage.setItem("setLocalStorage_set_token", result.data.token);
   }
 
   async function handleLogin() {
@@ -70,14 +77,13 @@ const ConfirmVerificationSetPass = () => {
   return (
     <div className="signUp-parent-div">
       <div className="p-10">
-        <div className="mx-auto signup-div p-5">
-          <h1 className="heading1">Complete Verification </h1>
+        <div className="mx-auto confirmVerification-div p-5">
+          <h1 className="heading1">Complete Verification</h1>
+
           <p className="verification">(ভেরিফিকেশন সম্পন্ন করুন)</p>
 
           <div className="loginButton" id="loginButton" hidden>
-            <p className="loginInfo">
-              Your account already verified. Please login to your panel.
-            </p>
+            <p className="loginInfo"></p>
             <Link className="loginBtn sign-up-btn" to="/login">
               Login
             </Link>
@@ -85,9 +91,11 @@ const ConfirmVerificationSetPass = () => {
           <br></br>
           <form onSubmit={confirmVerification} id="submitForm" hidden>
             <p className="set_you_password">
-              নিচের 'Set Your Password' ঘরে আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি
-              যত্নের সাথে সংরক্ষণ করুন। আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে
-              এবং এটিই আপনার লগ ইন পাসওয়ার্ড। <br />
+              নিচের{" "}
+              <span className="Set_Your_Password">'Set Your Password'</span> ঘরে
+              আপনি একটি পাসওয়ার্ড সেট করুন এবং এটি যত্নের সাথে সংরক্ষণ করুন।
+              আপনার জন্য একটি এ্যাকাউন্ট তৈরি হয়েছে এবং এটিই আপনার লগ ইন
+              পাসওয়ার্ড। <br />
               <br /> আমাদের সিস্টেম আপনার পেমেন্টের তথ্য যাচাই করে আপনাকে পুনরায়
               ই-মেইল পাঠাবে। অতঃপর আপনি আপনার এ্যাকাউনন্টে লগ ইন করে
               ড্যাশবোর্ডের My Account অপশনের My Purchase থেকে ডাউনলোড করুন।
@@ -96,7 +104,10 @@ const ConfirmVerificationSetPass = () => {
               <label htmlFor="password" className="password">
                 Set Password
               </label>
-              <label>Please input a minimum of 8 characters</label>
+              <label>
+                নিচের ঘরটিতে মিনিমাম ৮ সংখ্যার একটি পাসওয়ার্ড টাইপ করে Submit
+                বাটনে ক্লিক করুন
+              </label>
               <input
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
@@ -112,6 +123,22 @@ const ConfirmVerificationSetPass = () => {
             </button>
           </form>
         </div>
+      </div>
+
+      <div id="confirm_success_div" className="confirm-success-div" hidden>
+        <p className="confirm-success-p">
+          আপনার এ্যাকাউন্ট তৈরি হয়েছে। সিস্টেমটি আপনার তথ্য যাচাই করে কিছুক্ষণের
+          মধ্যে আটোম্যাটিক্যালি আপনার purchase এ্যাপ্রুভ করবে। Purchase
+          এ্যাপ্রুভ হতে সর্বনিম্ন ১ মিনিট থেকে সর্বোচ্চ ৬ ঘন্টা সময় নিতে পারে।{" "}
+          <br />
+          Purchase এ্যাপ্রুভ হলে আপনি একটি ই-মেইল পাবেন। তারপর আপনি মেনু বারের
+          My Account অপশনের My Purchase থেকে ডাইনলোড করতে পারবেন। ।
+          <br />
+          <br />
+          <Link className="confirm_OK_btn" to="/">
+            OK
+          </Link>
+        </p>
       </div>
     </div>
   );
