@@ -1,6 +1,7 @@
 import React from "react";
 import "./BookInfo.css";
 import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPage.jpg";
+import bookPhotoTwo from "../../accets/Images/hero-section-photo/BookCoverPageTwo.png";
 import { Link } from "react-router-dom";
 
 import teacherJack from "../../accets/Images/teacher-jack/teacherJack.jpg";
@@ -93,7 +94,7 @@ const BookInfo = ({ bookData }) => {
             <div className="bookInfo-right-side-videoCart">
               <div className="bookInfo-courseDetails-div">
                 <div className="bookInfo-img-div">
-                  <img className="bookInfo-img" src={bookPhoto} alt="" />
+                  <img className="bookInfo-img" src={bookPhotoTwo} alt="" />
                 </div>
                 <div className="bookInfo-text-div">
                   {/* <h1 className="bookInfo-name">{name}</h1> */}

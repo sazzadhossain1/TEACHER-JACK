@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import "./BookDownloadPage.css";
 import { useState } from "react";
+import bookPhoto from "../../accets/Images/hero-section-photo/BookCoverPageTwo.png";
 import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/UseContext";
 
@@ -13,7 +14,7 @@ const BookDownloadPage = () => {
 
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  // console.log(getBookInfoApi.discount);
+  console.log(getBookInfoApi);
   const navigate = useNavigate();
 
   const { id } = getBookInfoApi;
@@ -58,8 +59,7 @@ const BookDownloadPage = () => {
       coupon_code,
       address: "",
     };
-    // console.log(inputItem);
-    // console.log(price);
+
     if (+price >= +price_text) {
       try {
         let url = "https://app.teacherjackonline.com/api/sale";
@@ -73,13 +73,9 @@ const BookDownloadPage = () => {
         });
 
         result = await result.json();
-        // console.log(JSON.stringify(inputItem));
-        // console.log("result", result);
 
         if (result.data) {
           const submitBtn = document.getElementById("submitBtn");
-
-          // submitBtn.setAttribute("hidden", "hidden");
         }
 
         setDisable(true);
@@ -151,7 +147,8 @@ const BookDownloadPage = () => {
             <div className="product_img">
               <img
                 className="img-bb"
-                src={`http://app.teacherjackonline.com/${getBookInfoApi.image}`}
+                // src={`http://app.teacherjackonline.com/${getBookInfoApi.image}`}
+                src={bookPhoto}
                 alt=""
               />
             </div>
@@ -169,14 +166,21 @@ const BookDownloadPage = () => {
                 <span className="book_discount" id="book_discount">
                   {Number(getBookInfoApi.discount).toFixed(0)}
                 </span>{" "}
-                Taka &nbsp;
-                {/* <span id="Book_discount">
-                  {Number(getBookInfoApi.discount).toFixed(0)}%
-                </span> */}
-                ডিসকাউন্ট
+                Tk &nbsp; <small className="discounts">ডিসকাউন্ট</small> &nbsp;
+                {/* <strike>
+                  <span className="item_price">
+                    {Number(getBookInfoApi.price).toFixed()}
+                  </span>{" "}
+                </strike> */}
+                <br />
+                ডিসকাউন্টের পর বইয়ের মুল্য মাত্র &nbsp;
+                <span className="item_discount_price">
+                  {getBookInfoApi.price - getBookInfoApi.discount}
+                </span>
+                &nbsp; TK
               </p>
               <p className="strike_p">
-                <strike>
+                {/* <strike>
                   <span className="item_price">
                     {Number(getBookInfoApi.price).toFixed()}
                   </span>{" "}
@@ -185,7 +189,7 @@ const BookDownloadPage = () => {
                 <span className="item_discount_price">
                   {getBookInfoApi.price - getBookInfoApi.discount}
                 </span>
-                &nbsp; টাকায়
+                &nbsp; টাকায় */}
               </p>
             </div>
           </div>
@@ -227,51 +231,248 @@ const BookDownloadPage = () => {
                  টাকা প্রদান করুন।
               </p>
             </div>
-            <div className="form-group payment_indication">
-              <label className="payment_options">
-                {" "}
-                পেমেন্ট করতে নিচের যে কোন একটা পেমেন্ট অপশন বেছে নিন।
-              </label>
-              <p>
-                বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>0196 144 9755</span>{" "}
-              </p>
-              <p>
-                নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>0196 144 9755</span>
-              </p>
-              <p>
-                রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
-                <span>0163 888 5358 1</span>
-              </p>
-              <p>
-                <span>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ</span>
-                <br />
-                <span className="brack-bank-info">
-                  BRAC BANK LIMITED.
+            {/*  xxxxxxxxxxxxxxxxxx */}
+            <div className="form_flex_div">
+              <div className="hide_text">
+                <div className="form-group payment_indication">
+                  <label className="payment_options">
+                    {" "}
+                    পেমেন্ট করতে নিচের যে কোন একটা পেমেন্ট অপশন বেছে নিন।
+                  </label>
+                  <p>
+                    বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0196 144 9755</span>{" "}
+                  </p>
+                  <p>
+                    নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0196 144 9755</span>
+                  </p>
+                  <p>
+                    রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0163 888 5358 1</span>
+                  </p>
+                  <p>
+                    <span>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ</span>
+                    <br />
+                    <span className="brack-bank-info">
+                      BRAC BANK LIMITED.
+                      <br />
+                      Bank Accont Holder: Zakir Hossain. <br />
+                      Account Num: 1501102568019001. 
+                      <br />
+                      Branch: Gulshan Branch.
+                    </span>
+                  </p>
                   <br />
-                  Bank Accont Holder: Zakir Hossain. <br />
-                  Account Num: 1501102568019001. 
+                  <p>
+                    <span>Paypal : derick@abaacorp.com</span>
+                    <br />
+                    <br />
+                    <span>USA Checking Account:</span>
+                    <br />
+                    <span>First Century Bank</span>
+                    <br />
+                    <span>Routing: 061120084</span>
+                    <br />
+                    <span>Acct Number: 4029111170017</span>
+                    <br />
+                  </p>
+                </div>
+              </div>
+              <div id="Show_hidden">
+                <div className="form-group">
+                  <div className="for_center">
+                    <select
+                      required
+                      className="select-option"
+                      name="pay_method"
+                      id="pay_method"
+                      type="text"
+                      value={pay_method}
+                      onChange={(e) => setPay_method(e.target.value)}
+                    >
+                      <option className="which_way" value="">
+                        কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করতে এখানে ক্লিক করুন
+                      </option>
+                      <option className="e_bank" value="bKash">
+                        বিকাশ
+                      </option>
+                      <option className="e_bank" value="Nagad">
+                        নগদ
+                      </option>
+                      <option className="e_bank" value="Rocket">
+                        রকেট
+                      </option>
+                      <option className="e_bank" value="bangk">
+                        BD BANK ACCOUNT
+                      </option>
+                      <option className="e_bank" value="bangk">
+                        PAYPAL
+                      </option>
+                      <option className="e_bank" value="bangk">
+                        US BANK ACCOUNT
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / যে ব্যংক থেকে পাঠানো
+                    হয়েছে সেটির নাম / PayPal id &nbsp; নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="text"
+                    onChange={(e) => setPayee_number(e.target.value)}
+                    id="payee_number"
+                    name="payee_number"
+                    value={payee_number}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    ট্র্যান্স্যাকশন আই ডি নাম্বার / যে ব্যংক থেকে পাঠানো হয়েছে
+                    সেটির এ্যাকাউন্ট নম্বর &nbsp; নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="text"
+                    onChange={(e) => setTrx_id(e.target.value)}
+                    id="trx_id"
+                    name="trx_id"
+                    value={trx_id}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    কত টাকা পেমেন্ট করেছেন সেটি নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="number"
+                    onChange={(e) => setPrice(e.target.value)}
+                    id="price"
+                    name="price"
+                    value={price}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    আপনার পুরো নাম নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="text"
+                    onChange={(e) => setName(e.target.value)}
+                    id="name"
+                    name="name"
+                    value={name}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    {" "}
+                    আপনার ই-মেইল এ্যাড্রেস নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    id="email"
+                    name="email"
+                    value={email}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    আপনার ফোন নাম্বার নিচের বক্সে লিখুন
+                  </label>
+                  <input
+                    className="input"
+                    type="number"
+                    onChange={(e) => setPhone(e.target.value)}
+                    id="phone"
+                    name="phone"
+                    value={phone}
+                    required
+                  />
+                </div>
+
+                {success && (
+                  <div className="bookDownloadPage-success-div">
+                    <p className="bookDownloadPage-success-p">
+                      ধন্যবাদ। আপনার পেমেন্ট গ্রহন করা হয়েছে। <br /> আপনার ইমেইল
+                      চেক করুন।
+                      <br />
+                      <br />
+                      <Link className="forget_btn" to="/login">
+                        OK
+                      </Link>
+                    </p>
+                  </div>
+                )}
+                <button
+                  onClick={handleFrom}
+                  id="submitBtn"
+                  className=" submit-btn"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+
+              <div className="hide_text_two">
+                <div className="form-group payment_indication">
+                  <label className="payment_options">
+                    {" "}
+                    পেমেন্ট করতে নিচের যে কোন একটা পেমেন্ট অপশন বেছে নিন।
+                  </label>
+                  <p>
+                    বিকশ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0196 144 9755</span>{" "}
+                  </p>
+                  <p>
+                    নগদ একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0196 144 9755</span>
+                  </p>
+                  <p>
+                    রকেট একাউন্টে সেন্ড মানি করুন এই নম্বরে{" "}
+                    <span>0163 888 5358 1</span>
+                  </p>
+                  <p>
+                    <span>ব্যাংক একাউন্টে ডিপোজিট/আই ব্যাংকিং করুনঃ</span>
+                    <br />
+                    <span className="brack-bank-info">
+                      BRAC BANK LIMITED.
+                      <br />
+                      Bank Accont Holder: Zakir Hossain. <br />
+                      Account Num: 1501102568019001. 
+                      <br />
+                      Branch: Gulshan Branch.
+                    </span>
+                  </p>
                   <br />
-                  Branch: Gulshan Branch.
-                </span>
-              </p>
-              <br />
-              <p>
-                <span>Paypal : derick@abaacorp.com</span>
-                <br />
-                <br />
-                <span>USA Checking Account:</span>
-                <br />
-                <span>First Century Bank</span>
-                <br />
-                <span>Routing: 061120084</span>
-                <br />
-                <span>Acct Number: 4029111170017</span>
-                <br />
-              </p>
-            </div>
-            <div className="form-group ">
+                  <p>
+                    <span>Paypal : derick@abaacorp.com</span>
+                    <br />
+                    <br />
+                    <span>USA Checking Account:</span>
+                    <br />
+                    <span>First Century Bank</span>
+                    <br />
+                    <span>Routing: 061120084</span>
+                    <br />
+                    <span>Acct Number: 4029111170017</span>
+                    <br />
+                  </p>
+                </div>
+              </div>
+              {/* <div className="form-group ">
               <label htmlFor="checked_field" className="">
                 <button
                   className="payment_btn"
@@ -283,155 +484,10 @@ const BookDownloadPage = () => {
                     এবং নিচের ফিল্ডগুলো পুরণ করুন
                   </p>
                 </button>
-              </label>
-            </div>
+                   </label>
+               </div> */}
 
-            <br />
-            <div id="Show_hidden" hidden>
-              <div className="form-group">
-                <div className="for_center">
-                  <select
-                    required
-                    className="select-option"
-                    name="pay_method"
-                    id="pay_method"
-                    type="text"
-                    value={pay_method}
-                    onChange={(e) => setPay_method(e.target.value)}
-                  >
-                    <option className="which_way" value="">
-                      কোন মাধ্যমে পেমেন্ট করেছেন সিলেক্ট করতে এখানে ক্লিক করুন
-                    </option>
-                    <option className="e_bank" value="bKash">
-                      বিকাশ
-                    </option>
-                    <option className="e_bank" value="Nagad">
-                      নগদ
-                    </option>
-                    <option className="e_bank" value="Rocket">
-                      রকেট
-                    </option>
-                    <option className="e_bank" value="bangk">
-                      BD BANK ACCOUNT
-                    </option>
-                    <option className="e_bank" value="bangk">
-                      PAYPAL
-                    </option>
-                    <option className="e_bank" value="bangk">
-                      US BANK ACCOUNT
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  যে নাম্বার থেকে পেমেন্ট পাঠাচ্ছেন / যে ব্যংক থেকে পাঠানো হয়েছে
-                  সেটির নাম / PayPal id &nbsp; নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="text"
-                  onChange={(e) => setPayee_number(e.target.value)}
-                  id="payee_number"
-                  name="payee_number"
-                  value={payee_number}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  ট্র্যান্স্যাকশন আই ডি নাম্বার / যে ব্যংক থেকে পাঠানো হয়েছে
-                  সেটির এ্যাকাউন্ট নম্বর &nbsp; নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="text"
-                  onChange={(e) => setTrx_id(e.target.value)}
-                  id="trx_id"
-                  name="trx_id"
-                  value={trx_id}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  কত টাকা পেমেন্ট করেছেন সেটি নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="number"
-                  onChange={(e) => setPrice(e.target.value)}
-                  id="price"
-                  name="price"
-                  value={price}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  আপনার পুরো নাম নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="text"
-                  onChange={(e) => setName(e.target.value)}
-                  id="name"
-                  name="name"
-                  value={name}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  {" "}
-                  আপনার ই-মেইল এ্যাড্রেস নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  id="email"
-                  name="email"
-                  value={email}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  আপনার ফোন নাম্বার নিচের বক্সে লিখুন
-                </label>
-                <input
-                  className="input"
-                  type="number"
-                  onChange={(e) => setPhone(e.target.value)}
-                  id="phone"
-                  name="phone"
-                  value={phone}
-                  required
-                />
-              </div>
-
-              {success && (
-                <div className="bookDownloadPage-success-div">
-                  <p className="bookDownloadPage-success-p">
-                    ধন্যবাদ। আপনার পেমেন্ট গ্রহন করা হয়েছে। <br /> আপনার ইমেইল
-                    চেক করুন।
-                    <br />
-                    <br />
-                    <Link className="forget_btn" to="/login">
-                      OK
-                    </Link>
-                  </p>
-                </div>
-              )}
-              <button
-                onClick={handleFrom}
-                id="submitBtn"
-                className=" submit-btn"
-                type="submit"
-              >
-                Submit
-              </button>
+              <br />
             </div>
           </form>
         </div>

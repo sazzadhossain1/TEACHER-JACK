@@ -90,8 +90,7 @@
   justify-content: right;
 }
 .heroBookCoverPhoto-img {
-  height: 800px;
-  width: 550px;
+  /* width: 600px; */
   margin-bottom: -185px;
 }
 

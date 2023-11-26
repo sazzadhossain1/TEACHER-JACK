@@ -11,14 +11,18 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const getProductData_fromApi = useLoaderData();
-  // console.log(getProductData_fromApi);
+  console.log(getProductData_fromApi);
 
   // For Safari
   document.body.scrollTop = 0;
   // For Chrome, Firefox, IE and Opera
   document.documentElement.scrollTop = 0;
+
   return (
     <div>
+      {/* {getProductData_fromApi.data.map((data) => (
+        <HeroSection key={data.id} data={data}></HeroSection>
+      ))} */}
       <HeroSection></HeroSection>
       <AffiliateMarketing></AffiliateMarketing>
       <EarnOnlineJob></EarnOnlineJob>

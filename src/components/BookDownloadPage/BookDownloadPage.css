@@ -11,6 +11,11 @@ del {
   margin-top: 20px;
 }
 
+.product_discount {
+  margin-top: -15px;
+  font-size: 20px;
+  color: green;
+}
 #numberPrice {
   font-size: 23px;
   font-weight: 700;
@@ -26,11 +31,11 @@ del {
   font-size: 20px;
 }
 .item_discount_price {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 500;
 }
 #book_discount {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
 }
 .item_price {
@@ -86,7 +91,7 @@ strike {
   /* font-weight: bold; */
 }
 .product_parent_div {
-  /* display: grid; */
+  display: flex;
 }
 
 .product_info {
@@ -101,7 +106,10 @@ strike {
 .product_info p span {
   font-weight: 400;
 }
-
+.discounts {
+  font-size: 18px;
+  font-weight: 500;
+}
 /* ------------------- */
 .e_bank {
   font-size: 25px;
@@ -123,7 +131,7 @@ strike {
   display: inline-block;
 }
 .img-bb {
-  max-width: 200px;
+  max-width: 300px;
   /* float: right; */
   margin-right: 25px;
 }
@@ -145,7 +153,7 @@ strike {
 }
 
 .submit-child-div {
-  max-width: 60%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 50px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -204,7 +212,13 @@ strike {
 .form-group {
   margin: 25px 0;
 }
-
+.form_flex_div {
+  display: flex;
+  gap: 50px;
+}
+.hide_text {
+  display: none;
+}
 label {
   display: block;
   margin-bottom: 5px;
@@ -310,12 +324,22 @@ form {
 } */
 /* BKash tab cart end */
 
+.hide_text_two {
+  border: 1px solid green;
+  padding: 0px 25px;
+  height: 70%;
+}
 @media screen and (max-width: 1550px) {
   .submit-child-div {
     max-width: 65%;
   }
   .e_bank {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .submit-child-div {
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -330,6 +354,17 @@ form {
   }
   .col-md-6 {
     width: 70%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .form_flex_div {
+    display: grid;
+  }
+  .hide_text {
+    display: block;
+  }
+  .hide_text_two {
+    display: none;
   }
 }
 @media screen and (max-width: 1000px) {
