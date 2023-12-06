@@ -92,3 +92,59 @@
     margin-left: 440px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .eye_icon {
+    margin-left: 380px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .eye_icon {
+    margin-left: 270px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .eye_icon {
+    margin-left: 260px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .eye_icon {
+    margin-left: 260px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .eye_icon {
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .eye_icon {
+    margin-left: 240px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .eye_icon {
+    margin-left: 230px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .eye_icon {
+    margin-left: 220px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .eye_icon {
+    margin-left: 210px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .eye_icon {
+    margin-left: 170px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .eye_icon {
+    margin-left: 120px;
+  }
+}
