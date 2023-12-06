@@ -19,7 +19,8 @@ const EarnOnlineJob = () => {
           <div className="earnOnlineJob-flex-div">
             {/* <div className="earn-online-job-blank-div"></div> */}
             <h2 className="earn-online-job">
-              খুব সহজে ধাপে ধাপে কিভাবে <br /> রিমোট জব বা ফ্রিল্যান্সিং করবেন?
+              রিমোট জব পেতে বা ফ্রিল্যান্সিং করতে <br /> নিচের ধাপগুলো
+              সম্পন্ন করুন
             </h2>
           </div>
           <p className="step-p">Step 1: “Remote Job” বইটি পড়ে শেষ করুন।</p>
@@ -44,7 +45,7 @@ const EarnOnlineJob = () => {
             ইনকাম করতে পারে
           </p>
           <Link to="/stepDetailsPage">
-            <button className="signUpNow-btn">
+            <button className="signUpNow-btn details_btn">
               বিস্তারিত..
               <FontAwesomeIcon icon={faAngleRight} />
             </button>

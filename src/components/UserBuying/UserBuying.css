@@ -27,3 +27,21 @@
 .red-status {
   color: red;
 }
+
+/* -------- User Feedback -------- */
+.form {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.form p {
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding: 5px;
+}

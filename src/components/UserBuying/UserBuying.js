@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UserBuying.css";
 import { Link, useLoaderData } from "react-router-dom";
 import UseBuyingDetails from "../UseBuyingDetails/UseBuyingDetails";
 
 const UserBuying = () => {
+  const [feedback, setFeedback] = useState("");
   const userBuyingGetApi = useLoaderData();
+
   console.log(userBuyingGetApi);
   if (!userBuyingGetApi.data) {
     return <div>Loading...</div>; // You can show a loading indicator or message while data is being fetched
   }
+
+  const handleFeedbackChange = (e) => {
+    setFeedback(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle the feedback submission (you can send it to a server or perform other actions)
+    console.log("Feedback submitted:", feedback);
+    // Reset the feedback field
+    setFeedback("");
+  };
   return (
     <div className="useBuyingDetails_parent_div mt-10">
       <h1 className="my_buying">My Purchase</h1>
@@ -54,6 +68,23 @@ const UserBuying = () => {
           ))}
         </tbody>
       </table>
+
+      <div>
+        <form className="form" onSubmit={handleSubmit}>
+          <p>Your Feedback</p>
+          <label>
+            <textarea
+              value={feedback}
+              onChange={handleFeedbackChange}
+              rows="4"
+              cols="50"
+              placeholder="Type your Feedback"
+            />
+          </label>
+          <br />
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
     </div>
   );
 };

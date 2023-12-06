@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./ConfirmVerificationSetPass.css";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const ConfirmVerificationSetPass = () => {
   const location = useLocation();
@@ -47,7 +49,9 @@ const ConfirmVerificationSetPass = () => {
       // navigation(form, { replace: true });
       // navigation(form);
     }
-    console.log(result);
+
+    localStorage.setItem("refer_code", result.data.user.refer_code);
+    console.log("refer_code", result.data.user.refer_code);
 
     // localStorage.setItem("setLocalStorage_set_token", result.data.token);
   }
@@ -63,6 +67,7 @@ const ConfirmVerificationSetPass = () => {
     });
 
     result = await result.json();
+    console.log(result);
 
     const submitForm = document.getElementById("submitForm");
     const loginButton = document.getElementById("loginButton");
@@ -74,6 +79,29 @@ const ConfirmVerificationSetPass = () => {
     }
   }
 
+  const showPass = () => {
+    const getPassInputField = document.getElementById("password");
+    getPassInputField.removeAttribute("type", "type");
+    getPassInputField.setAttribute("type", "text");
+
+    const showPassIcon = document.getElementById("showPassIcon");
+    const hidePassIcon = document.getElementById("hidePassIcon");
+
+    showPassIcon.setAttribute("hidden", "hidden");
+    hidePassIcon.removeAttribute("hidden");
+  };
+
+  const hidePass = () => {
+    const getPassInputField = document.getElementById("password");
+    getPassInputField.removeAttribute("type", "type");
+    getPassInputField.setAttribute("type", "password");
+
+    const showPassIcon = document.getElementById("showPassIcon");
+    const hidePassIcon = document.getElementById("hidePassIcon");
+
+    showPassIcon.removeAttribute("hidden");
+    hidePassIcon.setAttribute("hidden", "hidden");
+  };
   return (
     <div className="signUp-parent-div">
       <div className="p-10">
@@ -108,15 +136,30 @@ const ConfirmVerificationSetPass = () => {
                 নিচের ঘরটিতে মিনিমাম ৮ সংখ্যার একটি পাসওয়ার্ড টাইপ করে Submit
                 বাটনে ক্লিক করুন
               </label>
-              <input
-                type="password"
-                onChange={(e) => setPassword(e.target.value)}
-                id="password"
-                name="password"
-                value={password}
-                required
-                placeholder="Set your new password"
-              />
+              <div className="for_eye_icon_div">
+                <input
+                  type="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  id="password"
+                  name="password"
+                  value={password}
+                  required
+                  placeholder="Set your new password"
+                />
+                <FontAwesomeIcon
+                  id="showPassIcon"
+                  onClick={showPass}
+                  className="eye_icon"
+                  icon={faEye}
+                />
+                <FontAwesomeIcon
+                  id="hidePassIcon"
+                  onClick={hidePass}
+                  hidden
+                  className="eye_icon"
+                  icon={faEyeSlash}
+                />
+              </div>
             </div>
             <button className="submit_btn" type="submit">
               Submit

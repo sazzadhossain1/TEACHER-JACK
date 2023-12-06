@@ -38,8 +38,12 @@ const BookInfo = ({ bookData }) => {
               <img className="bookInfo-teacherJack" src={teacherJack} alt="" />
               <div>
                 <h3 className="Zakir_Sir">Zakir Hossain</h3>
-                <p className="trainer">Trainer, Teacherjackonline.com</p>
-                <Link target="_blank" to="/meetOurCeo" className="righter">
+                <p className="trainer">Entrepreneur, Teacherjackonline.com</p>
+                <Link
+                  target="_blank"
+                  to="/aboutTeacherJack"
+                  className="righter"
+                >
                   বইটির লেখক সম্পর্কে জানুন
                 </Link>
               </div>
@@ -95,6 +99,7 @@ const BookInfo = ({ bookData }) => {
               <div className="bookInfo-courseDetails-div">
                 <div className="bookInfo-img-div">
                   <img className="bookInfo-img" src={bookPhotoTwo} alt="" />
+                  <p className="isbn_number">ISBN: 978-984-98092-8-9</p>
                 </div>
                 <div className="bookInfo-text-div">
                   {/* <h1 className="bookInfo-name">{name}</h1> */}

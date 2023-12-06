@@ -40,18 +40,19 @@
   margin-top: 40px;
 }
 
-.signUpNow-btn {
+.details_btn {
   background-color: darkblue;
   color: white;
   padding: 10px;
   width: 250px;
-  font-size: 26px;
-  border-radius: 50px;
+  font-size: 24px;
+  border-radius: 10px;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.signUpNow-btn:hover {
+
+.details_btn :hover {
   background-color: rgb(2, 2, 255);
   transition: 0.5s;
 }
@@ -183,7 +184,7 @@
   .earnOnlineJob-parent-div {
     margin-top: 150px;
   }
-  .signUpNow-btn {
+  .details_btn {
     width: 250px;
     font-size: 25px;
     margin-top: 20px;

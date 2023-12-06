@@ -1,11 +1,9 @@
 .btn {
-  /* border: 1px solid #ddd; */
-  /* background: #ddd; */
   background-color: blue;
   color: white;
+  margin: auto;
 }
-del {
-}
+
 .error {
   color: red;
   margin-top: 20px;
@@ -74,8 +72,9 @@ strike {
   display: none;
 }
 .col-md-6 {
-  width: 50%;
+  width: 100%;
 }
+
 .payment_options {
   border: 1px solid #ddd;
   padding: 10px;
@@ -132,7 +131,7 @@ strike {
 }
 .img-bb {
   max-width: 300px;
-  /* float: right; */
+
   margin-right: 25px;
 }
 
@@ -162,13 +161,6 @@ strike {
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 10px;
-}
-.bookDownloadPage-book-grid-die {
-  max-width: 50%;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  gap: 20px;
 }
 
 .bookDownloadPage-img {
@@ -208,12 +200,15 @@ strike {
 
   margin-bottom: 50px;
 }
-
+.Show_hidden {
+  background-color: red;
+}
 .form-group {
   margin: 25px 0;
 }
 .form_flex_div {
   display: flex;
+  width: 100%;
   gap: 50px;
 }
 .hide_text {
@@ -234,12 +229,15 @@ select {
   border: 1px solid #ccc;
   font-size: 16px;
 }
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
 .select-option {
   border: 1px solid #ccc;
   padding: 10px;
   font-size: 18px;
-}
-form {
 }
 
 .submit-btn {
@@ -306,28 +304,12 @@ form {
   border-bottom: 2px solid black;
   padding: 10px;
 }
-/* tabs end */
-
-/* BKash tab cart start */
-/* .tab_grid_cart {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.tab_cart {
-  border: 3px solid rgb(255, 95, 122);
-  padding: 20px;
-  border-radius: 15px;
-}
-.BKash_Number {
-  font-size: 50px;
-} */
-/* BKash tab cart end */
 
 .hide_text_two {
   border: 1px solid green;
   padding: 0px 25px;
   height: 70%;
+  margin-top: 200px;
 }
 @media screen and (max-width: 1550px) {
   .submit-child-div {
@@ -393,9 +375,7 @@ form {
   #book_discount {
     font-size: 30px;
   }
-  .strike_p {
-    font-size: 18px;
-  }
+
   .item_price {
     font-size: 18px;
   }
@@ -411,9 +391,7 @@ form {
   .submit-child-div {
     padding: 10px;
   }
-  .bookDownloadPage-book-grid-die {
-    grid-template-columns: 1fr;
-  }
+
   .bookDownloadPage-img {
     max-width: 300px;
   }
@@ -437,9 +415,7 @@ form {
   #book_discount {
     font-size: 21px;
   }
-  .strike_p {
-    font-size: 16px;
-  }
+
   .item_price {
     font-size: 16px;
   }
@@ -481,9 +457,6 @@ form {
   }
 
   .product_discount {
-    margin-top: -15px;
-  }
-  .strike_p {
     margin-top: -15px;
   }
 

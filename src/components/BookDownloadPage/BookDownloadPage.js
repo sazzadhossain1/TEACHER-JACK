@@ -91,7 +91,7 @@ const BookDownloadPage = () => {
         setSuccess(false);
       }
     } else {
-      alert("Please input your valid price");
+      alert("Please input data correctly");
     }
   }
 
@@ -179,58 +179,10 @@ const BookDownloadPage = () => {
                 </span>
                 &nbsp; TK
               </p>
-              <p className="strike_p">
-                {/* <strike>
-                  <span className="item_price">
-                    {Number(getBookInfoApi.price).toFixed()}
-                  </span>{" "}
-                </strike>
-                &nbsp; মাত্র &nbsp;
-                <span className="item_discount_price">
-                  {getBookInfoApi.price - getBookInfoApi.discount}
-                </span>
-                &nbsp; টাকায় */}
-              </p>
             </div>
           </div>
 
-          <div className="bookDownloadPage-book-grid-die"></div>
-          <div className="product-id-div"></div>
           <form>
-            <div className="col-md-6">
-              <div className="form-group">
-                <label className="label">কুপন কোড ব্যবহার করুন</label>
-                <div className="input-group">
-                  <input
-                    className="input input-bordered"
-                    type="number"
-                    placeholder=""
-                    onChange={(e) => setCoupon_code(e.target.value)}
-                    id="CouponCode"
-                    name="CouponCode"
-                    value={coupon_code}
-                  />
-                  <button
-                    type="button"
-                    className="btn"
-                    onClick={handleCheckCoupon}
-                  >
-                    কুপন কোড চেক করুন
-                  </button>
-                </div>
-                <span id="code_error"></span>
-              </div>
-            </div>
-
-            <div className="form-group">
-              <p>
-                বইটির মূল্য{" "}
-                <span id="numberPrice">
-                  {Number(getBookInfoApi.price).toFixed(0)}
-                </span>{" "}
-                 টাকা প্রদান করুন।
-              </p>
-            </div>
             {/*  xxxxxxxxxxxxxxxxxx */}
             <div className="form_flex_div">
               <div className="hide_text">
@@ -279,7 +231,42 @@ const BookDownloadPage = () => {
                   </p>
                 </div>
               </div>
+              {/*  */}
               <div id="Show_hidden">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <label className="label">কুপন কোড ব্যবহার করুন</label>
+                    <div className="input-group">
+                      <input
+                        className="input input-bordered"
+                        type="number"
+                        placeholder=""
+                        onChange={(e) => setCoupon_code(e.target.value)}
+                        id="CouponCode"
+                        name="CouponCode"
+                        value={coupon_code}
+                      />
+                      <button
+                        type="button"
+                        className="btn"
+                        onClick={handleCheckCoupon}
+                      >
+                        কুপন কোড চেক করুন
+                      </button>
+                    </div>
+                    <span id="code_error"></span>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <p>
+                    বইটির মূল্য{" "}
+                    <span id="numberPrice">
+                      {Number(getBookInfoApi.price).toFixed(0)}
+                    </span>{" "}
+                     টাকা প্রদান করুন।
+                  </p>
+                </div>
                 <div className="form-group">
                   <div className="for_center">
                     <select

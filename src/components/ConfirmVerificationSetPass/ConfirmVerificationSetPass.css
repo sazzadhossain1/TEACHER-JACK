@@ -74,3 +74,21 @@
   padding: 15px 50px;
   border-radius: 15px;
 }
+
+/* =========--------=========== */
+.for_eye_icon_div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.eye_icon {
+  position: absolute;
+  margin-left: 470px;
+}
+/* ===========---------=========== */
+
+@media screen and (max-width: 620px) {
+  .eye_icon {
+    margin-left: 440px;
+  }
+}

@@ -14,12 +14,12 @@
   background-color: rgb(71, 255, 102);
   padding: 5px 35px;
   max-width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 .download-the-book_p {
-  font-weight: 700;
+  font-weight: 500;
 }
 .click_here_btn {
   display: block;

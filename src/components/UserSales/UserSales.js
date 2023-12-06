@@ -3,45 +3,47 @@ import "./UserSales.css";
 import { Link, useLoaderData } from "react-router-dom";
 
 const UserSales = () => {
-  const referCodeFromLocalStore = localStorage.getItem("storeReferCode");
+  const referCodeFromLocalStore = localStorage.getItem("refer_code");
   // console.log(referCodeFromLocalStore);
 
   const userSalesGetApi = useLoaderData();
-  // console.log(userSalesGetApi);
+  console.log(userSalesGetApi);
 
   if (!userSalesGetApi.data) {
     return <div>Loading...</div>; // You can show a loading indicator or message while data is being fetched
   }
   return (
     <div className="useBuyingDetails_parent_div mt-10">
-      {/* <h2 className="reff_code">
+      <h2 className="reff_code">
         আপনার রেফারেল কোডটি হলো{" "}
         <span className="refer_code_number">{referCodeFromLocalStore}</span> ।
         এটি ব্যবহার করে আপনি এ্যাফিলিয়েট মার্কেটিং করতে পারেন
-      </h2> */}
+      </h2>
       <h1 className="my_buying">My Sales</h1>
       <table className="table-border table" cellPadding={30}>
         <thead>
           <tr className="t_head">
             <th>Product Name</th>
-            <th>Payment From</th>
+            <th>Buyer Name</th>
+            <th>Buyer Phone Number</th>
             <th>Pay Method</th>
             <th>Price</th>
-            <th>Discount</th>
-            <th>Download</th>
+            <th> My Earning</th>
+
             <th>Status</th>
           </tr>
         </thead>
-
+        {/* Total Earning:, Ascending-Descending, */}
         <tbody>
           {userSalesGetApi.data.map((data) => (
             <tr className="table_colum" key={data.id}>
-              <td>{data.id}</td>
+              <td>{data.product_name}</td>
+              <td>{data.buyer_name}</td>
               <td>{data.payee_number}</td>
               <td>{data.pay_method}</td>
               <td>{data.price}</td>
-              <td>{data.discount}</td>
-              <td>
+              <td>{data.ref_discount}</td>
+              {/* <td>
                 {data.url ? (
                   <Link target="_blank" className="btn" to={data.url}>
                     Download
@@ -49,14 +51,13 @@ const UserSales = () => {
                 ) : (
                   ""
                 )}
-              </td>
+              </td> */}
 
               <td
                 className={
                   data.status === "Approved" ? "green-status" : "red-status"
                 }
               >
-                {" "}
                 {data.status}
               </td>
             </tr>

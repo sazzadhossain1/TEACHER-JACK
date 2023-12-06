@@ -12,42 +12,43 @@ const HeroSection = () => {
     <div className="hero-main-div">
       <div className="hero-child-div">
         <h1 className="hero-first-heading">
-          রিমোট জব বা ফ্রিল্যান্সিং এর সঠিক তথ্য জানুন
+          সঠিক গাইডলাইন ফলো করুন, রিমোট জব বা ফ্রিল্যান্সিং করে স্বনির্ভর হউন
         </h1>
         <div className="hero-grid-div">
           <div className="learn-more-btn-and-text-div">
             <div className="hero-text-div">
-              <h3 className="hero-second-text-heading">
-                “Skills for Job Program”
-              </h3>
-              <h2 className="hero-teacher-jack">আপনি কি একজন</h2>
+              <h2 className="hero-teacher-jack_text_title">আপনি কি একজন</h2>
 
               <div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">চাকুরিপ্রার্থী ব্যক্তি ?</p>
+                  <p className="hero_section-p-text">
+                    চাকুরিপ্রার্থী ব্যক্তি ?
+                  </p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">স্কুল, কলেজ পড়ুয়া শিক্ষার্থী ?</p>
+                  <p className="hero_section-p-text">
+                    স্কুল, কলেজ পড়ুয়া শিক্ষার্থী ?
+                  </p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text hero_p_text_third">
+                  <p className="hero_section-p-text hero_p_text_third">
                     যেকোন পেশায় চাকুরিরত কিন্তু কিছু বাড়তি আয় করতে চান ?
                   </p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text"> অবসরপ্রাপ্ত ব্যক্তি? </p>
+                  <p className="hero_section-p-text"> অবসরপ্রাপ্ত ব্যক্তি? </p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text">গৃহিণী ?</p>
+                  <p className="hero_section-p-text">গৃহিণী ?</p>
                 </div>
                 <div className="hero-font-awesome-icon-div">
                   <FontAwesomeIcon icon={faRightLong} />
-                  <p className="hero-p-text hero_p_text_last">
+                  <p className="hero_section-p-text hero_p_text_last">
                     কিছুটা বাংলা বা ইংরেজি পড়তে পারেন এবং একটি স্মার্টফোন আছে
                   </p>
                 </div>
@@ -62,15 +63,16 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-
-            <RemoteJobBookDownload></RemoteJobBookDownload>
           </div>
-          <div className="heroBookCoverPhoto-dvi">
-            <img
-              className="heroBookCoverPhoto-img"
-              src={heroBookCoverPhotoTwo}
-              alt=""
-            />
+          <div className="img_bookBtn_div">
+            <div className="heroBookCoverPhoto-dvi">
+              <img
+                className="heroBookCoverPhoto-img"
+                src={heroBookCoverPhotoTwo}
+                alt=""
+              />
+            </div>
+            <RemoteJobBookDownload></RemoteJobBookDownload>
           </div>
         </div>
       </div>

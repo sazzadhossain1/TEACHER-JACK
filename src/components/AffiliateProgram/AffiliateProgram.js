@@ -13,6 +13,7 @@ const AffiliateProgram = () => {
 
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
   return (
     <div>
       <div>
@@ -121,7 +122,7 @@ const AffiliateProgram = () => {
                 </div>
 
                 <Link to={`/bookDownloadPage/${id}`}>
-                  <button className="buyCourseBtn">
+                  <button className="Affiliate_CourseBtn">
                     <span className="Affiliate_Marketing_gideline">
                       Affiliate Marketing
                     </span>{" "}

@@ -3,6 +3,8 @@ import "./StepDetailsPage.css";
 import { Link } from "react-router-dom";
 import bannerOne from "../../accets/Images/Step-details-page-photo/bannerOne.jpg";
 import RemoteJobBook from "../../accets/Images/Step-details-page-photo/RemoteJobBook.jpg";
+
+import RemoteJobBookTwo from "../../accets/Images/hero-section-photo/BookCoverPageTwo.png";
 import BasicEnglishCommunication from "../../accets/Images/Step-details-page-photo/BasicEnglishCommunication.jpg";
 
 import CoreSkills from "../../accets/Images/Step-details-page-photo/CoreSkills.jpg";
@@ -60,7 +62,7 @@ const StepDetailsPage = () => {
             </p>
           </div>
           <div className="remoteJobBook-img-div">
-            <img className="remoteJobBook-img" src={RemoteJobBook} alt="" />
+            <img className="remoteJobBook-img" src={RemoteJobBookTwo} alt="" />
           </div>
         </div>
 
