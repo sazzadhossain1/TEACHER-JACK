@@ -142,15 +142,21 @@ function App() {
         // ---------------- //
 
         {
-          path: "/bookDetailsPage",
-          loader: async () => {
-            return fetch("https://app.teacherjackonline.com/api/product");
+          path: "/productDetailsPage/:id",
+          // loader: async () => {
+          //   return fetch("https://app.teacherjackonline.com/api/product");
+          // },
+
+          loader: async ({ params }) => {
+            return fetch(
+              `https://app.teacherjackonline.com/api/product/${params.id}`
+            );
           },
           element: <BookDetailsPage></BookDetailsPage>,
         },
 
         {
-          path: "/bookDownloadPage/:id",
+          path: "/productPurchasePage/:id",
           loader: async ({ params }) => {
             return fetch(
               `https://app.teacherjackonline.com/api/product/${params.id}`
@@ -166,21 +172,21 @@ function App() {
           path: "/userBuying",
           loader: async () => {
             const id = localStorage.getItem("userId");
-            console.log(id);
+            // console.log(id);
             try {
-              const result = await fetch(
-                `https://app.teacherjackonline.com/api/user/buyings/${id}`,
-                {
-                  headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                    Authorization: `Bearer ${tokenId}`,
-                  },
-                }
-              );
+              // const result = await fetch(
+              //   `https://app.teacherjackonline.com/api/user/buyings/${id}`,
+
+              const result = await fetch(`array.json`, {
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                  Authorization: `Bearer ${tokenId}`,
+                },
+              });
 
               const data = await result.json();
-              console.log(data);
+              // console.log(data);
               return data;
             } catch (error) {
               console.error("Error fetching data:", error);

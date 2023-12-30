@@ -58,7 +58,7 @@ const NavigationBar = () => {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/bookDetailsPage">BUY BOOK</Link>
+                <Link to={`/productDetailsPage/${1}`}>BUY BOOK</Link>
               </li>
               <li>
                 <Link to="/courses">COURSES</Link>
@@ -130,7 +130,7 @@ const NavigationBar = () => {
               <Link to="/">HOME</Link>
             </li>
             <li>
-              <Link to="/bookDetailsPage">BUY BOOK</Link>
+              <Link to={`/productDetailsPage/${1}`}>BUY BOOK</Link>
             </li>
             <li>
               <Link to="/courses">COURSES</Link>

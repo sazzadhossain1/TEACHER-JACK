@@ -14,7 +14,7 @@ const BookDownloadPage = () => {
 
   const { setUser } = useContext(AuthContext);
   const getBookInfoApi = useLoaderData();
-  console.log(getBookInfoApi);
+  // console.log(getBookInfoApi);
   const navigate = useNavigate();
 
   const { id } = getBookInfoApi;

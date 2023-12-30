@@ -8,16 +8,13 @@ import { Link, useLoaderData } from "react-router-dom";
 const RemoteJobBookDownload = () => {
   const getProductData = useLoaderData();
   const id = getProductData.data.id;
-  console.log(id);
+  // console.log(id);
 
   return (
     <div className="buyTheBook-parent-div">
       {/* {getProductData.data.map((data) => console.log(data.id))} */}
       <div className="buyTheBook-flex-div">
-        <Link
-          to={`/bookDetailsPage`}
-          // to={`/bookDownloadPage/${id}`}
-        >
+        <Link to={`/productDetailsPage/${1}`}>
           <button className="download-the-book">
             <p className="download-the-book_p">
               BUY BOOK &nbsp;

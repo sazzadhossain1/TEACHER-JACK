@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import "./UserBuying.css";
 import { Link, useLoaderData } from "react-router-dom";
 import UseBuyingDetails from "../UseBuyingDetails/UseBuyingDetails";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleDown,
+  faCircleArrowDown,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const UserBuying = () => {
   const [feedback, setFeedback] = useState("");
+  const [visibleDetails, setVisibleDetails] = useState({});
+
   const userBuyingGetApi = useLoaderData();
 
   console.log(userBuyingGetApi);
@@ -23,6 +31,19 @@ const UserBuying = () => {
     // Reset the feedback field
     setFeedback("");
   };
+
+  // const showData = (data) => {
+  //   console.log(data);
+  //   const arrowData = document.getElementById("arrow_data");
+  //   arrowData.data.setAttribute("hidden", "hidden");
+  // };
+
+  const toggleDetails = (id) => {
+    setVisibleDetails((prev) => ({
+      ...prev,
+      [id]: !prev[id], // Toggle visibility for the specific id
+    }));
+  };
   return (
     <div className="useBuyingDetails_parent_div mt-10">
       <h1 className="my_buying">My Purchase</h1>
@@ -39,52 +60,111 @@ const UserBuying = () => {
           </tr>
         </thead>
         <tbody>
-          {userBuyingGetApi.data.map((data) => (
-            <tr className="table_colum" key={data.id}>
-              <td>{data.product_name}</td>
-              <td>{data.payee_number}</td>
-              <td>{data.pay_method}</td>
-              <td>{data.price}</td>
-              <td>{data.discount}</td>
+          {/* <div>
+            {userBuyingGetApi.data.map((data) => (
+              <tr className="table_colum" key={data.id}>
+                <td>{data.product_name}</td>
+                <td>{data.payee_number}</td>
+                <td>{data.pay_method}</td>
+                <td>{data.price}</td>
+                <td>{data.discount}</td>
 
-              <td>
-                {data.url ? (
-                  <Link target="_blank" className="btn" to={data.url}>
-                    Download
-                  </Link>
-                ) : (
-                  ""
-                )}
-              </td>
+                <td>
+                  {data.url ? (
+                    <Link target="_blank" className="btn" to={data.url}>
+                      Download
+                    </Link>
+                  ) : (
+                    ""
+                  )}
+                </td>
 
-              <td
-                className={
-                  data.status === "Approved" ? "green-status" : "red-status"
-                }
-              >
-                {data.status}
-              </td>
-            </tr>
+                <td
+                  className={
+                    data.status === "Approved" ? "green-status" : "red-status"
+                  }
+                >
+                  {data.status}
+                </td>
+              </tr>
+            ))}
+          </div> */}
+
+          {/* ============================== */}
+          {/* =========== New API ========== */}
+          {/* ============================== */}
+
+          {userBuyingGetApi.data.data.map((data) => (
+            <React.Fragment key={data.id}>
+              <tr className="table_colum">
+                <td>{data.name}</td>
+                <td>{data.payee_number}</td>
+                <td>{data.pay_method}</td>
+                <td>{data.price}</td>
+                <td>{data.discount}</td>
+
+                <td>
+                  {data.resource ? (
+                    <Link target="_blank" className="btn" to={data.url}>
+                      Download
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={() => toggleDetails(data.id)}
+                      className="btn"
+                    >
+                      <FontAwesomeIcon icon={faAngleDown} />
+                    </button>
+                  )}
+                </td>
+
+                <td
+                  className={
+                    data.status === "Approved" ? "green-status" : "red-status"
+                  }
+                >
+                  {data.status}
+                </td>
+              </tr>
+
+              {visibleDetails[data.id] && (
+                <tr key={`arrow_data_${data.id}`} className="arrow_data">
+                  <td colSpan={7}>
+                    <table>
+                      <tbody>
+                        {data.module !== null ? (
+                          <React.Fragment>
+                            <tr>
+                              <td colSpan={7}>{data.module.name}</td>
+                            </tr>
+
+                            {data.module.resource.map((rsData) => (
+                              <React.Fragment key={rsData.id}>
+                                <tr>
+                                  <td>{rsData.name}</td>
+                                  <td>
+                                    <button className="btn second_btn">
+                                      Download
+                                    </button>
+                                  </td>
+                                </tr>
+                              </React.Fragment>
+                            ))}
+                          </React.Fragment>
+                        ) : (
+                          <tr style={{ width: "100%" }}>
+                            <td>{data?.package?.name}</td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              )}
+            </React.Fragment>
           ))}
         </tbody>
       </table>
-
-      <div>
-        <form className="form" onSubmit={handleSubmit}>
-          <p>Your Feedback</p>
-          <label>
-            <textarea
-              value={feedback}
-              onChange={handleFeedbackChange}
-              rows="4"
-              cols="50"
-              placeholder="Type your Feedback"
-            />
-          </label>
-          <br />
-          <button type="submit">Submit Feedback</button>
-        </form>
-      </div>
     </div>
   );
 };

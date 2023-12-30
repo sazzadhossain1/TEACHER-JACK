@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./OurCourses.css";
 import { Link } from "react-router-dom";
 import cartPhoto from "../../accets/Images/our-corses-photo/cart-photo.jpg";
 
 const OurCourses = () => {
-  const handlePopup = (e) => {
-    console.log(e);
-  };
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://app.teacherjackonline.com/api/product")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
   return (
     <div className="our-courses-parent-div">
       <div className="our-courses-child-div">
@@ -15,8 +19,23 @@ const OurCourses = () => {
         <p className="pick_at_least">
           Pick at least 1 course from this section
         </p>
+
         <div className="our-course-cart-grid-div">
-          <div className="our-course-cart-div">
+          {products?.data?.map((data) => (
+            <div className="our-course-cart-div">
+              <img className="our-course-img" src={cartPhoto} alt="" />
+              <h4 className="our-course-header">{data.name}</h4>
+              <p className="discount_price">
+                Discount w/ coupon: {data.price} Tk
+              </p>
+              <p className="">Discount: {data.discount} Tk</p>
+              <Link to={`/productDetailsPage/${data.id}`}>
+                <button className="our-course-see-more-btn">Buy Now</button>
+              </Link>
+            </div>
+          ))}
+
+          {/* <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">
               Writing & Translation / Content development Course Fee: 1250 Tk
@@ -220,27 +239,7 @@ const OurCourses = () => {
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
           </div>
-          {/* <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              *Basic Computer Usage Online Downloadable Course:  900 tk
-            </h4>
 
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div> */}
-          {/* <div className="our-course-cart-div">
-            <img className="our-course-img" src={cartPhoto} alt="" />
-            <h4 className="our-course-header">
-              Online Business ideas & scopes - How to know the entire business
-              process of each of this businesses  -  5000 tk
-            </h4>
-
-            <Link>
-              <button className="our-course-see-more-btn">Buy Now</button>
-            </Link>
-          </div> */}
           <div className="our-course-cart-div">
             <img className="our-course-img" src={cartPhoto} alt="" />
             <h4 className="our-course-header">Business Development</h4>
@@ -248,7 +247,7 @@ const OurCourses = () => {
             <Link>
               <button className="our-course-see-more-btn">Buy Now</button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

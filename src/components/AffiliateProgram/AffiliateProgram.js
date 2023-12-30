@@ -121,7 +121,7 @@ const AffiliateProgram = () => {
                   />
                 </div>
 
-                <Link to={`/bookDownloadPage/${id}`}>
+                <Link to={`/productPurchasePage/${1}`}>
                   <button className="Affiliate_CourseBtn">
                     <span className="Affiliate_Marketing_gideline">
                       Affiliate Marketing

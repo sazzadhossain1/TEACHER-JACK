@@ -11,7 +11,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const getProductData_fromApi = useLoaderData();
-  console.log(getProductData_fromApi.data[0]);
+  // console.log(getProductData_fromApi);
 
   // For Safari
   document.body.scrollTop = 0;

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BookInfo = ({ bookData }) => {
-  console.log(bookData);
+  // console.log(bookData);
   const { id } = bookData;
   // console.log(typeof id, id);
   localStorage.setItem("bookDataId", id);
@@ -124,7 +124,7 @@ const BookInfo = ({ bookData }) => {
                   </p> */}
                 </div>
 
-                <Link to={`/bookDownloadPage/${id}`}>
+                <Link to={`/productPurchasePage/${id}`}>
                   <button className="buyCourseBtn">
                     বইটি কিনুন (soft copy)
                   </button>
