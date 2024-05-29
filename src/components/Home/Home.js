@@ -23,6 +23,7 @@ const Home = () => {
       {/* {getProductData_fromApi.data.map((data) => (
         <HeroSection key={data.id} data={data}></HeroSection>
       ))} */}
+      <h2>dfdfdfdf</h2>
       <HeroSection></HeroSection>
       <AffiliateMarketing></AffiliateMarketing>
       <EarnOnlineJob></EarnOnlineJob>
