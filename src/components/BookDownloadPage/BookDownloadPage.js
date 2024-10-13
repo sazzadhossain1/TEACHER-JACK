@@ -288,10 +288,10 @@ const BookDownloadPage = () => {
                       <option className="e_bank" value="bangk">
                         BD BANK ACCOUNT
                       </option>
-                      <option className="e_bank" value="bangk">
+                      <option className="e_bank" value="PayPal">
                         PAYPAL
                       </option>
-                      <option className="e_bank" value="bangk">
+                      <option className="e_bank" value="US_BANK_ACCOUNT">
                         US BANK ACCOUNT
                       </option>
                     </select>
