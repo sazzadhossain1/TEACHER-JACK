@@ -27,6 +27,7 @@ import ForgetPassword from "./components/ForgetPassword/ForgetPassword";
 import SetForgetPassword from "./components/SetForgetPassword/SetForgetPassword";
 import RemoteJobBookDownload from "./components/RemoteJobBookDownload/RemoteJobBookDownload";
 import BookInfo from "./components/BookInfo/BookInfo";
+import LiveCourse from "./components/LiveCourse/LiveCourse";
 
 function App() {
   const tokenId = localStorage.getItem("token");
@@ -54,6 +55,10 @@ function App() {
         {
           path: "/faq",
           element: <Faq></Faq>,
+        },
+        {
+          path: "/liveCourse",
+          element: <LiveCourse></LiveCourse>,
         },
         {
           path: "/jobOpportunities",

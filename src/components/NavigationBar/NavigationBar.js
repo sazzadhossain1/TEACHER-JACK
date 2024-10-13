@@ -73,7 +73,9 @@ const NavigationBar = () => {
                   CONTACT
                 </Link>
               </li>
-
+              <li>
+                <Link to="/liveCourse">LIVE COURSE</Link>
+              </li>
               {getToken ? (
                 <li tabIndex={0}>
                   <details>
@@ -144,6 +146,9 @@ const NavigationBar = () => {
               <Link to="#" onClick={scrollToFooter}>
                 CONTACT
               </Link>
+            </li>
+            <li>
+              <Link to="/liveCourse">LIVE COURSE</Link>
             </li>
 
             {getToken ? (

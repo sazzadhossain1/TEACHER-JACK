@@ -145,12 +145,7 @@ const BookDownloadPage = () => {
         <div className="submit-form">
           <div className="product_parent_div">
             <div className="product_img">
-              <img
-                className="img-bb"
-                // src={`http://app.teacherjackonline.com/${getBookInfoApi.image}`}
-                src={bookPhoto}
-                alt=""
-              />
+              <img className="img-bb" src={bookPhoto} alt="" />
             </div>
             <div className="product_info">
               <h1 className="product_title">{getBookInfoApi.name}</h1>

@@ -1,0 +1,28 @@
+.live_course_parent_div {
+  padding-left: 20px;
+  padding-top: 20px;
+  /* text-align: center; */
+}
+.live_course_parent_div h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.live_course_parent_div h2 {
+  font-size: 20px;
+}
+.This_special_offer {
+  margin-top: 5px;
+}
+.liveCourse_parent_div {
+}
+.liveCourse_flex_div {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.liveCourse_flex_div div {
+}
