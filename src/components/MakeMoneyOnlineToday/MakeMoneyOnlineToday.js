@@ -6,7 +6,7 @@ const MakeMoneyOnlineToday = () => {
     <div className="makeMoneyOnlineToday-parent-div">
       <div className="makeMOneyOnlineToday-first-text-div">
         <div className="job_preparation_div">
-          <h1 className="makeMOneyOnlineToday-heading">Step 4</h1>
+          {/* <h1 className="makeMOneyOnlineToday-heading">Step 4</h1> */}
           <p className="Job_Preparation">Job Preparation Guideline</p>
           <p className="makeMOneyOnlineToday-p">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est

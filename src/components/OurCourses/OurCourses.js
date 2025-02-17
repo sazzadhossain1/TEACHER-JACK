@@ -14,7 +14,7 @@ const OurCourses = () => {
   return (
     <div className="our-courses-parent-div">
       <div className="our-courses-child-div">
-        <h1 className="our-courses-first-heading">Step 3</h1>
+        {/* <h1 className="our-courses-first-heading">Step 3</h1> */}
         <p className="core_skills">“Core Skills” Section</p>
         <p className="pick_at_least">
           Pick at least 1 course from this section

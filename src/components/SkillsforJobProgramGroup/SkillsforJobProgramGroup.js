@@ -6,7 +6,7 @@ import StepFivePhoto from "../../accets/Images/steps-five-photo/StepFivePhoto.jp
 const SkillsforJobProgramGroup = () => {
   return (
     <div className="sills_for_job_program_group_parent_div">
-      <h1 className="step_five">Step 5</h1>
+      <h1 className="step_five">{/* Step 5 */}</h1>
       <h1 className="SkillsforJobProgramGroup-heading">
         Join 'Skills for Job Program' 
         <Link

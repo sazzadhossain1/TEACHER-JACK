@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer_first_div">
           <img className="footer-teacher-jack-logo" src={teacherJack} alt="" />
           <p className="WhatsApp_number">
-            WhatsApp: 01327808821 (Message Only)
+            WhatsApp: 01793596432 (Message Only)
           </p>
           <p className="email">teacherjackonline@gmail.com </p>
           <button className="teacherjack_main_site">

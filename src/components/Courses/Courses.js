@@ -9,7 +9,7 @@ import SpecialCourses from "../SpecialCourses/SpecialCourses";
 const Courses = () => {
   return (
     <div>
-      <TryTodayOurTreat></TryTodayOurTreat>
+      {/* <TryTodayOurTreat></TryTodayOurTreat> */}
       <OurCourses></OurCourses>
       <MakeMoneyOnlineToday></MakeMoneyOnlineToday>
       <SkillsforJobProgramGroup></SkillsforJobProgramGroup>
